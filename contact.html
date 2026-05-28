@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title_contact">联系我们 - 瑞基测控 RAGA</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <span data-i18n="topbar.slogan">温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商</span>
+    <div class="lang-switch"><a href="tel:057756582698">📞 0577-56582698</a><a href="#" data-lang="zh">中文</a><a href="#" data-lang="en">English</a></div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo.jpg" alt="RAGA 瑞基"><div class="logo-text"><span data-i18n="logo.text">瑞基测控</span><span data-i18n="logo.subtext">RAGA · 智能执行机构</span></div></a>
+                <nav class="nav">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <div class="nav-dd">
+          <a href="about.html" data-i18n="nav.about">公司简介</a>
+          <div class="nav-dd-menu">
+            <a href="about.html#about-raga" data-i18n="nav.dd_about_raga">关于瑞基</a>
+            <a href="about.html#history" data-i18n="nav.dd_history">发展历程</a>
+            <a href="about.html#culture" data-i18n="nav.dd_culture">企业文化</a>
+            <a href="about.html#production" data-i18n="nav.dd_production">生产实力</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="products.html" data-i18n="nav.products">公司产品</a>
+          <div class="nav-dd-menu">
+            <a href="products.html#ra-series" data-i18n="nav.dd_ra">RA系列多回转</a>
+            <a href="products.html#rq-series" data-i18n="nav.dd_rq">RQ系列直行程</a>
+            <a href="products.html#rl-series" data-i18n="nav.dd_rl">RL/RJ角行程</a>
+            <a href="products.html#rjm-series" data-i18n="nav.dd_rjm">RJM调节型</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="cases.html" data-i18n="nav.cases">使用案例</a>
+          <div class="nav-dd-menu">
+            <a href="cases.html#oil" data-i18n="nav.dd_oil">石油行业</a>
+            <a href="cases.html#power" data-i18n="nav.dd_power">电力行业</a>
+            <a href="cases.html#metallurgy" data-i18n="nav.dd_metallurgy">冶金行业</a>
+            <a href="cases.html#water" data-i18n="nav.dd_water">水处理行业</a>
+            <a href="cases.html#chemical" data-i18n="nav.dd_chemical">化工行业</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="downloads.html" data-i18n="nav.downloads">资料下载</a>
+          <div class="nav-dd-menu">
+            <a href="downloads.html#manuals" data-i18n="nav.dd_manuals">产品说明书</a>
+            <a href="downloads.html#catalog" data-i18n="nav.dd_catalog">选型手册</a>
+            <a href="downloads.html#brochure" data-i18n="nav.dd_brochure">公司宣传册</a>
+            <a href="downloads.html#drawings" data-i18n="nav.dd_drawings">外形图</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="technology.html" data-i18n="nav.tech">技术优势</a>
+          <div class="nav-dd-menu">
+            <a href="technology.html#core" data-i18n="nav.dd_core_tech">核心技术</a>
+            <a href="technology.html#cert" data-i18n="nav.dd_cert">资质认证</a>
+            <a href="technology.html#quality" data-i18n="nav.dd_quality">质量控制</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="contact.html" class="active" data-i18n="nav.contact">联系我们</a>
+          <div class="nav-dd-menu">
+            <a href="contact.html#contact-info" data-i18n="nav.dd_contact_info">联系方式</a>
+            <a href="contact.html#form" data-i18n="nav.dd_online_msg">在线留言</a>
+          </div>
+        </div>
+      </nav>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/banner-contact.jpg');"></div>
+  <div class="container">
+    <div class="page-hero-content"></div>
+  </div>
+</div>
+
+<section class="section contact-section">
+  <div class="container">
+    <div class="section-title">
+      <div class="subtitle" data-i18n="section.contact_subtitle">Contact</div>
+      <h2 data-i18n="contact.subtitle">联系方式</h2>
+      <p data-i18n="contact.desc">欢迎来电咨询，我们将竭诚为您服务</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:40px 0;">
+      <div class="office-card" style="text-align:center;">
+        <h3 data-i18n="contact.office_wenzhou">温州基地</h3>
+        <p>浙江省温州市<br><span data-i18n="contact.phone">电话</span>：0577-56582698<br><span data-i18n="contact.fax">传真</span>：0577-56582695</p>
+      </div>
+      <div class="office-card" style="text-align:center;">
+        <h3 data-i18n="contact.office_shanghai">上海基地</h3>
+        <p>上海市<br>上海瑞基瑞然自动化技术有限公司</p>
+      </div>
+      <div class="office-card" style="text-align:center;">
+        <h3 data-i18n="contact.office_taicang">太仓基地</h3>
+        <p>江苏省太仓市<br>瑞基测控设备（太仓）有限公司</p>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div id="contact-info" class="contact-info">
+        <h3 data-i18n="contact.subtitle">联系方式</h3>
+        <div class="contact-item">
+          <div class="icon">📍</div>
+          <div><h4 data-i18n="contact.address">公司地址</h4><p data-i18n="contact.address_wenzhou">温州基地：浙江省温州市</p><p data-i18n="contact.address_shanghai">上海基地：上海市</p><p data-i18n="contact.address_taicang">太仓基地：江苏省太仓市</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">📞</div>
+          <div><h4 data-i18n="contact.phone">电话</h4><p>0577-56582698</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">📠</div>
+          <div><h4 data-i18n="contact.fax">传真</h4><p>0577-56582695</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">✉️</div>
+          <div><h4 data-i18n="contact.email">邮箱</h4><p>wnfo@raga.com.cn</p><p>raga@raga.com.cn</p></div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div id="company-map"></div>
+        <div class="map-footer-links">
+          <a href="https://map.baidu.com/m?word=温州瑞基测控设备有限公司" target="_blank" class="btn btn-sm btn-primary">百度地图打开</a>
+          <a href="https://uri.amap.com/marker?position=120.7,28.0&name=瑞基测控" target="_blank" class="btn btn-sm btn-outline">高德地图打开</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="form" class="contact-form-wrapper">
+      <h3 data-i18n="contact.form_title" style="text-align:center;margin-bottom:30px;font-size:22px;">在线留言</h3>
+      <form class="contact-form" style="max-width:700px;margin:0 auto;" onsubmit="event.preventDefault();alert(i18nData[I18N.currentLang]['contact.alert_success']);">
+        <div class="form-group">
+          <label data-i18n="contact.form_name">您的姓名 *</label>
+          <input type="text" data-i18n-placeholder="contact.form_name_placeholder" placeholder="请输入您的姓名" required>
+        </div>
+        <div class="form-group">
+          <label data-i18n="contact.form_phone">联系电话 *</label>
+          <input type="tel" data-i18n-placeholder="contact.form_phone_placeholder" placeholder="请输入您的电话" required>
+        </div>
+        <div class="form-group">
+          <label data-i18n="contact.form_email">邮箱地址</label>
+          <input type="email" data-i18n-placeholder="contact.form_email_placeholder" placeholder="请输入您的邮箱">
+        </div>
+        <div class="form-group">
+          <label data-i18n="contact.form_product">感兴趣的产品</label>
+          <select>
+            <option value="" data-i18n-value="contact.form_product_placeholder">请选择</option>
+            <option>RA10/RA16 智能型多回转</option>
+            <option>RA40/RA50 中型多回转</option>
+            <option>RA100/RA160 大转矩多回转</option>
+            <option>RAⅢ系列第三代多回转</option>
+            <option>R系列分体式</option>
+            <option>RQⅢ直行程</option>
+            <option>RQMⅢ直行程</option>
+            <option>RL智能角行程</option>
+            <option>RJ开关型角行程</option>
+            <option>RJM调节型</option>
+            <option>减速箱</option>
+            <option>其他/不明确</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="contact.form_message">留言内容</label>
+          <textarea data-i18n-placeholder="contact.form_message_placeholder" placeholder="请描述您的需求或询价信息..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact.form_submit">提交留言 →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><img src="images/logo.jpg" alt="RAGA 瑞基"></div><p data-i18n="footer.brand">瑞基测控 — 专业智能电动阀门执行机构制造商。</p></div>
+      <div><h4 data-i18n="footer.quick_links">快速链接</h4><ul><li><a href="index.html" data-i18n="nav.home">首页</a></li><li><a href="about.html" data-i18n="nav.about">公司简介</a></li><li><a href="products.html" data-i18n="nav.products">公司产品</a></li><li><a href="cases.html" data-i18n="nav.cases">使用案例</a></li><li><a href="downloads.html" data-i18n="nav.downloads">资料下载</a></li><li><a href="technology.html" data-i18n="nav.tech">技术优势</a></li><li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li></ul></div>
+      <div><h4 data-i18n="footer.product_series">产品系列</h4><ul><li><a href="products.html" data-i18n="footer.series_ra">RA系列多回转</a></li><li><a href="products.html" data-i18n="footer.series_rq">RQ系列直行程</a></li><li><a href="products.html" data-i18n="footer.series_rl">RL/RJ角行程</a></li><li><a href="products.html" data-i18n="footer.series_rjm">RJM调节型</a></li></ul></div>
+      <div><h4 data-i18n="footer.contact_info">联系方式</h4><ul><li><a href="tel:057756582698">0577-56582698</a></li><li><a href="mailto:raga@raga.com.cn">raga@raga.com.cn</a></li><li><a href="contact.html" data-i18n="footer.online_msg">在线留言</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="footer.copyright">Copyright &copy; 2026 温州瑞基测控设备有限公司 | 上海瑞基瑞然自动化技术有限公司. All Rights Reserved. | <a href="https://beian.miit.gov.cn" target="_blank" data-i18n="footer.icp">浙ICP备2021002987号</a></p></div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top">↑</a>
+<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/i18n-main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function() {
+  var mapEl = document.getElementById('company-map');
+  if (!mapEl) return;
+
+  var mapInstance = null;
+
+  function initMap() {
+    var lang = typeof I18N !== 'undefined' ? I18N.currentLang : 'zh';
+
+    if (mapInstance) {
+      mapInstance.remove();
+      mapInstance = null;
+    }
+
+    mapInstance = L.map('company-map', { scrollWheelZoom: false }).setView([30.0, 121.0], 8);
+
+    if (lang === 'zh') {
+      L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+        subdomains: ['1', '2', '3', '4'],
+        maxZoom: 18,
+        attribution: '高德地图'
+      }).addTo(mapInstance);
+    } else {
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 18,
+        attribution: 'Esri'
+      }).addTo(mapInstance);
+    }
+
+    var labels = lang === 'zh'
+      ? { wz: '温州基地<br>浙江省温州市', sh: '上海基地<br>上海瑞基瑞然自动化技术有限公司', tc: '太仓基地<br>瑞基测控设备（太仓）有限公司' }
+      : { wz: 'Wenzhou Office<br>Wenzhou, Zhejiang', sh: 'Shanghai Office<br>Shanghai', tc: 'Taicang Office<br>Taicang, Jiangsu' };
+
+    L.marker([28.0, 120.7]).addTo(mapInstance).bindPopup(labels.wz);
+    L.marker([31.2, 121.5]).addTo(mapInstance).bindPopup(labels.sh);
+    L.marker([31.45, 121.1]).addTo(mapInstance).bindPopup(labels.tc);
+  }
+
+  initMap();
+
+  // Re-init map when language switches
+  document.querySelectorAll('[data-lang]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      setTimeout(initMap, 300);
+    });
+  });
+})();
+</script>
+</body>
+</html>

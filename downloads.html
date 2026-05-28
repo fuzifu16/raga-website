@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title_downloads">资料下载 - 瑞基测控 RAGA</title>
+  <meta name="description" content="瑞基测控产品说明书、选型手册、技术参数表等资料下载。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .download-section { margin-bottom: 48px; }
+    .download-section h3 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    .download-section .series-desc { font-size: 14px; color: var(--gray-500); margin-bottom: 20px; }
+    .download-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+    .download-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: box-shadow 0.2s; }
+    .download-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .download-card .file-icon { font-size: 32px; flex-shrink: 0; }
+    .download-card .file-info { flex: 1; min-width: 0; }
+    .download-card .file-info .file-name { font-size: 15px; font-weight: 600; color: var(--gray-900); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .download-card .file-info .file-meta { font-size: 13px; color: var(--gray-500); margin-top: 2px; }
+    .download-card .file-info .file-product { font-size: 12px; color: var(--primary); margin-top: 2px; }
+    .download-card .btn-sm { flex-shrink: 0; }
+    @media (max-width: 768px) { .download-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <span data-i18n="topbar.slogan">温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商</span>
+    <div class="lang-switch"><a href="tel:057756582698">📞 0577-56582698</a><a href="#" data-lang="zh">中文</a><a href="#" data-lang="en">English</a></div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo.jpg" alt="RAGA 瑞基"><div class="logo-text"><span data-i18n="logo.text">瑞基测控</span><span data-i18n="logo.subtext">RAGA · 智能执行机构</span></div></a>
+                <nav class="nav">
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <div class="nav-dd">
+          <a href="about.html" data-i18n="nav.about">公司简介</a>
+          <div class="nav-dd-menu">
+            <a href="about.html#about-raga" data-i18n="nav.dd_about_raga">关于瑞基</a>
+            <a href="about.html#history" data-i18n="nav.dd_history">发展历程</a>
+            <a href="about.html#culture" data-i18n="nav.dd_culture">企业文化</a>
+            <a href="about.html#production" data-i18n="nav.dd_production">生产实力</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="products.html" data-i18n="nav.products">公司产品</a>
+          <div class="nav-dd-menu">
+            <a href="products.html#ra-series" data-i18n="nav.dd_ra">RA系列多回转</a>
+            <a href="products.html#rq-series" data-i18n="nav.dd_rq">RQ系列直行程</a>
+            <a href="products.html#rl-series" data-i18n="nav.dd_rl">RL/RJ角行程</a>
+            <a href="products.html#rjm-series" data-i18n="nav.dd_rjm">RJM调节型</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="cases.html" data-i18n="nav.cases">使用案例</a>
+          <div class="nav-dd-menu">
+            <a href="cases.html#oil" data-i18n="nav.dd_oil">石油行业</a>
+            <a href="cases.html#power" data-i18n="nav.dd_power">电力行业</a>
+            <a href="cases.html#metallurgy" data-i18n="nav.dd_metallurgy">冶金行业</a>
+            <a href="cases.html#water" data-i18n="nav.dd_water">水处理行业</a>
+            <a href="cases.html#chemical" data-i18n="nav.dd_chemical">化工行业</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="downloads.html" class="active" data-i18n="nav.downloads">资料下载</a>
+          <div class="nav-dd-menu">
+            <a href="downloads.html#manuals" data-i18n="nav.dd_manuals">产品说明书</a>
+            <a href="downloads.html#catalog" data-i18n="nav.dd_catalog">选型手册</a>
+            <a href="downloads.html#brochure" data-i18n="nav.dd_brochure">公司宣传册</a>
+            <a href="downloads.html#drawings" data-i18n="nav.dd_drawings">外形图</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="technology.html" data-i18n="nav.tech">技术优势</a>
+          <div class="nav-dd-menu">
+            <a href="technology.html#core" data-i18n="nav.dd_core_tech">核心技术</a>
+            <a href="technology.html#cert" data-i18n="nav.dd_cert">资质认证</a>
+            <a href="technology.html#quality" data-i18n="nav.dd_quality">质量控制</a>
+          </div>
+        </div>
+        <div class="nav-dd">
+          <a href="contact.html" data-i18n="nav.contact">联系我们</a>
+          <div class="nav-dd-menu">
+            <a href="contact.html#contact-info" data-i18n="nav.dd_contact_info">联系方式</a>
+            <a href="contact.html#form" data-i18n="nav.dd_online_msg">在线留言</a>
+          </div>
+        </div>
+      </nav>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/banner-downloads.jpg');"></div>
+  <div class="container">
+    <div class="page-hero-content"></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div class="subtitle" data-i18n="downloads.subtitle">Downloads</div>
+      <h2 data-i18n="downloads.title">资料中心</h2>
+      <p data-i18n="downloads.desc">瑞基全系列产品技术资料下载，包含产品说明书、选型手册、安装指南等</p>
+    </div>
+
+    <div class="downloads-page" style="margin-top:40px;"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><img src="images/logo.jpg" alt="RAGA 瑞基"></div><p data-i18n="footer.brand">瑞基测控 — 专业智能电动阀门执行机构制造商。</p></div>
+      <div><h4 data-i18n="footer.quick_links">快速链接</h4><ul><li><a href="index.html" data-i18n="nav.home">首页</a></li><li><a href="about.html" data-i18n="nav.about">公司简介</a></li><li><a href="products.html" data-i18n="nav.products">公司产品</a></li><li><a href="cases.html" data-i18n="nav.cases">使用案例</a></li><li><a href="downloads.html" data-i18n="nav.downloads">资料下载</a></li><li><a href="technology.html" data-i18n="nav.tech">技术优势</a></li><li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li></ul></div>
+      <div><h4 data-i18n="footer.product_series">产品系列</h4><ul><li><a href="products.html" data-i18n="footer.series_ra">RA系列多回转</a></li><li><a href="products.html" data-i18n="footer.series_rq">RQ系列直行程</a></li><li><a href="products.html" data-i18n="footer.series_rl">RL/RJ角行程</a></li><li><a href="products.html" data-i18n="footer.series_rjm">RJM调节型</a></li></ul></div>
+      <div><h4 data-i18n="footer.contact_info">联系方式</h4><ul><li><a href="tel:057756582698">0577-56582698</a></li><li><a href="mailto:raga@raga.com.cn">raga@raga.com.cn</a></li><li><a href="contact.html" data-i18n="footer.online_msg">在线留言</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="footer.copyright">Copyright &copy; 2026 温州瑞基测控设备有限公司 | 上海瑞基瑞然自动化技术有限公司. All Rights Reserved. | <a href="https://beian.miit.gov.cn" target="_blank" data-i18n="footer.icp">浙ICP备2021002987号</a></p></div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top">↑</a>
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/i18n-main.js"></script>
+<script>
+// Render download cards grouped by product category
+(function() {
+  var container = document.querySelector('.downloads-page');
+  if (!container) return;
+
+  var categories = [
+    { key: '多回转', title: 'Multi-turn Series', zhTitle: '多回转系列', products: ['ra10', 'ra40', 'ra100', 'ra3', 'fen'] },
+    { key: '直行程', title: 'Linear-motion Series', zhTitle: '直行程系列', products: ['rq3', 'rqm3'] },
+    { key: '角行程', title: 'Quarter-turn Series', zhTitle: '角行程系列', products: ['rl', 'rj'] },
+    { key: '调节型', title: 'Modulating Series', zhTitle: '调节型系列', products: ['rjm'] },
+    { key: '配件', title: 'Accessories', zhTitle: '配件系列', products: ['gear'] }
+  ];
+
+  function getLang() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var fromUrl = urlParams.get('lang');
+    if (fromUrl === 'en' || fromUrl === 'zh') return fromUrl;
+    try { var saved = localStorage.getItem('raga_lang'); if (saved === 'en' || saved === 'zh') return saved; } catch(e) {}
+    return 'zh';
+  }
+  var lang = getLang();
+
+  categories.forEach(function(cat) {
+    var section = document.createElement('div');
+    section.className = 'download-section';
+
+    var title = document.createElement('h3');
+    title.textContent = lang === 'zh' ? cat.zhTitle : cat.title;
+    section.appendChild(title);
+
+    var grid = document.createElement('div');
+    grid.className = 'download-grid';
+
+    cat.products.forEach(function(pid) {
+      var product = PRODUCTS[pid];
+      if (!product || !product.downloads) return;
+
+      product.downloads.forEach(function(dl) {
+        var card = document.createElement('div');
+        card.className = 'download-card';
+
+        var langText = I18N ? I18N.t('detail.download') : '下载';
+        var deployText = '下载功能待部署';
+
+        card.innerHTML =
+          '<div class="file-icon">' + (dl.icon || '📄') + '</div>' +
+          '<div class="file-info">' +
+            '<div class="file-name">' + dl.name + '</div>' +
+            '<div class="file-meta">' + dl.size + '</div>' +
+            '<div class="file-product">' + product.name + '</div>' +
+          '</div>' +
+          (dl.url
+            ? '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + langText + '</a>'
+            : '<a href="#" onclick="alert(\'' + deployText + '\');return false;" class="btn btn-sm btn-primary">' + langText + '</a>');
+
+        grid.appendChild(card);
+      });
+    });
+
+    section.appendChild(grid);
+    container.appendChild(section);
+  });
+
+  // Company info section (brochures, catalogs, etc.)
+  var companySection = document.createElement('div');
+  companySection.className = 'download-section';
+  companySection.id = 'brochure';
+  var companyTitle = document.createElement('h3');
+  companyTitle.textContent = lang === 'zh' ? '公司资料' : 'Company Info';
+  companySection.appendChild(companyTitle);
+  var companyGrid = document.createElement('div');
+  companyGrid.className = 'download-grid';
+  var companyFiles = [
+    { name: '上海瑞基瑞然样本', size: '24 MB', icon: '📘', url: 'files/company-catalog.pdf' },
+    { name: '瑞基RAGA宣传册', size: '7.6 MB', icon: '📘', url: 'files/company-brochure.pdf' }
+  ];
+  var langText = I18N ? I18N.t('detail.download') : '下载';
+  companyFiles.forEach(function(dl) {
+    var card = document.createElement('div');
+    card.className = 'download-card';
+    card.innerHTML =
+      '<div class="file-icon">' + dl.icon + '</div>' +
+      '<div class="file-info">' +
+        '<div class="file-name">' + dl.name + '</div>' +
+        '<div class="file-meta">' + dl.size + '</div>' +
+        '<div class="file-product">' + (lang === 'zh' ? '公司宣传资料' : 'Company Brochure') + '</div>' +
+      '</div>' +
+      '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + langText + '</a>';
+    companyGrid.appendChild(card);
+  });
+  companySection.appendChild(companyGrid);
+  container.appendChild(companySection);
+})();
+</script>
+</body>
+</html>

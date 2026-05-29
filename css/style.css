@@ -75,6 +75,9 @@ a { color: inherit; }
   color: var(--dark);
   line-height: 1.2;
 }
+.logo-text span { font-size: 13px; font-weight: 400; color: var(--gray-600); display: block; }
+.header-qr { margin-left: 20px; flex-shrink: 0; }
+.header-qr img { display: block; width: 64px; height: 64px; border-radius: 6px; border: 1px solid var(--gray-200); }
 .logo-text span { font-size: 12px; font-weight: 400; color: var(--gray-600); display: block; }
 
 /* ===== Navigation ===== */

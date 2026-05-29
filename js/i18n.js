@@ -176,6 +176,7 @@ const i18nData = {
     "detail.quote": "获取报价 →",
     "detail.specs": "技术参数",
     "detail.downloads": "资料下载",
+    "detail.preview": "预览",
     "detail.download": "下载",
     "detail.no_downloads": "暂无资料下载"
   },
@@ -356,6 +357,7 @@ const i18nData = {
     "detail.quote": "Get Quote →",
     "detail.specs": "Technical Specifications",
     "detail.downloads": "Downloads",
+    "detail.preview": "Preview",
     "detail.download": "Download",
     "detail.no_downloads": "No downloads available"
   }

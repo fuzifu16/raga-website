@@ -63,7 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
       'images/banner-case.jpg',
       'images/banner-tech.jpg',
       'images/hero-industrial.jpg',
-      'images/banner-about.jpg'
+      'images/banner-about.jpg',
+      'images/R-C-1.png',
+      'images/52.png'
     ];
 
     // Remove original bg

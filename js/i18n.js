@@ -1,11 +1,13 @@
 /* ===== RAGA 瑞基 - i18n Translation Data ===== */
 const i18nData = {
+  "zh-TW": {},
   "zh": {
     /* Top Bar */
     "topbar.slogan": "温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商",
     "topbar.phone": "📞 0577-56582698",
     "topbar.lang_zh": "中文",
     "topbar.lang_en": "English",
+    "topbar.lang_tw": "繁體",
 
     /* Navigation */
     "nav.home": "首页",
@@ -187,6 +189,7 @@ const i18nData = {
     "topbar.phone": "📞 0577-56582698",
     "topbar.lang_zh": "中文",
     "topbar.lang_en": "English",
+    "topbar.lang_tw": "繁體",
 
     /* Navigation */
     "nav.home": "Home",
@@ -532,3 +535,230 @@ i18nData.zh["contact.address_shanghai"] = "上海基地：上海市";
 i18nData.en["contact.address_shanghai"] = "Shanghai Office: Shanghai";
 i18nData.zh["contact.address_taicang"] = "太仓基地：江苏省太仓市";
 i18nData.en["contact.address_taicang"] = "Taicang Office: Taicang, Jiangsu";
+
+/* Nav dropdown items */
+i18nData.en["nav.dd_about_raga"] = "About RAGA";
+i18nData.en["nav.dd_history"] = "History";
+i18nData.en["nav.dd_culture"] = "Corporate Culture";
+i18nData.en["nav.dd_production"] = "Production Capabilities";
+i18nData.en["nav.dd_ra"] = "RA Multi-turn Series";
+i18nData.en["nav.dd_rq"] = "RQ Linear-motion Series";
+i18nData.en["nav.dd_rl"] = "RL/RJ Quarter-turn Series";
+i18nData.en["nav.dd_rjm"] = "Local Complete Set Series";
+i18nData.en["nav.dd_oil"] = "Petroleum Industry";
+i18nData.en["nav.dd_power"] = "Power Industry";
+i18nData.en["nav.dd_metallurgy"] = "Metallurgy Industry";
+i18nData.en["nav.dd_water"] = "Water Treatment";
+i18nData.en["nav.dd_chemical"] = "Chemical Industry";
+i18nData.en["nav.dd_manuals"] = "Product Manuals";
+i18nData.en["nav.dd_catalog"] = "Selection Guide";
+i18nData.en["nav.dd_brochure"] = "Company Brochure";
+i18nData.en["nav.dd_drawings"] = "Dimension Drawings";
+i18nData.en["nav.dd_core_tech"] = "Core Technology";
+i18nData.en["nav.dd_cert"] = "Certifications";
+i18nData.en["nav.dd_quality"] = "Quality Control";
+i18nData.en["nav.dd_contact_info"] = "Contact Info";
+i18nData.en["nav.dd_online_msg"] = "Online Message";
+
+/* Cases - Clients section */
+i18nData.en["cases.client_subtitle"] = "Our Clients";
+i18nData.en["cases.client_title"] = "Our Clients";
+i18nData.en["cases.client_desc"] = "Thank you for the trust and support of our partners";
+
+/* Technology - Certifications */
+i18nData.en["tech.cert_subtitle"] = "Certifications";
+i18nData.en["tech.cert_title"] = "Certifications";
+i18nData.en["tech.cert_desc"] = "RAGA products are certified by multiple international and domestic authorities";
+
+/* Technology - Quality Control */
+i18nData.en["tech.quality_subtitle"] = "Quality Control";
+i18nData.en["tech.quality_title"] = "Quality Control";
+i18nData.en["tech.quality_desc"] = "Strict quality control system ensures every product is trustworthy";
+i18nData.en["tech.quality_inspect"] = "Incoming Inspection";
+i18nData.en["tech.quality_inspect_desc"] = "All raw materials and components undergo strict inspection upon arrival, ensuring only qualified materials enter the production line.";
+i18nData.en["tech.quality_process"] = "Process Control";
+i18nData.en["tech.quality_process_desc"] = "Full-process quality control is implemented throughout production, with quality checkpoints at key stages for real-time monitoring.";
+i18nData.en["tech.quality_test"] = "Factory Testing";
+i18nData.en["tech.quality_test_desc"] = "Every product undergoes rigorous full-performance testing before shipment, including torque testing, sealing tests, and insulation tests.";
+
+/* Preview page */
+i18nData.en["preview.title"] = "File Preview";
+i18nData.en["preview.back"] = "← Back to Downloads";
+i18nData.en["preview.download"] = "Download File";
+i18nData.en["preview.loading"] = "Loading file...";
+
+/* Machining Center page */
+i18nData.en["machining.title"] = "Precision Machining Center";
+i18nData.en["machining.breadcrumb"] = "Machining Center";
+i18nData.en["machining.desc"] = "Equipped with advanced processing equipment to ensure component accuracy and product quality";
+i18nData.en["machining.back"] = "← Back to Home";
+
+/* Section subtitles */
+i18nData.en["section.cases_subtitle"] = "Case Studies";
+i18nData.en["section.contact_subtitle"] = "Contact";
+i18nData.en["downloads.subtitle"] = "Downloads";
+
+/* Chinese versions for new keys */
+i18nData.zh["nav.dd_about_raga"] = "关于瑞基";
+i18nData.zh["nav.dd_history"] = "发展历程";
+i18nData.zh["nav.dd_culture"] = "企业文化";
+i18nData.zh["nav.dd_production"] = "生产实力";
+i18nData.zh["nav.dd_ra"] = "RA系列多回转";
+i18nData.zh["nav.dd_rq"] = "RQ系列直行程";
+i18nData.zh["nav.dd_rl"] = "RL/RJ角行程";
+i18nData.zh["nav.dd_rjm"] = "就地成套系列";
+i18nData.zh["nav.dd_oil"] = "石油行业";
+i18nData.zh["nav.dd_power"] = "电力行业";
+i18nData.zh["nav.dd_metallurgy"] = "冶金行业";
+i18nData.zh["nav.dd_water"] = "水处理行业";
+i18nData.zh["nav.dd_chemical"] = "化工行业";
+i18nData.zh["nav.dd_manuals"] = "产品说明书";
+i18nData.zh["nav.dd_catalog"] = "选型手册";
+i18nData.zh["nav.dd_brochure"] = "公司宣传册";
+i18nData.zh["nav.dd_drawings"] = "外形图";
+i18nData.zh["nav.dd_core_tech"] = "核心技术";
+i18nData.zh["nav.dd_cert"] = "资质认证";
+i18nData.zh["nav.dd_quality"] = "质量控制";
+i18nData.zh["nav.dd_contact_info"] = "联系方式";
+i18nData.zh["nav.dd_online_msg"] = "在线留言";
+i18nData.zh["cases.client_subtitle"] = "合作伙伴";
+i18nData.zh["cases.client_title"] = "合作伙伴";
+i18nData.zh["cases.client_desc"] = "感谢以下合作伙伴对瑞基的信任与支持";
+i18nData.zh["tech.cert_subtitle"] = "资质认证";
+i18nData.zh["tech.cert_title"] = "资质认证";
+i18nData.zh["tech.cert_desc"] = "瑞基产品通过多项国际国内权威认证，品质值得信赖";
+i18nData.zh["tech.quality_subtitle"] = "质量控制";
+i18nData.zh["tech.quality_title"] = "质量控制";
+i18nData.zh["tech.quality_desc"] = "严格品控体系，确保每一台产品都值得信赖";
+i18nData.zh["tech.quality_inspect"] = "来料检验";
+i18nData.zh["tech.quality_inspect_desc"] = "所有原材料和零部件进厂后均经过严格的检验流程，确保只有合格品进入生产线。";
+i18nData.zh["tech.quality_process"] = "过程控制";
+i18nData.zh["tech.quality_process_desc"] = "生产过程实施全流程质量控制，关键工序设立品质控制点，实时监控产品参数。";
+i18nData.zh["tech.quality_test"] = "出厂检测";
+i18nData.zh["tech.quality_test_desc"] = "每台产品出厂前均经过严格的全性能测试，包括转矩测试、密封测试、绝缘测试等，确保产品性能达标。";
+i18nData.zh["preview.title"] = "文件预览";
+i18nData.zh["preview.back"] = "← 返回资料下载";
+i18nData.zh["preview.download"] = "下载文件";
+i18nData.zh["preview.loading"] = "正在加载文件...";
+i18nData.zh["machining.title"] = "精密加工中心";
+i18nData.zh["machining.breadcrumb"] = "精密加工中心";
+i18nData.zh["machining.desc"] = "精密加工中心配备先进加工设备，确保零部件加工精度和产品品质";
+i18nData.zh["machining.back"] = "← 返回首页";
+i18nData.zh["section.cases_subtitle"] = "行业应用案例";
+i18nData.zh["section.contact_subtitle"] = "联系我们";
+i18nData.zh["downloads.subtitle"] = "资料下载";
+i18nData.zh["downloads.company_brochure"] = "公司宣传资料";
+i18nData.en["downloads.company_brochure"] = "Company Brochure";
+
+/* ===== Traditional Chinese (zh-TW) ===== */
+i18nData["zh-TW"]["cases.oil"] = "石油行業";
+i18nData["zh-TW"]["cases.oil_desc"] = "瑞基智能電動執行機構在石油行業的油田開採、油氣輸送、煉油化工等環節得到廣泛應用。產品具備防爆ExdⅡCT4認證，可在危險氣體環境中安全可靠運行。";
+i18nData["zh-TW"]["cases.power"] = "電力行業";
+i18nData["zh-TW"]["cases.power_desc"] = "在火電、核電、水電及新能源發電領域，瑞基執行機構廣泛用於鍋爐給水系統、冷卻水系統、煙氣脫硫脫硝系統等關鍵工位。";
+i18nData["zh-TW"]["cases.metallurgy"] = "冶金行業";
+i18nData["zh-TW"]["cases.metallurgy_desc"] = "在鋼鐵冶煉和有色金屬加工領域，瑞基執行機構用於高爐送風系統、轉爐煙氣回收、連鑄冷卻水控制等高溫、高粉塵的嚴苛環境。";
+i18nData["zh-TW"]["cases.water"] = "水處理行業";
+i18nData["zh-TW"]["cases.water_desc"] = "在市政供水、汙水處理、海水淡化及工業廢水處理領域，瑞基執行機構廣泛應用於濾池控制、沉澱池排泥閥、加藥系統閥門等。";
+i18nData["zh-TW"]["cases.chemical"] = "化工行業";
+i18nData["zh-TW"]["cases.chemical_desc"] = "在石油化工、精細化工、煤化工等領域，瑞基執行機構用於反應釜進料控制、管道輸送閥門、儲罐區安全閥等關鍵工位。";
+i18nData["zh-TW"]["cases.oil_full"] = "瑞基智能電動執行機構在石油行業的油田開採、油氣輸送、煉油化工等環節得到廣泛應用。產品具備防爆ExdⅡCT4認證，可在危險氣體環境中安全可靠運行。RA系列多回轉執行機構用於大口徑管線閥門控制，RL角行程系列用於油罐區蝶閥控制，為石油行業提供全方位的閥門自動化解決方案。";
+i18nData["zh-TW"]["cases.power_full"] = "在火電、核電、水電及新能源發電領域，瑞基執行機構廣泛用於鍋爐給水系統、冷卻水系統、煙氣脫硫脫硝系統等關鍵工位。RQⅢ直行程執行機構用於煙道擋板控制，RJM調節型用於給水調節閥精確控制，產品已在多家大型發電企業穩定運行多年。";
+i18nData["zh-TW"]["cases.metallurgy_full"] = "在鋼鐵冶煉和有色金屬加工領域，瑞基執行機構用於高爐送風系統、轉爐煙氣回收、連鑄冷卻水控制等高溫、高粉塵的嚴苛環境。RAⅢ第三代智能執行機構憑藉其IP68高防護等級和寬溫域適應性（-30℃~+70℃），在冶金行業表現出色。";
+i18nData["zh-TW"]["cases.water_full"] = "在市政供水、汙水處理、海水淡化及工業廢水處理領域，瑞基執行機構廣泛應用於濾池控制、沉澱池排泥閥、加藥系統閥門等。RL智能角行程執行機構因其精準的90°旋轉控制和優異的耐腐蝕性能，成為水處理行業蝶閥和球閥驅動的理想選擇。";
+i18nData["zh-TW"]["cases.chemical_full"] = "在石油化工、精細化工、煤化工等領域，瑞基執行機構用於反應釜進料控制、管道輸送閥門、儲罐區安全閥等關鍵工位。R系列分體式執行機構可將控制器安裝在安全區域，執行器安裝在現場，特別適合存在腐蝕性介質或空間受限的化工應用場景。";
+i18nData["zh-TW"]["case.petroleum"] = "石油行業";
+i18nData["zh-TW"]["case.power_gen"] = "電力行業";
+i18nData["zh-TW"]["case.metallurgy"] = "冶金行業";
+i18nData["zh-TW"]["case.water_treatment"] = "水處理行業";
+i18nData["zh-TW"]["case.chemical"] = "化工行業";
+i18nData["zh-TW"]["meta.title_home"] = "瑞基測控 - RAGA | 智能電動閥門執行機構專家";
+i18nData["zh-TW"]["meta.title_about"] = "公司簡介 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_products"] = "公司產品 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_cases"] = "使用案例 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_tech"] = "技術優勢 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_contact"] = "聯繫我們 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_downloads"] = "資料下載 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["nav.downloads"] = "資料下載";
+i18nData["zh-TW"]["downloads.page_title"] = "資料下載";
+i18nData["zh-TW"]["downloads.breadcrumb"] = "資料下載";
+i18nData["zh-TW"]["downloads.subtitle"] = "資料下載";
+i18nData["zh-TW"]["downloads.title"] = "資料中心";
+i18nData["zh-TW"]["downloads.desc"] = "瑞基全系列產品技術資料下載，包含產品說明書、選型手冊、安裝指南等";
+i18nData["zh-TW"]["meta.title_detail"] = "產品詳情 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["logo.text"] = "瑞基測控";
+i18nData["zh-TW"]["logo.subtext"] = "RAGA · 智能執行機構";
+i18nData["zh-TW"]["nav.toggle_label"] = "菜單";
+i18nData["zh-TW"]["about.culture_vision_label"] = "企業願景：";
+i18nData["zh-TW"]["about.culture_mission_label"] = "企業使命：";
+i18nData["zh-TW"]["about.culture_values_label"] = "核心價值觀：";
+i18nData["zh-TW"]["contact.alert_success"] = "感謝您的留言，我們會盡快與您聯繫！";
+i18nData["zh-TW"]["products.sub_accessory"] = "配件";
+i18nData["zh-TW"]["detail.not_found"] = "產品未找到";
+i18nData["zh-TW"]["detail.not_found_title"] = "未找到該產品";
+i18nData["zh-TW"]["detail.not_found_desc"] = "請返回產品列表查看。";
+i18nData["zh-TW"]["section.cases_subtitle"] = "行業應用案例";
+i18nData["zh-TW"]["tech.cert_group_company"] = "公司資質";
+i18nData["zh-TW"]["tech.cert_group_iso"] = "管理體系認證";
+i18nData["zh-TW"]["tech.cert_group_ex"] = "防爆認證";
+i18nData["zh-TW"]["tech.cert_group_ip"] = "防護等級測試";
+i18nData["zh-TW"]["tech.cert_group_eac"] = "EAC認證";
+i18nData["zh-TW"]["tech.cert_group_corrosion"] = "防腐與鹽霧測試";
+i18nData["zh-TW"]["tech.cert_group_type_test"] = "型式試驗報告";
+i18nData["zh-TW"]["tech.cert_group_calibration"] = "校準證書";
+i18nData["zh-TW"]["tech.cert_iso"] = "ISO9001 質量管理體系";
+i18nData["zh-TW"]["tech.cert_iso_desc"] = "公司通過ISO9001質量管理體系認證，建立了完善的質量管理體系，覆蓋從原材料進廠到成品出廠的全過程質量控制。";
+i18nData["zh-TW"]["tech.cert_ex"] = "防爆認證 ExdⅡCT4";
+i18nData["zh-TW"]["tech.cert_ex_desc"] = "產品通過ExdⅡCT4防爆認證，可在含爆炸性氣體環境中安全運行，適用於石油、化工等高安全要求行業。";
+i18nData["zh-TW"]["tech.cert_ip"] = "防護等級 IP68";
+i18nData["zh-TW"]["tech.cert_ip_desc"] = "產品防護等級達到IP68，可在深度水浸環境下長期穩定運行，適應戶外及潮溼環境。";
+i18nData["zh-TW"]["section.contact_subtitle"] = "聯繫我們";
+i18nData["zh-TW"]["contact.address_wenzhou"] = "溫州基地：浙江省溫州市";
+i18nData["zh-TW"]["contact.address_shanghai"] = "上海基地：上海市";
+i18nData["zh-TW"]["contact.address_taicang"] = "太倉基地：江蘇省太倉市";
+i18nData["zh-TW"]["nav.dd_about_raga"] = "關於瑞基";
+i18nData["zh-TW"]["nav.dd_history"] = "發展歷程";
+i18nData["zh-TW"]["nav.dd_culture"] = "企業文化";
+i18nData["zh-TW"]["nav.dd_production"] = "生產實力";
+i18nData["zh-TW"]["nav.dd_ra"] = "RA系列多回轉";
+i18nData["zh-TW"]["nav.dd_rq"] = "RQ系列直行程";
+i18nData["zh-TW"]["nav.dd_rl"] = "RL/RJ角行程";
+i18nData["zh-TW"]["nav.dd_rjm"] = "就地成套系列";
+i18nData["zh-TW"]["nav.dd_oil"] = "石油行業";
+i18nData["zh-TW"]["nav.dd_power"] = "電力行業";
+i18nData["zh-TW"]["nav.dd_metallurgy"] = "冶金行業";
+i18nData["zh-TW"]["nav.dd_water"] = "水處理行業";
+i18nData["zh-TW"]["nav.dd_chemical"] = "化工行業";
+i18nData["zh-TW"]["nav.dd_manuals"] = "產品說明書";
+i18nData["zh-TW"]["nav.dd_catalog"] = "選型手冊";
+i18nData["zh-TW"]["nav.dd_brochure"] = "公司宣傳冊";
+i18nData["zh-TW"]["nav.dd_drawings"] = "外形圖";
+i18nData["zh-TW"]["nav.dd_core_tech"] = "核心技術";
+i18nData["zh-TW"]["nav.dd_cert"] = "資質認證";
+i18nData["zh-TW"]["nav.dd_quality"] = "質量控制";
+i18nData["zh-TW"]["nav.dd_contact_info"] = "聯繫方式";
+i18nData["zh-TW"]["nav.dd_online_msg"] = "在線留言";
+i18nData["zh-TW"]["cases.client_subtitle"] = "合作伙伴";
+i18nData["zh-TW"]["cases.client_title"] = "合作伙伴";
+i18nData["zh-TW"]["cases.client_desc"] = "感謝以下合作伙伴對瑞基的信任與支持";
+i18nData["zh-TW"]["tech.cert_subtitle"] = "資質認證";
+i18nData["zh-TW"]["tech.cert_title"] = "資質認證";
+i18nData["zh-TW"]["tech.cert_desc"] = "瑞基產品通過多項國際國內權威認證，品質值得信賴";
+i18nData["zh-TW"]["tech.quality_subtitle"] = "質量控制";
+i18nData["zh-TW"]["tech.quality_title"] = "質量控制";
+i18nData["zh-TW"]["tech.quality_desc"] = "嚴格品控體系，確保每一臺產品都值得信賴";
+i18nData["zh-TW"]["tech.quality_inspect"] = "來料檢驗";
+i18nData["zh-TW"]["tech.quality_inspect_desc"] = "所有原材料和零部件進廠後均經過嚴格的檢驗流程，確保只有合格品進入生產線。";
+i18nData["zh-TW"]["tech.quality_process"] = "過程控制";
+i18nData["zh-TW"]["tech.quality_process_desc"] = "生產過程實施全流程質量控制，關鍵工序設立品質控制點，實時監控產品參數。";
+i18nData["zh-TW"]["tech.quality_test"] = "出廠檢測";
+i18nData["zh-TW"]["tech.quality_test_desc"] = "每臺產品出廠前均經過嚴格的全性能測試，包括轉矩測試、密封測試、絕緣測試等，確保產品性能達標。";
+i18nData["zh-TW"]["preview.title"] = "文件預覽";
+i18nData["zh-TW"]["preview.back"] = "← 返回資料下載";
+i18nData["zh-TW"]["preview.download"] = "下載文件";
+i18nData["zh-TW"]["preview.loading"] = "正在加載文件...";
+i18nData["zh-TW"]["machining.title"] = "精密加工中心";
+i18nData["zh-TW"]["machining.breadcrumb"] = "精密加工中心";
+i18nData["zh-TW"]["machining.desc"] = "精密加工中心配備先進加工設備，確保零部件加工精度和產品品質";
+i18nData["zh-TW"]["machining.back"] = "← 返回首頁";
+i18nData["zh-TW"]["downloads.company_brochure"] = "公司宣傳資料";
+i18nData["zh-TW"]["topbar.lang_tw"] = "繁體";

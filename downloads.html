@@ -23,9 +23,10 @@
     .download-card .file-info .file-meta { font-size: 13px; color: var(--gray-500); margin-top: 2px; }
     .download-card .file-info .file-product { font-size: 12px; color: var(--primary); margin-top: 2px; }
     .download-card .btn-sm { flex-shrink: 0; }
-    .download-card .dl-btns { display: flex; gap: 8px; flex-shrink: 0; }
+    .download-card .dl-btns { display: flex; gap: 6px; flex-shrink: 0; }
     .btn-preview { background: #2563EB; color: #fff; border: 2px solid #2563EB; }
     .btn-preview:hover { background: #1D4ED8; border-color: #1D4ED8; transform: translateY(-2px); }
+    .download-card .btn-sm { padding: 6px 14px; font-size: 12px; }
     @media (max-width: 768px) { .download-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -34,7 +35,7 @@
 <div class="top-bar">
   <div class="container">
     <span data-i18n="topbar.slogan">温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商</span>
-    <div class="lang-switch"><a href="tel:057756582698">📞 0577-56582698</a><a href="#" data-lang="zh">中文</a><a href="#" data-lang="en">English</a></div>
+    <div class="lang-switch"><a href="tel:057756582698">📞 0577-56582698</a><a href="#" data-lang="zh">中文</a><a href="#" data-lang="zh-TW">繁體</a> <a href="#" data-lang="en">English</a></div>
   </div>
 </div>
 
@@ -138,18 +139,10 @@
 <script src="js/i18n.js"></script>
 <script src="js/i18n-main.js"></script>
 <script>
-// Render download cards grouped by product category
+// Render download cards grouped by document type
 (function() {
   var container = document.querySelector('.downloads-page');
   if (!container) return;
-
-  var categories = [
-    { key: '多回转', title: 'Multi-turn Series', zhTitle: '多回转系列', products: ['ra10', 'ra40', 'ra100', 'ra3', 'fen'] },
-    { key: '直行程', title: 'Linear-motion Series', zhTitle: '直行程系列', products: ['rq3', 'rqm3'] },
-    { key: '角行程', title: 'Quarter-turn Series', zhTitle: '角行程系列', products: ['rl', 'rj'] },
-    { key: '调节型', title: 'Modulating Series', zhTitle: '调节型系列', products: ['rjm'] },
-    { key: '配件', title: 'Accessories', zhTitle: '配件系列', products: ['gear'] }
-  ];
 
   function getLang() {
     var urlParams = new URLSearchParams(window.location.search);
@@ -159,53 +152,65 @@
     return 'zh';
   }
   var lang = getLang();
+  var deployText = '下载功能待部署';
+  var allProducts = ['ra10','ra40','ra100','ra3','fen','rq3','rqm3','rl','rlm','rl150','rj','rjm','gear','rib'];
 
-  categories.forEach(function(cat) {
-    var section = document.createElement('div');
-    section.className = 'download-section';
+  // Collect and group downloads by icon type
+  var manuals = [];   // 📄📘🔧 → 说明书系列
+  var drawings = [];  // 📐 → 外形系列
 
-    var title = document.createElement('h3');
-    title.textContent = lang === 'zh' ? cat.zhTitle : cat.title;
-    section.appendChild(title);
-
-    var grid = document.createElement('div');
-    grid.className = 'download-grid';
-
-    cat.products.forEach(function(pid) {
-      var product = PRODUCTS[pid];
-      if (!product || !product.downloads) return;
-
-      product.downloads.forEach(function(dl) {
-        var card = document.createElement('div');
-        card.className = 'download-card';
-
-        var previewText = I18N ? (I18N.t('detail.preview') || '预览') : '预览';
-        var downloadText = I18N ? I18N.t('detail.download') || '下载' : '下载';
-        var deployText = '下载功能待部署';
-
-        card.innerHTML =
-          '<div class="file-icon">' + (dl.icon || '📄') + '</div>' +
-          '<div class="file-info">' +
-            '<div class="file-name">' + dl.name + '</div>' +
-            '<div class="file-meta">' + dl.size + '</div>' +
-            '<div class="file-product">' + product.name + '</div>' +
-          '</div>' +
-          '<div class="dl-btns">' +
-            (dl.url
-              ? '<a href="' + dl.url + '" target="_blank" class="btn btn-sm btn-preview">' + previewText + '</a>' +
-                '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + downloadText + '</a>'
-              : '<a href="#" onclick="alert(\'' + deployText + '\');return false;" class="btn btn-sm btn-primary">' + downloadText + '</a>') +
-          '</div>';
-
-        grid.appendChild(card);
-      });
+  allProducts.forEach(function(pid) {
+    var product = PRODUCTS[pid];
+    if (!product || !product.downloads) return;
+    product.downloads.forEach(function(dl) {
+      var item = { dl: dl, product: product };
+      if (dl.icon === '📐') {
+        drawings.push(item);
+      } else {
+        manuals.push(item);
+      }
     });
-
-    section.appendChild(grid);
-    container.appendChild(section);
   });
 
-  // Company info section (brochures, catalogs, etc.)
+  function renderCard(dl, productName) {
+    return '<div class="download-card">' +
+      '<div class="file-icon">' + (dl.icon || '📄') + '</div>' +
+      '<div class="file-info">' +
+        '<div class="file-name">' + dl.name + '</div>' +
+        '<div class="file-meta">' + dl.size + '</div>' +
+        '<div class="file-product">' + productName + '</div>' +
+      '</div>' +
+      '<div class="dl-btns">' +
+        (dl.url
+          ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(dl.name) + '" class="btn btn-sm btn-preview" data-i18n="detail.preview">预览</a>'
+          : '<a href="#" onclick="alert(\'' + deployText + '\');return false;" class="btn btn-sm btn-preview" data-i18n="detail.download">下载</a>') +
+      '</div>' +
+    '</div>';
+  }
+
+  function renderSection(titleZh, titleEn, items) {
+    if (!items.length) return;
+    var section = document.createElement('div');
+    section.className = 'download-section';
+    var h3 = document.createElement('h3');
+    h3.textContent = lang === 'zh' ? titleZh : titleEn;
+    section.appendChild(h3);
+    var grid = document.createElement('div');
+    grid.className = 'download-grid';
+    items.forEach(function(item) {
+      grid.innerHTML += renderCard(item.dl, item.product.name);
+    });
+    section.appendChild(grid);
+    container.appendChild(section);
+  }
+
+  // Section 1: 说明书系列
+  renderSection('说明书系列', 'Manuals & Guides', manuals);
+
+  // Section 2: 外形系列
+  renderSection('外形系列', 'Dimension Drawings', drawings);
+
+  // Section 3: 公司资料
   var companySection = document.createElement('div');
   companySection.className = 'download-section';
   companySection.id = 'brochure';
@@ -218,23 +223,8 @@
     { name: '上海瑞基瑞然样本', size: '24 MB', icon: '📘', url: 'files/company-catalog.pdf' },
     { name: '瑞基RAGA宣传册', size: '7.6 MB', icon: '📘', url: 'files/company-brochure.pdf' }
   ];
-  var previewText = I18N ? (I18N.t('detail.preview') || '预览') : '预览';
-  var downloadText = I18N ? I18N.t('detail.download') || '下载' : '下载';
   companyFiles.forEach(function(dl) {
-    var card = document.createElement('div');
-    card.className = 'download-card';
-    card.innerHTML =
-      '<div class="file-icon">' + dl.icon + '</div>' +
-      '<div class="file-info">' +
-        '<div class="file-name">' + dl.name + '</div>' +
-        '<div class="file-meta">' + dl.size + '</div>' +
-        '<div class="file-product">' + (lang === 'zh' ? '公司宣传资料' : 'Company Brochure') + '</div>' +
-      '</div>' +
-      '<div class="dl-btns">' +
-        '<a href="' + dl.url + '" target="_blank" class="btn btn-sm btn-preview">' + previewText + '</a>' +
-        '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + downloadText + '</a>' +
-      '</div>';
-    companyGrid.appendChild(card);
+    companyGrid.innerHTML += renderCard(dl, lang === 'zh' ? '公司宣传资料' : 'Company Brochure');
   });
   companySection.appendChild(companyGrid);
   container.appendChild(companySection);

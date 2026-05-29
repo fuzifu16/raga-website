@@ -2,11 +2,11 @@
 const PRODUCTS = {
   "ra10": {
     id: "ra10",
-    name: "RA10 / RA16",
+    name: "RAIII7A / RAIII11A / RAIII13A",
     image: "images/20210129145229.jpg",
     category: "多回转",
     tag: "智能型",
-    desc: "RA10/RA16 智能型多回转电动执行机构，结构紧凑，体积小、重量轻，适用于中小口径阀门及闸阀、截止阀等的控制。采用非侵入式设定方式，无需打开电气箱盖即可完成所有调试。",
+    desc: "RAIII7A/RAIII11A/RAIII13A 智能型多回转电动执行机构，结构紧凑，体积小、重量轻，适用于中小口径阀门及闸阀、截止阀等的控制。采用非侵入式设定方式，无需打开电气箱盖即可完成所有调试。",
     specs: [
       ["输出转矩", "100N·m / 160N·m"],
       ["输出转速", "24 r/min"],
@@ -20,18 +20,18 @@ const PRODUCTS = {
       ["重复性误差", "≤ 1%"]
     ],
     downloads: [
-      { name: "RA10-RA16产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
+      { name: "RAIII7A/RAIII11A/RAIII13A产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "ra40": {
     id: "ra40",
-    name: "RA40 / RA50",
+    name: "RAIII14A / RAIII15A / RAIII16A",
     image: "images/20210129144003.jpg",
     category: "多回转",
     tag: "中型",
-    desc: "RA40/RA50 中型多回转智能执行机构，输出转矩大，性能稳定可靠，适用于各类工业阀门控制。支持多种通信协议，可实现远程监控与智能诊断。",
+    desc: "RAIII14A/RAIII15A/RAIII16A 中型多回转智能执行机构，输出转矩大，性能稳定可靠，适用于各类工业阀门控制。支持多种通信协议，可实现远程监控与智能诊断。",
     specs: [
       ["输出转矩", "400N·m / 500N·m"],
       ["输出转速", "36 r/min"],
@@ -45,17 +45,17 @@ const PRODUCTS = {
       ["重复性误差", "≤ 1%"]
     ],
     downloads: [
-      { name: "RA40-RA50产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
+      { name: "RAIII14A/RAIII15A/RAIII16A产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
     ]
   },
   "ra100": {
     id: "ra100",
-    name: "RA100 / RA160",
+    name: "RAIII40A / RAIII70A / RAIII90A / RAIII95A",
     image: "images/20210129133414.jpg",
     category: "多回转",
     tag: "大转矩",
-    desc: "RA100/RA160 大转矩智能执行机构，专为大型阀门及重载工业应用设计。具备强大的输出能力和卓越的耐用性，适用于石油、化工、电力等行业的关键工位。",
+    desc: "RAIII40A/RAIII70A/RAIII90A/RAIII95A 大转矩智能执行机构，专为大型阀门及重载工业应用设计。具备强大的输出能力和卓越的耐用性，适用于石油、化工、电力等行业的关键工位。",
     specs: [
       ["输出转矩", "1000N·m / 1600N·m"],
       ["输出转速", "24 r/min"],
@@ -67,7 +67,7 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RA100-RA160产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
+      { name: "RAIII40A/RAIII70A/RAIII90A/RAIII95A产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
     ]
   },
@@ -115,6 +115,27 @@ const PRODUCTS = {
     downloads: [
       { name: "RLM智能型产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
       { name: "角行程执行机构选型指南", size: "1.5 MB", icon: "📘", url: "files/rl-manual-zh.pdf" }
+    ]
+  },
+
+  "rl150": {
+    id: "rl150",
+    name: "RL150智能型角行程",
+    image: "images/3.png",
+    category: "角行程",
+    tag: "智能",
+    desc: "RL150智能型角行程执行机构，大转矩输出，精确控制90°旋转阀门。适用于大型蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
+    specs: [
+      ["输出转矩", "1500N·m"],
+      ["动作角度", "90°（可调）"],
+      ["供电电源", "380VAC/50Hz"],
+      ["防护等级", "IP68"],
+      ["防爆标志", "ExdⅡCT4"],
+      ["环境温度", "-30℃ ~ +70℃"]
+    ],
+    downloads: [
+      { name: "RL150智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
+      { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" }
     ]
   },
 
@@ -357,7 +378,7 @@ const PRODUCTS = {
 
   "gear": {
     id: "gear",
-    name: "减速箱",
+    name: "RGW系列减速箱",
     image: "images/20130630102425990.jpg",
     category: "就地成套",
     tag: "配套",
@@ -373,6 +394,25 @@ const PRODUCTS = {
     downloads: [
       { name: "减速箱产品手册", size: "655 KB", icon: "📄", url: "files/enterprise-standard.pdf" },
       { name: "RAⅢ30A-RGW6减速箱外形图", size: "281 KB", icon: "📐", url: "files/rgw6-dimension.pdf" }
+    ]
+  },
+  "rib": {
+    id: "rib",
+    name: "RIB系列减速箱",
+    image: "images/rib-gearbox.png",
+    category: "就地成套",
+    tag: "配套",
+    desc: "RIB系列减速箱，专为阀门电动执行机构配套设计。传动效率高，运行平稳可靠，适配多种执行器型号，满足不同工况下的传动需求。",
+    specs: [
+      ["配套型号", "RIB系列"],
+      ["传动比", "根据型号定制"],
+      ["适配执行器", "RA系列 / RQ系列"],
+      ["润滑方式", "油浴润滑"],
+      ["工作制式", "S2-15min"],
+      ["环境温度", "-30℃ ~ +70℃"]
+    ],
+    downloads: [
+      { name: "RIB系列减速箱产品手册", size: "655 KB", icon: "📄", url: "files/enterprise-standard.pdf" }
     ]
   }
 };

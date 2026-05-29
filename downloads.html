@@ -139,7 +139,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/i18n-main.js"></script>
 <script>
-// Render download cards grouped by document type
+// Render download cards grouped by product series
 (function() {
   var container = document.querySelector('.downloads-page');
   if (!container) return;
@@ -153,24 +153,15 @@
   }
   var lang = getLang();
   var deployText = '下载功能待部署';
-  var allProducts = ['ra10','ra40','ra100','ra3','fen','rq3','rqm3','rl','rlm','rl150','rj','rjm','gear','rib'];
 
-  // Collect and group downloads by icon type
-  var manuals = [];   // 📄📘🔧 → 说明书系列
-  var drawings = [];  // 📐 → 外形系列
-
-  allProducts.forEach(function(pid) {
-    var product = PRODUCTS[pid];
-    if (!product || !product.downloads) return;
-    product.downloads.forEach(function(dl) {
-      var item = { dl: dl, product: product };
-      if (dl.icon === '📐') {
-        drawings.push(item);
-      } else {
-        manuals.push(item);
-      }
-    });
-  });
+  var series = [
+    { zh: 'RA系列（多回转）', en: 'RA Series (Multi-turn)', products: ['ra10','ra40','ra100','ra3','fen'] },
+    { zh: 'RQ系列（直行程）', en: 'RQ Series (Linear-motion)', products: ['rq3','rqm3'] },
+    { zh: 'RL系列（角行程）', en: 'RL Series (Quarter-turn)', products: ['rl','rlm','rl150'] },
+    { zh: '调节型系列', en: 'Modulating Series', products: ['rjm'] },
+    { zh: '开关型系列', en: 'On-Off Series', products: ['rj'] },
+    { zh: '配件系列', en: 'Accessories', products: ['gear','rib'] }
+  ];
 
   function renderCard(dl, productName) {
     return '<div class="download-card">' +
@@ -204,13 +195,7 @@
     container.appendChild(section);
   }
 
-  // Section 1: 说明书系列
-  renderSection('说明书系列', 'Manuals & Guides', manuals);
-
-  // Section 2: 外形系列
-  renderSection('外形系列', 'Dimension Drawings', drawings);
-
-  // Section 3: 公司资料
+  // Section 1: 公司资料
   var companySection = document.createElement('div');
   companySection.className = 'download-section';
   companySection.id = 'brochure';
@@ -228,6 +213,36 @@
   });
   companySection.appendChild(companyGrid);
   container.appendChild(companySection);
+
+  // Product series sections
+  series.forEach(function(s) {
+    var items = [];
+    s.products.forEach(function(pid) {
+      var product = PRODUCTS[pid];
+      if (!product || !product.downloads || !product.downloads.length) return;
+      product.downloads.forEach(function(dl) {
+        if (dl.icon !== '📐') items.push({ dl: dl, product: product });
+      });
+    });
+    renderSection(s.zh, s.en, items);
+  });
+
+  // Section: 所有外形图
+  var allDrawings = [];
+  series.forEach(function(s) {
+    s.products.forEach(function(pid) {
+      var product = PRODUCTS[pid];
+      if (!product || !product.downloads) return;
+      product.downloads.forEach(function(dl) {
+        if (dl.icon === '📐') allDrawings.push({ dl: dl, product: product });
+      });
+    });
+  });
+  // Also collect from company files
+  companyFiles.forEach(function(dl) {
+    if (dl.icon === '📐') allDrawings.push({ dl: dl, product: { name: lang === 'zh' ? '公司资料' : 'Company Info' } });
+  });
+  renderSection('所有外形图', 'All Dimension Drawings', allDrawings);
 })();
 </script>
 </body>

@@ -20,7 +20,6 @@ const PRODUCTS = {
       ["重复性误差", "≤ 1%"]
     ],
     downloads: [
-      { name: "RAIII7A/RAIII11A/RAIII13A产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
@@ -45,7 +44,6 @@ const PRODUCTS = {
       ["重复性误差", "≤ 1%"]
     ],
     downloads: [
-      { name: "RAIII14A/RAIII15A/RAIII16A产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
     ]
   },
@@ -67,7 +65,6 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RAIII40A/RAIII70A/RAIII90A/RAIII95A产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
     ]
   },
@@ -92,6 +89,7 @@ const PRODUCTS = {
       { name: "RL角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
       { name: "角行程执行机构选型指南", size: "1.5 MB", icon: "📘", url: "files/rl-manual-zh.pdf" },
       { name: "RL10系列外形图", size: "140 KB", icon: "📐", url: "files/rl10-dimension.pdf" },
+      { name: "RL80系列外形图", size: "48 KB", icon: "📐", url: "files/rl80-dimension.pdf" },
       { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" }
     ]
   },
@@ -134,8 +132,7 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RL150智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
-      { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" }
+      { name: "RL150智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" }
     ]
   },
 
@@ -156,9 +153,7 @@ const PRODUCTS = {
       ["防护等级", "IP67"],
       ["环境温度", "-30℃ ~ +70℃"]
     ],
-    downloads: [
-      { name: "RJM调节型产品说明书", size: "1.3 MB", icon: "📄", url: "files/multi-turn-installation.pdf" }
-    ]
+    downloads: []
   },
   "rqm3": {
     id: "rqm3",
@@ -198,10 +193,7 @@ const PRODUCTS = {
       ["防护等级", "IP67"],
       ["环境温度", "-30℃ ~ +70℃"]
     ],
-    downloads: [
-      { name: "RJ开关型产品说明书", size: "1.5 MB", icon: "📄", url: "files/rl-manual-zh.pdf" },
-      { name: "RL80系列外形图", size: "48 KB", icon: "📐", url: "files/rl80-dimension.pdf" }
-    ]
+    downloads: []
   },
   "rq3": {
     id: "rq3",
@@ -224,7 +216,8 @@ const PRODUCTS = {
       { name: "RQⅢ系列产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" },
       { name: "RQ03外形图", size: "233 KB", icon: "📐", url: "files/rq03-dimension.pdf" },
       { name: "RQ04外形图", size: "249 KB", icon: "📐", url: "files/rq04-dimension.pdf" },
-      { name: "RQ06外形图", size: "235 KB", icon: "📐", url: "files/rq06-dimension.pdf" }
+      { name: "RQ06外形图", size: "235 KB", icon: "📐", url: "files/rq06-dimension.pdf" },
+      { name: "RQ150外形图", size: "143 KB", icon: "📐", url: "files/rq150-dimension.pdf" }
     ]
   },
   "ra3": {
@@ -248,7 +241,6 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RAⅢ系列产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" },
-      { name: "RAⅢ技术参数表", size: "655 KB", icon: "📘", url: "files/enterprise-standard.pdf" },
       { name: "RAⅢ40A外形图", size: "169 KB", icon: "📐", url: "files/ra3-dimension.pdf" },
       { name: "RAⅢ95A外形图", size: "172 KB", icon: "📐", url: "files/ra3-dimension-large.pdf" }
     ]
@@ -269,7 +261,7 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "R系列分体式产品说明书", size: "2.7 MB", icon: "📄", url: "files/ra-selection-manual.pdf" },
+      { name: "R系列分体式安装说明书", size: "1.0 MB", icon: "📄", url: "files/r-series-manual.pdf" },
       { name: "RF10分体外形图", size: "138 KB", icon: "📐", url: "files/rf-dimension.pdf" }
     ]
   },
@@ -392,7 +384,7 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "减速箱产品手册", size: "655 KB", icon: "📄", url: "files/enterprise-standard.pdf" },
+      { name: "R系列减速箱使用说明书", size: "337 KB", icon: "📄", url: "files/r-gearbox-manual.pdf" },
       { name: "RAⅢ30A-RGW6减速箱外形图", size: "281 KB", icon: "📐", url: "files/rgw6-dimension.pdf" }
     ]
   },
@@ -412,7 +404,7 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RIB系列减速箱产品手册", size: "655 KB", icon: "📄", url: "files/enterprise-standard.pdf" }
+      { name: "R系列减速箱使用说明书", size: "337 KB", icon: "📄", url: "files/r-gearbox-manual.pdf" }
     ]
   }
 };

@@ -354,6 +354,7 @@ const i18nData = {
     "contact.form_email_placeholder": "Please enter your email",
     "contact.form_product_placeholder": "Please select",
     "contact.form_message_placeholder": "Describe your requirements or inquiry...",
+    "contact.offices_title": "National Offices",
 
     /* Product Detail */
     "detail.back": "← Back to Products",
@@ -762,3 +763,14 @@ i18nData["zh-TW"]["machining.desc"] = "精密加工中心配備先進加工設�
 i18nData["zh-TW"]["machining.back"] = "← 返回首頁";
 i18nData["zh-TW"]["downloads.company_brochure"] = "公司宣傳資料";
 i18nData["zh-TW"]["topbar.lang_tw"] = "繁體";
+i18nData.zh["contact.offices_title"] = "公司全国办事处";
+i18nData["zh-TW"]["contact.offices_title"] = "公司全國辦事處";
+i18nData.zh["contact.office_col"] = "办事处";
+i18nData.zh["contact.contact_col"] = "联系人";
+i18nData.zh["contact.info_col"] = "联系方式";
+i18nData.en["contact.office_col"] = "Office";
+i18nData.en["contact.contact_col"] = "Contact";
+i18nData.en["contact.info_col"] = "Contact Info";
+i18nData["zh-TW"]["contact.office_col"] = "辦事處";
+i18nData["zh-TW"]["contact.contact_col"] = "聯絡人";
+i18nData["zh-TW"]["contact.info_col"] = "聯絡方式";

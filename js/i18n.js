@@ -63,7 +63,7 @@ const i18nData = {
     "home.prod_1": "总装生产线",
     "home.prod_2": "精密加工中心",
     "home.prod_3": "装配调试线",
-    "home.prod_4": "成品检测区",
+    "home.prod_4": "质量检测设备",
 
     /* Home - News */
     "home.news_subtitle": "公司动态",
@@ -245,7 +245,7 @@ const i18nData = {
     "home.prod_1": "Assembly Line",
     "home.prod_2": "Precision Machining",
     "home.prod_3": "Testing & Debugging",
-    "home.prod_4": "Final Inspection",
+    "home.prod_4": "Quality Inspection Equipment",
 
     /* Home - News */
     "home.news_subtitle": "News",
@@ -774,3 +774,4 @@ i18nData.en["contact.info_col"] = "Contact Info";
 i18nData["zh-TW"]["contact.office_col"] = "辦事處";
 i18nData["zh-TW"]["contact.contact_col"] = "聯絡人";
 i18nData["zh-TW"]["contact.info_col"] = "聯絡方式";
+i18nData["zh-TW"]["home.prod_4"] = "質量檢測設備";

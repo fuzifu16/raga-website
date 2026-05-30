@@ -116,6 +116,26 @@ const PRODUCTS = {
     ]
   },
 
+  "rl100": {
+    id: "rl100",
+    name: "RL100智能型角行程",
+    image: "images/13.png",
+    category: "角行程",
+    tag: "智能",
+    desc: "RL100智能型角行程执行机构，精确控制90°旋转阀门。适用于蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
+    specs: [
+      ["输出转矩", "1000N·m"],
+      ["动作角度", "90°（可调）"],
+      ["供电电源", "380VAC/50Hz"],
+      ["防护等级", "IP68"],
+      ["防爆标志", "ExdⅡCT4"],
+      ["环境温度", "-30℃ ~ +70℃"]
+    ],
+    downloads: [
+      { name: "RL100智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" }
+    ]
+  },
+
   "rl150": {
     id: "rl150",
     name: "RL150智能型角行程",
@@ -408,3 +428,61 @@ const PRODUCTS = {
     ]
   }
 };
+// === RAIII add ===
+var ra3Add = [
+  ["RAIII13A外形图", "233 KB", "files/RAIII13A外形图.pdf"],
+  ["RAIII14A外形图", "248 KB", "files/RAIII14A 外形图.pdf"],
+  ["RAIII30A-RGW6-02", "280 KB", "files/RAIII30A-RGW6-02.pdf"],
+  ["RAIII30A-RGW7-02", "273 KB", "files/RAIII30A-RGW7-02.pdf"],
+  ["RAIII30A外形图", "234 KB", "files/RAIII30A外形图.pdf"],
+  ["RAIII35A-RGW8-02", "273 KB", "files/RAIII35A-RGW8-02.pdf"],
+  ["RAIII40A-RGW8-02", "175 KB", "files/RAIII40A-RGW8-02.pdf"],
+  ["RAIII40A-RGW8-03", "175 KB", "files/RAIII40A-RGW8-03.pdf"],
+  ["RAIII70A-RGW8-02", "175 KB", "files/RAIII70A-RGW8-02.pdf"],
+  ["RAIII70A-RGW8-03", "175 KB", "files/RAIII70A-RGW8-03.pdf"],
+  ["RAIII70A-RGW9-02", "178 KB", "files/RAIII70A-RGW9-02.pdf"]
+];
+ra3Add.forEach(function(e){ PRODUCTS.ra3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
+
+// === Fen add ===
+var fenAdd = [
+  ["RF10分体外形图", "138 KB", "files/RF10 分体外形图.pdf"],
+  ["RF10-分体外形图", "138 KB", "files/RF10- 分体外形图.pdf"]
+];
+fenAdd.forEach(function(e){ PRODUCTS.fen.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
+
+// === RQ3 add ===
+var rq3Add = [
+  ["RQ03-RGW3外形图", "251 KB", "files/RQ03-RGW3外形图.pdf"],
+  ["RQ03-RGW4R外形图", "247 KB", "files/RQ03-RGW4R 外形图.pdf"],
+  ["RQ03-RGW4外形图", "253 KB", "files/RQ03-RGW4外形图.pdf"],
+  ["RQ03-RGW5R外形图", "249 KB", "files/RQ03-RGW5R 外形图.pdf"],
+  ["RQ03-RGW5外形图", "246 KB", "files/RQ03-RGW5外形图.pdf"],
+  ["RQ03-RGW6R外形图", "259 KB", "files/RQ03-RGW6R 外形图.pdf"],
+  ["RQ04-RGW4R外形图", "263 KB", "files/RQ04-RGW4R 外形图.pdf"],
+  ["RQ04-RGW4外形图", "262 KB", "files/RQ04-RGW4外形图.pdf"],
+  ["RQ04-RGW5外形图", "263 KB", "files/RQ04-RGW5 外形图.pdf"],
+  ["RQ04-RGW5R外形图", "261 KB", "files/RQ04-RGW5R 外形图.pdf"],
+  ["RQ04-RGW6外形图", "261 KB", "files/RQ04-RGW6 外形图.pdf"],
+  ["RQ04-RGW6R外形图", "267 KB", "files/RQ04-RGW6R 外形图.pdf"],
+  ["RQ04-RGW7外形图", "261 KB", "files/RQ04-RGW7 外形图.pdf"],
+  ["RQ04-RGW7R外形图", "263 KB", "files/RQ04-RGW7R 外形图.pdf"],
+  ["RQ06-RGW7外形图", "257 KB", "files/RQ06-RGW7 外形图.pdf"],
+  ["RQ06-RGW7R外形图", "264 KB", "files/RQ06-RGW7R 外形图.pdf"],
+  ["RQ06-RGW8外形图", "257 KB", "files/RQ06-RGW8 外形图.pdf"],
+  ["RQ06-RGW8R外形图", "261 KB", "files/RQ06-RGW8R 外形图.pdf"],
+  ["RQ06-RGW9外形图", "258 KB", "files/RQ06-RGW9 外型图.pdf"],
+  ["RQ100-RGW8外形图", "160 KB", "files/RQ100-RGW8 外形图.pdf"],
+  ["RQ100-RGW8R外形图", "165 KB", "files/RQ100-RGW8R 外形图.pdf"],
+  ["RQ150-RGW10外形图", "149 KB", "files/RQ150-RGW10 外形图.pdf"],
+  ["RQ150-RGW9外形图", "153 KB", "files/RQ150-RGW9 外形图.pdf"]
+];
+rq3Add.forEach(function(e){ PRODUCTS.rq3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
+
+// === RQM3 add ===
+var rqm3Add = [
+  ["RQML06直行程外形图", "254 KB", "files/RQML06直行程.pdf"],
+  ["RQML12直行程外形图", "266 KB", "files/RQML12直行程.pdf"],
+  ["RQML54直行程外形图", "258 KB", "files/RQML54直行程.pdf"]
+];
+rqm3Add.forEach(function(e){ PRODUCTS.rqm3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });

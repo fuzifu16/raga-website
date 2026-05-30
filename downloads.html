@@ -11,22 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .download-section { margin-bottom: 48px; }
-    .download-section h3 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    .download-section { margin-bottom: 40px; }
+    .download-section h3 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
     .download-section .series-desc { font-size: 14px; color: var(--gray-500); margin-bottom: 20px; }
-    .download-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
-    .download-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: box-shadow 0.2s; }
+    .download-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+    .download-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; transition: box-shadow 0.2s; }
     .download-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    .download-card .file-icon { font-size: 32px; flex-shrink: 0; }
+    .download-card .file-icon { font-size: 24px; flex-shrink: 0; }
     .download-card .file-info { flex: 1; min-width: 0; }
-    .download-card .file-info .file-name { font-size: 15px; font-weight: 600; color: var(--gray-900); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .download-card .file-info .file-meta { font-size: 13px; color: var(--gray-500); margin-top: 2px; }
-    .download-card .file-info .file-product { font-size: 12px; color: var(--primary); margin-top: 2px; }
+    .download-card .file-info .file-name { font-size: 13px; font-weight: 600; color: var(--gray-900); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .download-card .file-info .file-meta { font-size: 11px; color: var(--gray-500); margin-top: 1px; }
+    .download-card .file-info .file-product { font-size: 11px; color: var(--primary); margin-top: 1px; }
     .download-card .btn-sm { flex-shrink: 0; }
     .download-card .dl-btns { display: flex; gap: 6px; flex-shrink: 0; }
     .btn-preview { background: #2563EB; color: #fff; border: 2px solid #2563EB; }
     .btn-preview:hover { background: #1D4ED8; border-color: #1D4ED8; transform: translateY(-2px); }
-    .download-card .btn-sm { padding: 6px 14px; font-size: 12px; }
+    .download-card .btn-sm { padding: 4px 10px; font-size: 11px; }
     @media (max-width: 768px) { .download-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -157,7 +157,7 @@
   var series = [
     { zh: 'RA系列（多回转）', en: 'RA Series (Multi-turn)', products: ['ra10','ra40','ra100','ra3','fen'] },
     { zh: 'RQ系列（直行程）', en: 'RQ Series (Linear-motion)', products: ['rq3','rqm3'] },
-    { zh: 'RL系列（角行程）', en: 'RL Series (Quarter-turn)', products: ['rl','rlm','rl150'] },
+    { zh: 'RL系列（角行程）', en: 'RL Series (Quarter-turn)', products: ['rl','rlm','rl100','rl150'] },
     { zh: '调节型系列', en: 'Modulating Series', products: ['rjm'] },
     { zh: '开关型系列', en: 'On-Off Series', products: ['rj'] },
     { zh: '配件系列', en: 'Accessories', products: ['gear','rib'] }

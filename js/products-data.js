@@ -3,16 +3,18 @@ const PRODUCTS = {
   "ra10": {
     id: "ra10",
     name: "RAIII7A / RAIII11A / RAIII13A",
-    image: "images/20210129145229.jpg",
+    image: "images/RAIII7A.png",
     category: "多回转",
     tag: "智能型",
     desc: "RAIII7A/RAIII11A/RAIII13A 智能型多回转电动执行机构，结构紧凑，体积小、重量轻，适用于中小口径阀门及闸阀、截止阀等的控制。采用非侵入式设定方式，无需打开电气箱盖即可完成所有调试。",
     specs: [
-      ["输出转矩", "100N·m / 160N·m"],
-      ["输出转速", "24 r/min"],
-      ["电机功率", "0.12kW / 0.25kW"],
-      ["供电电源", "380VAC/50Hz"],
-      ["控制方式", "开关型/调节型"],
+      ["型号", "RAIII7A / RAIII11A / RAIII13A"],
+      ["输出转矩", "34 ~ 108 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 / 72 / 96 / 144 r/min"],
+      ["电机功率", "0.05 ~ 4.80 kW (380VAC)"],
+      ["电机电流", "1.4 ~ 16.5 A (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC/50Hz)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"],
@@ -27,16 +29,17 @@ const PRODUCTS = {
   "ra40": {
     id: "ra40",
     name: "RAIII14A / RAIII15A / RAIII16A",
-    image: "images/20210129144003.jpg",
+    image: "images/hero-product.png",
     category: "多回转",
     tag: "中型",
     desc: "RAIII14A/RAIII15A/RAIII16A 中型多回转智能执行机构，输出转矩大，性能稳定可靠，适用于各类工业阀门控制。支持多种通信协议，可实现远程监控与智能诊断。",
     specs: [
-      ["输出转矩", "400N·m / 500N·m"],
-      ["输出转速", "36 r/min"],
-      ["电机功率", "0.55kW / 0.75kW"],
-      ["供电电源", "380VAC/50Hz"],
-      ["控制方式", "开关型/调节型"],
+      ["型号", "RAIII14A / RAIII15A / RAIII16A"],
+      ["输出转矩", "203 ~ 400 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 / 72 r/min"],
+      ["电机功率", "0.23 ~ 0.80 kW"],
+      ["供电电源", "380VAC/50Hz (可选220VAC/50Hz)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"],
@@ -44,28 +47,55 @@ const PRODUCTS = {
       ["重复性误差", "≤ 1%"]
     ],
     downloads: [
-      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
+      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "ra100": {
     id: "ra100",
     name: "RAIII40A / RAIII70A / RAIII90A / RAIII95A",
-    image: "images/20210129133414.jpg",
+    image: "images/RA250.png",
     category: "多回转",
     tag: "大转矩",
-    desc: "RAIII40A/RAIII70A/RAIII90A/RAIII95A 大转矩智能执行机构，专为大型阀门及重载工业应用设计。具备强大的输出能力和卓越的耐用性，适用于石油、化工、电力等行业的关键工位。",
+    desc: "RAIII40A/RAIII70A/RAIII90A/RAIII95A 大转矩智能执行机构，专为大型阀门及重载工业应用设计。可配RGW/RGD系列减速箱。具备强大的输出能力和卓越的耐用性，适用于石油、化工、电力等行业的关键工位。",
     specs: [
-      ["输出转矩", "1000N·m / 1600N·m"],
-      ["输出转速", "24 r/min"],
-      ["电机功率", "1.5kW / 2.2kW"],
-      ["供电电源", "380VAC/50Hz"],
-      ["控制方式", "开关型/调节型"],
+      ["型号", "RAIII40A / RAIII70A / RAIII90A / RAIII95A"],
+      ["输出转矩", "1020 ~ 3500 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 r/min"],
+      ["电机功率", "0.37 ~ 5.5 kW"],
+      ["供电电源", "380VAC/50Hz (可选220VAC/50Hz)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
+      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+    ]
+  },
+  "ra35": {
+    id: "ra35",
+    name: "RAIII30A / RAIII35A",
+    image: "images/hero-product.png",
+    category: "多回转",
+    tag: "智能型",
+    desc: "RAIII30A/RAIII35A 智能型多回转电动执行机构，性能稳定可靠，适用于中等口径阀门控制。采用非侵入式设定方式，支持多种通信协议。",
+    specs: [
+      ["型号", "RAIII30A / RAIII35A"],
+      ["输出转矩", "610 / 900 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 r/min"],
+      ["电机功率", "0.68 ~ 1.90 kW (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
+      ["防护等级", "IP68"],
+      ["防爆标志", "ExdⅡCT4"],
+      ["环境温度", "-30℃ ~ +70℃"],
+      ["基本误差", "≤ ±1.0%"]
+    ],
+    downloads: [
+      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "rl": {
@@ -76,18 +106,22 @@ const PRODUCTS = {
     tag: "智能",
     desc: "RL智能角行程执行机构，精确控制90°旋转阀门，特别适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速，广泛应用于水处理、暖通等行业。",
     specs: [
-      ["输出转矩", "20N·m ~ 250N·m"],
+      ["型号", "RL10 / RL20 / RL40 / RL60 / RL80 / RL100 / RL150 / RL200 / RL250"],
+      ["输出转矩", "100 ~ 2000 N·m"],
       ["动作角度", "90°（可调）"],
-      ["供电电源", "220VAC / 380VAC"],
-      ["控制方式", "开关型/调节型"],
-      ["防护等级", "IP67"],
+      ["全行程时间", "15 ~ 90 s"],
+      ["连接法兰", "ISO 5211 (F07 / F10 / F12)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["电机功率", "0.07 ~ 0.85 kW"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
+      ["防护等级", "IP67 (可选IP68)"],
       ["环境温度", "-30℃ ~ +70℃"],
       ["位置重复性", "≤ 1%"],
       ["死区", "0.1% ~ 9.9%可调"]
     ],
     downloads: [
       { name: "RL角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
-      { name: "角行程执行机构选型指南", size: "1.5 MB", icon: "📘", url: "files/rl-manual-zh.pdf" },
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" },
       { name: "RL10系列外形图", size: "140 KB", icon: "📐", url: "files/rl10-dimension.pdf" },
       { name: "RL80系列外形图", size: "48 KB", icon: "📐", url: "files/rl80-dimension.pdf" },
       { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" }
@@ -99,20 +133,23 @@ const PRODUCTS = {
     image: "images/20130711134549999.jpg",
     category: "角行程",
     tag: "智能",
-    desc: "RLM智能型角行程执行机构，精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速。",
+    desc: "RLM智能型调节角行程执行机构，支持4~20mA模拟量控制，精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速。",
     specs: [
-      ["输出转矩", "20N·m ~ 250N·m"],
+      ["型号", "RLM10 / RLM20 / RLM40 / RLM60 / RLM80 / RLM100 / RLM150 / RLM200 / RLM250"],
+      ["输出转矩", "90 ~ 1650 N·m (调节)"],
       ["动作角度", "90°（可调）"],
-      ["供电电源", "220VAC / 380VAC"],
-      ["控制方式", "开关型/调节型"],
-      ["防护等级", "IP67"],
+      ["全行程时间", "15 ~ 90 s"],
+      ["输入信号", "4~20mA / 1~5VDC"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["电机功率", "0.07 ~ 0.85 kW"],
+      ["防护等级", "IP67 (可选IP68)"],
       ["环境温度", "-30℃ ~ +70℃"],
-      ["位置重复性", "≤ 1%"],
+      ["基本误差", "≤ ±1.0%"],
       ["死区", "0.1% ~ 9.9%可调"]
     ],
     downloads: [
       { name: "RLM智能型产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
-      { name: "角行程执行机构选型指南", size: "1.5 MB", icon: "📘", url: "files/rl-manual-zh.pdf" }
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" },
     ]
   },
 
@@ -122,17 +159,22 @@ const PRODUCTS = {
     image: "images/13.png",
     category: "角行程",
     tag: "智能",
-    desc: "RL100智能型角行程执行机构，精确控制90°旋转阀门。适用于蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
+    desc: "RL100智能型角行程执行机构，额定转矩800N·m，精确控制90°旋转阀门。适用于蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
     specs: [
-      ["输出转矩", "1000N·m"],
+      ["型号", "RL100 / RLM100"],
+      ["输出转矩", "800 N·m (调节720 N·m)"],
       ["动作角度", "90°（可调）"],
-      ["供电电源", "380VAC/50Hz"],
+      ["全行程时间", "30 s"],
+      ["连接法兰", "ISO 5211 F10 / F12"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["电机功率", "0.42 kW"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RL100智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" }
+      { name: "RL100智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" }
     ]
   },
 
@@ -142,17 +184,22 @@ const PRODUCTS = {
     image: "images/3.png",
     category: "角行程",
     tag: "智能",
-    desc: "RL150智能型角行程执行机构，大转矩输出，精确控制90°旋转阀门。适用于大型蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
+    desc: "RL150智能型角行程执行机构，额定转矩1000N·m，大转矩输出，适用于大型蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
     specs: [
-      ["输出转矩", "1500N·m"],
+      ["型号", "RL150 / RLM150"],
+      ["输出转矩", "1000 N·m (调节900 N·m)"],
       ["动作角度", "90°（可调）"],
-      ["供电电源", "380VAC/50Hz"],
+      ["全行程时间", "30 s"],
+      ["连接法兰", "ISO 5211 F12"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["电机功率", "0.55 kW"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RL150智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" }
+      { name: "RL150智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" }
     ]
   },
 
@@ -160,7 +207,7 @@ const PRODUCTS = {
     id: "rjm",
     name: "RJM调节型",
     image: "images/20130702091501103.jpg",
-    category: "就地成套",
+    category: "配套",
     tag: "高精度",
     desc: "RJM调节型智能执行机构，支持4-20mA模拟量信号控制，调节精度高，响应速度快。适用于需要对阀门开度进行精确控制的工艺流程。",
     specs: [
@@ -177,25 +224,27 @@ const PRODUCTS = {
   },
   "rqm3": {
     id: "rqm3",
-    name: "RQMⅢ系列",
+    name: "RQⅢ 100系列",
     image: "images/20130701114119219.jpg",
-    category: "多回转",
-    tag: "第三代",
-    desc: "RQMⅢ系列第三代智能直行程执行机构，在原RQM基础上进行全面升级，性能更稳定，功能更强大。防护等级IP68，适用于严苛环境。",
+    category: "直行程",
+    tag: "调节型",
+    desc: "RQⅢ100大转矩直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于大口径阀门及重载工业过程控制场景。防护等级IP68。",
     specs: [
-      ["类型", "直行程"],
-      ["输出转矩", "60N·m ~ 2000N·m"],
-      ["供电电源", "380VAC/50Hz"],
-      ["控制方式", "开关型/调节型"],
+      ["型号", "RQⅢ100"],
+      ["类型", "直行程 (线性输出)"],
+      ["输出转矩", "1020 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 r/min"],
+      ["电机功率", "2.1 ~ 3.7 kW (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"],
-      ["通信方式", "现场总线/以太网/无线"]
+      ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQMⅢ系列产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" },
-      { name: "第三代智能执行机构介绍", size: "666 KB", icon: "📘", url: "files/ra3-rq3-manual.pdf" },
-      { name: "RQML直行程外形图", size: "255 KB", icon: "📐", url: "files/rqml-dimension.pdf" }
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "rj": {
@@ -206,63 +255,92 @@ const PRODUCTS = {
     tag: "开关型",
     desc: "RJ开关型角行程执行机构，结构简单，操作方便，性价比高。适用于仅需开关控制的蝶阀、球阀等阀门，可靠耐用。",
     specs: [
+      ["型号", "RJ10 / RJ20 / RJ40 / RJ60 / RJ80 / RJ100 / RJ150 / RJ200"],
       ["类型", "角行程开关型"],
-      ["输出转矩", "60N·m ~ 800N·m"],
-      ["供电电源", "220VAC / 380VAC"],
-      ["控制方式", "开关型"],
-      ["防护等级", "IP67"],
+      ["输出转矩", "100 ~ 2000 N·m"],
+      ["动作角度", "90°"],
+      ["全行程时间", "15 ~ 90 s"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 (无源触点)"],
+      ["防护等级", "IP67 (可选IP68)"],
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: []
   },
   "rq3": {
     id: "rq3",
-    name: "RQⅢ执行机构",
+    name: "RQⅢ 020~040系列",
     image: "images/20130630161718980.jpg",
-    category: "多回转",
+    category: "直行程",
     tag: "智能型",
-    desc: "RQⅢ第三代智能型直行程执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。",
+    desc: "RQⅢ020/RQⅢ030/RQⅢ040中型直行程执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。适用于各类直行程阀门控制。",
     specs: [
-      ["类型", "直行程"],
-      ["输出转矩", "60N·m ~ 600N·m"],
-      ["输出转速", "1 r/min ~ 96 r/min"],
-      ["供电电源", "380VAC/50Hz"],
-      ["控制方式", "开关型/调节型"],
+      ["型号", "RQⅢ020 / RQⅢ030 / RQⅢ040"],
+      ["输出转矩", "203 ~ 400 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 / 72 r/min"],
+      ["电机功率", "0.35 ~ 15 kW (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
-      ["环境温度", "-30℃ ~ +70℃"]
+      ["环境温度", "-30℃ ~ +70℃"],
+      ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQⅢ系列产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" },
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
       { name: "RQ03外形图", size: "233 KB", icon: "📐", url: "files/rq03-dimension.pdf" },
       { name: "RQ04外形图", size: "249 KB", icon: "📐", url: "files/rq04-dimension.pdf" },
       { name: "RQ06外形图", size: "235 KB", icon: "📐", url: "files/rq06-dimension.pdf" },
-      { name: "RQ150外形图", size: "143 KB", icon: "📐", url: "files/rq150-dimension.pdf" }
+      { name: "RQ150外形图", size: "143 KB", icon: "📐", url: "files/rq150-dimension.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+    ]
+  },
+  "rq060": {
+    id: "rq060",
+    name: "RQⅢ 060系列",
+    image: "images/20130630161718980.jpg",
+    category: "直行程",
+    tag: "智能型",
+    desc: "RQⅢ060大型直行程智能执行机构，适用于大口径阀门控制。具备非侵入式设定、图形化显示、智能诊断等先进功能，防护等级IP68。",
+    specs: [
+      ["型号", "RQⅢ060"],
+      ["输出转矩", "474 ~ 610 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 / 72 r/min"],
+      ["电机功率", "1.05 ~ 1.90 kW (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
+      ["防护等级", "IP68"],
+      ["防爆标志", "ExdⅡCT4"],
+      ["环境温度", "-30℃ ~ +70℃"],
+      ["基本误差", "≤ ±1.0%"]
+    ],
+    downloads: [
+      { name: "RQ/RQM系列安装使用说明书", size: "910 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "ra3": {
     id: "ra3",
-    name: "RAⅢ系列电动",
+    name: "RQⅢ 003~014系列",
     image: "images/20130630103742150.jpg",
     category: "多回转",
     tag: "第三代",
-    desc: "RAⅢ系列第三代智能型多回转电动执行机构，采用非侵入式设定方式，配备图形点阵式液晶显示器，支持多语言、数字、图形显示，可实时显示转矩、阀门位置、限位设定等工作状态及报警信息。",
+    desc: "RQⅢ003/RQⅢ008/RQⅢ014智能型直行程执行机构，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。",
     specs: [
-      ["类型", "多回转"],
-      ["输出转矩", "100N·m ~ 1600N·m"],
-      ["供电电源", "380VAC/50Hz"],
-      ["控制方式", "开关型/调节型"],
-      ["显示", "图形点阵式LCD"],
-      ["设定方式", "非侵入式（独立设定器）"],
+      ["型号", "RQⅢ003 / RQⅢ008 / RQⅢ014"],
+      ["输出转矩", "34 ~ 108 N·m (380VAC)"],
+      ["输出转速", "18 / 24 / 36 / 48 / 72 r/min"],
+      ["电机功率", "0.05 ~ 4.3 kW (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
       ["防爆标志", "ExdⅡCT4"],
       ["环境温度", "-30℃ ~ +70℃"],
-      ["通信方式", "现场总线/工业以太网/无线"]
+      ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RAⅢ系列产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" },
-      { name: "RAⅢ40A外形图", size: "169 KB", icon: "📐", url: "files/ra3-dimension.pdf" },
-      { name: "RAⅢ95A外形图", size: "172 KB", icon: "📐", url: "files/ra3-dimension-large.pdf" }
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "fen": {
@@ -303,7 +381,7 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQMLIII06产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" }
+      { name: "RQMLIII06产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
     ]
   },
   "rqml12": {
@@ -323,16 +401,16 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQMLIII12产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" }
+      { name: "RQMLIII12产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
     ]
   },
   "rqml54": {
     id: "rqml54",
-    name: "RQMLII54调节型",
+    name: "RQMLIII54调节型",
     image: "images/1729057838899.png",
     category: "直行程",
     tag: "调节型",
-    desc: "RQMLII54调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。",
+    desc: "RQMLIII54调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。",
     specs: [
       ["类型", "直行程调节型"],
       ["供电电源", "380VAC/50Hz"],
@@ -343,7 +421,7 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQMLII54产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" }
+      { name: "RQMLIII54产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
     ]
   },
   "rlml10": {
@@ -363,7 +441,7 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RLML10产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" }
+      { name: "RLML10产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
     ]
   },
   "rlml20": {
@@ -384,7 +462,7 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RLML20产品说明书", size: "666 KB", icon: "📄", url: "files/ra3-rq3-manual.pdf" }
+      { name: "RLML20产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
     ]
   },
 
@@ -392,7 +470,7 @@ const PRODUCTS = {
     id: "gear",
     name: "RGW系列减速箱",
     image: "images/20130630102425990.jpg",
-    category: "就地成套",
+    category: "配套",
     tag: "配套",
     desc: "配套用减速箱系列，与瑞基各型号电动执行机构完美匹配。传动效率高，运行噪音低，使用寿命长，是阀门自动化系统的关键传动部件。",
     specs: [
@@ -412,7 +490,7 @@ const PRODUCTS = {
     id: "rib",
     name: "RIB系列减速箱",
     image: "images/rib-gearbox.png",
-    category: "就地成套",
+    category: "配套",
     tag: "配套",
     desc: "RIB系列减速箱，专为阀门电动执行机构配套设计。传动效率高，运行平稳可靠，适配多种执行器型号，满足不同工况下的传动需求。",
     specs: [
@@ -426,6 +504,54 @@ const PRODUCTS = {
     downloads: [
       { name: "R系列减速箱使用说明书", size: "337 KB", icon: "📄", url: "files/r-gearbox-manual.pdf" }
     ]
+  },
+  "elec-assy": {
+    id: "elec-assy",
+    name: "电器总承",
+    image: "images/电器总承.png",
+    category: "配件",
+    tag: "配件",
+    desc: "瑞基电动执行机构电器总承组件，包含核心电气控制部件，确保执行机构可靠运行。"
+  },
+  "ra-ctrl": {
+    id: "ra-ctrl",
+    name: "RA主控板",
+    image: "images/RA主控板.jpg",
+    category: "配件",
+    tag: "配件",
+    desc: "RA系列电动执行机构主控制板，集成控制逻辑与通信接口，支持多种控制模式切换。"
+  },
+  "ra-power": {
+    id: "ra-power",
+    name: "RA电源板",
+    image: "images/RA电源板.jpg",
+    category: "配件",
+    tag: "配件",
+    desc: "RA系列电动执行机构电源板，为执行机构提供稳定可靠的电源供应与保护功能。"
+  },
+  "remote": {
+    id: "remote",
+    name: "遥控器",
+    image: "images/遥控器.png",
+    category: "配件",
+    tag: "配件",
+    desc: "瑞基智能型电动执行机构专用遥控器，支持非侵入式设定与操作，方便现场调试与参数设置。"
+  },
+  "planet-gear": {
+    id: "planet-gear",
+    name: "行星轮总承",
+    image: "images/行星轮总承.png",
+    category: "配件",
+    tag: "配件",
+    desc: "行星轮总承传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。"
+  },
+  "sun-plate": {
+    id: "sun-plate",
+    name: "葵花接盘",
+    image: "images/葵花接盘.png",
+    category: "配件",
+    tag: "配件",
+    desc: "葵花接盘连接组件，用于执行机构与外部电源信号连接，结构精密，安装方便。"
   }
 };
 // === RAIII add ===

@@ -38,8 +38,9 @@
           <div class="nav-dd-menu">
             <a href="products.html#ra-series" data-i18n="nav.dd_ra">RA系列多回转</a>
             <a href="products.html#rq-series" data-i18n="nav.dd_rq">RQ系列直行程</a>
-            <a href="products.html#rl-series" data-i18n="nav.dd_rl">RL/RJ角行程</a>
-            <a href="products.html#rjm-series" data-i18n="nav.dd_rjm">RJM调节型</a>
+            <a href="products.html#rl-series" data-i18n="nav.dd_rl">RL系列角行程</a>
+            <a href="products.html#rjm-series" data-i18n="nav.dd_rjm">配套系列</a>
+            <a href="products.html" data-i18n="nav.dd_accessory">配件系列</a>
           </div>
         </div>
         <div class="nav-dd">
@@ -55,10 +56,13 @@
         <div class="nav-dd">
           <a href="downloads.html" data-i18n="nav.downloads">资料下载</a>
           <div class="nav-dd-menu">
-            <a href="downloads.html#manuals" data-i18n="nav.dd_manuals">产品说明书</a>
-            <a href="downloads.html#catalog" data-i18n="nav.dd_catalog">选型手册</a>
-            <a href="downloads.html#brochure" data-i18n="nav.dd_brochure">公司宣传册</a>
-            <a href="downloads.html#drawings" data-i18n="nav.dd_drawings">外形图</a>
+            <a href="downloads.html#brochure" data-i18n="nav.dd_brochure">公司资料</a>
+            <a href="downloads.html" data-i18n="nav.dd_ra_menu">RA系列多回转</a>
+            <a href="downloads.html" data-i18n="nav.dd_rq_menu">RQ系列直行程</a>
+            <a href="downloads.html" data-i18n="nav.dd_rl_menu">RL系列角行程</a>
+            <a href="downloads.html" data-i18n="nav.dd_accessory_menu2">配套系列</a>
+            <a href="downloads.html" data-i18n="nav.dd_accessory_menu">配件系列</a>
+            <a href="downloads.html" data-i18n="nav.dd_drawings">所有外形图</a>
           </div>
         </div>
         <div class="nav-dd">
@@ -73,6 +77,7 @@
           <a href="contact.html" data-i18n="nav.contact">联系我们</a>
           <div class="nav-dd-menu">
             <a href="contact.html#contact-info" data-i18n="nav.dd_contact_info">联系方式</a>
+            <a href="contact.html#offices" data-i18n="nav.dd_offices">全国办事处</a>
             <a href="contact.html#form" data-i18n="nav.dd_online_msg">在线留言</a>
           </div>
         </div>
@@ -97,53 +102,85 @@
       <p data-i18n="tech.core_desc">创新驱动，品质为本 — 瑞基智能执行机构的核心技术优势</p>
     </div>
 
-    <div class="tech-list">
-      <div class="tech-item">
-        <div class="tech-icon"><img src="images/tech-1.png" alt="非侵入式设定"></div>
-        <div>
-          <h3 data-i18n="tech.nonintrusive_title">非侵入式设定技术</h3>
-          <p data-i18n="tech.nonintrusive_full">通过独立设定器进行操作，无需打开电气箱盖即可完成全部参数设置、调试和诊断。这一设计从根本上避免了因开盖操作导致的密封失效和电子元件暴露风险，确保执行机构的防护等级长期保持在IP68水平。</p>
+    <div id="core-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;overflow:visible;">
+      <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div class="tech-img-box" style="height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--gray-100);display:flex;align-items:center;justify-content:center;" onmouseenter="this.style.overflow='visible';this.querySelector('img').style.transform='scale(2)';this.querySelector('img').style.zIndex='100'" onmouseleave="this.style.overflow='hidden';this.querySelector('img').style.transform='scale(1)';this.querySelector('img').style.zIndex='1'"><img src="images/tech-1.png" alt="非侵入式设定" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.nonintrusive_title" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">非侵入式设定技术</h3>
+          <p data-i18n="tech.nonintrusive_full" style="font-size:14px;color:var(--gray-600);line-height:1.7;">通过独立设定器进行操作，无需打开电气箱盖即可完成全部参数设置、调试和诊断。</p>
         </div>
       </div>
-      <div class="tech-item">
-        <div class="tech-icon"><img src="images/tech-2.png" alt="液晶显示"></div>
-        <div>
-          <h3 data-i18n="tech.lcd_title">图形点阵式液晶显示</h3>
-          <p data-i18n="tech.lcd_full">配备高分辨率图形点阵式液晶显示器，支持中文、英文等多语言显示。可实时显示输出转矩、阀门位置、限位设定等工作状态，以及完整的报警和诊断信息，让用户对设备状态一目了然。</p>
+      <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div class="tech-img-box" style="height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--gray-100);display:flex;align-items:center;justify-content:center;"><img src="images/14.png" alt="液晶显示" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.lcd_title" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">图形点阵式液晶显示</h3>
+          <p data-i18n="tech.lcd_full" style="font-size:14px;color:var(--gray-600);line-height:1.7;">配备高分辨率图形点阵式液晶显示器，支持中文、英文等多语言显示。</p>
         </div>
       </div>
-      <div class="tech-item">
-        <div class="tech-icon"><img src="images/tech-3.png" alt="智能保护"></div>
-        <div>
-          <h3 data-i18n="tech.protection_title">多重智能保护系统</h3>
-          <p data-i18n="tech.protection_full">内置过转矩保护、过热保护、缺相保护、相序自动纠正等多重保护功能。防爆标志 ExdⅡCT4，适用于含有爆炸性气体环境的工业现场，确保设备和人员安全。</p>
+      <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div class="tech-img-box" style="height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--gray-100);display:flex;align-items:center;justify-content:center;" onmouseenter="this.style.overflow='visible';this.querySelector('img').style.transform='scale(2)';this.querySelector('img').style.zIndex='100'" onmouseleave="this.style.overflow='hidden';this.querySelector('img').style.transform='scale(1)';this.querySelector('img').style.zIndex='1'"><img src="images/tech-3.png" alt="智能保护" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.protection_title" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">多重智能保护系统</h3>
+          <p data-i18n="tech.protection_full" style="font-size:14px;color:var(--gray-600);line-height:1.7;">内置过转矩保护、过热保护、缺相保护、相序自动纠正等多重保护功能。</p>
         </div>
       </div>
-      <div class="tech-item">
-        <div class="tech-icon"><img src="images/tech-4.jpg" alt="多种通信"></div>
-        <div>
-          <h3 data-i18n="tech.comm_title">多种通信方式</h3>
-          <p data-i18n="tech.comm_full">支持现场总线（Profibus、Modbus等）、工业以太网、无线等多种通信方式。可实现远程监控、智能诊断与预测性维护，帮助企业实现数字化转型和智能化升级。</p>
+      <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div class="tech-img-box" style="height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--gray-100);display:flex;align-items:center;justify-content:center;" onmouseenter="this.style.overflow='visible';this.querySelector('img').style.transform='scale(2)';this.querySelector('img').style.zIndex='100'" onmouseleave="this.style.overflow='hidden';this.querySelector('img').style.transform='scale(1)';this.querySelector('img').style.zIndex='1'"><img src="images/tech-4.jpg" alt="多种通信" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.comm_title" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">多种通信方式</h3>
+          <p data-i18n="tech.comm_full" style="font-size:14px;color:var(--gray-600);line-height:1.7;">支持现场总线、工业以太网、无线等多种通信方式，实现远程监控与智能诊断。</p>
         </div>
       </div>
-      <div class="tech-item">
-        <div class="tech-icon"><img src="images/tech-5.jpg" alt="高精度控制"></div>
-        <div>
-          <h3 data-i18n="tech.precision_title">高精度控制技术</h3>
-          <p data-i18n="tech.precision_full">基本误差限≤±1.0%，死区0.1%~9.9%可调，行程重复性误差≤1%。采用先进的伺服控制算法，确保在各种工况下都能实现精确、稳定的阀门位置控制。</p>
+      <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div class="tech-img-box" style="height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--gray-100);display:flex;align-items:center;justify-content:center;"><img src="images/640.jpg" alt="高精度控制" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.precision_title" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">高精度控制技术</h3>
+          <p data-i18n="tech.precision_full" style="font-size:14px;color:var(--gray-600);line-height:1.7;">基本误差限≤±1.0%，死区0.1%~9.9%可调，行程重复性误差≤1%。</p>
         </div>
       </div>
-      <div class="tech-item">
-        <div class="tech-icon"><img src="images/tech-6.jpg" alt="宽温域"></div>
-        <div>
-          <h3 data-i18n="tech.temp_title">宽温域环境适应性</h3>
-          <p data-i18n="tech.temp_full">环境温度-30℃~+70℃，使用环境湿度≤95%。通过严格的温度循环测试和盐雾测试，确保产品在各种严苛工业环境中保持稳定可靠的运行性能。</p>
+      <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div class="tech-img-box" style="height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:var(--gray-100);display:flex;align-items:center;justify-content:center;" onmouseenter="this.style.overflow='visible';this.querySelector('img').style.transform='scale(2)';this.querySelector('img').style.zIndex='100'" onmouseleave="this.style.overflow='hidden';this.querySelector('img').style.transform='scale(1)';this.querySelector('img').style.zIndex='1'"><img src="images/tech-6.jpg" alt="宽温域" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.temp_title" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">宽温域环境适应性</h3>
+          <p data-i18n="tech.temp_full" style="font-size:14px;color:var(--gray-600);line-height:1.7;">环境温度-30℃~+70℃，通过严格温度循环测试和盐雾测试，确保严苛环境下稳定运行。</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="section" id="quality" style="background:var(--gray-100);">
+  <div class="container">
+    <div class="section-title">
+      <div class="subtitle" data-i18n="tech.quality_subtitle">Quality Control</div>
+      <h2 data-i18n="tech.quality_title">质量控制</h2>
+      <p data-i18n="tech.quality_desc">严格品控体系，确保每一台产品都值得信赖</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
+      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div style="height:280px;overflow:hidden;"><img src="images/quality-inspect.jpg" alt="来料检验" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.quality_inspect" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">来料检验</h3>
+          <p data-i18n="tech.quality_inspect_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">所有原材料和零部件进厂后均经过严格的检验流程，确保只有合格品进入生产线。</p>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div style="height:280px;overflow:hidden;"><img src="images/quality-process.jpg" alt="过程控制" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.quality_process" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">过程控制</h3>
+          <p data-i18n="tech.quality_process_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">生产过程实施全流程质量控制，关键工序设立品质控制点，实时监控产品参数。</p>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <div style="height:280px;overflow:hidden;"><img src="images/quality-test.jpg" alt="出厂检测" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="padding:20px 24px;">
+          <h3 data-i18n="tech.quality_test" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">出厂检测</h3>
+          <p data-i18n="tech.quality_test_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">每台产品出厂前均经过严格的全性能测试，包括转矩测试、密封测试、绝缘测试等，确保产品性能达标。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section" id="cert">
   <div class="container">
     <div class="section-title">
@@ -153,21 +190,21 @@
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
       <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-        <div style="height:200px;overflow:hidden;"><img src="images/certificates/上海瑞基ISO9001-14001-45001.jpg" alt="ISO9001" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="height:280px;overflow:hidden;"><img src="images/certificates/上海瑞基ISO9001-14001-45001.jpg" alt="ISO9001" style="width:100%;height:100%;object-fit:contain;"></div>
         <div style="padding:20px 24px;">
           <h3 data-i18n="tech.cert_iso" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">ISO9001 质量管理体系</h3>
           <p data-i18n="tech.cert_iso_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">公司通过ISO9001质量管理体系认证，建立了完善的质量管理体系，覆盖从原材料进厂到成品出厂的全过程质量控制。</p>
         </div>
       </div>
       <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-        <div style="height:200px;overflow:hidden;"><img src="images/certificates/GYB23.1992X.jpg" alt="防爆认证" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="height:280px;overflow:hidden;"><img src="images/certificates/GYB23.1992X.jpg" alt="防爆认证" style="width:100%;height:100%;object-fit:contain;"></div>
         <div style="padding:20px 24px;">
           <h3 data-i18n="tech.cert_ex" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">防爆认证 ExdⅡCT4</h3>
           <p data-i18n="tech.cert_ex_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">产品通过ExdⅡCT4防爆认证，可在含爆炸性气体环境中安全运行，适用于石油、化工等高安全要求行业。</p>
         </div>
       </div>
       <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-        <div style="height:200px;overflow:hidden;"><img src="images/certificates/IP68水下7米72小时证书.jpg" alt="IP68" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="height:280px;overflow:hidden;"><img src="images/certificates/IP68水下7米72小时证书.jpg" alt="IP68" style="width:100%;height:100%;object-fit:contain;"></div>
         <div style="padding:20px 24px;">
           <h3 data-i18n="tech.cert_ip" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">防护等级 IP68</h3>
           <p data-i18n="tech.cert_ip_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">产品防护等级达到IP68，可在深度水浸环境下长期稳定运行，适应户外及潮湿环境。</p>
@@ -286,45 +323,13 @@
   </div>
 </section>
 
-<section class="section" id="quality" style="background:var(--gray-100);">
-  <div class="container">
-    <div class="section-title">
-      <div class="subtitle" data-i18n="tech.quality_subtitle">Quality Control</div>
-      <h2 data-i18n="tech.quality_title">质量控制</h2>
-      <p data-i18n="tech.quality_desc">严格品控体系，确保每一台产品都值得信赖</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
-      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-        <div style="height:200px;overflow:hidden;"><img src="images/quality-inspect.jpg" alt="来料检验" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div style="padding:20px 24px;">
-          <h3 data-i18n="tech.quality_inspect" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">来料检验</h3>
-          <p data-i18n="tech.quality_inspect_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">所有原材料和零部件进厂后均经过严格的检验流程，确保只有合格品进入生产线。</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-        <div style="height:200px;overflow:hidden;"><img src="images/quality-process.jpg" alt="过程控制" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div style="padding:20px 24px;">
-          <h3 data-i18n="tech.quality_process" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">过程控制</h3>
-          <p data-i18n="tech.quality_process_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">生产过程实施全流程质量控制，关键工序设立品质控制点，实时监控产品参数。</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-        <div style="height:200px;overflow:hidden;"><img src="images/quality-test.jpg" alt="出厂检测" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div style="padding:20px 24px;">
-          <h3 data-i18n="tech.quality_test" style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark);">出厂检测</h3>
-          <p data-i18n="tech.quality_test_desc" style="font-size:14px;color:var(--gray-600);line-height:1.7;">每台产品出厂前均经过严格的全性能测试，包括转矩测试、密封测试、绝缘测试等，确保产品性能达标。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><div class="logo"><img src="images/logo-header.png" alt="RAGA 瑞基"></div><p data-i18n="footer.brand">瑞基测控 — 专业智能电动阀门执行机构制造商。</p></div>
       <div><h4 data-i18n="footer.quick_links">快速链接</h4><ul><li><a href="index.html" data-i18n="nav.home">首页</a></li><li><a href="about.html" data-i18n="nav.about">公司简介</a></li><li><a href="products.html" data-i18n="nav.products">公司产品</a></li><li><a href="cases.html" data-i18n="nav.cases">使用案例</a></li><li><a href="downloads.html" data-i18n="nav.downloads">资料下载</a></li><li><a href="technology.html" data-i18n="nav.tech">技术优势</a></li><li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li></ul></div>
-      <div><h4 data-i18n="footer.product_series">产品系列</h4><ul><li><a href="products.html" data-i18n="footer.series_ra">RA系列多回转</a></li><li><a href="products.html" data-i18n="footer.series_rq">RQ系列直行程</a></li><li><a href="products.html" data-i18n="footer.series_rl">RL/RJ角行程</a></li><li><a href="products.html" data-i18n="footer.series_rjm">RJM调节型</a></li></ul></div>
+      <div><h4 data-i18n="footer.product_series">产品系列</h4><ul><li><a href="products.html" data-i18n="footer.series_ra">RA系列多回转</a></li><li><a href="products.html" data-i18n="footer.series_rq">RQ系列直行程</a></li><li><a href="products.html" data-i18n="footer.series_rl">RL/RJ角行程</a></li><li><a href="products.html" data-i18n="footer.series_rjm">RJM调节型</a></li>
+          <li><a href="products.html" data-i18n="footer.series_accessory">配件系列</a></li></ul></div>
       <div><h4 data-i18n="footer.contact_info">联系方式</h4><ul><li><a href="tel:057756582698">0577-56582698</a></li><li><a href="mailto:raga@raga.com.cn">raga@raga.com.cn</a></li><li><a href="contact.html" data-i18n="footer.online_msg">在线留言</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p data-i18n="footer.copyright">Copyright &copy; 2026 温州瑞基测控设备有限公司 | 上海瑞基瑞然自动化技术有限公司. All Rights Reserved. | <a href="https://beian.miit.gov.cn" target="_blank" data-i18n="footer.icp">浙ICP备2021002987号</a></p></div>
@@ -332,6 +337,41 @@
 </footer>
 
 <a href="#" class="back-to-top">↑</a>
+<script>
+document.querySelectorAll('[style*="border-radius:12px"][style*="box-shadow:0 2px 12px"]').forEach(function(card){
+  var img = card.querySelector('img');
+  if (!img) return;
+  img.style.transition = 'transform 0.3s';
+  card.addEventListener('mouseenter', function(){
+    card.style.overflow = 'visible';
+    card.style.borderRadius = '0';
+    card.style.zIndex = '20';
+    card.style.position = 'relative';
+    var box = img.parentElement;
+    box.style.overflow = 'visible';
+    box.style.borderRadius = '0';
+    box.style.zIndex = '20';
+    box.style.position = 'relative';
+    img.style.transform = 'scale(3)';
+    img.style.position = 'relative';
+    img.style.zIndex = '30';
+  });
+  card.addEventListener('mouseleave', function(){
+    card.style.overflow = '';
+    card.style.borderRadius = '';
+    card.style.zIndex = '';
+    card.style.position = '';
+    var box = img.parentElement;
+    box.style.overflow = 'hidden';
+    box.style.borderRadius = '';
+    box.style.zIndex = '';
+    box.style.position = '';
+    img.style.transform = 'scale(1)';
+    img.style.position = '';
+    img.style.zIndex = '';
+  });
+});
+</script>
 
 <style>
 .lightbox { display:none; position:fixed; top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;cursor:zoom-out; }

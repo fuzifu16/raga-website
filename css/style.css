@@ -210,11 +210,11 @@ a { color: inherit; }
 /* ===== Page Hero (inner pages) ===== */
 .page-hero {
   position: relative;
-  padding: 200px 0;
+  padding: 160px 0;
   text-align: center;
   overflow: hidden;
   background: var(--dark);
-  min-height: 520px;
+  min-height: 620px;
   display: flex;
   align-items: center;
 }
@@ -253,7 +253,7 @@ a { color: inherit; }
 .page-hero-slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   filter: brightness(0.9);
   opacity: 0;
@@ -1169,8 +1169,8 @@ a { color: inherit; }
 
 /* ===== Client Marquee ===== */
 .client-marquee {
-  overflow: hidden;
-  padding: 20px 0;
+  overflow: visible;
+  padding: 40px 0;
   position: relative;
 }
 .client-marquee::before,
@@ -1216,9 +1216,10 @@ a { color: inherit; }
   transition: box-shadow 0.3s, transform 0.3s;
 }
 .client-logo:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  transform: scale(1.15);
-  z-index: 5;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transform: scale(2.2);
+  z-index: 10;
+  overflow: visible;
 }
 .client-logo img {
   max-width: 80%;

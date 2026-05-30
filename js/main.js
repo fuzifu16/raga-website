@@ -60,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hero images to cycle through
     const images = [
       'images/banner-cta.jpg',
-      'images/banner-case.jpg',
       'images/banner-tech.jpg',
       'images/hero-industrial.jpg',
-      'images/banner-about.jpg',
       'images/R-C-1.png',
-      'images/52.png'
+      'images/52.png',
+      'images/134.jpg',
+      'images/12.jpg'
     ];
 
     // Remove original bg
@@ -79,6 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const slide = document.createElement('div');
       slide.className = 'page-hero-slide';
       slide.style.backgroundImage = 'url(' + src + ')';
+      slide.style.backgroundSize = '100% auto';
+      if (src.indexOf('52.png') !== -1) {
+        slide.style.backgroundPosition = 'top center';
+      }
+      if (src.indexOf('134.jpg') !== -1) {
+        slide.style.backgroundPosition = 'bottom center';
+      }
       slider.appendChild(slide);
     });
 

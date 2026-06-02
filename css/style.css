@@ -540,6 +540,97 @@ a { color: inherit; }
   margin: 0;
 }
 
+/* ===== Product Scroll Strip (Marquee) ===== */
+.product-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.015) 2px, rgba(255,255,255,0.015) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.015) 2px, rgba(255,255,255,0.015) 4px),
+    repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px),
+    repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px),
+    linear-gradient(135deg, #1a1a2e 0%, #0f0f23 50%, #1a1a2e 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 50px 0;
+}
+.product-scroll-wrapper::before,
+.product-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.product-scroll-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #1a1a2e, transparent);
+}
+.product-scroll-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #1a1a2e, transparent);
+}
+.product-scroll-strip {
+  overflow: visible;
+}
+.product-scroll-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: productScroll 20s linear infinite;
+}
+.product-scroll-strip:hover .product-scroll-track {
+  animation-play-state: paused;
+}
+.product-scroll-item {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--gray-100);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  padding: 12px;
+  text-decoration: none;
+  color: var(--dark);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  position: relative;
+}
+.product-scroll-item:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transform: scale(2.2);
+  z-index: 10;
+  background: var(--white);
+}
+.product-scroll-item img {
+  max-width: 80%;
+  max-height: 90px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+.product-scroll-item span {
+  font-size: 12px;
+  color: var(--gray-600);
+  font-weight: 500;
+  white-space: nowrap;
+}
+@keyframes productScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .product-scroll-item { width: 110px; height: 110px; }
+  .product-scroll-item img { max-height: 64px; }
+  .product-scroll-item:hover { transform: scale(1.8); }
+}
+
 /* ===== Products Grid ===== */
 .products-section { background: var(--white); }
 .products-grid {
@@ -786,6 +877,17 @@ a { color: inherit; }
   font-size: 14px;
   color: rgba(255,255,255,0.65);
   line-height: 1.7;
+  margin-bottom: 16px;
+}
+.news-link {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.news-link:hover {
+  color: var(--primary-dark);
 }
 @media (max-width: 768px) {
   .production-grid { grid-template-columns: repeat(2, 1fr); }

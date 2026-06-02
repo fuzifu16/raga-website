@@ -69,13 +69,14 @@ const i18nData = {
     "home.news_subtitle": "公司动态",
     "home.news_title": "新闻动态",
     "home.news_desc": "了解瑞基最新动态与行业资讯",
-    "home.news_1_title": "太仓新基地年产能突破2万台",
-    "home.news_1_summary": "瑞基测控设备（太仓）有限公司自2021年投产以来，年产能力已突破2万台智能电动执行机构。新生产线采用先进的加工中心和数控设备，实现从零部件加工到整机装配的全流程智能化生产，有效缩短了交期，提升了产品质量一致性。",
-    "home.news_2_title": "瑞基防爆认证达国际标准",
-    "home.news_2_summary": "瑞基智能电动执行机构通过ExdⅡCT4防爆认证，可在含爆炸性气体环境中安全运行。产品具备过转矩保护、过热保护、缺相保护等多重安全功能，已广泛应用于石油、化工等高安全要求行业。",
-    "home.news_3_title": "瑞基亮相国际工业博览会",
-    "home.news_3_summary": "瑞基携RAⅢ、RL、RQⅢ等全系列智能执行机构亮相中国国际工业博览会，展示了非侵入式设定、图形化显示、远程监控等核心技术，吸引了国内外众多客户和行业专家的广泛关注。",
+    "home.news_1_title": "瑞基Modbus总线通信功能",
+    "home.news_1_summary": "瑞基Modbus总线通信功能支持标准Modbus RTU/ASCII通信协议，可实现与各类DCS、PLC系统的无缝集成，支持远程监控、参数设置和故障诊断，提高工业自动化系统的智能化水平。",
+    "home.news_2_title": "瑞基PROFIBUS智能电动执行机构",
+    "home.news_2_summary": "瑞基PROFIBUS智能电动执行机构支持PROFIBUS-DP现场总线协议，具备高速、可靠的通信能力，适用于复杂的工业自动化控制系统，支持远程组态、诊断和维护，降低运维成本。",
+    "home.news_3_title": "瑞基RAGA电动执行机构无线控制与运维系统",
+    "home.news_3_summary": "瑞基RAGA电动执行机构无线控制与运维系统采用LoRaWAN无线通信技术，实现对电动执行机构的远程无线监控和运维管理，支持状态监测、故障预警、远程调试等功能，特别适用于布线困难的工业场景。",
     "home.news_more": "了解更多 →",
+    "news.view_document": "查看详细文档 →",
 
     "section.tech_subtitle": "技术优势",
     "section.tech_title": "技术优势",
@@ -251,13 +252,14 @@ const i18nData = {
     "home.news_subtitle": "News",
     "home.news_title": "News & Events",
     "home.news_desc": "Latest news and industry insights from RAGA",
-    "home.news_1_title": "Taicang Base Annual Capacity Exceeds 20,000 Units",
-    "home.news_1_summary": "Since commencing production in 2021, RAGA Measurement & Control Equipment (Taicang) Co., Ltd. has achieved an annual production capacity of over 20,000 smart electric actuators. The new production line utilizes advanced machining centers and CNC equipment, realizing intelligent production from component processing to complete assembly, effectively shortening delivery times and improving product quality consistency.",
-    "home.news_2_title": "RAGA Explosion-Proof Certification Meets International Standards",
-    "home.news_2_summary": "RAGA smart electric actuators have obtained ExdIICT4 explosion-proof certification, enabling safe operation in explosive gas environments. The products feature multiple safety functions including over-torque protection, overheat protection, and phase loss protection, and are widely used in petroleum, chemical and other high-safety industries.",
-    "home.news_3_title": "RAGA Showcases at International Industrial Fair",
-    "home.news_3_summary": "RAGA presented its full range of smart actuators including RAⅢ, RL and RQⅢ series at the China International Industrial Fair, demonstrating core technologies such as non-intrusive setting, graphic display, and remote monitoring, attracting widespread attention from domestic and international customers and industry experts.",
+    "home.news_1_title": "RAGA Modbus Bus Communication Function",
+    "home.news_1_summary": "RAGA Modbus bus communication function supports standard Modbus RTU/ASCII communication protocols, enabling seamless integration with various DCS and PLC systems. It supports remote monitoring, parameter setting, and fault diagnosis, enhancing the intelligence level of industrial automation systems.",
+    "home.news_2_title": "RAGA PROFIBUS Smart Electric Actuator",
+    "home.news_2_summary": "RAGA PROFIBUS smart electric actuators support PROFIBUS-DP fieldbus protocol, featuring high-speed and reliable communication capabilities. Suitable for complex industrial automation control systems, it supports remote configuration, diagnosis, and maintenance, reducing operational costs.",
+    "home.news_3_title": "RAGA Wireless Control and Operation Maintenance System",
+    "home.news_3_summary": "RAGA wireless control and operation maintenance system for electric actuators adopts LoRaWAN wireless communication technology, enabling remote wireless monitoring and operation maintenance management of electric actuators. It supports condition monitoring, fault warning, remote debugging and other functions, especially suitable for industrial scenarios with difficult wiring.",
     "home.news_more": "Learn More →",
+    "news.view_document": "View Detailed Document →",
 
     "section.tech_subtitle": "Technology",
     "section.tech_title": "Technology",
@@ -374,7 +376,7 @@ i18nData.zh["cases.oil"] = "石油行业";
 i18nData.zh["cases.oil_desc"] = "瑞基智能电动执行机构在石油行业的油田开采、油气输送、炼油化工等环节得到广泛应用。产品具备防爆ExdⅡCT4认证，可在危险气体环境中安全可靠运行。";
 
 i18nData.en["cases.power"] = "Power Industry";
-i18nData.en["cases.power_desc"] = "In thermal, nuclear, hydro and new energy power generation, RAGA actuators are widely used in boiler feedwater systems, cooling water systems, and FGD systems. RQⅢ linear-motion actuators for flue gas damper control, RJM modulating type for feedwater regulating valve precise control.";
+i18nData.en["cases.power_desc"] = "In thermal, nuclear, hydro and new energy power generation, RAGA actuators are widely used in boiler feedwater systems, cooling water systems, and FGD systems. RQⅢ linear-motion actuators for flue gas damper control, RQM modulating type for feedwater regulating valve precise control.";
 i18nData.zh["cases.power"] = "电力行业";
 i18nData.zh["cases.power_desc"] = "在火电、核电、水电及新能源发电领域，瑞基执行机构广泛用于锅炉给水系统、冷却水系统、烟气脱硫脱硝系统等关键工位。";
 
@@ -396,8 +398,8 @@ i18nData.zh["cases.chemical_desc"] = "在石油化工、精细化工、煤化工
 /* Cases full descriptions (cases page) */
 i18nData.zh["cases.oil_full"] = "瑞基智能电动执行机构在石油行业的油田开采、油气输送、炼油化工等环节得到广泛应用。产品具备防爆ExdⅡCT4认证，可在危险气体环境中安全可靠运行。RA系列多回转执行机构用于大口径管线阀门控制，RL角行程系列用于油罐区蝶阀控制，为石油行业提供全方位的阀门自动化解决方案。";
 i18nData.en["cases.oil_full"] = "RAGA smart electric actuators are widely used in oil field extraction, oil & gas transportation, and refining. With ExdIICT4 explosion-proof certification, they operate safely in hazardous environments. RA series multi-turn actuators control large-diameter pipeline valves, while RL quarter-turn series are used for tank farm butterfly valve control, providing comprehensive valve automation solutions for the petroleum industry.";
-i18nData.zh["cases.power_full"] = "在火电、核电、水电及新能源发电领域，瑞基执行机构广泛用于锅炉给水系统、冷却水系统、烟气脱硫脱硝系统等关键工位。RQⅢ直行程执行机构用于烟道挡板控制，RJM调节型用于给水调节阀精确控制，产品已在多家大型发电企业稳定运行多年。";
-i18nData.en["cases.power_full"] = "In thermal, nuclear, hydro and new energy power generation, RAGA actuators are widely used in boiler feedwater systems, cooling water systems, and FGD systems. RQⅢ linear-motion actuators for flue gas damper control, RJM modulating type for feedwater regulating valve precise control. Products have been running stably in many large power generation enterprises for years.";
+i18nData.zh["cases.power_full"] = "在火电、核电、水电及新能源发电领域，瑞基执行机构广泛用于锅炉给水系统、冷却水系统、烟气脱硫脱硝系统等关键工位。RQⅢ直行程执行机构用于烟道挡板控制，RQM调节型用于给水调节阀精确控制，产品已在多家大型发电企业稳定运行多年。";
+i18nData.en["cases.power_full"] = "In thermal, nuclear, hydro and new energy power generation, RAGA actuators are widely used in boiler feedwater systems, cooling water systems, and FGD systems. RQⅢ linear-motion actuators for flue gas damper control, RQM modulating type for feedwater regulating valve precise control. Products have been running stably in many large power generation enterprises for years.";
 i18nData.zh["cases.metallurgy_full"] = "在钢铁冶炼和有色金属加工领域，瑞基执行机构用于高炉送风系统、转炉烟气回收、连铸冷却水控制等高温、高粉尘的严苛环境。RAⅢ第三代智能执行机构凭借其IP68高防护等级和宽温域适应性（-30℃~+70℃），在冶金行业表现出色。";
 i18nData.en["cases.metallurgy_full"] = "In steel smelting and non-ferrous metal processing, RAGA actuators are used in blast furnace air supply, converter gas recovery, continuous casting cooling water control in high-temperature, high-dust environments. RAⅢ third-gen smart actuators excel with IP68 protection and wide temperature tolerance (-30°C to +70°C), delivering outstanding performance in metallurgy.";
 i18nData.zh["cases.water_full"] = "在市政供水、污水处理、海水淡化及工业废水处理领域，瑞基执行机构广泛应用于滤池控制、沉淀池排泥阀、加药系统阀门等。RL智能角行程执行机构因其精准的90°旋转控制和优异的耐腐蚀性能，成为水处理行业蝶阀和球阀驱动的理想选择。";
@@ -785,14 +787,15 @@ i18nData["zh-TW"]["hero.btn_products"] = "查看產品 →";
 i18nData["zh-TW"]["hero.desc"] = "瑞基測控 — 專注於智能型電動閥門執行機構的研發與製造，為全球工業自動化提供可靠、精準、智能的驅動解決方案。";
 i18nData["zh-TW"]["hero.tag"] = "智能閥門執行機構";
 i18nData["zh-TW"]["hero.title"] = "精準驅動<br>智控未來";
-i18nData["zh-TW"]["home.news_1_summary"] = "瑞基測控設備（太倉）有限公司自2021年投產以來，年產能力已突破2萬臺智能電動執行機構。新生產線採用先進的加工中心和數控設備，實現從零部件加工到整機裝配的全流程智能化生產，有效縮短了交期，提升了產品質量一致性。";
-i18nData["zh-TW"]["home.news_1_title"] = "太倉新基地年產能突破2萬臺";
-i18nData["zh-TW"]["home.news_2_summary"] = "瑞基智能電動執行機構通過ExdⅡCT4防爆認證，可在含爆炸性氣體環境中安全運行。產品具備過轉矩保護、過熱保護、缺相保護等多重安全功能，已廣泛應用於石油、化工等高安全要求行業。";
-i18nData["zh-TW"]["home.news_2_title"] = "瑞基防爆認證達國際標準";
-i18nData["zh-TW"]["home.news_3_summary"] = "瑞基攜RAⅢ、RL、RQⅢ等全系列智能執行機構亮相中國國際工業博覽會，展示了非侵入式設定、圖形化顯示、遠程監控等核心技術，吸引了國內外眾多客戶和行業專家的廣泛關注。";
-i18nData["zh-TW"]["home.news_3_title"] = "瑞基亮相國際工業博覽會";
+i18nData["zh-TW"]["home.news_1_summary"] = "瑞基Modbus總線通信功能支援標準Modbus RTU/ASCII通信協議，可實現與各類DCS、PLC系統的無縫整合，支援遠端監控、參數設定和故障診斷，提高工業自動化系統的智能化水準。";
+i18nData["zh-TW"]["home.news_1_title"] = "瑞基Modbus總線通信功能";
+i18nData["zh-TW"]["home.news_2_summary"] = "瑞基PROFIBUS智能電動執行機構支援PROFIBUS-DP現場總線協議，具備高速、可靠的通信能力，適用於複雜的工業自動化控制系統，支援遠端組態、診斷和維護，降低運維成本。";
+i18nData["zh-TW"]["home.news_2_title"] = "瑞基PROFIBUS智能電動執行機構";
+i18nData["zh-TW"]["home.news_3_summary"] = "瑞基RAGA電動執行機構無線控制與運維系統採用LoRaWAN無線通信技術，實現對電動執行機構的遠端無線監控和運維管理，支援狀態監測、故障預警、遠端調試等功能，特別適用於佈線困難的工業場景。";
+i18nData["zh-TW"]["home.news_3_title"] = "瑞基RAGA電動執行機構無線控制與運維系統";
 i18nData["zh-TW"]["home.news_desc"] = "瞭解瑞基最新動態與行業資訊";
 i18nData["zh-TW"]["home.news_more"] = "瞭解更多 →";
+i18nData["zh-TW"]["news.view_document"] = "查看詳細文件 →";
 i18nData["zh-TW"]["home.news_subtitle"] = "公司動態";
 i18nData["zh-TW"]["home.news_title"] = "新聞動態";
 i18nData["zh-TW"]["home.prod_1"] = "總裝生產線";

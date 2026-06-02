@@ -98,7 +98,6 @@
 <section class="section">
   <div class="container">
     <div class="section-title">
-      <div class="subtitle" data-i18n="section.cases_subtitle">Case Studies</div>
       <h2 data-i18n="cases.subtitle">行业应用案例</h2>
       <p data-i18n="cases.desc">瑞基智能电动执行机构广泛应用于多个行业，以下是部分典型应用案例</p>
     </div>
@@ -119,7 +118,7 @@
         <div class="case-card-body">
           <span class="case-card-number">02</span>
           <h3 id="power" data-i18n="case.power_gen">电力行业</h3>
-          <p data-i18n="cases.power_full">在火电、核电、水电及新能源发电领域，瑞基执行机构广泛用于锅炉给水系统、冷却水系统、烟气脱硫脱硝系统等关键工位。RQⅢ直行程执行机构用于烟道挡板控制，RJM调节型用于给水调节阀精确控制，产品已在多家大型发电企业稳定运行多年。</p>
+          <p data-i18n="cases.power_full">在火电、核电、水电及新能源发电领域，瑞基执行机构广泛用于锅炉给水系统、冷却水系统、烟气脱硫脱硝系统等关键工位。RQⅢ直行程执行机构用于烟道挡板控制，RQM调节型用于给水调节阀精确控制，产品已在多家大型发电企业稳定运行多年。</p>
         </div>
       </div>
       <div class="case-card">
@@ -156,7 +155,6 @@
 <section class="section" id="clients">
   <div class="container">
     <div class="section-title">
-      <div class="subtitle" data-i18n="cases.client_subtitle">Our Clients</div>
       <h2 data-i18n="cases.client_title">合作伙伴</h2>
       <p data-i18n="cases.client_desc">感谢以下合作伙伴对瑞基的信任与支持</p>
     </div>
@@ -175,6 +173,12 @@
         <div class="client-logo"><img src="images/logos/山东核电.png" alt="山东核电"><span>山东核电</span></div>
         <div class="client-logo"><img src="images/logos/秦山核电.png" alt="秦山核电"><span>秦山核电</span></div>
         <div class="client-logo"><img src="images/logos/三门核电.png" alt="三门核电"><span>三门核电</span></div>
+        <div class="client-logo"><img src="images/logos/sinopec.png" alt="中国石化"><span>中国石化</span></div>
+        <div class="client-logo"><img src="images/logos/中国石油.png" alt="中国石油"><span>中国石油</span></div>
+        <div class="client-logo"><img src="images/logos/南方电网.png" alt="南方电网"><span>南方电网</span></div>
+        <div class="client-logo"><img src="images/logos/南水北调.png" alt="南水北调"><span>南水北调</span></div>
+        <div class="client-logo"><img src="images/logos/上海水务海洋.png" alt="上海水务海洋"><span>上海水务海洋</span></div>
+        <div class="client-logo"><img src="images/logos/海螺集团.png" alt="海螺集团"><span>海螺集团</span></div>
         </div>
     </div>
   </div>
@@ -194,6 +198,14 @@
 </footer>
 
 <a href="#" class="back-to-top">↑</a>
+<script>
+(function(){
+  var track = document.querySelector('.client-marquee-track');
+  if (track) {
+    track.innerHTML = track.innerHTML + track.innerHTML;
+  }
+})();
+</script>
 <script src="js/main.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/i18n-main.js"></script>

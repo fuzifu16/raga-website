@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Product scroll marquee - duplicate track for seamless loop
+  (function() {
+    var track = document.getElementById('productScrollTrack');
+    if (track) {
+      track.innerHTML = track.innerHTML + track.innerHTML;
+    }
+  })();
+
   // Product filter (if on products page)
   const filterBtns = document.querySelectorAll('.filter-btn');
   const productCards = document.querySelectorAll('.product-card');

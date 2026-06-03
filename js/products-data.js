@@ -431,7 +431,7 @@ const PRODUCTS = {
   "rqml12": {
     id: "rqml12",
     name: "RQMLIII12调节型",
-    image: "images/1729057838899.png",
+    image: "images/RQMLIII12.png",
     category: "直行程",
     tag: "调节型",
     desc: "RQMLIII12调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。",
@@ -451,7 +451,7 @@ const PRODUCTS = {
   "rqml54": {
     id: "rqml54",
     name: "RQMLIII54调节型",
-    image: "images/1729057838899.png",
+    image: "images/RQMLIII12.png",
     category: "直行程",
     tag: "调节型",
     desc: "RQMLIII54调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。",

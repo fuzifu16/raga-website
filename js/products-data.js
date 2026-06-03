@@ -101,7 +101,7 @@ const PRODUCTS = {
   "rl": {
     id: "rl",
     name: "RL智能角行程",
-    image: "images/20130711134549999.jpg",
+    image: "images/rl-angle-product.png",
     category: "角行程",
     tag: "智能",
     desc: "RL智能角行程执行机构，精确控制90°旋转阀门，特别适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速，广泛应用于水处理、暖通等行业。",
@@ -130,7 +130,7 @@ const PRODUCTS = {
   "rlm": {
     id: "rlm",
     name: "RLM智能型",
-    image: "images/20130711134549999.jpg",
+    image: "images/rl-angle-product.png",
     category: "角行程",
     tag: "智能",
     desc: "RLM智能型调节角行程执行机构，支持4~20mA模拟量控制，精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速。",
@@ -235,6 +235,31 @@ const PRODUCTS = {
       ["输出转矩", "1020 N·m (380VAC)"],
       ["输出转速", "18 / 24 / 36 / 48 r/min"],
       ["电机功率", "2.1 ~ 3.7 kW (380VAC)"],
+      ["供电电源", "380VAC/50Hz (可选220VAC)"],
+      ["控制方式", "开关型 / 调节型 (4~20mA)"],
+      ["防护等级", "IP68"],
+      ["防爆标志", "ExdⅡCT4"],
+      ["环境温度", "-30℃ ~ +70℃"],
+      ["基本误差", "≤ ±1.0%"]
+    ],
+    downloads: [
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+    ]
+  },
+  "rq150": {
+    id: "rq150",
+    name: "RQⅢ150~RQ300系列",
+    image: "images/RAIII70A.png",
+    category: "直行程",
+    tag: "第三代",
+    desc: "RQⅢ150~RQ300超大型直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于超大口径重载阀门及工业过程控制场景。防护等级IP68。",
+    specs: [
+      ["型号", "RQⅢ150 / RQⅢ200 / RQⅢ300"],
+      ["类型", "直行程 (线性输出)"],
+      ["输出转矩", "1500 ~ 3500 N·m (380VAC)"],
+      ["输出转速", "12 / 18 / 24 / 36 r/min"],
+      ["电机功率", "3.0 ~ 7.5 kW (380VAC)"],
       ["供电电源", "380VAC/50Hz (可选220VAC)"],
       ["控制方式", "开关型 / 调节型 (4~20mA)"],
       ["防护等级", "IP68"],
@@ -361,6 +386,25 @@ const PRODUCTS = {
     downloads: [
       { name: "R系列分体式安装说明书", size: "1.0 MB", icon: "📄", url: "files/r-series-manual.pdf" },
       { name: "RF10分体外形图", size: "138 KB", icon: "📐", url: "files/rf-dimension.pdf" }
+    ]
+  },
+  "ra-fen": {
+    id: "ra-fen",
+    name: "RA系列分体式",
+    image: "images/rq04-fenti.png",
+    category: "多回转",
+    tag: "分体式",
+    desc: "RA系列多回转分体式执行机构，控制器与执行器分离安装，适用于高温、震动、狭小空间等特殊工况，安装灵活，维护方便。",
+    specs: [
+      ["类型", "分体式多回转"],
+      ["控制器与执行器距离", "最长50m"],
+      ["供电电源", "380VAC/50Hz"],
+      ["控制方式", "开关型/调节型"],
+      ["防护等级", "执行器IP68 / 控制器IP65"],
+      ["环境温度", "-30℃ ~ +70℃"]
+    ],
+    downloads: [
+      { name: "RA系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" }
     ]
   },
   "rqml06": {

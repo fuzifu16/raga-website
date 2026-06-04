@@ -471,7 +471,7 @@ const PRODUCTS = {
   "rlml10": {
     id: "rlml10",
     name: "RLML10调节型",
-    image: "images/5.png",
+    image: "images/RLML10.png",
     category: "直行程",
     tag: "调节型",
     desc: "RLML10调节型直行程执行机构，精密调节控制能力，适用于对阀门开度有精确控制要求的自动化控制系统。",
@@ -491,7 +491,7 @@ const PRODUCTS = {
   "rlml20": {
     id: "rlml20",
     name: "RLML20调节型",
-    image: "images/5.png",
+    image: "images/RLML20.png",
     category: "直行程",
     tag: "调节型",
     desc: "RLML20调节型直行程执行机构，精密的调节控制能力，支持多种信号输入。适用于对阀门开度有精确控制要求的自动化控制系统。",

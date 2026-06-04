@@ -407,6 +407,25 @@ const PRODUCTS = {
       { name: "RA系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" }
     ]
   },
+  "rl-fen": {
+    id: "rl-fen",
+    name: "RL系列分体式",
+    image: "images/RL-fenti.png",
+    category: "角行程",
+    tag: "分体式",
+    desc: "RL系列角行程分体式执行机构，控制器与执行器分离安装，适用于高温、震动、狭小空间等特殊工况，安装灵活，维护方便。",
+    specs: [
+      ["类型", "分体式角行程"],
+      ["控制器与执行器距离", "最长50m"],
+      ["供电电源", "380VAC/50Hz"],
+      ["控制方式", "开关型/调节型"],
+      ["防护等级", "执行器IP68 / 控制器IP65"],
+      ["环境温度", "-30℃ ~ +70℃"]
+    ],
+    downloads: [
+      { name: "RL系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" }
+    ]
+  },
   "rqml06": {
     id: "rqml06",
     name: "RQMLIII06调节型",

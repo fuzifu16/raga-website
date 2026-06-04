@@ -429,7 +429,7 @@ const PRODUCTS = {
   "rqml06": {
     id: "rqml06",
     name: "RQMLIII06调节型",
-    image: "images/1729056743404.png",
+    image: "images/RQMLIII06.png",
     category: "直行程",
     tag: "调节型",
     desc: "RQMLIII06调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。适用于需要精确调节的工业控制场景，结构紧凑，响应迅速。",

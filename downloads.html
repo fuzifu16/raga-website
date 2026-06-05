@@ -169,6 +169,7 @@
   ];
 
   function renderCard(dl, productName) {
+    var isPdf = dl.url && dl.url.toLowerCase().endsWith('.pdf');
     return '<div class="download-card">' +
       '<div class="file-icon">' + (dl.icon || '📄') + '</div>' +
       '<div class="file-info">' +
@@ -178,8 +179,10 @@
       '</div>' +
       '<div class="dl-btns">' +
         (dl.url
-          ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(dl.name) + '" class="btn btn-sm btn-preview" data-i18n="detail.preview">预览</a>'
-          : '<a href="#" onclick="alert(\'' + deployText + '\');return false;" class="btn btn-sm btn-preview" data-i18n="detail.download">下载</a>') +
+          ? (isPdf
+            ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(dl.name) + '" class="btn btn-sm btn-preview">预览</a>'
+            : '<a href="' + dl.url + '" download class="btn btn-sm btn-preview">下载</a>')
+          : '<a href="#" onclick="alert(\'' + deployText + '\');return false;" class="btn btn-sm btn-preview">下载</a>') +
       '</div>' +
     '</div>';
   }
@@ -211,7 +214,8 @@
   companyGrid.className = 'download-grid';
   var companyFiles = [
     { name: '上海瑞基瑞然样本', size: '24 MB', icon: '📘', url: 'files/company-catalog.pdf' },
-    { name: '瑞基RAGA宣传册', size: '7.6 MB', icon: '📘', url: 'files/company-brochure.pdf' }
+    { name: '瑞基RAGA宣传册', size: '7.6 MB', icon: '📘', url: 'files/company-brochure.pdf' },
+    { name: 'RAⅢ系列智能型电动执行器培训手册', size: '13 MB', icon: '📊', url: 'files/RAⅢ系列智能型电动执行器培训手册.pdf' },
   ];
   companyFiles.forEach(function(dl) {
     companyGrid.innerHTML += renderCard(dl, lang === 'zh' ? '公司宣传资料' : 'Company Brochure');

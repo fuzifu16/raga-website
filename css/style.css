@@ -1029,7 +1029,7 @@ a { color: inherit; }
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-.footer-brand .logo img { height: 40px; filter: brightness(10); }
+.footer-brand .logo img { height: 40px; }
 .footer-brand p { font-size: 14px; margin-top: 16px; line-height: 1.7; }
 .footer h4 { color: var(--white); font-size: 16px; margin-bottom: 20px; }
 .footer ul { list-style: none; }

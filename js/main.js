@@ -57,6 +57,41 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Email copy on click (mailto doesn't work without email client)
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var email = this.getAttribute('href').replace('mailto:', '');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(function() {
+          showToast('邮箱已复制：' + email);
+        });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = email;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('邮箱已复制：' + email);
+      }
+    });
+  });
+
+  function showToast(msg) {
+    var t = document.createElement('div');
+    t.className = 'copy-toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(function() { t.classList.add('show'); }, 10);
+    setTimeout(function() {
+      t.classList.remove('show');
+      setTimeout(function() { t.remove(); }, 300);
+    }, 2000);
+  }
+
   // Page hero slideshow (inner pages only)
   (function() {
     const hero = document.querySelector('.page-hero');

@@ -947,6 +947,8 @@ a { color: inherit; }
 .contact-item p { font-size: 14px; color: var(--gray-600); margin-top: 2px; }
 .contact-item a { color: #E70032; text-decoration: underline; cursor: pointer; }
 .contact-item a:hover { color: #C4002A; text-decoration: underline; }
+.office-email { color: #E70032; text-decoration: underline; cursor: pointer; }
+.office-email:hover { color: #C4002A; }
 
 .contact-map {
   border-radius: var(--radius);

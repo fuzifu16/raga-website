@@ -368,7 +368,7 @@ const PRODUCTS = {
   "fen": {
     id: "fen",
     name: "R系列分体式",
-    image: "images/fenti.jpg",
+    image: "images/fenti.png",
     category: "多回转",
     tag: "分体式",
     desc: "R系列分体式执行机构，控制器与执行器分体设计，可适应特殊安装环境。控制器可安装在便于操作的位置，执行器安装在阀门现场，灵活可靠。",

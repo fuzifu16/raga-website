@@ -267,15 +267,27 @@
     }
   }
 
-  renderProductDetail();
-
-  // Re-render when user switches language
-  if (I18N && I18N.switchLang) {
-    var _origSwitch = I18N.switchLang;
-    I18N.switchLang = function(lang) {
-      _origSwitch.call(I18N, lang);
+  // Wait for DOMContentLoaded so I18N is initialized
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
       renderProductDetail();
-    };
+      hookLangSwitch();
+    });
+  } else {
+    // DOM already loaded (e.g. navigated back)
+    renderProductDetail();
+    hookLangSwitch();
+  }
+
+  function hookLangSwitch() {
+    // Re-render when user switches language
+    if (I18N && I18N.switchLang) {
+      var _origSwitch = I18N.switchLang;
+      I18N.switchLang = function(lang) {
+        _origSwitch.call(I18N, lang);
+        renderProductDetail();
+      };
+    }
   }
 })();
 </script>

@@ -1050,3 +1050,137 @@ i18nData.dlMap = {
     i18nData.dlMap.zh[zh] = zh;
   });
 })();
+
+/* ===== zh-TW spec labels ===== */
+i18nData.specMap["zh-TW"] = {
+  "型号":"型號","输出转矩":"輸出轉矩","输出转速":"輸出轉速",
+  "电机功率":"電機功率","电机电流":"電機電流","供电电源":"供電電源",
+  "控制方式":"控制方式","防护等级":"防護等級","防爆标志":"防爆標誌",
+  "环境温度":"環境溫度","基本误差":"基本誤差","重复性误差":"重複性誤差",
+  "类型":"類型","传动比":"傳動比","位置重复性":"位置重複性",
+  "动作角度":"動作角度","全行程时间":"全行程時間","连接法兰":"連接法蘭",
+  "输入信号":"輸入信號","回差":"回差","死区":"死區",
+  "控制器与执行器距离":"控制器與執行器距離","润滑方式":"潤滑方式",
+  "工作制式":"工作制式","适配执行器":"適配執行器","配套型号":"配套型號"
+};
+
+/* ===== zh-TW download names ===== */
+i18nData.dlMap["zh-TW"] = {};
+(function(){
+  var tw=i18nData.dlMap["zh-TW"];
+  var m={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","系":"係","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別"};
+  var s2t=function(t){return t.split('').map(function(c){return m[c]||c;}).join('');};
+  var zhDl=Object.keys(i18nData.dlMap.zh);
+  zhDl.forEach(function(k){tw[k]=s2t(k);});
+})();
+
+/* ===== Product description translations ===== */
+i18nData.descMap = {
+  "zh": {},
+  "en": {
+    "RAIII7A/RAIII11A/RAIII13A 智能型多回转电动执行机构，结构紧凑，体积小、重量轻，适用于中小口径阀门及闸阀、截止阀等的控制。采用非侵入式设定方式，无需打开电气箱盖即可完成所有调试。":
+      "RAIII7A/RAIII11A/RAIII13A smart multi-turn electric actuator, compact design with small size and light weight, suitable for small and medium-diameter valves including gate and globe valves. Features non-intrusive setup — all commissioning can be completed without opening the electrical cover.",
+
+    "RAIII14A/RAIII15A/RAIII16A 中型多回转智能执行机构，输出转矩大，性能稳定可靠，适用于各类工业阀门控制。支持多种通信协议，可实现远程监控与智能诊断。":
+      "RAIII14A/RAIII15A/RAIII16A medium multi-turn smart actuator with high output torque, stable and reliable performance, suitable for various industrial valve control. Supports multiple communication protocols for remote monitoring and intelligent diagnostics.",
+
+    "RAIII40A/RAIII70A/RAIII90A/RAIII95A 大转矩智能执行机构，专为大型阀门及重载工业应用设计。可配RGW/RGD系列减速箱。具备强大的输出能力和卓越的耐用性，适用于石油、化工、电力等行业的关键工位。":
+      "RAIII40A/RAIII70A/RAIII90A/RAIII95A high-torque smart actuator, designed for large valves and heavy-duty industrial applications. Compatible with RGW/RGD series gearboxes. Delivers powerful output and exceptional durability for critical stations in petroleum, chemical, power and other industries.",
+
+    "RAIII30A/RAIII35A 智能型多回转电动执行机构，性能稳定可靠，适用于中等口径阀门控制。采用非侵入式设定方式，支持多种通信协议。":
+      "RAIII30A/RAIII35A smart multi-turn electric actuator, stable and reliable performance, suitable for medium-diameter valve control. Features non-intrusive setup and supports multiple communication protocols.",
+
+    "RL智能角行程执行机构，精确控制90°旋转阀门，特别适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速，广泛应用于水处理、暖通等行业。":
+      "RL smart quarter-turn actuator, precisely controls 90° rotary valves, ideal for butterfly valves, ball valves and other part-turn valves. High-precision positioning with rapid response, widely used in water treatment, HVAC and other industries.",
+
+    "RLM智能型调节角行程执行机构，支持4~20mA模拟量控制，精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速。":
+      "RLM smart modulating quarter-turn actuator, supports 4~20mA analog control, precisely controls 90° rotary valves, suitable for butterfly valves, ball valves and other part-turn valves. High-precision positioning with rapid response.",
+
+    "RL100智能型角行程执行机构，额定转矩800N·m，精确控制90°旋转阀门。适用于蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。":
+      "RL100 smart quarter-turn actuator, rated torque 800 N·m, precisely controls 90° rotary valves. Suitable for butterfly valves, ball valves and other part-turn valves, widely used in water treatment, petrochemical and other industries.",
+
+    "RL150智能型角行程执行机构，额定转矩1000N·m，大转矩输出，适用于大型蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。":
+      "RL150 smart quarter-turn actuator, rated torque 1000 N·m, high torque output, suitable for large butterfly valves, ball valves and other part-turn valves, widely used in water treatment, petrochemical and other industries.",
+
+    "RJM调节型智能执行机构，支持4-20mA模拟量信号控制，调节精度高，响应速度快。适用于需要对阀门开度进行精确控制的工艺流程。":
+      "RJM modulating smart actuator, supports 4-20mA analog signal control with high regulation accuracy and fast response. Suitable for process flows requiring precise valve positioning control.",
+
+    "RQⅢ100大转矩直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于大口径阀门及重载工业过程控制场景。防护等级IP68。":
+      "RQⅢ100 high-torque linear-motion smart actuator, supports 4~20mA analog and on/off control, suitable for large-diameter valves and heavy-duty industrial process control. IP68 protection rating.",
+
+    "RQⅢ150~RQ300超大型直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于超大口径重载阀门及工业过程控制场景。防护等级IP68。":
+      "RQⅢ150~RQ300 ultra-large linear-motion smart actuator, supports 4~20mA analog and on/off control, suitable for ultra-large heavy-duty valves and industrial process control. IP68 protection rating.",
+
+    "RJ开关型角行程执行机构，结构简单，操作方便，性价比高。适用于仅需开关控制的蝶阀、球阀等阀门，可靠耐用。":
+      "RJ on/off quarter-turn actuator, simple structure, easy operation, cost-effective. Suitable for butterfly and ball valves requiring on/off control only, reliable and durable.",
+
+    "RQⅢ020/RQⅢ030/RQⅢ040中型直行程执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。适用于各类直行程阀门控制。":
+      "RQⅢ020/RQⅢ030/RQⅢ040 medium linear-motion actuator, integrating field and remote control. Features non-intrusive setup, graphic display, intelligent diagnostics and more. Suitable for various linear-motion valve control applications.",
+
+    "RQⅢ060大型直行程智能执行机构，适用于大口径阀门控制。具备非侵入式设定、图形化显示、智能诊断等先进功能，防护等级IP68。":
+      "RQⅢ060 large linear-motion smart actuator, suitable for large-diameter valve control. Features non-intrusive setup, graphic display, intelligent diagnostics and more, IP68 protection rating.",
+
+    "RQⅢ003~014系列智能型直行程电动执行机构，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。":
+      "RQⅢ003~014 series smart linear-motion electric actuator, integrating non-intrusive setup, graphic display, intelligent diagnostics and more. Suitable for small valve control, IP68 protection rating.",
+
+    "R系列分体式执行机构，控制器与执行器分体设计，可适应特殊安装环境。控制器可安装在便于操作的位置，执行器安装在阀门现场，灵活可靠。":
+      "R series split-type actuator with separate controller and actuator design, adaptable to special installation environments. Controller can be installed in an accessible location while actuator mounts at the valve, offering flexibility and reliability.",
+
+    "RA系列多回转分体式执行机构，控制器与执行器分离安装，适用于高温、震动、狭小空间等特殊工况，安装灵活，维护方便。":
+      "RA series multi-turn split-type actuator, separate controller and actuator installation, suitable for high temperature, vibration, confined spaces and other special conditions, flexible installation and easy maintenance.",
+
+    "RL系列角行程分体式执行机构，控制器与执行器分离安装，适用于高温、震动、狭小空间等特殊工况，安装灵活，维护方便。":
+      "RL series quarter-turn split-type actuator, separate controller and actuator installation, suitable for high temperature, vibration, confined spaces and other special conditions, flexible installation and easy maintenance.",
+
+    "RQMLIII06调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。适用于需要精确调节的工业控制场景，结构紧凑，响应迅速。":
+      "RQMLIII06 modulating linear-motion actuator, featuring smart control technology for high-precision valve positioning. Suitable for industrial control scenarios requiring precise regulation, compact structure with rapid response.",
+
+    "RQMLIII12调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。":
+      "RQMLIII12 modulating linear-motion actuator, featuring smart control technology for high-precision valve positioning.",
+
+    "RQMLIII54调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。":
+      "RQMLIII54 modulating linear-motion actuator, featuring smart control technology for high-precision valve positioning.",
+
+    "RLML10调节型直行程执行机构，精密调节控制能力，适用于对阀门开度有精确控制要求的自动化控制系统。":
+      "RLML10 modulating linear-motion actuator, precise regulation capability, suitable for automated control systems requiring accurate valve position control.",
+
+    "RLML20调节型直行程执行机构，精密的调节控制能力，支持多种信号输入。适用于对阀门开度有精确控制要求的自动化控制系统。":
+      "RLML20 modulating linear-motion actuator, precise regulation capability with multiple signal inputs. Suitable for automated control systems requiring accurate valve position control.",
+
+    "配套用减速箱系列，与瑞基各型号电动执行机构完美匹配。传动效率高，运行噪音低，使用寿命长，是阀门自动化系统的关键传动部件。":
+      "Supporting gearbox series, perfectly matched with RAGA electric actuator models. High transmission efficiency, low operating noise, long service life — a key transmission component in valve automation systems.",
+
+    "RIB系列减速箱，专为阀门电动执行机构配套设计。传动效率高，运行平稳可靠，适配多种执行器型号，满足不同工况下的传动需求。":
+      "RIB series gearbox, designed specifically for valve electric actuator support. High transmission efficiency, stable and reliable operation, compatible with multiple actuator models to meet various operating requirements.",
+
+    "瑞基电动执行机构电器总承组件，包含核心电气控制部件，确保执行机构可靠运行。":
+      "RAGA electric actuator electrical assembly, containing core electrical control components to ensure reliable actuator operation.",
+
+    "RA系列电动执行机构主控制板，集成控制逻辑与通信接口，支持多种控制模式切换。":
+      "RA series electric actuator main control board, integrating control logic and communication interfaces, supporting multiple control mode switching.",
+
+    "RA系列电动执行机构电源板，为执行机构提供稳定可靠的电源供应与保护功能。":
+      "RA series electric actuator power supply board, providing stable and reliable power supply and protection functions for the actuator.",
+
+    "瑞基智能型电动执行机构专用遥控器，支持非侵入式设定与操作，方便现场调试与参数设置。":
+      "RAGA smart electric actuator remote control, supporting non-intrusive setup and operation, convenient for on-site commissioning and parameter configuration.",
+
+    "行星轮总承传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。":
+      "Planetary gear assembly transmission component, utilizing precision planetary gear structure with high transmission efficiency and smooth operation, suitable for actuator reduction drive.",
+
+    "葵花接盘连接组件，用于执行机构与外部电源信号连接，结构精密，安装方便。":
+      "Sun plate connection component, used for connecting the actuator to external power and signal, precision structure with easy installation."
+  }
+};
+
+/* Populate zh (identity) and zh-TW (simplified->traditional) */
+(function(){
+  var m={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","系":"係","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別","处":"處"};
+  var s2t=function(t){return t.split('').map(function(c){return m[c]||c;}).join('');};
+  var enKeys=Object.keys(i18nData.descMap.en);
+  i18nData.descMap["zh-TW"]={};
+  enKeys.forEach(function(k){
+    i18nData.descMap.zh[k]=k;
+    i18nData.descMap["zh-TW"][k]=s2t(k);
+  });
+})();

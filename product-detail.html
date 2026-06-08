@@ -208,11 +208,19 @@
   img.src = product.image;
   img.alt = product.name;
 
-  document.getElementById('detail-desc').textContent = product.desc;
-
-  // --- Render product detail (specs + downloads) with i18n support ---
+  // --- Render product detail (desc + specs + downloads) with i18n support ---
   function renderProductDetail() {
     var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
+
+    // Product description
+    var descEl = document.getElementById('detail-desc');
+    if (descEl) {
+      var descText = product.desc;
+      if (i18nData && i18nData.descMap && i18nData.descMap[lang]) {
+        descText = i18nData.descMap[lang][product.desc] || product.desc;
+      }
+      descEl.textContent = descText;
+    }
 
     // Specs table
     var specsTbody = document.getElementById('detail-specs');

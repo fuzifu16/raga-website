@@ -404,7 +404,8 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RA系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" }
+      { name: "RA系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" },
+      { name: "R系列分体式安装说明书", size: "1.0 MB", icon: "📄", url: "files/r-series-manual.pdf" }
     ]
   },
   "rl-fen": {
@@ -423,7 +424,8 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RL系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" }
+      { name: "RL系列安装使用说明书", size: "1.3 MB", icon: "📄", url: "files/ra-installation.pdf" },
+      { name: "R系列分体式安装说明书", size: "1.0 MB", icon: "📄", url: "files/r-series-manual.pdf" }
     ]
   },
   "rqml06": {

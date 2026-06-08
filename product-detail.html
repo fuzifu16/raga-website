@@ -202,15 +202,22 @@
   if (el) el.textContent = product.name;
   el = document.getElementById('detail-breadcrumb');
   if (el) el.textContent = product.name;
-  document.getElementById('detail-name').textContent = product.name;
 
   const img = document.querySelector('#detail-image img');
   img.src = product.image;
   img.alt = product.name;
 
-  // --- Render product detail (desc + specs + downloads) with i18n support ---
+  // --- Render product detail (desc + specs + downloads + name) with i18n support ---
   function renderProductDetail() {
     var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
+
+    // Product name
+    var nameEl = document.getElementById('detail-name');
+    if (nameEl) {
+      var nameKey = 'name.' + product.id;
+      var nameText = (i18nData && i18nData[lang] && i18nData[lang][nameKey]) ? i18nData[lang][nameKey] : product.name;
+      nameEl.textContent = nameText;
+    }
 
     // Product description
     var descEl = document.getElementById('detail-desc');

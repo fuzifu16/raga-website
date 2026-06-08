@@ -399,7 +399,7 @@ a { color: inherit; }
   <div class="container">
     <span data-i18n="topbar.slogan">温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商</span>
     <div class="lang-switch"><a href="tel:057756582698">📞 0577-56582698</a>
-          <a href="#" data-lang="zh">中文</a><a href="#" data-lang="zh-tw">繁體</a><a href="#" data-lang="zh-TW">繁體</a> <a href="#" data-lang="en">English</a></div>
+          <a href="#" data-lang="zh">中文</a><a href="#" data-lang="zh-TW">繁體</a> <a href="#" data-lang="en">English</a></div>
   </div>
 </div>
 
@@ -543,7 +543,9 @@ a { color: inherit; }
       btn.href = file;
     }
   } catch(e) {
-    document.getElementById('file-name').textContent = '加载失败: ' + e.message;
+    var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
+    var errText = (i18nData && i18nData[lang] && i18nData[lang]["preview.load_error"]) ? i18nData[lang]["preview.load_error"] : '加载失败';
+    document.getElementById('file-name').textContent = errText + ': ' + e.message;
   }
 })();
 </script>

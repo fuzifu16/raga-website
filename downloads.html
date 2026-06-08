@@ -149,109 +149,147 @@
   var container = document.querySelector('.downloads-page');
   if (!container) return;
 
+  // --- Helpers ---
   function getLang() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var fromUrl = urlParams.get('lang');
-    if (fromUrl === 'en' || fromUrl === 'zh') return fromUrl;
-    try { var saved = localStorage.getItem('raga_lang'); if (saved === 'en' || saved === 'zh') return saved; } catch(e) {}
-    return 'zh';
+    return (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
   }
-  var lang = getLang();
-  var deployText = '下载功能待部署';
+
+  // Top-level i18n key lookup
+  function t(key) {
+    var lang = getLang();
+    return (i18nData && i18nData[lang] && i18nData[lang][key]) ? i18nData[lang][key] : key;
+  }
+
+  // Translate download name via dlMap
+  function tlDlName(name) {
+    var lang = getLang();
+    if (i18nData && i18nData.dlMap && i18nData.dlMap[lang] && i18nData.dlMap[lang][name]) {
+      return i18nData.dlMap[lang][name];
+    }
+    return name;
+  }
+
+  // Translate product name via name.* key
+  function tlProductName(pid) {
+    var lang = getLang();
+    var key = 'name.' + pid;
+    if (i18nData && i18nData[lang] && i18nData[lang][key]) {
+      return i18nData[lang][key];
+    }
+    var product = PRODUCTS[pid];
+    return product ? product.name : pid;
+  }
 
   var series = [
-    { zh: 'RA系列（多回转）', en: 'RA Series (Multi-turn)', products: ['ra10','ra35','ra40','ra100','ra3','fen'] },
-    { zh: 'RQ系列（直行程）', en: 'RQ Series (Linear-motion)', products: ['rq3','rq060','rqm3'] },
-    { zh: 'RL系列（角行程）', en: 'RL Series (Quarter-turn)', products: ['rl','rlm','rl100','rl150'] },
-    { zh: '调节型系列', en: 'Modulating Series', products: ['rjm'] },
-    { zh: '开关型系列', en: 'On-Off Series', products: ['rj'] },
-    { zh: '配件系列', en: 'Accessories', products: ['gear','rib'] }
+    { key: 'downloads.series_ra', products: ['ra10','ra35','ra40','ra100','ra3','fen'] },
+    { key: 'downloads.series_rq', products: ['rq3','rq060','rqm3'] },
+    { key: 'downloads.series_rl', products: ['rl','rlm','rl100','rl150'] },
+    { key: 'downloads.series_modulating', products: ['rjm'] },
+    { key: 'downloads.series_onoff', products: ['rj'] },
+    { key: 'downloads.series_accessories', products: ['gear','rib'] }
   ];
 
-  function renderCard(dl, productName) {
+  function renderCard(dl, productPid) {
+    var lang = getLang();
     var isPdf = dl.url && dl.url.toLowerCase().endsWith('.pdf');
+    var previewText = t('downloads.btn_preview');
+    var downloadText = t('downloads.btn_download');
+    var pendingText = t('downloads.deploy_pending');
+    var productNameText = productPid ? tlProductName(productPid) : '';
     return '<div class="download-card">' +
       '<div class="file-icon">' + (dl.icon || '📄') + '</div>' +
       '<div class="file-info">' +
-        '<div class="file-name">' + dl.name + '</div>' +
+        '<div class="file-name">' + tlDlName(dl.name) + '</div>' +
         '<div class="file-meta">' + dl.size + '</div>' +
-        '<div class="file-product">' + productName + '</div>' +
+        '<div class="file-product">' + productNameText + '</div>' +
       '</div>' +
       '<div class="dl-btns">' +
         (dl.url
           ? (isPdf
-            ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(dl.name) + '" class="btn btn-sm btn-preview">预览</a>'
-            : '<a href="' + dl.url + '" download class="btn btn-sm btn-preview">下载</a>')
-          : '<a href="#" onclick="alert(\'' + deployText + '\');return false;" class="btn btn-sm btn-preview">下载</a>') +
+            ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(tlDlName(dl.name)) + '" class="btn btn-sm btn-preview">' + previewText + '</a>'
+            : '<a href="' + dl.url + '" download class="btn btn-sm btn-preview">' + downloadText + '</a>')
+          : '<a href="#" onclick="alert(\'' + pendingText + '\');return false;" class="btn btn-sm btn-preview">' + downloadText + '</a>') +
       '</div>' +
     '</div>';
   }
 
-  function renderSection(titleZh, titleEn, items) {
+  function renderSection(titleKey, items) {
     if (!items.length) return;
     var section = document.createElement('div');
     section.className = 'download-section';
     var h3 = document.createElement('h3');
-    h3.textContent = lang === 'zh' ? titleZh : titleEn;
+    h3.textContent = t(titleKey);
     section.appendChild(h3);
     var grid = document.createElement('div');
     grid.className = 'download-grid';
     items.forEach(function(item) {
-      grid.innerHTML += renderCard(item.dl, item.product.name);
+      grid.innerHTML += renderCard(item.dl, item.product.id);
     });
     section.appendChild(grid);
     container.appendChild(section);
   }
 
-  // Section 1: 公司资料
-  var companySection = document.createElement('div');
-  companySection.className = 'download-section';
-  companySection.id = 'brochure';
-  var companyTitle = document.createElement('h3');
-  companyTitle.textContent = lang === 'zh' ? '公司宣传册' : 'Company Brochure';
-  companySection.appendChild(companyTitle);
-  var companyGrid = document.createElement('div');
-  companyGrid.className = 'download-grid';
-  var companyFiles = [
-    { name: '上海瑞基瑞然样本', size: '24 MB', icon: '📘', url: 'files/company-catalog.pdf' },
-    { name: '瑞基RAGA宣传册', size: '7.6 MB', icon: '📘', url: 'files/company-brochure.pdf' },
-    { name: 'RAⅢ系列智能型电动执行器培训手册', size: '13 MB', icon: '📊', url: 'files/RAⅢ系列智能型电动执行器培训手册.pdf' },
-  ];
-  companyFiles.forEach(function(dl) {
-    companyGrid.innerHTML += renderCard(dl, lang === 'zh' ? '公司宣传资料' : 'Company Brochure');
-  });
-  companySection.appendChild(companyGrid);
-  container.appendChild(companySection);
+  function renderDownloadsPage() {
+    container.innerHTML = '';
 
-  // Product series sections
-  series.forEach(function(s) {
-    var items = [];
-    s.products.forEach(function(pid) {
-      var product = PRODUCTS[pid];
-      if (!product || !product.downloads || !product.downloads.length) return;
-      product.downloads.forEach(function(dl) {
-        if (dl.icon !== '📐') items.push({ dl: dl, product: product });
+    // Company brochure section
+    var companySection = document.createElement('div');
+    companySection.className = 'download-section';
+    companySection.id = 'brochure';
+    var companyTitle = document.createElement('h3');
+    companyTitle.textContent = t('downloads.company_section');
+    companySection.appendChild(companyTitle);
+    var companyGrid = document.createElement('div');
+    companyGrid.className = 'download-grid';
+    var companyFiles = [
+      { nameKey: 'downloads.file_catalog', size: '24 MB', icon: '📘', url: 'files/company-catalog.pdf' },
+      { nameKey: 'downloads.file_brochure', size: '7.6 MB', icon: '📘', url: 'files/company-brochure.pdf' },
+      { nameKey: 'downloads.file_training', size: '13 MB', icon: '📊', url: 'files/RAⅢ系列智能型电动执行器培训手册.pdf' },
+    ];
+    companyFiles.forEach(function(dl) {
+      companyGrid.innerHTML += renderCard({ name: t(dl.nameKey), size: dl.size, icon: dl.icon, url: dl.url }, null);
+    });
+    companySection.appendChild(companyGrid);
+    container.appendChild(companySection);
+
+    // Product series sections
+    series.forEach(function(s) {
+      var items = [];
+      s.products.forEach(function(pid) {
+        var product = PRODUCTS[pid];
+        if (!product || !product.downloads || !product.downloads.length) return;
+        product.downloads.forEach(function(dl) {
+          if (dl.icon !== '📐') items.push({ dl: dl, product: product });
+        });
+      });
+      renderSection(s.key, items);
+    });
+
+    // All dimension drawings section
+    var allDrawings = [];
+    series.forEach(function(s) {
+      s.products.forEach(function(pid) {
+        var product = PRODUCTS[pid];
+        if (!product || !product.downloads) return;
+        product.downloads.forEach(function(dl) {
+          if (dl.icon === '📐') allDrawings.push({ dl: dl, product: product });
+        });
       });
     });
-    renderSection(s.zh, s.en, items);
-  });
+    renderSection('downloads.drawings_section', allDrawings);
+  }
 
-  // Section: 所有外形图
-  var allDrawings = [];
-  series.forEach(function(s) {
-    s.products.forEach(function(pid) {
-      var product = PRODUCTS[pid];
-      if (!product || !product.downloads) return;
-      product.downloads.forEach(function(dl) {
-        if (dl.icon === '📐') allDrawings.push({ dl: dl, product: product });
-      });
-    });
-  });
-  // Also collect from company files
-  companyFiles.forEach(function(dl) {
-    if (dl.icon === '📐') allDrawings.push({ dl: dl, product: { name: lang === 'zh' ? '公司宣传册' : 'Company Brochure' } });
-  });
-  renderSection('所有外形图', 'All Dimension Drawings', allDrawings);
+  // Initial render
+  renderDownloadsPage();
+
+  // Hook into language switch for live updates
+  if (I18N && I18N.switchLang) {
+    var origSwitch = I18N.switchLang;
+    I18N.switchLang = function(lang) {
+      origSwitch.call(I18N, lang);
+      renderDownloadsPage();
+    };
+  }
 })();
 </script>
 </body>

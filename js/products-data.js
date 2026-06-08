@@ -225,7 +225,7 @@ const PRODUCTS = {
   "rqm3": {
     id: "rqm3",
     name: "RQⅢ 100系列",
-    image: "images/20130701114119219.jpg",
+    image: "images/RQIII-100.png",
     category: "直行程",
     tag: "调节型",
     desc: "RQⅢ100大转矩直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于大口径阀门及重载工业过程控制场景。防护等级IP68。",
@@ -250,7 +250,7 @@ const PRODUCTS = {
   "rq150": {
     id: "rq150",
     name: "RQⅢ150~RQ300系列",
-    image: "images/RAIII70A.png",
+    image: "images/RQIII-150-300.png",
     category: "直行程",
     tag: "第三代",
     desc: "RQⅢ150~RQ300超大型直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于超大口径重载阀门及工业过程控制场景。防护等级IP68。",
@@ -295,7 +295,7 @@ const PRODUCTS = {
   "rq3": {
     id: "rq3",
     name: "RQⅢ 020~040系列",
-    image: "images/20130630161718980.jpg",
+    image: "images/RQIII-020-040.png",
     category: "直行程",
     tag: "智能型",
     desc: "RQⅢ020/RQⅢ030/RQⅢ040中型直行程执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。适用于各类直行程阀门控制。",
@@ -323,7 +323,7 @@ const PRODUCTS = {
   "rq060": {
     id: "rq060",
     name: "RQⅢ 060系列",
-    image: "images/20130630161718980.jpg",
+    image: "images/RQIII-060.png",
     category: "直行程",
     tag: "智能型",
     desc: "RQⅢ060大型直行程智能执行机构，适用于大口径阀门控制。具备非侵入式设定、图形化显示、智能诊断等先进功能，防护等级IP68。",
@@ -347,10 +347,7 @@ const PRODUCTS = {
   "ra3": {
     id: "ra3",
     name: "RQⅢ 003~014系列",
-    image: "images/20130630103742150.jpg",
-    category: "多回转",
-    tag: "第三代",
-    desc: "RQⅢ003/RQⅢ008/RQⅢ014智能型直行程执行机构，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。",
+    image: "images/RQIII-003-014.png",，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。",
     specs: [
       ["型号", "RQⅢ003 / RQⅢ008 / RQⅢ014"],
       ["输出转矩", "34 ~ 108 N·m (380VAC)"],

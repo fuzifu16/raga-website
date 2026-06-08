@@ -1068,7 +1068,7 @@ i18nData.specMap["zh-TW"] = {
 i18nData.dlMap["zh-TW"] = {};
 (function(){
   var tw=i18nData.dlMap["zh-TW"];
-  var m={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","系":"係","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別"};
+  var m={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別"};
   var s2t=function(t){return t.split('').map(function(c){return m[c]||c;}).join('');};
   var zhDl=Object.keys(i18nData.dlMap.zh);
   zhDl.forEach(function(k){tw[k]=s2t(k);});
@@ -1183,4 +1183,127 @@ i18nData.descMap = {
     i18nData.descMap.zh[k]=k;
     i18nData.descMap["zh-TW"][k]=s2t(k);
   });
+})();
+
+/* ===== Product card descriptions (products.html) ===== */
+i18nData.cardMap = {
+  "zh": {
+    "card.desc_ra10": "智能型多回转电动执行机构，结构紧凑，适用于中小口径阀门控制",
+    "card.desc_ra40": "中型多回转智能执行机构，输出转矩大，适用于各类工业阀门",
+    "card.desc_ra35": "智能型多回转电动执行机构，性能稳定，适用于中等口径阀门控制",
+    "card.desc_ra100": "大转矩智能执行机构，适用于大型阀门及重载工业应用",
+    "card.desc_ra3": "智能型直行程，转矩34~108N·m，适用于小型阀门控制",
+    "card.desc_rq3": "中型直行程执行机构，转矩203~400N·m，性能稳定可靠",
+    "card.desc_rq060": "大型直行程执行机构，转矩474~610N·m，适用于大口径阀门",
+    "card.desc_rqm3": "大型直行程执行机构，转矩1020N·m，适用于重载工况",
+    "card.desc_rq150": "超大型直行程执行机构，转矩1500~3500N·m，适用于超大口径重载阀门",
+    "card.desc_fen": "控制器与执行器分体设计，适应特殊安装环境，灵活可靠",
+    "card.desc_ra-fen": "RA多回转分体式设计，控制器与执行器分离安装，适应高温、震动等特殊工况",
+    "card.desc_rl-fen": "RL角行程分体式设计，控制器与执行器分离安装，适用于高温、震动、空间受限等特殊工况",
+    "card.desc_rqml06": "智能调节型直行程执行机构，高精度阀门定位控制",
+    "card.desc_rqml12": "智能调节型直行程执行机构，高精度阀门定位控制",
+    "card.desc_rqml54": "智能调节型直行程执行机构，高精度阀门定位控制",
+    "card.desc_rlml10": "精密调节型直行程执行机构，适用于精确开度控制",
+    "card.desc_rlml20": "精密调节型直行程执行机构，支持多种信号输入",
+    "card.desc_rl100": "精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门",
+    "card.desc_rl150": "大转矩输出，精确控制90°旋转阀门，适用于大型蝶阀、球阀等",
+    "card.desc_rl": "精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门",
+    "card.desc_rlm": "智能型角行程执行机构，精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门",
+    "card.desc_rj": "角行程开关型执行机构，结构简单，性价比高",
+    "card.desc_rjm": "支持4-20mA模拟量信号控制，适用于精确开度控制工艺",
+    "card.desc_gear": "配套用减速箱系列，传动效率高，运行噪音低",
+    "card.desc_rib": "RIB系列减速箱，专为阀门电动执行机构配套设计",
+    "card.desc_elec": "核心电气控制部件，确保执行机构可靠运行",
+    "card.desc_ractrl": "集成控制逻辑与通信接口，支持多种控制模式",
+    "card.desc_rapower": "提供稳定可靠的电源供应与保护功能",
+    "card.desc_remote": "非侵入式设定与操作，方便现场调试与参数设置",
+    "card.desc_planet": "精密行星齿轮结构，传动效率高，运行平稳",
+    "card.desc_sun": "执行机构与外部电源信号连接组件"
+  },
+  "en": {
+    "card.desc_ra10": "Smart multi-turn electric actuator, compact design, suitable for small/medium valves",
+    "card.desc_ra40": "Medium multi-turn smart actuator, high output torque, suitable for various industrial valves",
+    "card.desc_ra35": "Smart multi-turn electric actuator, stable performance, suitable for medium-diameter valves",
+    "card.desc_ra100": "High-torque smart actuator, suitable for large valves and heavy-duty industrial applications",
+    "card.desc_ra3": "Smart linear-motion, torque 34~108 N·m, suitable for small valve control",
+    "card.desc_rq3": "Medium linear-motion actuator, torque 203~400 N·m, stable and reliable",
+    "card.desc_rq060": "Large linear-motion actuator, torque 474~610 N·m, suitable for large-diameter valves",
+    "card.desc_rqm3": "Large linear-motion actuator, torque 1020 N·m, suitable for heavy-duty conditions",
+    "card.desc_rq150": "Ultra-large linear-motion actuator, torque 1500~3500 N·m, suitable for ultra-large heavy-duty valves",
+    "card.desc_fen": "Split-type design with separate controller and actuator, adaptable to special installation environments, flexible and reliable",
+    "card.desc_ra-fen": "RA multi-turn split-type design, separate controller and actuator installation, suitable for high temperature and vibration conditions",
+    "card.desc_rl-fen": "RL quarter-turn split-type design, separate controller and actuator installation, suitable for high temperature, vibration and confined spaces",
+    "card.desc_rqml06": "Smart modulating linear-motion actuator, high-precision valve positioning control",
+    "card.desc_rqml12": "Smart modulating linear-motion actuator, high-precision valve positioning control",
+    "card.desc_rqml54": "Smart modulating linear-motion actuator, high-precision valve positioning control",
+    "card.desc_rlml10": "Precision modulating linear-motion actuator, suitable for accurate opening control",
+    "card.desc_rlml20": "Precision modulating linear-motion actuator, supports multiple signal inputs",
+    "card.desc_rl100": "Precisely controls 90° rotary valves, suitable for butterfly and ball valves",
+    "card.desc_rl150": "High torque output, precisely controls 90° rotary valves, suitable for large butterfly and ball valves",
+    "card.desc_rl": "Precisely controls 90° rotary valves, suitable for butterfly and ball valves",
+    "card.desc_rlm": "Smart quarter-turn actuator, precisely controls 90° rotary valves, suitable for butterfly and ball valves",
+    "card.desc_rj": "Quarter-turn on/off actuator, simple structure, cost-effective",
+    "card.desc_rjm": "Supports 4-20mA analog signal control, suitable for precise opening control processes",
+    "card.desc_gear": "Supporting gearbox series, high transmission efficiency, low operating noise",
+    "card.desc_rib": "RIB series gearbox, designed for valve electric actuator support",
+    "card.desc_elec": "Core electrical control components, ensuring reliable actuator operation",
+    "card.desc_ractrl": "Integrated control logic and communication interfaces, supporting multiple control modes",
+    "card.desc_rapower": "Provides stable and reliable power supply and protection",
+    "card.desc_remote": "Non-intrusive setup and operation, convenient for on-site commissioning",
+    "card.desc_planet": "Precision planetary gear structure, high transmission efficiency, smooth operation",
+    "card.desc_sun": "Actuator-to-external power and signal connection component"
+  },
+  "zh-TW": {}
+};
+
+/* ===== Product card tags (products.html) ===== */
+i18nData.tagMap = {
+  "zh": {
+    "tag.smart": "智能型", "tag.gen3": "第三代", "tag.split": "分体式",
+    "tag.modulating": "调节型", "tag.smart2": "智能", "tag.onoff": "开关型",
+    "tag.hiprec": "高精度", "tag.accessory": "配套", "tag.parts": "配件"
+  },
+  "en": {
+    "tag.smart": "Smart", "tag.gen3": "3rd Gen", "tag.split": "Split-type",
+    "tag.modulating": "Modulating", "tag.smart2": "Smart", "tag.onoff": "On/Off",
+    "tag.hiprec": "High Precision", "tag.accessory": "Accessory", "tag.parts": "Parts"
+  },
+  "zh-TW": {
+    "tag.smart": "智能型", "tag.gen3": "第三代", "tag.split": "分體式",
+    "tag.modulating": "調節型", "tag.smart2": "智能", "tag.onoff": "開關型",
+    "tag.hiprec": "高精度", "tag.accessory": "配套", "tag.parts": "配件"
+  }
+};
+
+/* ===== Scroll strip labels (products.html) ===== */
+i18nData.scrollMap = {
+  "zh": {
+    "scroll.split_r": "R系列分体式", "scroll.split_ra": "RA系列分体式",
+    "scroll.split_rl": "RL系列分体式", "scroll.rqml06": "RQMLIII06 调节型",
+    "scroll.rqml12": "RQMLIII12 调节型", "scroll.rlml10": "RLML10 调节型",
+    "scroll.rl100": "RL100 智能型", "scroll.rl150": "RL150 智能型",
+    "scroll.rl": "RL 智能型", "scroll.rj": "RJ 开关型",
+    "scroll.rjm": "配套系列", "scroll.rgw": "RGW 减速箱",
+    "scroll.rib": "RIB 减速箱", "scroll.rq150": "RQIII150~RQ300 系列"
+  },
+  "en": {
+    "scroll.split_r": "R Series Split-type", "scroll.split_ra": "RA Series Split-type",
+    "scroll.split_rl": "RL Series Split-type", "scroll.rqml06": "RQMLIII06 Modulating",
+    "scroll.rqml12": "RQMLIII12 Modulating", "scroll.rlml10": "RLML10 Modulating",
+    "scroll.rl100": "RL100 Smart", "scroll.rl150": "RL150 Smart",
+    "scroll.rl": "RL Smart", "scroll.rj": "RJ On/Off",
+    "scroll.rjm": "Accessory Series", "scroll.rgw": "RGW Gearbox",
+    "scroll.rib": "RIB Gearbox", "scroll.rq150": "RQIII150~RQ300 Series"
+  },
+  "zh-TW": {}
+};
+
+/* Auto-generate zh-TW for cardMap and scrollMap */
+(function(){
+  var m={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別"};
+  var s2t=function(t){return t.split('').map(function(c){return m[c]||c;}).join('');};
+  var zhCard=Object.keys(i18nData.cardMap.zh);
+  zhCard.forEach(function(k){i18nData.cardMap["zh-TW"][k]=s2t(i18nData.cardMap.zh[k]);});
+  var zhScroll=Object.keys(i18nData.scrollMap.zh);
+  zhScroll.forEach(function(k){i18nData.scrollMap["zh-TW"][k]=s2t(i18nData.scrollMap.zh[k]);});
 })();

@@ -26,47 +26,62 @@ const I18N = {
   },
 
   applyLanguage() {
+    var self = this;
     document.documentElement.lang = this.currentLang === 'zh' ? 'zh-CN' : this.currentLang === 'zh-TW' ? 'zh-Hant' : 'en';
 
+    function lookup(key) {
+      var text = self.t(key);
+      if (text !== undefined) return text;
+      // Check sub-maps: cardMap, tagMap, scrollMap, specMap, dlMap, descMap
+      var subMaps = ['cardMap','tagMap','scrollMap','specMap','dlMap','descMap'];
+      for (var i = 0; i < subMaps.length; i++) {
+        var map = i18nData[subMaps[i]];
+        if (map && map[self.currentLang] && map[self.currentLang][key] !== undefined) {
+          return map[self.currentLang][key];
+        }
+      }
+      return undefined;
+    }
+
     // data-i18n: replace textContent
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.dataset.i18n;
-      const text = this.t(key);
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.dataset.i18n;
+      var text = lookup(key);
       if (text !== undefined) el.textContent = text;
     });
 
     // data-i18n-html: replace innerHTML (for elements with <br> etc.)
-    document.querySelectorAll('[data-i18n-html]').forEach(el => {
-      const key = el.dataset.i18nHtml;
-      const text = this.t(key);
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.dataset.i18nHtml;
+      var text = lookup(key);
       if (text !== undefined) el.innerHTML = text;
     });
 
     // data-i18n-placeholder: replace placeholder attribute
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      const key = el.dataset.i18nPlaceholder;
-      const text = this.t(key);
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.dataset.i18nPlaceholder;
+      var text = lookup(key);
       if (text !== undefined) el.placeholder = text;
     });
 
     // data-i18n-value: replace value attribute
-    document.querySelectorAll('[data-i18n-value]').forEach(el => {
-      const key = el.dataset.i18nValue;
-      const text = this.t(key);
+    document.querySelectorAll('[data-i18n-value]').forEach(function(el) {
+      var key = el.dataset.i18nValue;
+      var text = lookup(key);
       if (text !== undefined && el.tagName === 'OPTION' && !el.value) el.textContent = text;
     });
 
     // Update <title>
-    const titleEl = document.querySelector('title[data-i18n]');
+    var titleEl = document.querySelector('title[data-i18n]');
     if (titleEl) {
-      const key = titleEl.dataset.i18n;
-      const text = this.t(key);
-      if (text !== undefined) document.title = text;
+      var tkey = titleEl.dataset.i18n;
+      var ttext = lookup(tkey);
+      if (ttext !== undefined) document.title = ttext;
     }
 
     // Toggle active class on lang switcher
-    document.querySelectorAll('.lang-switch a[data-lang]').forEach(el => {
-      el.classList.toggle('active', el.dataset.lang === this.currentLang);
+    document.querySelectorAll('.lang-switch a[data-lang]').forEach(function(el) {
+      el.classList.toggle('active', el.dataset.lang === self.currentLang);
     });
   },
 

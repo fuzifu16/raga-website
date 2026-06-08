@@ -279,16 +279,26 @@
     renderSection('downloads.drawings_section', allDrawings);
   }
 
-  // Initial render
-  renderDownloadsPage();
-
-  // Hook into language switch for live updates
-  if (I18N && I18N.switchLang) {
-    var origSwitch = I18N.switchLang;
-    I18N.switchLang = function(lang) {
-      origSwitch.call(I18N, lang);
+  // Wait for DOMContentLoaded so I18N.init() runs first
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
       renderDownloadsPage();
-    };
+      hookLangSwitch();
+    });
+  } else {
+    // DOM already loaded (e.g. navigated back)
+    renderDownloadsPage();
+    hookLangSwitch();
+  }
+
+  function hookLangSwitch() {
+    if (I18N && I18N.switchLang) {
+      var origSwitch = I18N.switchLang;
+      I18N.switchLang = function(lang) {
+        origSwitch.call(I18N, lang);
+        renderDownloadsPage();
+      };
+    }
   }
 })();
 </script>

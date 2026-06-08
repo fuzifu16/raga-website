@@ -955,3 +955,98 @@ i18nData.en["footer.series_accessory"] = "Accessories";
 i18nData.zh["nav.dd_accessory_menu2"] = "配套系列";
 i18nData.en["nav.dd_accessory_menu2"] = "Accessories Series";
 i18nData["zh-TW"]["nav.dd_accessory_menu2"] = "配套系列";
+
+/* ===== Spec label translations (zh → en) ===== */
+i18nData.specMap = {
+  "zh": {
+    "传动比": "传动比", "位置重复性": "位置重复性", "供电电源": "供电电源",
+    "全行程时间": "全行程时间", "动作角度": "动作角度", "回差": "回差",
+    "型号": "型号", "基本误差": "基本误差", "工作制式": "工作制式",
+    "控制器与执行器距离": "控制器与执行器距离", "控制方式": "控制方式",
+    "死区": "死区", "润滑方式": "润滑方式", "环境温度": "环境温度",
+    "电机功率": "电机功率", "电机电流": "电机电流", "类型": "类型",
+    "输入信号": "输入信号", "输出转矩": "输出转矩", "输出转速": "输出转速",
+    "连接法兰": "连接法兰", "适配执行器": "适配执行器", "配套型号": "配套型号",
+    "重复性误差": "重复性误差", "防护等级": "防护等级", "防爆标志": "防爆标志"
+  },
+  "en": {
+    "型号": "Model", "输出转矩": "Output Torque", "输出转速": "Output Speed",
+    "电机功率": "Motor Power", "电机电流": "Motor Current", "供电电源": "Power Supply",
+    "控制方式": "Control Mode", "防护等级": "Protection Rating", "防爆标志": "Explosion-proof",
+    "环境温度": "Ambient Temp.", "基本误差": "Basic Error", "重复性误差": "Repeatability Error",
+    "类型": "Type", "传动比": "Gear Ratio", "位置重复性": "Position Repeatability",
+    "动作角度": "Operating Angle", "全行程时间": "Full-stroke Time", "连接法兰": "Mounting Flange",
+    "输入信号": "Input Signal", "回差": "Hysteresis", "死区": "Dead Band",
+    "控制器与执行器距离": "Distance (Controller-Actuator)", "润滑方式": "Lubrication",
+    "工作制式": "Operating Mode", "适配执行器": "Compatible Actuators", "配套型号": "Matching Model"
+  }
+};
+
+/* ===== Download name translations (zh → en) ===== */
+i18nData.dlMap = {
+  "zh": {
+    "RA系列选型手册": "RA系列选型手册", "RA系列安装使用说明书": "RA系列安装使用说明书",
+    "RL系列安装使用说明书": "RL系列安装使用说明书", "R系列分体式安装说明书": "R系列分体式安装说明书",
+    "安装与调试指南": "安装与调试指南", "RL角行程产品说明书": "RL角行程产品说明书",
+    "RL选型安装使用说明书": "RL选型安装使用说明书", "RLM智能型产品说明书": "RLM智能型产品说明书",
+    "RL100智能型角行程产品说明书": "RL100智能型角行程产品说明书",
+    "RL150智能型角行程产品说明书": "RL150智能型角行程产品说明书",
+    "RQ/RQM系列安装使用说明书": "RQ/RQM系列安装使用说明书",
+    "R系列减速箱使用说明书": "R系列减速箱使用说明书",
+    "RQMLIII06产品说明书": "RQMLIII06产品说明书", "RQMLIII12产品说明书": "RQMLIII12产品说明书",
+    "RQMLIII54产品说明书": "RQMLIII54产品说明书", "RLML10产品说明书": "RLML10产品说明书",
+    "RLML20产品说明书": "RLML20产品说明书"
+  },
+  "en": {
+    "RA系列选型手册": "RA Series Selection Guide",
+    "RA系列安装使用说明书": "RA Series Installation Manual",
+    "RL系列安装使用说明书": "RL Series Installation Manual",
+    "R系列分体式安装说明书": "R Series Split-type Installation Manual",
+    "安装与调试指南": "Installation & Commissioning Guide",
+    "RL角行程产品说明书": "RL Quarter-turn Product Manual",
+    "RL选型安装使用说明书": "RL Selection & Installation Guide",
+    "RLM智能型产品说明书": "RLM Smart Product Manual",
+    "RL100智能型角行程产品说明书": "RL100 Smart Quarter-turn Product Manual",
+    "RL150智能型角行程产品说明书": "RL150 Smart Quarter-turn Product Manual",
+    "RQ/RQM系列安装使用说明书": "RQ/RQM Series Installation Manual",
+    "R系列减速箱使用说明书": "R Series Gearbox Manual",
+    "RQMLIII06产品说明书": "RQMLIII06 Product Manual",
+    "RQMLIII12产品说明书": "RQMLIII12 Product Manual",
+    "RQMLIII54产品说明书": "RQMLIII54 Product Manual",
+    "RLML10产品说明书": "RLML10 Product Manual",
+    "RLML20产品说明书": "RLML20 Product Manual"
+  }
+};
+
+/* Generate EN download names for drawing-type files automatically */
+(function() {
+  var enDl = i18nData.dlMap.en;
+  // Dimension drawings: X外形图 → X Dimension Drawing
+  var zhDl = [
+    "RAIII13A外形图","RAIII14A外形图","RAIII30A外形图",
+    "RAIII30A-RGW6-02","RAIII30A-RGW7-02",
+    "RAIII35A-RGW8-02","RAIII40A-RGW8-02","RAIII40A-RGW8-03",
+    "RAIII70A-RGW8-02","RAIII70A-RGW8-03","RAIII70A-RGW9-02",
+    "RAⅢ30A-RGW6减速箱外形图",
+    "RF10分体外形图","RF10-分体外形图",
+    "RL10系列外形图","RL80系列外形图","RL150系列外形图",
+    "RQ03外形图","RQ04外形图","RQ06外形图","RQ150外形图",
+    "RQ03-RGW3外形图","RQ03-RGW4R外形图","RQ03-RGW4外形图",
+    "RQ03-RGW5R外形图","RQ03-RGW5外形图","RQ03-RGW6R外形图",
+    "RQ04-RGW4R外形图","RQ04-RGW4外形图","RQ04-RGW5R外形图",
+    "RQ04-RGW5外形图","RQ04-RGW6R外形图","RQ04-RGW6外形图",
+    "RQ04-RGW7R外形图","RQ04-RGW7外形图",
+    "RQ06-RGW7R外形图","RQ06-RGW7外形图","RQ06-RGW8R外形图",
+    "RQ06-RGW8外形图","RQ06-RGW9外形图",
+    "RQ100-RGW8R外形图","RQ100-RGW8外形图",
+    "RQ150-RGW10外形图","RQ150-RGW9外形图",
+    "RQML06直行程外形图","RQML12直行程外形图","RQML54直行程外形图"
+  ];
+  zhDl.forEach(function(zh) {
+    var en = zh.replace(/外形图$/," Dimension Drawing")
+              .replace(/直行程外形图$/," Linear-motion Dimension Drawing")
+              .replace(/减速箱外形图$/," Gearbox Dimension Drawing");
+    enDl[zh] = en;
+    i18nData.dlMap.zh[zh] = zh;
+  });
+})();

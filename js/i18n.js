@@ -1268,6 +1268,53 @@ i18nData.zh["name.sun-plate"] = "葵花接盘";
 i18nData.en["name.sun-plate"] = "Sunflower Connector";
 i18nData["zh-TW"]["name.sun-plate"] = "葵花接盤";
 
+/* ===== Downloads page UI translations ===== */
+i18nData.zh["downloads.btn_preview"] = "预览";
+i18nData.en["downloads.btn_preview"] = "Preview";
+i18nData["zh-TW"]["downloads.btn_preview"] = "預覽";
+i18nData.zh["downloads.btn_download"] = "下载";
+i18nData.en["downloads.btn_download"] = "Download";
+i18nData["zh-TW"]["downloads.btn_download"] = "下載";
+i18nData.zh["downloads.deploy_pending"] = "下载功能待部署";
+i18nData.en["downloads.deploy_pending"] = "Download pending deployment";
+i18nData["zh-TW"]["downloads.deploy_pending"] = "下載功能待部署";
+i18nData.zh["downloads.company_section"] = "公司宣传册";
+i18nData.en["downloads.company_section"] = "Company Brochure";
+i18nData["zh-TW"]["downloads.company_section"] = "公司宣傳冊";
+i18nData.zh["downloads.company_material"] = "公司宣传资料";
+i18nData.en["downloads.company_material"] = "Company Brochure Material";
+i18nData["zh-TW"]["downloads.company_material"] = "公司宣傳資料";
+i18nData.zh["downloads.drawings_section"] = "所有外形图";
+i18nData.en["downloads.drawings_section"] = "All Dimension Drawings";
+i18nData["zh-TW"]["downloads.drawings_section"] = "所有外形圖";
+i18nData.zh["downloads.file_catalog"] = "上海瑞基瑞然样本";
+i18nData.en["downloads.file_catalog"] = "Shanghai Ruiji Ruiran Catalog";
+i18nData["zh-TW"]["downloads.file_catalog"] = "上海瑞基瑞然樣本";
+i18nData.zh["downloads.file_brochure"] = "瑞基RAGA宣传册";
+i18nData.en["downloads.file_brochure"] = "RAGA Brochure";
+i18nData["zh-TW"]["downloads.file_brochure"] = "瑞基RAGA宣傳冊";
+i18nData.zh["downloads.file_training"] = "RAⅢ系列智能型电动执行器培训手册";
+i18nData.en["downloads.file_training"] = "RAⅢ Smart Actuator Training Manual";
+i18nData["zh-TW"]["downloads.file_training"] = "RAⅢ系列智能型電動執行器培訓手冊";
+i18nData.zh["downloads.series_ra"] = "RA系列（多回转）";
+i18nData.en["downloads.series_ra"] = "RA Series (Multi-turn)";
+i18nData["zh-TW"]["downloads.series_ra"] = "RA系列（多回轉）";
+i18nData.zh["downloads.series_rq"] = "RQ系列（直行程）";
+i18nData.en["downloads.series_rq"] = "RQ Series (Linear-motion)";
+i18nData["zh-TW"]["downloads.series_rq"] = "RQ系列（直行程）";
+i18nData.zh["downloads.series_rl"] = "RL系列（角行程）";
+i18nData.en["downloads.series_rl"] = "RL Series (Quarter-turn)";
+i18nData["zh-TW"]["downloads.series_rl"] = "RL系列（角行程）";
+i18nData.zh["downloads.series_modulating"] = "调节型系列";
+i18nData.en["downloads.series_modulating"] = "Modulating Series";
+i18nData["zh-TW"]["downloads.series_modulating"] = "調節型系列";
+i18nData.zh["downloads.series_onoff"] = "开关型系列";
+i18nData.en["downloads.series_onoff"] = "On-Off Series";
+i18nData["zh-TW"]["downloads.series_onoff"] = "開關型系列";
+i18nData.zh["downloads.series_accessories"] = "配件系列";
+i18nData.en["downloads.series_accessories"] = "Accessories";
+i18nData["zh-TW"]["downloads.series_accessories"] = "配件系列";
+
 /* ===== Product card descriptions (products.html) ===== */
 i18nData.cardMap = {
   "zh": {
@@ -1390,3 +1437,8 @@ i18nData.scrollMap = {
   var zhScroll=Object.keys(i18nData.scrollMap.zh);
   zhScroll.forEach(function(k){i18nData.scrollMap["zh-TW"][k]=s2t(i18nData.scrollMap.zh[k]);});
 })();
+
+/* preview.load_error */
+i18nData.zh["preview.load_error"] = "加载失败";
+i18nData.en["preview.load_error"] = "Failed to load";
+i18nData["zh-TW"]["preview.load_error"] = "加載失敗";

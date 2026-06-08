@@ -210,39 +210,57 @@
 
   document.getElementById('detail-desc').textContent = product.desc;
 
-  // Specs table
-  const specsTbody = document.getElementById('detail-specs');
-  product.specs.forEach(spec => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = '<td>' + spec[0] + '</td><td>' + spec[1] + '</td>';
-    specsTbody.appendChild(tr);
-  });
+  // --- Render product detail (specs + downloads) with i18n support ---
+  function renderProductDetail() {
+    var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
 
-  // Downloads
-  const downloadsDiv = document.getElementById('detail-downloads');
-  function getDownloadLang() {
-    var p = new URLSearchParams(window.location.search);
-    var u = p.get('lang');
-    if (u === 'en' || u === 'zh') return u;
-    try { var s = localStorage.getItem('raga_lang'); if (s === 'en' || s === 'zh') return s; } catch(e) {}
-    return 'zh';
-  }
-  var dlLang = getDownloadLang();
-  var dlBtnText = dlLang === 'en' ? 'Download' : '下载';
-  var dlNoneText = dlLang === 'en' ? 'No downloads available' : '暂无资料下载';
-  if (product.downloads && product.downloads.length) {
-    product.downloads.filter(dl => dl.icon !== '📐').forEach(dl => {
-      const item = document.createElement('div');
-      item.className = 'download-item';
-      item.innerHTML =
-        '<div class="file-info"><span class="file-icon">' + dl.icon + '</span><div><div class="file-name">' + dl.name + '</div><div class="file-size">' + dl.size + '</div></div></div>' +
-        (dl.url
-          ? '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
-          : '<a href="#" onclick="alert(\'Download feature coming soon\');return false;" class="btn btn-sm btn-primary">' + dlBtnText + '</a>');
-      downloadsDiv.appendChild(item);
+    // Specs table
+    var specsTbody = document.getElementById('detail-specs');
+    specsTbody.innerHTML = '';
+    product.specs.forEach(function(spec) {
+      var label = spec[0];
+      if (i18nData && i18nData.specMap && i18nData.specMap[lang]) {
+        label = i18nData.specMap[lang][spec[0]] || spec[0];
+      }
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + label + '</td><td>' + spec[1] + '</td>';
+      specsTbody.appendChild(tr);
     });
-  } else {
-    downloadsDiv.innerHTML = '<p style="color:var(--gray-500);">' + dlNoneText + '</p>';
+
+    // Downloads
+    var downloadsDiv = document.getElementById('detail-downloads');
+    downloadsDiv.innerHTML = '';
+    var dlBtnText = lang === 'en' ? 'Download' : '下载';
+    var dlNoneText = lang === 'en' ? 'No downloads available' : '暂无资料下载';
+    if (product.downloads && product.downloads.length) {
+      product.downloads.filter(function(dl) { return dl.icon !== '\uD83D\uDCD0'; }).forEach(function(dl) {
+        var dlName = dl.name;
+        if (i18nData && i18nData.dlMap && i18nData.dlMap[lang]) {
+          dlName = i18nData.dlMap[lang][dl.name] || dl.name;
+        }
+        var item = document.createElement('div');
+        item.className = 'download-item';
+        item.innerHTML =
+          '<div class="file-info"><span class="file-icon">' + dl.icon + '</span><div><div class="file-name">' + dlName + '</div><div class="file-size">' + dl.size + '</div></div></div>' +
+          (dl.url
+            ? '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
+            : '<a href="#" onclick="alert(\'Download feature coming soon\');return false;" class="btn btn-sm btn-primary">' + dlBtnText + '</a>');
+        downloadsDiv.appendChild(item);
+      });
+    } else {
+      downloadsDiv.innerHTML = '<p style="color:var(--gray-500);">' + dlNoneText + '</p>';
+    }
+  }
+
+  renderProductDetail();
+
+  // Re-render when user switches language
+  if (I18N && I18N.switchLang) {
+    var _origSwitch = I18N.switchLang;
+    I18N.switchLang = function(lang) {
+      _origSwitch.call(I18N, lang);
+      renderProductDetail();
+    };
   }
 })();
 </script>

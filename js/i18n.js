@@ -1175,15 +1175,98 @@ i18nData.descMap = {
 
 /* Populate zh (identity) and zh-TW (simplified->traditional) */
 (function(){
-  var m={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","系":"係","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別","处":"處"};
-  var s2t=function(t){return t.split('').map(function(c){return m[c]||c;}).join('');};
+  var m2={"机":"機","构":"構","电":"電","气":"氣","阀":"閥","门":"門","闸":"閘","适":"適","无":"無","开":"開","盖":"蓋","调":"調","试":"試","专":"專","为":"為","设":"設","计":"計","转":"轉","紧":"緊","轻":"輕","积":"積","结":"結","远":"遠","处":"處","广":"廣","应":"應","产":"產","业":"業","动":"動","态":"態","诊":"診","断":"斷","显":"顯","护":"護","级":"級","标":"標","环":"環","温":"溫","误":"誤","复":"複","连":"連","号":"號","关":"關","统":"統","对":"對","实":"實","现":"現","监":"監","选":"選","响":"響","灵":"靈","维":"維","执":"執","负":"負","载":"載","质":"質","达":"達","检":"檢","测":"測","验":"驗","认":"認","证":"證","润":"潤","齿":"齒","轮":"輪","减":"減","噪":"噪","声":"聲","寿":"壽","组":"組","稳":"穩","输":"輸","范":"範","围":"圍","场":"場","况":"況","总":"總","线":"線","网":"網","运":"運","数":"數","据":"據","万":"萬","与":"與","风":"風","险":"險","严":"嚴","蚀":"蝕","剂":"劑","缩":"縮","仅":"僅","体":"體","预":"預","警":"警","马":"馬","达":"達","驱":"驅","领":"領","导":"導","优":"優","创":"創","经":"經","验":"驗","际":"際","难":"難","获":"獲","权":"權","节":"節","约":"約","压":"壓","丝":"絲","锈":"鏽","图":"圖","确":"確","别":"別","处":"處"};
+  var s2t2=function(t){return t.split('').map(function(c){return m2[c]||c;}).join('');};
   var enKeys=Object.keys(i18nData.descMap.en);
   i18nData.descMap["zh-TW"]={};
   enKeys.forEach(function(k){
     i18nData.descMap.zh[k]=k;
-    i18nData.descMap["zh-TW"][k]=s2t(k);
+    i18nData.descMap["zh-TW"][k]=s2t2(k);
   });
 })();
+
+/* ===== Product name translations (all pages) ===== */
+i18nData.zh["name.ra3"] = "RQⅢ 003~014系列";
+i18nData.en["name.ra3"] = "RQⅢ 003~014 Series";
+i18nData["zh-TW"]["name.ra3"] = "RQⅢ 003~014系列";
+i18nData.zh["name.rq3"] = "RQⅢ 020~040系列";
+i18nData.en["name.rq3"] = "RQⅢ 020~040 Series";
+i18nData["zh-TW"]["name.rq3"] = "RQⅢ 020~040系列";
+i18nData.zh["name.rq060"] = "RQⅢ 060系列";
+i18nData.en["name.rq060"] = "RQⅢ 060 Series";
+i18nData["zh-TW"]["name.rq060"] = "RQⅢ 060系列";
+i18nData.zh["name.rqm3"] = "RQⅢ 100系列";
+i18nData.en["name.rqm3"] = "RQⅢ 100 Series";
+i18nData["zh-TW"]["name.rqm3"] = "RQⅢ 100系列";
+i18nData.zh["name.rq150"] = "RQⅢ150~RQ300系列";
+i18nData.en["name.rq150"] = "RQⅢ 150~RQ300 Series";
+i18nData["zh-TW"]["name.rq150"] = "RQⅢ150~RQ300系列";
+i18nData.zh["name.fen"] = "R系列分体式";
+i18nData.en["name.fen"] = "R Series Split-type";
+i18nData["zh-TW"]["name.fen"] = "R系列分體式";
+i18nData.zh["name.ra-fen"] = "RA系列分体式";
+i18nData.en["name.ra-fen"] = "RA Series Split-type";
+i18nData["zh-TW"]["name.ra-fen"] = "RA系列分體式";
+i18nData.zh["name.rl-fen"] = "RL系列分体式";
+i18nData.en["name.rl-fen"] = "RL Series Split-type";
+i18nData["zh-TW"]["name.rl-fen"] = "RL系列分體式";
+i18nData.zh["name.rqml06"] = "RQMLIII06调节型";
+i18nData.en["name.rqml06"] = "RQMLIII06 Modulating";
+i18nData["zh-TW"]["name.rqml06"] = "RQMLIII06調節型";
+i18nData.zh["name.rqml12"] = "RQMLIII12调节型";
+i18nData.en["name.rqml12"] = "RQMLIII12 Modulating";
+i18nData["zh-TW"]["name.rqml12"] = "RQMLIII12調節型";
+i18nData.zh["name.rqml54"] = "RQMLIII54调节型";
+i18nData.en["name.rqml54"] = "RQMLIII54 Modulating";
+i18nData["zh-TW"]["name.rqml54"] = "RQMLIII54調節型";
+i18nData.zh["name.rlml10"] = "RLML10调节型";
+i18nData.en["name.rlml10"] = "RLML10 Modulating";
+i18nData["zh-TW"]["name.rlml10"] = "RLML10調節型";
+i18nData.zh["name.rlml20"] = "RLML20调节型";
+i18nData.en["name.rlml20"] = "RLML20 Modulating";
+i18nData["zh-TW"]["name.rlml20"] = "RLML20調節型";
+i18nData.zh["name.rl100"] = "RL100智能型角行程";
+i18nData.en["name.rl100"] = "RL100 Smart Quarter-turn";
+i18nData["zh-TW"]["name.rl100"] = "RL100智能型角行程";
+i18nData.zh["name.rl150"] = "RL150智能型角行程";
+i18nData.en["name.rl150"] = "RL150 Smart Quarter-turn";
+i18nData["zh-TW"]["name.rl150"] = "RL150智能型角行程";
+i18nData.zh["name.rl"] = "RL智能角行程";
+i18nData.en["name.rl"] = "RL Smart Quarter-turn";
+i18nData["zh-TW"]["name.rl"] = "RL智能角行程";
+i18nData.zh["name.rlm"] = "RLM智能型";
+i18nData.en["name.rlm"] = "RLM Smart";
+i18nData["zh-TW"]["name.rlm"] = "RLM智能型";
+i18nData.zh["name.rj"] = "RJ开关型";
+i18nData.en["name.rj"] = "RJ On/Off";
+i18nData["zh-TW"]["name.rj"] = "RJ開關型";
+i18nData.zh["name.rjm"] = "配套系列";
+i18nData.en["name.rjm"] = "Accessories Series";
+i18nData["zh-TW"]["name.rjm"] = "配套系列";
+i18nData.zh["name.gear"] = "RGW系列减速箱";
+i18nData.en["name.gear"] = "RGW Series Gearbox";
+i18nData["zh-TW"]["name.gear"] = "RGW系列減速箱";
+i18nData.zh["name.rib"] = "RIB系列减速箱";
+i18nData.en["name.rib"] = "RIB Series Gearbox";
+i18nData["zh-TW"]["name.rib"] = "RIB系列減速箱";
+i18nData.zh["name.elec-assy"] = "电器总承";
+i18nData.en["name.elec-assy"] = "Electrical Assembly";
+i18nData["zh-TW"]["name.elec-assy"] = "電器總承";
+i18nData.zh["name.ra-ctrl"] = "RA主控板";
+i18nData.en["name.ra-ctrl"] = "RA Control Board";
+i18nData["zh-TW"]["name.ra-ctrl"] = "RA主控板";
+i18nData.zh["name.ra-power"] = "RA电源板";
+i18nData.en["name.ra-power"] = "RA Power Board";
+i18nData["zh-TW"]["name.ra-power"] = "RA電源板";
+i18nData.zh["name.remote"] = "遥控器";
+i18nData.en["name.remote"] = "Remote Controller";
+i18nData["zh-TW"]["name.remote"] = "遙控器";
+i18nData.zh["name.planet-gear"] = "行星轮总承";
+i18nData.en["name.planet-gear"] = "Planetary Gear Assembly";
+i18nData["zh-TW"]["name.planet-gear"] = "行星輪總承";
+i18nData.zh["name.sun-plate"] = "葵花接盘";
+i18nData.en["name.sun-plate"] = "Sunflower Connector";
+i18nData["zh-TW"]["name.sun-plate"] = "葵花接盤";
 
 /* ===== Product card descriptions (products.html) ===== */
 i18nData.cardMap = {

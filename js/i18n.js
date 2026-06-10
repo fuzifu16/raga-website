@@ -599,6 +599,35 @@ i18nData.en["machining.title"] = "Precision Machining Center";
 i18nData.en["machining.breadcrumb"] = "Machining Center";
 i18nData.en["machining.desc"] = "Equipped with advanced processing equipment to ensure component accuracy and product quality";
 i18nData.en["machining.back"] = "← Back to Home";
+i18nData.en["machining.subtitle"] = "Machining Center";
+i18nData.en["machining.label"] = "Machining Center";
+i18nData.en["machining.label1"] = "Machining Center 1";
+i18nData.en["machining.label2"] = "Machining Center 2";
+i18nData.en["machining.label_h"] = "Horizontal Machining Center";
+i18nData.en["machining.label_h2"] = "Horizontal Machining";
+i18nData.en["machining.label_v"] = "Vertical Machining Center";
+
+/* Production Line page */
+i18nData.en["production.title"] = "Final Assembly Line";
+i18nData.en["production.breadcrumb"] = "Assembly Line";
+i18nData.en["production.subtitle"] = "Final Assembly Line";
+i18nData.en["production.desc"] = "Modern final assembly line ensuring strict assembly and commissioning for every product";
+i18nData.en["production.back"] = "← Back to Home";
+
+/* Assembly Line page */
+i18nData.en["assembly.title"] = "Assembly & Commissioning";
+i18nData.en["assembly.breadcrumb"] = "Assembly Line";
+i18nData.en["assembly.subtitle"] = "Assembly & Commissioning";
+i18nData.en["assembly.desc"] = "Professional assembly workshop with strict control over assembly precision and commissioning quality";
+i18nData.en["assembly.back"] = "← Back to Home";
+
+/* Quality Inspection page */
+i18nData.en["quality.title"] = "Quality Inspection";
+i18nData.en["quality.breadcrumb"] = "Quality Inspection";
+i18nData.en["quality.subtitle"] = "Quality Inspection";
+i18nData.en["quality.desc"] = "Professional quality inspection equipment ensuring every product passes rigorous testing before delivery";
+i18nData.en["quality.back"] = "← Back to Home";
+i18nData.en["quality.label"] = "Inspection Equipment";
 
 /* Section subtitles */
 i18nData.en["section.cases_subtitle"] = "Case Studies";
@@ -655,6 +684,35 @@ i18nData.zh["machining.title"] = "精密加工中心";
 i18nData.zh["machining.breadcrumb"] = "精密加工中心";
 i18nData.zh["machining.desc"] = "精密加工中心配备先进加工设备，确保零部件加工精度和产品品质";
 i18nData.zh["machining.back"] = "← 返回首页";
+i18nData.zh["machining.subtitle"] = "精密加工中心";
+i18nData.zh["machining.label"] = "加工中心";
+i18nData.zh["machining.label1"] = "加工中心一";
+i18nData.zh["machining.label2"] = "加工中心二";
+i18nData.zh["machining.label_h"] = "卧式加工中心";
+i18nData.zh["machining.label_h2"] = "卧式加工";
+i18nData.zh["machining.label_v"] = "立式加工中心";
+
+/* Production Line page */
+i18nData.zh["production.title"] = "总装生产线";
+i18nData.zh["production.breadcrumb"] = "总装生产线";
+i18nData.zh["production.subtitle"] = "总装生产线";
+i18nData.zh["production.desc"] = "现代化总装生产线，确保每一台产品都经过严格的装配和调试";
+i18nData.zh["production.back"] = "← 返回首页";
+
+/* Assembly Line page */
+i18nData.zh["assembly.title"] = "装配生产线";
+i18nData.zh["assembly.breadcrumb"] = "装配生产线";
+i18nData.zh["assembly.subtitle"] = "装配生产线";
+i18nData.zh["assembly.desc"] = "专业装配调试车间，严格把控每一台产品的装配精度与调试质量";
+i18nData.zh["assembly.back"] = "← 返回首页";
+
+/* Quality Inspection page */
+i18nData.zh["quality.title"] = "质量检测设备";
+i18nData.zh["quality.breadcrumb"] = "质量检测设备";
+i18nData.zh["quality.subtitle"] = "质量检测设备";
+i18nData.zh["quality.desc"] = "专业质量检测设备，确保每一台产品出厂前都经过严格检测";
+i18nData.zh["quality.back"] = "← 返回首页";
+i18nData.zh["quality.label"] = "检测设备";
 i18nData.zh["section.cases_subtitle"] = "行业应用案例";
 i18nData.zh["section.contact_subtitle"] = "联系我们";
 i18nData.zh["downloads.subtitle"] = "资料下载";

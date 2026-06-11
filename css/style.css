@@ -218,6 +218,10 @@ a { color: inherit; }
   display: flex;
   align-items: center;
 }
+/* products.html专用：为底部滚动条留空间 */
+.page-hero.has-scroll {
+  padding-bottom: 230px;
+}
 .page-hero-bg {
   position: absolute;
   inset: 0;
@@ -543,9 +547,13 @@ a { color: inherit; }
 /* ===== Product Scroll Strip (Marquee) ===== */
 .product-scroll-wrapper {
   overflow: hidden;
-  position: relative;
-  background: var(--white);
-  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+  z-index: 3;
 }
 .product-scroll-wrapper::before {
   content: '';
@@ -556,7 +564,7 @@ a { color: inherit; }
   z-index: 2;
   pointer-events: none;
   left: 0;
-  background: linear-gradient(to right, var(--white), transparent);
+  background: linear-gradient(to right, rgba(0,0,0,0.3), transparent);
 }
 .product-scroll-wrapper::after {
   content: '';
@@ -567,7 +575,7 @@ a { color: inherit; }
   z-index: 2;
   pointer-events: none;
   right: 0;
-  background: linear-gradient(to left, var(--white), transparent);
+  background: linear-gradient(to left, rgba(0,0,0,0.3), transparent);
 }
 .product-scroll-strip {
   overflow: visible;

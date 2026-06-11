@@ -206,8 +206,7 @@ const PRODUCTS = {
   "rjm": {
     id: "rjm",
     name: "RJM调节型",
-    image: "images/rjm-1.png",
-    images: ["images/rjm-1.png", "images/rjm-2.png", "images/rjm-3.png"],
+    image: "images/20130702091501103.jpg",
     category: "配套",
     tag: "高精度",
     desc: "RJM调节型智能执行机构，支持4-20mA模拟量信号控制，调节精度高，响应速度快。适用于需要对阀门开度进行精确控制的工艺流程。",

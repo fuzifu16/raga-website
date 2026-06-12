@@ -905,7 +905,7 @@ a { color: inherit; }
 .cta-banner-bg {
   position: absolute;
   inset: 0;
-  background-size: contain;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0d0d1a;

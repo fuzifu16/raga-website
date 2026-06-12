@@ -1237,7 +1237,7 @@ a { color: inherit; }
 .case-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(26,26,46,0.6) 50%, rgba(26,26,46,0.3) 100%);
+  background: linear-gradient(135deg, rgba(26,26,46,0.55) 0%, rgba(26,26,46,0.28) 50%, rgba(26,26,46,0.08) 100%);
 }
 .case-card-body {
   position: relative;

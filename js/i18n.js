@@ -1098,7 +1098,7 @@ i18nData.dlMap = {
     "RAIII35A-RGW8-02","RAIII40A-RGW8-02","RAIII40A-RGW8-03",
     "RAIII70A-RGW8-02","RAIII70A-RGW8-03","RAIII70A-RGW9-02",
     "RAⅢ30A-RGW6减速箱外形图",
-    "RF10分体外形图","RF10-分体外形图",
+    "RF10分体外形图",
     "RL10系列外形图","RL80系列外形图","RL150系列外形图",
     "RQ03外形图","RQ04外形图","RQ06外形图","RQ150外形图",
     "RQ03-RGW3外形图","RQ03-RGW4R外形图","RQ03-RGW4外形图",

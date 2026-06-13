@@ -635,13 +635,6 @@ var ra3Add = [
 ];
 ra3Add.forEach(function(e){ PRODUCTS.ra3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
 
-// === Fen add ===
-var fenAdd = [
-  ["RF10分体外形图", "138 KB", "files/RF10 分体外形图.pdf"],
-  ["RF10-分体外形图", "138 KB", "files/RF10- 分体外形图.pdf"]
-];
-fenAdd.forEach(function(e){ PRODUCTS.fen.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
-
 // === RQ3 add ===
 var rq3Add = [
   ["RQ03-RGW3外形图", "251 KB", "files/RQ03-RGW3外形图.pdf"],

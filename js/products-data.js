@@ -243,7 +243,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "rq150": {
@@ -267,7 +268,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "rj": {
@@ -338,7 +340,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQ/RQM系列安装使用说明书", size: "910 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
+      { name: "RQ/RQM系列安装使用说明书", size: "910 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "ra3": {
@@ -361,7 +364,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
+      { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "fen": {

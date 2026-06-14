@@ -629,6 +629,7 @@ i18nData.en["quality.subtitle"] = "Quality Inspection";
 i18nData.en["quality.desc"] = "Professional quality inspection equipment ensuring every product passes rigorous testing before delivery";
 i18nData.en["quality.back"] = "← Back to Home";
 i18nData.en["quality.label"] = "Inspection Equipment";
+i18nData.en["quality.label_test"] = "Test Equipment";
 
 /* Section subtitles */
 i18nData.en["section.cases_subtitle"] = "Case Studies";
@@ -715,6 +716,7 @@ i18nData.zh["quality.subtitle"] = "质量检测设备";
 i18nData.zh["quality.desc"] = "专业质量检测设备，确保每一台产品出厂前都经过严格检测";
 i18nData.zh["quality.back"] = "← 返回首页";
 i18nData.zh["quality.label"] = "检测设备";
+i18nData.zh["quality.label_test"] = "测试设备";
 i18nData.zh["section.cases_subtitle"] = "行业应用案例";
 i18nData.zh["section.contact_subtitle"] = "联系我们";
 i18nData.zh["downloads.subtitle"] = "资料下载";
@@ -956,6 +958,7 @@ i18nData["zh-TW"]["quality.back"] = "← 返回首頁";
 i18nData["zh-TW"]["quality.breadcrumb"] = "質量檢測設備";
 i18nData["zh-TW"]["quality.desc"] = "專業質量檢測設備，確保每一臺產品出廠前都經過嚴格檢測";
 i18nData["zh-TW"]["quality.label"] = "檢測設備";
+i18nData["zh-TW"]["quality.label_test"] = "測試設備";
 i18nData["zh-TW"]["quality.subtitle"] = "質量檢測設備";
 i18nData["zh-TW"]["quality.title"] = "質量檢測設備";
 i18nData["zh-TW"]["section.about_desc"] = "專注工業自動化領域，打造高品質智能執行機構";

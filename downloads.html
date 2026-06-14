@@ -255,11 +255,17 @@
     // Product series sections
     series.forEach(function(s) {
       var items = [];
+      var seen = {}; // 同一系列内去重：同名文件只保留第一个
       s.products.forEach(function(pid) {
         var product = PRODUCTS[pid];
         if (!product || !product.downloads || !product.downloads.length) return;
         product.downloads.forEach(function(dl) {
-          if (dl.icon !== '📐') items.push({ dl: dl, product: product });
+          if (dl.icon !== '📐') {
+            if (!seen[dl.name]) {
+              seen[dl.name] = true;
+              items.push({ dl: dl, product: product });
+            }
+          }
         });
       });
       renderSection(s.key, items);

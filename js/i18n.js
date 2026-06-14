@@ -606,6 +606,7 @@ i18nData.en["machining.label2"] = "Machining Center 2";
 i18nData.en["machining.label_h"] = "Horizontal Machining Center";
 i18nData.en["machining.label_h2"] = "Horizontal Machining";
 i18nData.en["machining.label_v"] = "Vertical Machining Center";
+i18nData.en["machining.label_smt"] = "SMT Machine";
 
 /* Production Line page */
 i18nData.en["production.title"] = "Final Assembly Line";
@@ -691,6 +692,7 @@ i18nData.zh["machining.label2"] = "加工中心二";
 i18nData.zh["machining.label_h"] = "卧式加工中心";
 i18nData.zh["machining.label_h2"] = "卧式加工";
 i18nData.zh["machining.label_v"] = "立式加工中心";
+i18nData.zh["machining.label_smt"] = "贴片机";
 
 /* Production Line page */
 i18nData.zh["production.title"] = "总装生产线";
@@ -882,6 +884,7 @@ i18nData["zh-TW"]["machining.label2"] = "加工中心二";
 i18nData["zh-TW"]["machining.label_h"] = "臥式加工中心";
 i18nData["zh-TW"]["machining.label_h2"] = "臥式加工";
 i18nData["zh-TW"]["machining.label_v"] = "立式加工中心";
+i18nData["zh-TW"]["machining.label_smt"] = "貼片機";
 i18nData["zh-TW"]["machining.title"] = "精密加工中心";
 i18nData["zh-TW"]["meta.title_about"] = "公司簡介 - 瑞基測控 RAGA";
 i18nData["zh-TW"]["meta.title_cases"] = "使用案例 - 瑞基測控 RAGA";
@@ -1065,7 +1068,8 @@ i18nData.dlMap = {
     "R系列减速箱使用说明书": "R系列减速箱使用说明书",
     "RQMLIII06产品说明书": "RQMLIII06产品说明书", "RQMLIII12产品说明书": "RQMLIII12产品说明书",
     "RQMLIII54产品说明书": "RQMLIII54产品说明书", "RLML10产品说明书": "RLML10产品说明书",
-    "RLML20产品说明书": "RLML20产品说明书"
+    "RLML20产品说明书": "RLML20 Product Manual",
+    "RAIII系列接线图": "RAIII系列接线图",
   },
   "en": {
     "RA系列选型手册": "RA Series Selection Guide",
@@ -1084,7 +1088,8 @@ i18nData.dlMap = {
     "RQMLIII12产品说明书": "RQMLIII12 Product Manual",
     "RQMLIII54产品说明书": "RQMLIII54 Product Manual",
     "RLML10产品说明书": "RLML10 Product Manual",
-    "RLML20产品说明书": "RLML20 Product Manual"
+    "RLML20产品说明书": "RLML20 Product Manual",
+    "RAIII系列接线图": "RAIII Series Wiring Diagram"
   }
 };
 

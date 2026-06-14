@@ -47,7 +47,8 @@ const PRODUCTS = {
       ["重复性误差", "≤ 1%"]
     ],
     downloads: [
-      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
+      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "ra100": {
@@ -69,7 +70,8 @@ const PRODUCTS = {
       ["环境温度", "-30℃ ~ +70℃"]
     ],
     downloads: [
-      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
+      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "ra35": {
@@ -92,7 +94,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" }
+      { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
     ]
   },
   "rl": {

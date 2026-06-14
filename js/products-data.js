@@ -23,7 +23,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "ra40": {
@@ -48,7 +49,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "ra100": {
@@ -71,7 +73,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "ra35": {
@@ -95,7 +98,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "rl": {
@@ -244,7 +248,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "rq150": {
@@ -269,7 +274,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "rj": {
@@ -317,7 +323,8 @@ const PRODUCTS = {
       { name: "RQ04外形图", size: "249 KB", icon: "📐", url: "files/rq04-dimension.pdf" },
       { name: "RQ06外形图", size: "235 KB", icon: "📐", url: "files/rq06-dimension.pdf" },
       { name: "RQ150外形图", size: "143 KB", icon: "📐", url: "files/rq150-dimension.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "rq060": {
@@ -341,7 +348,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "910 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "ra3": {
@@ -365,7 +373,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
-      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" }
+      { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "fen": {
@@ -385,7 +394,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "R系列分体式安装说明书", size: "1.0 MB", icon: "📄", url: "files/r-series-manual.pdf" },
-      { name: "RF10分体外形图", size: "138 KB", icon: "📐", url: "files/rf-dimension.pdf" }
+      { name: "RF10分体外形图", size: "138 KB", icon: "📐", url: "files/rf-dimension.pdf" },
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "ra-fen": {

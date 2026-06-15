@@ -820,6 +820,8 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 .production-img-wrap img {
   width: 100%;

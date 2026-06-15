@@ -1,4 +1,7 @@
-/* ===== RAGA 瑞基 - i18n Translation Data ===== */
+/i18nData["zh-TW"]["production.label"] = "總裝與裝配生產線";
+i18nData.en["production.label"] = "Assembly & Production";
+i18nData.zh["production.label"] = "总装与装配生产线";
+* ===== RAGA 瑞基 - i18n Translation Data ===== */
 const i18nData = {
   "zh-TW": {},
   "zh": {
@@ -60,7 +63,7 @@ const i18nData = {
     "home.production_subtitle": "生产现场",
     "home.production_title": "生产场景",
     "home.production_desc": "现代化生产线与严格品控体系，确保每一台产品都值得信赖",
-    "home.prod_1": "总装生产线",
+    "home.prod_1": "总装与装配生产线",
     "home.prod_2": "精密加工中心",
     "home.prod_3": "装配生产线",
     "home.prod_4": "质量检测设备",
@@ -243,7 +246,7 @@ const i18nData = {
     "home.production_subtitle": "Production",
     "home.production_title": "Production Scenes",
     "home.production_desc": "Modern production lines and strict quality control ensure every product is trustworthy",
-    "home.prod_1": "Assembly Line",
+    "home.prod_1": "Assembly & Production",
     "home.prod_2": "Precision Machining",
     "home.prod_3": "Testing & Debugging",
     "home.prod_4": "Quality Inspection Equipment",
@@ -609,10 +612,10 @@ i18nData.en["machining.label_v"] = "Vertical Machining Center";
 i18nData.en["machining.label_smt"] = "SMT Machine";
 
 /* Production Line page */
-i18nData.en["production.title"] = "Final Assembly Line";
-i18nData.en["production.breadcrumb"] = "Assembly Line";
-i18nData.en["production.subtitle"] = "Final Assembly Line";
-i18nData.en["production.desc"] = "Modern final assembly line ensuring strict assembly and commissioning for every product";
+i18nData.en["production.title"] = "Assembly & Production Line";
+i18nData.en["production.breadcrumb"] = "Assembly & Production Line";
+i18nData.en["production.subtitle"] = "Assembly & Production Line";
+i18nData.en["production.desc"] = "Modern assembly and production line ensuring strict assembly and commissioning for every product";
 i18nData.en["production.back"] = "← Back to Home";
 
 /* Assembly Line page */
@@ -696,10 +699,10 @@ i18nData.zh["machining.label_v"] = "立式加工中心";
 i18nData.zh["machining.label_smt"] = "贴片机";
 
 /* Production Line page */
-i18nData.zh["production.title"] = "总装生产线";
-i18nData.zh["production.breadcrumb"] = "总装生产线";
-i18nData.zh["production.subtitle"] = "总装生产线";
-i18nData.zh["production.desc"] = "现代化总装生产线，确保每一台产品都经过严格的装配和调试";
+i18nData.zh["production.title"] = "总装与装配生产线";
+i18nData.zh["production.breadcrumb"] = "总装与装配生产线";
+i18nData.zh["production.subtitle"] = "总装与装配生产线";
+i18nData.zh["production.desc"] = "现代化总装与装配生产线，确保每一台产品都经过严格的装配和调试";
 i18nData.zh["production.back"] = "← 返回首页";
 
 /* Assembly Line page */
@@ -868,7 +871,7 @@ i18nData["zh-TW"]["home.news_more"] = "瞭解更多 →";
 i18nData["zh-TW"]["news.view_document"] = "查看詳細文件 →";
 i18nData["zh-TW"]["home.news_subtitle"] = "公司動態";
 i18nData["zh-TW"]["home.news_title"] = "新聞動態";
-i18nData["zh-TW"]["home.prod_1"] = "總裝生產線";
+i18nData["zh-TW"]["home.prod_1"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["home.prod_2"] = "精密加工中心";
 i18nData["zh-TW"]["home.prod_3"] = "裝配生產線";
 i18nData["zh-TW"]["home.prod_4"] = "質量檢測設備";
@@ -941,10 +944,10 @@ i18nData["zh-TW"]["preview.download"] = "下載文件";
 i18nData["zh-TW"]["preview.loading"] = "正在加載文件...";
 i18nData["zh-TW"]["preview.title"] = "文件預覽";
 i18nData["zh-TW"]["production.back"] = "← 返回首頁";
-i18nData["zh-TW"]["production.breadcrumb"] = "總裝生產線";
+i18nData["zh-TW"]["production.breadcrumb"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["production.desc"] = "現代化總裝生產線，確保每一臺產品都經過嚴格的裝配和調試";
-i18nData["zh-TW"]["production.subtitle"] = "總裝生產線";
-i18nData["zh-TW"]["production.title"] = "總裝生產線";
+i18nData["zh-TW"]["production.subtitle"] = "總裝與裝配生產線";
+i18nData["zh-TW"]["production.title"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["products.breadcrumb"] = "公司產品";
 i18nData["zh-TW"]["products.filter_all"] = "全部產品";
 i18nData["zh-TW"]["products.page_title"] = "公司產品";

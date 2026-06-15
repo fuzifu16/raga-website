@@ -1,7 +1,4 @@
-/i18nData["zh-TW"]["production.label"] = "總裝與裝配生產線";
-i18nData.en["production.label"] = "Assembly & Production";
-i18nData.zh["production.label"] = "总装与装配生产线";
-* ===== RAGA 瑞基 - i18n Translation Data ===== */
+/* ===== RAGA 瑞基 - i18n Translation Data ===== */
 const i18nData = {
   "zh-TW": {},
   "zh": {
@@ -617,6 +614,8 @@ i18nData.en["production.breadcrumb"] = "Assembly & Production Line";
 i18nData.en["production.subtitle"] = "Assembly & Production Line";
 i18nData.en["production.desc"] = "Modern assembly and production line ensuring strict assembly and commissioning for every product";
 i18nData.en["production.back"] = "← Back to Home";
+i18nData.en["production.label"] = "Assembly & Production";
+i18nData.en["production.label_smt"] = "SMT Machine";
 
 /* Assembly Line page */
 i18nData.en["assembly.title"] = "Assembly & Commissioning";
@@ -704,6 +703,8 @@ i18nData.zh["production.breadcrumb"] = "总装与装配生产线";
 i18nData.zh["production.subtitle"] = "总装与装配生产线";
 i18nData.zh["production.desc"] = "现代化总装与装配生产线，确保每一台产品都经过严格的装配和调试";
 i18nData.zh["production.back"] = "← 返回首页";
+i18nData.zh["production.label"] = "总装与装配生产线";
+i18nData.zh["production.label_smt"] = "SMT贴片设备";
 
 /* Assembly Line page */
 i18nData.zh["assembly.title"] = "装配生产线";
@@ -948,6 +949,8 @@ i18nData["zh-TW"]["production.breadcrumb"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["production.desc"] = "現代化總裝生產線，確保每一臺產品都經過嚴格的裝配和調試";
 i18nData["zh-TW"]["production.subtitle"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["production.title"] = "總裝與裝配生產線";
+i18nData["zh-TW"]["production.label"] = "總裝與裝配生產線";
+i18nData["zh-TW"]["production.label_smt"] = "SMT貼片設備";
 i18nData["zh-TW"]["products.breadcrumb"] = "公司產品";
 i18nData["zh-TW"]["products.filter_all"] = "全部產品";
 i18nData["zh-TW"]["products.page_title"] = "公司產品";

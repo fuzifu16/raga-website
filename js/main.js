@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hero images to cycle through
     const images = [
       'images/banner-cta.jpg',
-      'images/banner-tech.jpg',
+      'images/3.jpeg',
       'images/hero-industrial.jpg',
       'images/R-C-1.png',
       'images/52.png',

@@ -607,6 +607,7 @@ i18nData.en["machining.label_h"] = "Horizontal Machining Center";
 i18nData.en["machining.label_h2"] = "Horizontal Machining";
 i18nData.en["machining.label_v"] = "Vertical Machining Center";
 i18nData.en["machining.label_smt"] = "SMT Machine";
+i18nData.en["machining.label_cnc"] = "CNC Machining Center";
 
 /* Production Line page */
 i18nData.en["production.title"] = "Assembly & Production Line";
@@ -696,6 +697,7 @@ i18nData.zh["machining.label_h"] = "卧式加工中心";
 i18nData.zh["machining.label_h2"] = "卧式加工";
 i18nData.zh["machining.label_v"] = "立式加工中心";
 i18nData.zh["machining.label_smt"] = "贴片机";
+i18nData.zh["machining.label_cnc"] = "数控加工中心";
 
 /* Production Line page */
 i18nData.zh["production.title"] = "总装与装配生产线";
@@ -891,6 +893,7 @@ i18nData["zh-TW"]["machining.label_h"] = "臥式加工中心";
 i18nData["zh-TW"]["machining.label_h2"] = "臥式加工";
 i18nData["zh-TW"]["machining.label_v"] = "立式加工中心";
 i18nData["zh-TW"]["machining.label_smt"] = "貼片機";
+i18nData["zh-TW"]["machining.label_cnc"] = "數控加工中心";
 i18nData["zh-TW"]["machining.title"] = "精密加工中心";
 i18nData["zh-TW"]["meta.title_about"] = "公司簡介 - 瑞基測控 RAGA";
 i18nData["zh-TW"]["meta.title_cases"] = "使用案例 - 瑞基測控 RAGA";

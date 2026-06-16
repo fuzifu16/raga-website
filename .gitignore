@@ -3,11 +3,12 @@
 Thumbs.db
 *.tmp
 *.log
+*.mbtree
+ffmpeg2pass-*
 
 # 忽略编辑器配置
 .vscode/
 .idea/
 
 # 大视频文件（本地使用，不部署到线上）
-videos/瑞基中文宣传.avi
 videos/raga-promo-web.mp4

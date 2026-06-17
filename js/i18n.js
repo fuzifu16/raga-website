@@ -618,6 +618,7 @@ i18nData.en["production.back"] = "← Back to Home";
 i18nData.en["production.label"] = "Assembly & Production";
 i18nData.en["production.label_smt"] = "SMT Machine";
 i18nData.en["production.label_monitor"] = "Production Monitoring Room";
+i18nData.en["production.label_home"] = "Assembly & Production Line";
 
 /* Assembly Line page */
 i18nData.en["assembly.title"] = "Assembly & Commissioning";
@@ -709,6 +710,7 @@ i18nData.zh["production.back"] = "← 返回首页";
 i18nData.zh["production.label"] = "总装与装配生产线";
 i18nData.zh["production.label_smt"] = "SMT贴片设备";
 i18nData.zh["production.label_monitor"] = "生产监控室";
+i18nData.zh["production.label_home"] = "总装与装配生产线";
 
 /* Assembly Line page */
 i18nData.zh["assembly.title"] = "装配生产线";
@@ -957,6 +959,7 @@ i18nData["zh-TW"]["production.title"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["production.label"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["production.label_smt"] = "SMT貼片設備";
 i18nData["zh-TW"]["production.label_monitor"] = "生產監控室";
+i18nData["zh-TW"]["production.label_home"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["products.breadcrumb"] = "公司產品";
 i18nData["zh-TW"]["products.filter_all"] = "全部產品";
 i18nData["zh-TW"]["products.page_title"] = "公司產品";

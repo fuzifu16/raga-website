@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'images/hero-industrial.jpg',
       'images/R-C-1.png',
       'images/52.png',
+      'images/banner-6.jpeg',
       'images/134.jpg',
       'images/12.jpg'
     ];

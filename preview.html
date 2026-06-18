@@ -534,13 +534,28 @@ a { color: inherit; }
     if (file) {
       document.getElementById('file-name').textContent = name || file;
       document.title = (name || file) + ' - RAGA';
-      var iframe = document.getElementById('pdf-iframe');
-      iframe.src = file;
-      iframe.style.display = 'block';
-      document.querySelector('.preview-loading').style.display = 'none';
-
       var btn = document.getElementById('download-btn');
       btn.href = file;
+
+      // 检查是否为可在线预览的格式（仅 PDF 浏览器能直接渲染）
+      var ext = file.split('.').pop().toLowerCase();
+      var isPreviewable = (ext === 'pdf');
+
+      if (isPreviewable) {
+        var iframe = document.getElementById('pdf-iframe');
+        iframe.src = file;
+        iframe.style.display = 'block';
+        document.querySelector('.preview-loading').style.display = 'none';
+      } else {
+        // 非 PDF 格式（DWG、3D等），不载入 iframe，提示下载
+        document.querySelector('.preview-loading').style.display = 'none';
+        var frame = document.getElementById('preview-frame');
+        frame.innerHTML = '<div style="text-align:center;padding:80px 20px;color:var(--gray-600);">' +
+          '<div style="font-size:48px;margin-bottom:16px;">📁</div>' +
+          '<p style="font-size:18px;font-weight:600;margin-bottom:8px;">此格式不支持在线预览</p>' +
+          '<p style="font-size:14px;color:var(--gray-500);">请点击下方「下载文件」按钮下载后查看</p>' +
+          '</div>';
+      }
     }
   } catch(e) {
     var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';

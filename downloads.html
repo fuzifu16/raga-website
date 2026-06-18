@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title data-i18n="meta.title_downloads">资料下载 - 瑞基测控 RAGA</title>
   <meta name="description" content="瑞基测控产品说明书、选型手册、技术参数表等资料下载。">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
@@ -28,6 +31,91 @@
     .btn-preview:hover { background: #1D4ED8; border-color: #1D4ED8; transform: translateY(-2px); }
     .download-card .btn-sm { padding: 4px 10px; font-size: 11px; }
     @media (max-width: 768px) { .download-grid { grid-template-columns: 1fr; } }
+    /* ===== 外形图可折叠下拉面板（仿 select 下拉框格式） ===== */
+    .drawings-panels-row {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+      align-items: flex-start;
+    }
+    .drawings-panels-row .drawings-panel {
+      flex: 1;
+      min-width: 0;
+      max-width: none;
+      margin-top: 0;
+    }
+    @media (max-width: 768px) {
+      .drawings-panels-row { flex-direction: column; }
+    }
+    .drawings-panel {
+      margin-top: 8px;
+      border: 1px solid var(--gray-300);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--white);
+    }
+    .drawings-panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      cursor: pointer;
+      user-select: none;
+      background: var(--gray-50);
+      transition: background 0.15s;
+      gap: 8px;
+    }
+    .drawings-panel-header:hover { background: var(--gray-100); }
+    .drawings-panel-header .panel-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-700);
+      flex: 1;
+      min-width: 0;
+    }
+    .drawings-panel-header .panel-arrow {
+      font-size: 12px;
+      color: var(--gray-400);
+      transition: transform 0.2s;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .drawings-panel.open .drawings-panel-header .panel-arrow {
+      transform: rotate(180deg);
+    }
+    .drawings-panel .panel-body {
+      display: none;
+      border-top: 1px solid var(--gray-200);
+    }
+    .drawings-panel.open .panel-body {
+      display: block;
+    }
+    .drawings-group-sep {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: #999;
+      padding: 14px 16px 6px 16px;
+    }
+    .drawings-group-sep:first-child { padding-top: 10px; }
+    .drawings-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      transition: background 0.15s;
+    }
+    .drawings-item:hover { background: var(--gray-50); }
+    .drawings-item .file-icon { font-size: 16px; flex-shrink: 0; width: 24px; text-align: center; }
+    .drawings-item .file-info { flex: 1; min-width: 0; }
+    .drawings-item .file-info .file-name { font-size: 14px; font-weight: 500; color: var(--gray-800); }
+    .drawings-item .file-info .file-meta { display: none; }
+    .drawings-item .dl-btns { display: flex; gap: 6px; flex-shrink: 0; }
+    .drawings-item .btn-sm { padding: 3px 10px; font-size: 11px; }
+    @media (max-width: 768px) {
+      .drawings-item { flex-wrap: wrap; }
+      .drawings-item .dl-btns { width: 100%; justify-content: flex-end; }
+    }
   </style>
 </head>
 <body>
@@ -271,18 +359,233 @@
       renderSection(s.key, items);
     });
 
-    // All dimension drawings section
-    var allDrawings = [];
-    series.forEach(function(s) {
+    // 所有外形图区域（PDF + DWG 并排）
+    var groups = series.map(function(s) {
+      var items = [];
       s.products.forEach(function(pid) {
         var product = PRODUCTS[pid];
         if (!product || !product.downloads) return;
         product.downloads.forEach(function(dl) {
-          if (dl.icon === '📐') allDrawings.push({ dl: dl, product: product });
+          if (dl.icon === '📐') items.push({ dl: dl, product: product });
         });
       });
-    });
-    renderSection('downloads.drawings_section', allDrawings);
+      return { title: t(s.key), items: items };
+    }).filter(function(g) { return g.items.length > 0; });
+
+    var dwgRoot = 'downloads/dwg/';
+    var dwgGroups = [
+      { title: t('series.ra'), files: [
+        { name: 'RAIII30A-RGW6-02', url: dwgRoot+'RAIII30A-RGW6-02.dwg', size: '2.8MB' },
+        { name: 'RAIII30A-RGW7-02', url: dwgRoot+'RAIII30A-RGW7-02.dwg', size: '2.8MB' },
+        { name: 'RAIII35A-RGW8-02', url: dwgRoot+'RAIII35A-RGW8-02.dwg', size: '2.7MB' },
+        { name: 'RAIII35A外形图', url: dwgRoot+'RAIII35A外形图.dwg', size: '2.6MB' },
+        { name: 'RAIII40A-RGW8-02', url: dwgRoot+'RAIII40A-RGW8-02.dwg', size: '2.8MB' },
+        { name: 'RAIII40A-RGW8-03', url: dwgRoot+'RAIII40A-RGW8-03.dwg', size: '2.5MB' },
+        { name: 'RAIII40A外形图', url: dwgRoot+'RAIII40A外形图.dwg', size: '2.5MB' },
+        { name: 'RAIII70A-RGW8-02', url: dwgRoot+'RAIII70A-RGW8-02.dwg', size: '699KB' },
+        { name: 'RAIII70A-RGW8-03', url: dwgRoot+'RAIII70A-RGW8-03.dwg', size: '697KB' },
+        { name: 'RAIII70A-RGW9-02', url: dwgRoot+'RAIII70A-RGW9-02.dwg', size: '707KB' },
+        { name: 'RAIII70A外形图', url: dwgRoot+'RAIII70A外形图.dwg', size: '463KB' },
+        { name: 'RAIII90A-RIB10-01', url: dwgRoot+'RAIII90A-RIB10-01.dwg', size: '2.1MB' },
+        { name: 'RAIII95A外形图', url: dwgRoot+'RAIII95A外形图.dwg', size: '463KB' }
+      ]},
+      { title: t('series.rq'), files: [
+        { name: 'RQ03外型图', url: dwgRoot+'RQ03外型图.dwg', size: '2.2MB' },
+        { name: 'RQ03-RGW3外型图', url: dwgRoot+'RQ03-RGW3外型图.dwg', size: '2.3MB' },
+        { name: 'RQ06外型图', url: dwgRoot+'RQ06外型图.dwg', size: '2.6MB' },
+        { name: 'RQ06外型图-B4', url: dwgRoot+'RQ06外型图-B4.dwg', size: '2.6MB' },
+        { name: 'RQML06直行程', url: dwgRoot+'RQML06直行程.dwg', size: '2.3MB' },
+        { name: 'RQML12直行程', url: dwgRoot+'RQML12直行程.dwg', size: '2.7MB' },
+        { name: 'RQML54直行程', url: dwgRoot+'RQML54直行程.dwg', size: '2.7MB' }
+      ]},
+      { title: t('series.rl'), files: [
+        { name: 'RL10系列-外型图', url: dwgRoot+'RL10系列-外型图.dwg', size: '469KB' },
+        { name: 'RL80系列-外型图', url: dwgRoot+'RL80系列-外型图.dwg', size: '460KB' },
+        { name: 'RL150系列-外型图', url: dwgRoot+'RL150系列-外型图.dwg', size: '808KB' },
+        { name: 'RL系列-直行程外型图', url: dwgRoot+'RL系列-直行程外型图.dwg', size: '597KB' },
+        { name: 'RL10-60就地外型图', url: dwgRoot+'RL10-60就地外型图.dwg', size: '421KB' },
+        { name: 'RL80-100就地外型图', url: dwgRoot+'RL80-100就地外型图.dwg', size: '367KB' }
+      ]},
+      { title: '分体式 / 就地', files: [
+        { name: 'RF10-分体外形图', url: dwgRoot+'RF10-分体外形图.dwg', size: '781KB' }
+      ]}
+    ];
+
+    if (groups.length || dwgGroups.length) {
+      var dwSection = document.createElement('div');
+      dwSection.className = 'download-section';
+      var dwH3 = document.createElement('h3');
+      dwH3.textContent = t('downloads.drawings_section');
+      dwSection.appendChild(dwH3);
+
+      // PDF 面板
+      var pdfPanel = document.createElement('div');
+      pdfPanel.className = 'drawings-panel';
+      var pdfHeader = document.createElement('div');
+      pdfHeader.className = 'drawings-panel-header';
+      var pdfTitleSpan = document.createElement('span');
+      pdfTitleSpan.className = 'panel-title';
+      pdfTitleSpan.textContent = t('downloads.drawings_pdf');
+      var pdfArrow = document.createElement('span');
+      pdfArrow.className = 'panel-arrow';
+      pdfArrow.textContent = '▼';
+      pdfHeader.appendChild(pdfTitleSpan);
+      pdfHeader.appendChild(pdfArrow);
+      pdfPanel.addEventListener('mouseenter', function() { pdfPanel.classList.add('open'); });
+      var pdfBody = document.createElement('div');
+      pdfBody.className = 'panel-body';
+      groups.forEach(function(group) {
+        var sep = document.createElement('div');
+        sep.className = 'drawings-group-sep';
+        sep.textContent = '── ' + group.title + ' ──';
+        pdfBody.appendChild(sep);
+        group.items.forEach(function(item) {
+          var isPdf = item.dl.url && item.dl.url.toLowerCase().endsWith('.pdf');
+          var row = document.createElement('div');
+          row.className = 'drawings-item';
+          row.innerHTML =
+            '<div class="file-icon">' + (item.dl.icon || '📐') + '</div>' +
+            '<div class="file-info">' +
+              '<div class="file-name">' + tlDlName(item.dl.name) + '</div>' +
+              '<div class="file-meta">' + item.dl.size + '</div>' +
+            '</div>' +
+            '<div class="dl-btns">' +
+              (item.dl.url
+                ? (isPdf
+                  ? '<a href="preview.html?file=' + encodeURIComponent(item.dl.url) + '&name=' + encodeURIComponent(tlDlName(item.dl.name)) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>'
+                  : '<a href="' + item.dl.url + '" download class="btn btn-sm btn-preview">' + t('downloads.btn_download') + '</a>')
+                : '<a href="#" onclick="alert(\'' + t('downloads.deploy_pending') + '\');return false;" class="btn btn-sm btn-preview">' + t('downloads.btn_download') + '</a>') +
+            '</div>';
+          pdfBody.appendChild(row);
+        });
+      });
+      pdfPanel.appendChild(pdfHeader);
+      pdfPanel.appendChild(pdfBody);
+
+      // DWG 面板
+      var dwgPanel = document.createElement('div');
+      dwgPanel.className = 'drawings-panel';
+      var dwgHeader = document.createElement('div');
+      dwgHeader.className = 'drawings-panel-header';
+      var dwgTitleSpan = document.createElement('span');
+      dwgTitleSpan.className = 'panel-title';
+      dwgTitleSpan.textContent = t('downloads.drawings_dwg');
+      var dwgArrow = document.createElement('span');
+      dwgArrow.className = 'panel-arrow';
+      dwgArrow.textContent = '▼';
+      dwgHeader.appendChild(dwgTitleSpan);
+      dwgHeader.appendChild(dwgArrow);
+      dwgPanel.addEventListener('mouseenter', function() { dwgPanel.classList.add('open'); });
+      var dwgBody = document.createElement('div');
+      dwgBody.className = 'panel-body';
+      dwgGroups.forEach(function(group) {
+        var sep = document.createElement('div');
+        sep.className = 'drawings-group-sep';
+        sep.textContent = '── ' + group.title + ' ──';
+        dwgBody.appendChild(sep);
+        group.files.forEach(function(file) {
+          var encodedDwgUrl = encodeURIComponent(file.url);
+          var encodedDwgName = encodeURIComponent(file.name);
+          var row = document.createElement('div');
+          row.className = 'drawings-item';
+          row.innerHTML =
+            '<div class="file-icon">📏</div>' +
+            '<div class="file-info">' +
+              '<div class="file-name">' + file.name + '</div>' +
+              '<div class="file-meta">' + file.size + '</div>' +
+            '</div>' +
+            '<div class="dl-btns">' +
+              '<a href="preview.html?file=' + encodedDwgUrl + '&name=' + encodedDwgName + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>' +
+            '</div>';
+          dwgBody.appendChild(row);
+        });
+      });
+      dwgPanel.appendChild(dwgHeader);
+      dwgPanel.appendChild(dwgBody);
+
+      // 3D 面板
+      var d3dRoot = 'downloads/3d/';
+      var d3dFilesAll = [
+        { name: 'RA 分体式外型', ext: '.zip', group: 'ra', size: '22.2MB' },
+        { name: 'RAIII90A-RIB10-01外型图', ext: '.xz', group: 'ra', size: '18.2MB', note: '7z解压' },
+        { name: 'RQ03 外型图', ext: '.xz', group: 'rq', size: '19.2MB', note: '7z解压' },
+        { name: 'RQ03-RGW4 外型图', ext: '.zip', group: 'rq', size: '23.4MB' },
+        { name: 'RQ04 外型图', ext: '.xz', group: 'rq', size: '20.1MB', note: '7z解压' },
+        { name: 'RQ06 外型图', ext: '.zip', group: 'rq', size: '22.7MB' },
+        { name: 'RQ150 外型图', ext: '.zip', group: 'rq', size: '22.1MB' },
+        { name: 'RL10 外型图', ext: '.zip', group: 'rl', size: '3.0MB' },
+        { name: 'RL80 外型图', ext: '.zip', group: 'rl', size: '8.1MB' },
+        { name: 'RL150 外型图', ext: '.zip', group: 'rl', size: '12.1MB' },
+        { name: 'RL150总装（就地）', ext: '.zip', group: 'rl', size: '9.0MB' }
+      ];
+      // 按系列分组
+      var d3dGroups = [];
+      var d3dGroupTitles = { 'ra': t('series.ra'), 'rq': t('series.rq'), 'rl': t('series.rl') };
+      d3dFilesAll.forEach(function(f) {
+        var grp = d3dGroups.find(function(g) { return g.key === f.group; });
+        if (!grp) { grp = { key: f.group, title: d3dGroupTitles[f.group], files: [] }; d3dGroups.push(grp); }
+        grp.files.push(f);
+      });
+
+      var d3dPanel = document.createElement('div');
+      d3dPanel.className = 'drawings-panel';
+      var d3dHeader = document.createElement('div');
+      d3dHeader.className = 'drawings-panel-header';
+      var d3dTitleSpan = document.createElement('span');
+      d3dTitleSpan.className = 'panel-title';
+      d3dTitleSpan.textContent = t('downloads.drawings_3d');
+      var d3dArrow = document.createElement('span');
+      d3dArrow.className = 'panel-arrow';
+      d3dArrow.textContent = '▼';
+      d3dHeader.appendChild(d3dTitleSpan);
+      d3dHeader.appendChild(d3dArrow);
+      d3dPanel.addEventListener('mouseenter', function() { d3dPanel.classList.add('open'); });
+      var d3dBody = document.createElement('div');
+      d3dBody.className = 'panel-body';
+      d3dGroups.forEach(function(group) {
+        var sep = document.createElement('div');
+        sep.className = 'drawings-group-sep';
+        sep.textContent = '── ' + group.title + ' ──';
+        d3dBody.appendChild(sep);
+        group.files.forEach(function(file) {
+          var fileName = file.name + file.ext;
+          var displayName = file.name + (file.note ? ' (' + file.note + ')' : '');
+          var encodedFile = encodeURIComponent(d3dRoot + fileName);
+          var encodedName = encodeURIComponent(fileName);
+          var row = document.createElement('div');
+          row.className = 'drawings-item';
+          row.innerHTML =
+            '<div class="file-icon">🧊</div>' +
+            '<div class="file-info">' +
+              '<div class="file-name">' + displayName + '</div>' +
+              '<div class="file-meta">' + file.size + '</div>' +
+            '</div>' +
+            '<div class="dl-btns">' +
+              '<a href="preview.html?file=' + encodedFile + '&name=' + encodedName + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>' +
+            '</div>';
+          d3dBody.appendChild(row);
+        });
+      });
+      d3dPanel.appendChild(d3dHeader);
+      d3dPanel.appendChild(d3dBody);
+
+      // 三个面板放入同一行
+      var row = document.createElement('div');
+      row.className = 'drawings-panels-row';
+      row.appendChild(pdfPanel);
+      row.appendChild(dwgPanel);
+      row.appendChild(d3dPanel);
+      dwSection.appendChild(row);
+
+      // 点击面板外部任意位置时收起所有面板
+      document.addEventListener('click', function(e) {
+        var allPanels = [pdfPanel, dwgPanel, d3dPanel];
+        allPanels.forEach(function(p) {
+          if (!p.contains(e.target)) { p.classList.remove('open'); }
+        });
+      });
+      container.appendChild(dwSection);
+    }
   }
 
   // Wait for DOMContentLoaded so I18N.init() runs first

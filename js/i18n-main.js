@@ -71,12 +71,34 @@ const I18N = {
       if (text !== undefined && el.tagName === 'OPTION' && !el.value) el.textContent = text;
     });
 
+    // data-i18n-title: replace title attribute
+    document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
+      var key = el.dataset.i18nTitle;
+      var text = lookup(key);
+      if (text !== undefined) el.title = text;
+    });
+
+    // data-i18n-aria-label: replace aria-label attribute
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(function(el) {
+      var key = el.dataset.i18nAriaLabel;
+      var text = lookup(key);
+      if (text !== undefined) el.setAttribute('aria-label', text);
+    });
+
     // Update <title>
     var titleEl = document.querySelector('title[data-i18n]');
     if (titleEl) {
       var tkey = titleEl.dataset.i18n;
       var ttext = lookup(tkey);
       if (ttext !== undefined) document.title = ttext;
+    }
+
+    // Update meta description
+    var metaDesc = document.querySelector('meta[name="description"][data-i18n]');
+    if (metaDesc) {
+      var dkey = metaDesc.dataset.i18n;
+      var dtext = lookup(dkey);
+      if (dtext !== undefined) metaDesc.setAttribute('content', dtext);
     }
 
     // Toggle active class on lang switcher

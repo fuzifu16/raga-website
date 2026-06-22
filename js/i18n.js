@@ -1149,15 +1149,18 @@ i18nData.dlMap = {
   ];
   zhDl.forEach(function(zh) {
     var en = zh
+              .replace(/系列-直行程外[型形]图$/," Series Linear-motion Dimension Drawing")
               .replace(/直行程外[型形]图$/," Linear-motion Dimension Drawing")
               .replace(/直行程$/," Linear-motion")
               .replace(/减速箱外[型形]图$/," Gearbox Dimension Drawing")
               .replace(/就地外[型形]图$/," Local Dimension Drawing")
               .replace(/分体外[型形]图$/," Split-type Dimension Drawing")
               .replace(/外[型形]图-B4$/," Dimension Drawing - B4")
+              .replace(/系列-外[型形]图$/," Series Dimension Drawing")
+              .replace(/系列外[型形]图$/," Series Dimension Drawing")
               .replace(/外[型形]图$/," Dimension Drawing")
-              .replace(/外[型形]$/," Dimension")
               .replace(/分体式外[型形]$/," Split-type")
+              .replace(/外[型形]$/," Dimension")
               .replace(/总装（就地）$/," Assembly (Local)")
     enDl[zh] = en;
     i18nData.dlMap.zh[zh] = zh;

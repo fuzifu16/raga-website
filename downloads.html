@@ -588,27 +588,17 @@
     }
   }
 
-  // Wait for DOMContentLoaded so I18N.init() runs first
+  // Listen for language change event to re-render dynamic content
+  window.addEventListener('languageChanged', function() {
+    if (container) renderDownloadsPage();
+  });
+
+  // Initial render: wait for DOMContentLoaded so I18N.init() runs first
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      renderDownloadsPage();
-      hookLangSwitch();
-    });
+    document.addEventListener('DOMContentLoaded', renderDownloadsPage);
   } else {
     // DOM already loaded (e.g. navigated back)
     renderDownloadsPage();
-    hookLangSwitch();
-  }
-
-  function hookLangSwitch() {
-    if (I18N && I18N.switchLang && !I18N._downloadsHooked) {
-      I18N._downloadsHooked = true;
-      var origSwitch = I18N.switchLang;
-      I18N.switchLang = function(lang) {
-        origSwitch.call(I18N, lang);
-        renderDownloadsPage();
-      };
-    }
   }
 })();
 </script>

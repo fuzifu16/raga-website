@@ -126,6 +126,7 @@ const PRODUCTS = {
     downloads: [
       { name: "RL角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
       { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" },
+      { name: "RL操作维护手册", size: "1.3 MB", icon: "📄", url: "files/RLOprationManual.pdf" },
       { name: "RL10系列外形图", size: "140 KB", icon: "📐", url: "files/rl10-dimension.pdf" },
       { name: "RL80系列外形图", size: "48 KB", icon: "📐", url: "files/rl80-dimension.pdf" },
       { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" }
@@ -154,6 +155,7 @@ const PRODUCTS = {
     downloads: [
       { name: "RLM智能型产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
       { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" },
+      { name: "RL操作维护手册", size: "1.3 MB", icon: "📄", url: "files/RLOprationManual.pdf" },
     ]
   },
 
@@ -178,7 +180,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RL100智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
-      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" }
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" },
+      { name: "RL操作维护手册", size: "1.3 MB", icon: "📄", url: "files/RLOprationManual.pdf" }
     ]
   },
 
@@ -203,7 +206,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RL150智能型角行程产品说明书", size: "810 KB", icon: "📄", url: "files/rl-manual.pdf" },
-      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" }
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📘", url: "files/rl-selection-manual.pdf" },
+      { name: "RL操作维护手册", size: "1.3 MB", icon: "📄", url: "files/RLOprationManual.pdf" }
     ]
   },
 

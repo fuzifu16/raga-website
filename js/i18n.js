@@ -1087,6 +1087,7 @@ i18nData.dlMap = {
     "RQMLIII06产品说明书": "RQMLIII06产品说明书", "RQMLIII12产品说明书": "RQMLIII12产品说明书",
     "RQMLIII54产品说明书": "RQMLIII54产品说明书", "RLML10产品说明书": "RLML10产品说明书",
     "RLML20产品说明书": "RLML20 Product Manual",
+    "RL操作维护手册": "RL操作维护手册",
     "RAIII系列接线图": "RAIII系列接线图",
   },
   "en": {
@@ -1107,6 +1108,7 @@ i18nData.dlMap = {
     "RQMLIII54产品说明书": "RQMLIII54 Product Manual",
     "RLML10产品说明书": "RLML10 Product Manual",
     "RLML20产品说明书": "RLML20 Product Manual",
+    "RL操作维护手册": "RL Operation & Maintenance Manual",
     "RAIII系列接线图": "RAIII Series Wiring Diagram"
   }
 };

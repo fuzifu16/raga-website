@@ -181,7 +181,41 @@ const i18nData = {
     "detail.downloads": "资料下载",
     "detail.preview": "预览",
     "detail.download": "下载",
-    "detail.no_downloads": "暂无资料下载"
+    "detail.no_downloads": "暂无资料下载",
+    "detail.coming_soon": "即将上线",
+
+    /* Contact — company names in office cards */
+    "contact.company_name_wenzhou": "温州瑞基测控设备有限公司",
+    "contact.company_name_shanghai": "上海瑞基瑞然自动化技术有限公司",
+    "contact.company_name_taicang": "瑞基测控设备（太仓）有限公司",
+    "contact.addr_wenzhou": "浙江省温州市",
+    "contact.addr_shanghai": "上海市",
+    "contact.addr_taicang": "江苏省太仓市",
+    "contact.baidu_map": "百度地图打开",
+    "contact.amap": "高德地图打开",
+    "contact.email_copied": "邮箱已复制：",
+
+    /* Contact — form product options */
+    "contact.form_group_ra": "── RA系列多回转 ──",
+    "contact.form_group_rq": "── RQ系列直行程 ──",
+    "contact.form_group_rl": "── RL/RJ系列角行程 ──",
+    "contact.form_group_matching": "── 配套系列 ──",
+    "contact.form_group_accessory": "── 配件系列 ──",
+    "contact.form_opt_split_r": "R系列分体式",
+    "contact.form_opt_split_ra": "RA系列分体式",
+    "contact.form_opt_split_rl": "RL系列分体式",
+    "contact.form_opt_matching": "配套系列",
+    "contact.form_opt_electrical": "电器总承",
+    "contact.form_opt_ra_board": "RA主控板",
+    "contact.form_opt_ra_power": "RA电源板",
+    "contact.form_opt_remote": "遥控器",
+    "contact.form_opt_planetary": "行星轮总承",
+    "contact.form_opt_adapter": "葵花接盘",
+    "contact.form_opt_other": "其他/不明确",
+
+    /* Preview page */
+    "preview.unsupported": "此格式不支持在线预览",
+    "preview.download_hint": "请点击下方「下载文件」按钮下载后查看"
   },
 
   "en": {
@@ -365,7 +399,41 @@ const i18nData = {
     "detail.downloads": "Downloads",
     "detail.preview": "Preview",
     "detail.download": "Download",
-    "detail.no_downloads": "No downloads available"
+    "detail.no_downloads": "No downloads available",
+    "detail.coming_soon": "Coming Soon",
+
+    /* Contact — company names in office cards */
+    "contact.company_name_wenzhou": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.",
+    "contact.company_name_shanghai": "Shanghai RAGA Ruiran Automation Technology Co., Ltd.",
+    "contact.company_name_taicang": "RAGA Measurement & Control Equipment (Taicang) Co., Ltd.",
+    "contact.addr_wenzhou": "Wenzhou, Zhejiang Province",
+    "contact.addr_shanghai": "Shanghai",
+    "contact.addr_taicang": "Taicang, Jiangsu Province",
+    "contact.baidu_map": "Open in Baidu Maps",
+    "contact.amap": "Open in Amap",
+    "contact.email_copied": "Email copied: ",
+
+    /* Contact — form product options */
+    "contact.form_group_ra": "── RA Multi-turn Series ──",
+    "contact.form_group_rq": "── RQ Linear Series ──",
+    "contact.form_group_rl": "── RL/RJ Quarter-turn Series ──",
+    "contact.form_group_matching": "── Matching Series ──",
+    "contact.form_group_accessory": "── Accessories ──",
+    "contact.form_opt_split_r": "R Split-type",
+    "contact.form_opt_split_ra": "RA Split-type",
+    "contact.form_opt_split_rl": "RL Split-type",
+    "contact.form_opt_matching": "Matching Series",
+    "contact.form_opt_electrical": "Electrical Assembly",
+    "contact.form_opt_ra_board": "RA Main Control Board",
+    "contact.form_opt_ra_power": "RA Power Board",
+    "contact.form_opt_remote": "Remote Controller",
+    "contact.form_opt_planetary": "Planetary Gear Assembly",
+    "contact.form_opt_adapter": "Sunflower Adapter Plate",
+    "contact.form_opt_other": "Others / Unspecified",
+
+    /* Preview page */
+    "preview.unsupported": "This format does not support online preview",
+    "preview.download_hint": "Please click the \"Download File\" button below to download and view"
   }
 };
 
@@ -454,6 +522,40 @@ i18nData.zh["downloads.desc"] = "瑞基全系列产品技术资料下载，包�
 i18nData.en["downloads.desc"] = "Download technical resources for all RAGA products, including product manuals, selection guides, installation instructions and more.";
 i18nData.zh["meta.title_detail"] = "产品详情 - 瑞基测控 RAGA";
 i18nData.en["meta.title_detail"] = "Product Detail - RAGA";
+i18nData.zh["meta.title_machining"] = "加工中心 - 瑞基测控 RAGA";
+i18nData.en["meta.title_machining"] = "Machining Center - RAGA";
+i18nData.zh["meta.title_production"] = "总装生产线 - 瑞基测控 RAGA";
+i18nData.en["meta.title_production"] = "Production Line - RAGA";
+i18nData.zh["meta.title_quality"] = "质量检测设备 - 瑞基测控 RAGA";
+i18nData.en["meta.title_quality"] = "Quality Inspection - RAGA";
+i18nData.zh["meta.title_assembly"] = "装配生产线 - 瑞基测控 RAGA";
+i18nData.en["meta.title_assembly"] = "Assembly Line - RAGA";
+i18nData.zh["meta.title_preview"] = "文件预览 - 瑞基测控 RAGA";
+i18nData.en["meta.title_preview"] = "File Preview - RAGA";
+
+/* Meta descriptions */
+i18nData.zh["meta.desc_home"] = "温州瑞基测控设备有限公司专业研制智能电动阀门执行机构，RA多回转、RQ直行程、RL角行程系列产品，广泛应用于石油化工、电力、水处理等领域。";
+i18nData.en["meta.desc_home"] = "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. — professional manufacturer of smart electric valve actuators, RA multi-turn, RQ linear, RL quarter-turn series for petrochemical, power, water treatment industries.";
+i18nData.zh["meta.desc_about"] = "瑞基测控是专注于智能电动执行机构研发、生产、销售的高新技术企业，拥有自主知识产权和国际认证。";
+i18nData.en["meta.desc_about"] = "RAGA is a high-tech enterprise specializing in R&D, manufacturing and sales of smart electric actuators with independent IP rights and international certifications.";
+i18nData.zh["meta.desc_products"] = "瑞基测控全系列产品：RA多回转、RQ直行程、RL/RJ角行程智能电动执行机构，RGW/RIB减速箱，配套配件等。";
+i18nData.en["meta.desc_products"] = "RAGA full product range: RA multi-turn, RQ linear, RL/RJ quarter-turn smart electric actuators, RGW/RIB gearboxes, accessories and more.";
+i18nData.zh["meta.desc_cases"] = "瑞基智能电动执行机构在石油、化工、电力、冶金、水处理等行业的典型应用案例。";
+i18nData.en["meta.desc_cases"] = "Typical application cases of RAGA smart electric actuators in petroleum, chemical, power, metallurgy, water treatment industries.";
+i18nData.zh["meta.desc_tech"] = "瑞基核心技术优势：非侵入式设定、绝对编码器、IP68防护、防爆认证、智能诊断等。";
+i18nData.en["meta.desc_tech"] = "RAGA core technology advantages: non-intrusive setup, absolute encoder, IP68 protection, explosion-proof certification, intelligent diagnostics.";
+i18nData.zh["meta.desc_contact"] = "联系我们 — 温州瑞基测控设备有限公司，上海瑞基瑞然自动化技术有限公司，瑞基测控设备（太仓）有限公司。";
+i18nData.en["meta.desc_contact"] = "Contact Us — Wenzhou RAGA, Shanghai RAGA Ruiran, Taicang RAGA. Your smart valve actuator partner.";
+i18nData.zh["meta.desc_downloads"] = "瑞基测控产品说明书、选型手册、技术参数表、外形图等资料下载。";
+i18nData.en["meta.desc_downloads"] = "Download RAGA product manuals, selection guides, technical specifications, dimension drawings and more.";
+i18nData.zh["meta.desc_machining"] = "瑞基测控先进加工中心，高精度数控设备，确保零部件加工精度和质量。";
+i18nData.en["meta.desc_machining"] = "RAGA advanced machining center with high-precision CNC equipment ensuring component accuracy and quality.";
+i18nData.zh["meta.desc_production"] = "瑞基测控现代化总装生产线，严格的质量控制流程，确保每台产品可靠稳定。";
+i18nData.en["meta.desc_production"] = "RAGA modern production assembly line with rigorous quality control ensuring reliable and stable products.";
+i18nData.zh["meta.desc_quality"] = "瑞基测控质量检测设备，现代化流水线作业，完善的检测流程确保产品品质。";
+i18nData.en["meta.desc_quality"] = "RAGA quality inspection equipment, modern assembly line, comprehensive testing ensures product quality.";
+i18nData.zh["meta.desc_assembly"] = "瑞基测控装配生产线，现代化流水线作业，严格品控保障产品可靠性。";
+i18nData.en["meta.desc_assembly"] = "RAGA assembly production line, modern workflow, strict quality control for product reliability.";
 
 /* Logo & Brand */
 i18nData.zh["logo.text"] = "瑞基测控";
@@ -464,6 +566,11 @@ i18nData.en["logo.subtext"] = "RAGA · Smart Actuator";
 /* Nav toggle aria label */
 i18nData.zh["nav.toggle_label"] = "菜单";
 i18nData.en["nav.toggle_label"] = "Menu";
+
+/* Topbar WeChat QR */
+i18nData.zh["topbar.wechat_scan"] = "微信扫一扫";
+i18nData.en["topbar.wechat_scan"] = "Scan with WeChat";
+i18nData["zh-TW"]["topbar.wechat_scan"] = "微信掃一掃";
 
 /* About culture labels */
 i18nData.zh["about.culture_vision_label"] = "企业愿景：";
@@ -511,7 +618,45 @@ i18nData.zh["tech.cert_ex_desc"] = "产品通过ExdⅡCT4防爆认证，可在�
 i18nData.zh["tech.cert_ip"] = "防护等级 IP68";
 i18nData.zh["tech.cert_ip_desc"] = "产品防护等级达到IP68，可在深度水浸环境下长期稳定运行，适应户外及潮湿环境。";
 
-/* English certificate gallery titles */
+/* Certificate image labels — zh */
+i18nData.zh["tech.cert_label_wenzhou"] = "温州瑞基测控设备有限公司";
+i18nData.zh["tech.cert_label_shanghai"] = "上海瑞基瑞然自动化技术有限公司";
+i18nData.zh["tech.cert_label_ex1"] = "防爆合格证 GYB23.1992X";
+i18nData.zh["tech.cert_label_ex2"] = "防爆合格证 GYB23.1993X";
+i18nData.zh["tech.cert_label_ex3"] = "防爆合格证 GYB22.1729X";
+i18nData.zh["tech.cert_label_ip66"] = "IP66 测试报告";
+i18nData.zh["tech.cert_label_ip68"] = "IP68 水下7米72小时证书";
+i18nData.zh["tech.cert_label_eac_ra"] = "RA/RQ/RQM EAC DOC 报告";
+i18nData.zh["tech.cert_label_eac_rl"] = "RL/RLM EAC DOC 报告";
+i18nData.zh["tech.cert_label_eac_rl_cert"] = "RL/RLM EAC 认证证书";
+i18nData.zh["tech.cert_label_wf2"] = "WF2 防腐证书";
+i18nData.zh["tech.cert_label_wf2_report"] = "WF2 防腐证书报告";
+i18nData.zh["tech.cert_label_salt"] = "ISO12944-C5M 盐雾测试报告";
+i18nData.zh["tech.cert_label_480v_zh"] = "480V/60Hz 型式试验报告 (中文)";
+i18nData.zh["tech.cert_label_480v_en"] = "480V/60Hz 型式试验报告 (英文)";
+i18nData.zh["tech.cert_label_encoder"] = "绝对编码器试验报告";
+i18nData.zh["tech.cert_label_lowtemp_zh"] = "-50°C 低温型式试验报告 (中文)";
+i18nData.zh["tech.cert_label_lowtemp_en"] = "-50°C 低温型式试验报告 (英文)";
+
+/* Certificate image labels — en */
+i18nData.en["tech.cert_label_wenzhou"] = "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.";
+i18nData.en["tech.cert_label_shanghai"] = "Shanghai RAGA Ruiran Automation Technology Co., Ltd.";
+i18nData.en["tech.cert_label_ex1"] = "Explosion-proof Certificate GYB23.1992X";
+i18nData.en["tech.cert_label_ex2"] = "Explosion-proof Certificate GYB23.1993X";
+i18nData.en["tech.cert_label_ex3"] = "Explosion-proof Certificate GYB22.1729X";
+i18nData.en["tech.cert_label_ip66"] = "IP66 Test Report";
+i18nData.en["tech.cert_label_ip68"] = "IP68 7m/72h Submersion Certificate";
+i18nData.en["tech.cert_label_eac_ra"] = "RA/RQ/RQM EAC DOC Report";
+i18nData.en["tech.cert_label_eac_rl"] = "RL/RLM EAC DOC Report";
+i18nData.en["tech.cert_label_eac_rl_cert"] = "RL/RLM EAC Certificate";
+i18nData.en["tech.cert_label_wf2"] = "WF2 Corrosion Certificate";
+i18nData.en["tech.cert_label_wf2_report"] = "WF2 Corrosion Certificate Report";
+i18nData.en["tech.cert_label_salt"] = "ISO12944-C5M Salt Spray Test Report";
+i18nData.en["tech.cert_label_480v_zh"] = "480V/60Hz Type Test Report (Chinese)";
+i18nData.en["tech.cert_label_480v_en"] = "480V/60Hz Type Test Report (English)";
+i18nData.en["tech.cert_label_encoder"] = "Absolute Encoder Test Report";
+i18nData.en["tech.cert_label_lowtemp_zh"] = "-50°C Low-temperature Type Test Report (Chinese)";
+i18nData.en["tech.cert_label_lowtemp_en"] = "-50°C Low-temperature Type Test Report (English)";
 i18nData.en["tech.cert_group_company"] = "Company Qualifications";
 i18nData.en["tech.cert_group_iso"] = "Management System Certification";
 i18nData.en["tech.cert_group_ex"] = "Explosion-proof Certification";
@@ -844,6 +989,36 @@ i18nData["zh-TW"]["detail.not_found_title"] = "未找到該產品";
 i18nData["zh-TW"]["detail.preview"] = "預覽";
 i18nData["zh-TW"]["detail.quote"] = "獲取報價 →";
 i18nData["zh-TW"]["detail.specs"] = "技術參數";
+i18nData["zh-TW"]["detail.coming_soon"] = "即將上線";
+
+/* Contact — zh-TW */
+i18nData["zh-TW"]["contact.company_name_wenzhou"] = "溫州瑞基測控設備有限公司";
+i18nData["zh-TW"]["contact.company_name_shanghai"] = "上海瑞基瑞然自動化技術有限公司";
+i18nData["zh-TW"]["contact.company_name_taicang"] = "瑞基測控設備（太倉）有限公司";
+i18nData["zh-TW"]["contact.addr_wenzhou"] = "浙江省溫州市";
+i18nData["zh-TW"]["contact.addr_shanghai"] = "上海市";
+i18nData["zh-TW"]["contact.addr_taicang"] = "江蘇省太倉市";
+i18nData["zh-TW"]["contact.baidu_map"] = "百度地圖打開";
+i18nData["zh-TW"]["contact.amap"] = "高德地圖打開";
+i18nData["zh-TW"]["contact.email_copied"] = "郵箱已複製：";
+i18nData["zh-TW"]["contact.form_group_ra"] = "── RA系列多回轉 ──";
+i18nData["zh-TW"]["contact.form_group_rq"] = "── RQ系列直行程 ──";
+i18nData["zh-TW"]["contact.form_group_rl"] = "── RL/RJ系列角行程 ──";
+i18nData["zh-TW"]["contact.form_group_matching"] = "── 配套系列 ──";
+i18nData["zh-TW"]["contact.form_group_accessory"] = "── 配件系列 ──";
+i18nData["zh-TW"]["contact.form_opt_split_r"] = "R系列分體式";
+i18nData["zh-TW"]["contact.form_opt_split_ra"] = "RA系列分體式";
+i18nData["zh-TW"]["contact.form_opt_split_rl"] = "RL系列分體式";
+i18nData["zh-TW"]["contact.form_opt_matching"] = "配套系列";
+i18nData["zh-TW"]["contact.form_opt_electrical"] = "電器總承";
+i18nData["zh-TW"]["contact.form_opt_ra_board"] = "RA主控板";
+i18nData["zh-TW"]["contact.form_opt_ra_power"] = "RA電源板";
+i18nData["zh-TW"]["contact.form_opt_remote"] = "遙控器";
+i18nData["zh-TW"]["contact.form_opt_planetary"] = "行星輪總承";
+i18nData["zh-TW"]["contact.form_opt_adapter"] = "葵花接盤";
+i18nData["zh-TW"]["contact.form_opt_other"] = "其他/不明確";
+i18nData["zh-TW"]["preview.unsupported"] = "此格式不支持在線預覽";
+i18nData["zh-TW"]["preview.download_hint"] = "請點擊下方「下載文件」按鈕下載後查看";
 i18nData["zh-TW"]["downloads.breadcrumb"] = "資料下載";
 i18nData["zh-TW"]["downloads.company_brochure"] = "公司宣傳資料";
 i18nData["zh-TW"]["downloads.desc"] = "瑞基全系列產品技術資料下載，包含產品說明書、選型手冊、安裝指南等";
@@ -907,6 +1082,22 @@ i18nData["zh-TW"]["meta.title_downloads"] = "資料下載 - 瑞基測控 RAGA";
 i18nData["zh-TW"]["meta.title_home"] = "瑞基測控 - RAGA | 智能電動閥門執行機構專家";
 i18nData["zh-TW"]["meta.title_products"] = "公司產品 - 瑞基測控 RAGA";
 i18nData["zh-TW"]["meta.title_tech"] = "技術優勢 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_machining"] = "加工中心 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_production"] = "總裝生產線 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_quality"] = "質量檢測設備 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_assembly"] = "裝配生產線 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.title_preview"] = "文件預覽 - 瑞基測控 RAGA";
+i18nData["zh-TW"]["meta.desc_home"] = "溫州瑞基測控設備有限公司專業研製智能電動閥門執行機構，RA多回轉、RQ直行程、RL角行程系列產品，廣泛應用於石油化工、電力、水處理等領域。";
+i18nData["zh-TW"]["meta.desc_about"] = "瑞基測控是專注於智能電動執行機構研發、生產、銷售的高新技術企業，擁有自主知識產權和國際認證。";
+i18nData["zh-TW"]["meta.desc_products"] = "瑞基測控全系列產品：RA多回轉、RQ直行程、RL/RJ角行程智能電動執行機構，RGW/RIB減速箱，配套配件等。";
+i18nData["zh-TW"]["meta.desc_cases"] = "瑞基智能電動執行機構在石油、化工、電力、冶金、水處理等行業的典型應用案例。";
+i18nData["zh-TW"]["meta.desc_tech"] = "瑞基核心技術優勢：非侵入式設定、絕對編碼器、IP68防護、防爆認證、智能診斷等。";
+i18nData["zh-TW"]["meta.desc_contact"] = "聯繫我們 — 溫州瑞基測控設備有限公司，上海瑞基瑞然自動化技術有限公司，瑞基測控設備（太倉）有限公司。";
+i18nData["zh-TW"]["meta.desc_downloads"] = "瑞基測控產品說明書、選型手冊、技術參數表、外形圖等資料下載。";
+i18nData["zh-TW"]["meta.desc_machining"] = "瑞基測控先進加工中心，高精度數控設備，確保零部件加工精度和質量。";
+i18nData["zh-TW"]["meta.desc_production"] = "瑞基測控現代化總裝生產線，嚴格的質量控制流程，確保每台產品可靠穩定。";
+i18nData["zh-TW"]["meta.desc_quality"] = "瑞基測控質量檢測設備，現代化流水線作業，完善的檢測流程確保產品品質。";
+i18nData["zh-TW"]["meta.desc_assembly"] = "瑞基測控裝配生產線，現代化流水線作業，嚴格品控保障產品可靠性。";
 i18nData["zh-TW"]["nav.about"] = "公司簡介";
 i18nData["zh-TW"]["nav.cases"] = "使用案例";
 i18nData["zh-TW"]["nav.contact"] = "聯繫我們";
@@ -1005,6 +1196,24 @@ i18nData["zh-TW"]["tech.cert_iso"] = "ISO9001 質量管理體系";
 i18nData["zh-TW"]["tech.cert_iso_desc"] = "公司通過ISO9001質量管理體系認證，建立了完善的質量管理體系，覆蓋從原材料進廠到成品出廠的全過程質量控制。";
 i18nData["zh-TW"]["tech.cert_subtitle"] = "資質認證";
 i18nData["zh-TW"]["tech.cert_title"] = "資質認證";
+i18nData["zh-TW"]["tech.cert_label_wenzhou"] = "溫州瑞基測控設備有限公司";
+i18nData["zh-TW"]["tech.cert_label_shanghai"] = "上海瑞基瑞然自動化技術有限公司";
+i18nData["zh-TW"]["tech.cert_label_ex1"] = "防爆合格證 GYB23.1992X";
+i18nData["zh-TW"]["tech.cert_label_ex2"] = "防爆合格證 GYB23.1993X";
+i18nData["zh-TW"]["tech.cert_label_ex3"] = "防爆合格證 GYB22.1729X";
+i18nData["zh-TW"]["tech.cert_label_ip66"] = "IP66 測試報告";
+i18nData["zh-TW"]["tech.cert_label_ip68"] = "IP68 水下7米72小時證書";
+i18nData["zh-TW"]["tech.cert_label_eac_ra"] = "RA/RQ/RQM EAC DOC 報告";
+i18nData["zh-TW"]["tech.cert_label_eac_rl"] = "RL/RLM EAC DOC 報告";
+i18nData["zh-TW"]["tech.cert_label_eac_rl_cert"] = "RL/RLM EAC 認證證書";
+i18nData["zh-TW"]["tech.cert_label_wf2"] = "WF2 防腐證書";
+i18nData["zh-TW"]["tech.cert_label_wf2_report"] = "WF2 防腐證書報告";
+i18nData["zh-TW"]["tech.cert_label_salt"] = "ISO12944-C5M 鹽霧測試報告";
+i18nData["zh-TW"]["tech.cert_label_480v_zh"] = "480V/60Hz 型式試驗報告 (中文)";
+i18nData["zh-TW"]["tech.cert_label_480v_en"] = "480V/60Hz 型式試驗報告 (英文)";
+i18nData["zh-TW"]["tech.cert_label_encoder"] = "絕對編碼器試驗報告";
+i18nData["zh-TW"]["tech.cert_label_lowtemp_zh"] = "-50°C 低溫型式試驗報告 (中文)";
+i18nData["zh-TW"]["tech.cert_label_lowtemp_en"] = "-50°C 低溫型式試驗報告 (英文)";
 i18nData["zh-TW"]["tech.comm_full"] = "支持現場總線（Profibus、Modbus等）、工業以太網、無線等多種通信方式。可實現遠程監控、智能診斷與預測性維護，幫助企業實現數字化轉型和智能化升級。";
 i18nData["zh-TW"]["tech.comm_title"] = "多種通信方式";
 i18nData["zh-TW"]["tech.core_desc"] = "創新驅動，品質為本 — 瑞基智能執行機構的核心技術優勢";
@@ -1046,6 +1255,14 @@ i18nData.en["footer.series_accessory"] = "Accessories";
 i18nData.zh["nav.dd_accessory_menu2"] = "配套系列";
 i18nData.en["nav.dd_accessory_menu2"] = "Accessories Series";
 i18nData["zh-TW"]["nav.dd_accessory_menu2"] = "配套系列";
+
+/* Footer city labels */
+i18nData.zh["footer.shanghai_label"] = "上海：";
+i18nData.en["footer.shanghai_label"] = "Shanghai: ";
+i18nData["zh-TW"]["footer.shanghai_label"] = "上海：";
+i18nData.zh["footer.wenzhou_label"] = "温州：";
+i18nData.en["footer.wenzhou_label"] = "Wenzhou: ";
+i18nData["zh-TW"]["footer.wenzhou_label"] = "溫州：";
 
 /* ===== Spec label translations (zh → en) ===== */
 i18nData.specMap = {

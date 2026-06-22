@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>产品详情 - 瑞基测控 RAGA</title>
+  <title data-i18n="meta.title_detail">产品详情 - 瑞基测控 RAGA</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,8 +89,8 @@
           </div>
         </div>
       </nav>
-    <a href="images/qr-code-wechat.png" class="header-qr" target="_blank" title="微信扫一扫"><img src="images/qr-code-wechat.png" alt="微信二维码"></a>
-    <button class="nav-toggle" aria-label="菜单">
+    <a href="images/qr-code-wechat.png" class="header-qr" target="_blank" data-i18n-title="topbar.wechat_scan"><img src="images/qr-code-wechat.png" alt="微信二维码"></a>
+    <button class="nav-toggle" data-i18n-aria-label="nav.toggle_label">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -245,8 +245,8 @@
     // Downloads
     var downloadsDiv = document.getElementById('detail-downloads');
     downloadsDiv.innerHTML = '';
-    var dlBtnText = lang === 'en' ? 'Download' : '下载';
-    var dlNoneText = lang === 'en' ? 'No downloads available' : '暂无资料下载';
+    var dlBtnText = (i18nData && i18nData[lang] && i18nData[lang]['detail.download']) ? i18nData[lang]['detail.download'] : '下载';
+    var dlNoneText = (i18nData && i18nData[lang] && i18nData[lang]['detail.no_downloads']) ? i18nData[lang]['detail.no_downloads'] : '暂无资料下载';
     if (product.downloads && product.downloads.length) {
       product.downloads.filter(function(dl) { return dl.icon !== '\uD83D\uDCD0'; }).forEach(function(dl) {
         var dlName = dl.name;
@@ -259,7 +259,7 @@
           '<div class="file-info"><span class="file-icon">' + dl.icon + '</span><div><div class="file-name">' + dlName + '</div><div class="file-size">' + dl.size + '</div></div></div>' +
           (dl.url
             ? '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
-            : '<a href="#" onclick="alert(\'Download feature coming soon\');return false;" class="btn btn-sm btn-primary">' + dlBtnText + '</a>');
+            : '<a href="#" onclick="alert((i18nData && i18nData[I18N.currentLang] && i18nData[I18N.currentLang][\'detail.coming_soon\']) || \'Coming Soon\');return false;" class="btn btn-sm btn-primary">' + dlBtnText + '</a>');
         downloadsDiv.appendChild(item);
       });
     } else {

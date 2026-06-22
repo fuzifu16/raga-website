@@ -62,9 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       var email = this.getAttribute('href').replace('mailto:', '');
+      var copiedText = (typeof i18nData !== 'undefined' && i18nData[I18N.currentLang] && i18nData[I18N.currentLang]['contact.email_copied']) ? i18nData[I18N.currentLang]['contact.email_copied'] : '邮箱已复制：';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(function() {
-          showToast('邮箱已复制：' + email);
+          showToast(copiedText + email);
         });
       } else {
         var ta = document.createElement('textarea');
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ta.select();
         document.execCommand('copy');
         document.body.removeChild(ta);
-        showToast('邮箱已复制：' + email);
+        showToast(copiedText + email);
       }
     });
   });

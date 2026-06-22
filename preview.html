@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="preview.title">文件预览 - 瑞基测控 RAGA</title>
+  <title data-i18n="meta.title_preview">文件预览 - 瑞基测控 RAGA</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -464,10 +464,10 @@ a { color: inherit; }
         </div>
       </div>
     </nav>
-    <a href="images/qr-code-wechat.png" class="header-qr" target="_blank" title="微信扫一扫">
+    <a href="images/qr-code-wechat.png" class="header-qr" target="_blank" data-i18n-title="topbar.wechat_scan">
       <img src="images/qr-code-wechat.png" alt="微信">
     </a>
-    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" data-i18n-aria-label="nav.toggle_label"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -508,7 +508,7 @@ a { color: inherit; }
       <div><h4 data-i18n="footer.quick_links">快速链接</h4><ul><li><a href="index.html" data-i18n="nav.home">首页</a></li><li><a href="about.html" data-i18n="nav.about">公司简介</a></li><li><a href="products.html" data-i18n="nav.products">公司产品</a></li><li><a href="cases.html" data-i18n="nav.cases">使用案例</a></li><li><a href="downloads.html" data-i18n="nav.downloads">资料下载</a></li><li><a href="technology.html" data-i18n="nav.tech">技术优势</a></li><li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li></ul></div>
       <div><h4 data-i18n="footer.product_series">产品系列</h4><ul><li><a href="products.html" data-i18n="footer.series_ra">RA系列多回转</a></li><li><a href="products.html" data-i18n="footer.series_rq">RQ系列直行程</a></li><li><a href="products.html" data-i18n="footer.series_rl">RL/RJ角行程</a></li><li><a href="products.html" data-i18n="footer.series_rjm">就地成套系列</a></li>
           <li><a href="products.html" data-i18n="footer.series_accessory">配件系列</a></li></ul></div>
-      <div><h4 data-i18n="footer.contact_info">联系方式</h4><ul><li><a href="tel:057756582698">0577-88623428</a></li><li><a href="tel:057756582698">上海：0577-56582698</a></li><li><a href="mailto:wnfo@raga.com.cn">温州：wnfo@raga.com.cn</a></li><li><a href="mailto:raga@raga.com.cn">上海：raga@raga.com.cn</a></li><li><a href="contact.html" data-i18n="footer.online_msg">在线留言</a></li></ul></div>
+      <div><h4 data-i18n="footer.contact_info">联系方式</h4><ul><li><a href="tel:057756582698">0577-88623428</a></li><li><a href="tel:057756582698"><span data-i18n="footer.shanghai_label">上海：</span>0577-56582698</a></li><li><a href="mailto:wnfo@raga.com.cn"><span data-i18n="footer.wenzhou_label">温州：</span>wnfo@raga.com.cn</a></li><li><a href="mailto:raga@raga.com.cn"><span data-i18n="footer.shanghai_label">上海：</span>raga@raga.com.cn</a></li><li><a href="contact.html" data-i18n="footer.online_msg">在线留言</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p data-i18n="footer.copyright">Copyright &copy; 2026 温州瑞基测控设备有限公司 | 上海瑞基瑞然自动化技术有限公司. All Rights Reserved. | <a href="https://beian.miit.gov.cn" target="_blank" data-i18n="footer.icp">浙ICP备2021002987号</a></p></div>
   </div>
@@ -550,10 +550,13 @@ a { color: inherit; }
         // 非 PDF 格式（DWG、3D等），不载入 iframe，提示下载
         document.querySelector('.preview-loading').style.display = 'none';
         var frame = document.getElementById('preview-frame');
+        var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
+        var unsupportedText = (i18nData && i18nData[lang] && i18nData[lang]['preview.unsupported']) ? i18nData[lang]['preview.unsupported'] : '此格式不支持在线预览';
+        var downloadHintText = (i18nData && i18nData[lang] && i18nData[lang]['preview.download_hint']) ? i18nData[lang]['preview.download_hint'] : '请点击下方「下载文件」按钮下载后查看';
         frame.innerHTML = '<div style="text-align:center;padding:80px 20px;color:var(--gray-600);">' +
           '<div style="font-size:48px;margin-bottom:16px;">📁</div>' +
-          '<p style="font-size:18px;font-weight:600;margin-bottom:8px;">此格式不支持在线预览</p>' +
-          '<p style="font-size:14px;color:var(--gray-500);">请点击下方「下载文件」按钮下载后查看</p>' +
+          '<p style="font-size:18px;font-weight:600;margin-bottom:8px;">' + unsupportedText + '</p>' +
+          '<p style="font-size:14px;color:var(--gray-500);">' + downloadHintText + '</p>' +
           '</div>';
       }
     }

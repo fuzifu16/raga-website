@@ -95,6 +95,8 @@ const I18N = {
     url.searchParams.set('lang', lang);
     window.history.replaceState({}, '', url);
     this.applyLanguage();
+    // Notify dynamic pages to re-render
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: lang } }));
   },
 
   setupSwitcher() {

@@ -406,7 +406,7 @@
         { name: 'RL10-60就地外型图', url: dwgRoot+'RL10-60就地外型图.dwg', size: '421KB' },
         { name: 'RL80-100就地外型图', url: dwgRoot+'RL80-100就地外型图.dwg', size: '367KB' }
       ]},
-      { title: '分体式 / 就地', files: [
+      { title: t('downloads.dwg_group_split'), files: [
         { name: 'RF10-分体外形图', url: dwgRoot+'RF10-分体外形图.dwg', size: '781KB' }
       ]}
     ];
@@ -485,13 +485,13 @@
         dwgBody.appendChild(sep);
         group.files.forEach(function(file) {
           var encodedDwgUrl = encodeURIComponent(file.url);
-          var encodedDwgName = encodeURIComponent(file.name);
+          var encodedDwgName = encodeURIComponent(tlDlName(file.name));
           var row = document.createElement('div');
           row.className = 'drawings-item';
           row.innerHTML =
             '<div class="file-icon">📏</div>' +
             '<div class="file-info">' +
-              '<div class="file-name">' + file.name + '</div>' +
+              '<div class="file-name">' + tlDlName(file.name) + '</div>' +
               '<div class="file-meta">' + file.size + '</div>' +
             '</div>' +
             '<div class="dl-btns">' +
@@ -549,9 +549,9 @@
         d3dBody.appendChild(sep);
         group.files.forEach(function(file) {
           var fileName = file.name + file.ext;
-          var displayName = file.name + (file.note ? ' (' + file.note + ')' : '');
+          var displayName = tlDlName(file.name) + (file.note ? ' (' + t('downloads.note_7z') + ')' : '');
           var encodedFile = encodeURIComponent(d3dRoot + fileName);
-          var encodedName = encodeURIComponent(fileName);
+          var encodedName = encodeURIComponent(tlDlName(file.name));
           var row = document.createElement('div');
           row.className = 'drawings-item';
           row.innerHTML =

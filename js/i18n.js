@@ -1133,12 +1133,32 @@ i18nData.dlMap = {
     "RQ06-RGW8外形图","RQ06-RGW9外形图",
     "RQ100-RGW8R外形图","RQ100-RGW8外形图",
     "RQ150-RGW10外形图","RQ150-RGW9外形图",
-    "RQML06直行程外形图","RQML12直行程外形图","RQML54直行程外形图"
+    "RQML06直行程外形图","RQML12直行程外形图","RQML54直行程外形图",
+    /* DWG drawing names (may use 外型图 variant) */
+    "RAIII35A外形图","RAIII40A外形图","RAIII70A外形图","RAIII95A外形图",
+    "RQ03外型图","RQ03-RGW3外型图","RQ06外型图","RQ06外型图-B4",
+    "RQML06直行程","RQML12直行程","RQML54直行程",
+    "RL10系列-外型图","RL80系列-外型图","RL150系列-外型图",
+    "RL系列-直行程外型图","RL10-60就地外型图","RL80-100就地外型图",
+    "RF10-分体外形图",
+    /* 3D model file names */
+    "RA 分体式外型","RAIII90A-RIB10-01外型图",
+    "RQ03 外型图","RQ03-RGW4 外型图","RQ04 外型图",
+    "RQ06 外型图","RQ150 外型图",
+    "RL10 外型图","RL80 外型图","RL150 外型图","RL150总装（就地）"
   ];
   zhDl.forEach(function(zh) {
-    var en = zh.replace(/外形图$/," Dimension Drawing")
-              .replace(/直行程外形图$/," Linear-motion Dimension Drawing")
-              .replace(/减速箱外形图$/," Gearbox Dimension Drawing");
+    var en = zh
+              .replace(/直行程外[型形]图$/," Linear-motion Dimension Drawing")
+              .replace(/直行程$/," Linear-motion")
+              .replace(/减速箱外[型形]图$/," Gearbox Dimension Drawing")
+              .replace(/就地外[型形]图$/," Local Dimension Drawing")
+              .replace(/分体外[型形]图$/," Split-type Dimension Drawing")
+              .replace(/外[型形]图-B4$/," Dimension Drawing - B4")
+              .replace(/外[型形]图$/," Dimension Drawing")
+              .replace(/外[型形]$/," Dimension")
+              .replace(/分体式外[型形]$/," Split-type")
+              .replace(/总装（就地）$/," Assembly (Local)")
     enDl[zh] = en;
     i18nData.dlMap.zh[zh] = zh;
   });
@@ -1416,6 +1436,27 @@ i18nData["zh-TW"]["downloads.series_onoff"] = "開關型系列";
 i18nData.zh["downloads.series_accessories"] = "配件系列";
 i18nData.en["downloads.series_accessories"] = "Accessories";
 i18nData["zh-TW"]["downloads.series_accessories"] = "配件系列";
+
+/* DWG/3D panel group titles */
+i18nData.zh["series.ra"] = "RA系列";
+i18nData.en["series.ra"] = "RA Series";
+i18nData["zh-TW"]["series.ra"] = "RA系列";
+i18nData.zh["series.rq"] = "RQ系列";
+i18nData.en["series.rq"] = "RQ Series";
+i18nData["zh-TW"]["series.rq"] = "RQ系列";
+i18nData.zh["series.rl"] = "RL系列";
+i18nData.en["series.rl"] = "RL Series";
+i18nData["zh-TW"]["series.rl"] = "RL系列";
+
+/* DWG split/local group */
+i18nData.zh["downloads.dwg_group_split"] = "分体式 / 就地";
+i18nData.en["downloads.dwg_group_split"] = "Split-type / Local";
+i18nData["zh-TW"]["downloads.dwg_group_split"] = "分體式 / 就地";
+
+/* 3D 7z note */
+i18nData.zh["downloads.note_7z"] = "7z解压";
+i18nData.en["downloads.note_7z"] = "7z extract";
+i18nData["zh-TW"]["downloads.note_7z"] = "7z解壓";
 
 /* ===== Product card descriptions (products.html) ===== */
 i18nData.cardMap = {

@@ -74,12 +74,7 @@ const PRODUCTS = {
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
-      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" },
-      { name: "RAIII40A-RGW8-02外形图", size: "175 KB", icon: "📐", url: "files/RAIII40A-RGW8-02.pdf" },
-      { name: "RAIII40A-RGW8-03外形图", size: "175 KB", icon: "📐", url: "files/RAIII40A-RGW8-03.pdf" },
-      { name: "RAIII70A-RGW8-02外形图", size: "175 KB", icon: "📐", url: "files/RAIII70A-RGW8-02.pdf" },
-      { name: "RAIII70A-RGW8-03外形图", size: "175 KB", icon: "📐", url: "files/RAIII70A-RGW8-03.pdf" },
-      { name: "RAIII70A-RGW9-02外形图", size: "178 KB", icon: "📐", url: "files/RAIII70A-RGW9-02.pdf" }
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "ra35": {
@@ -104,10 +99,7 @@ const PRODUCTS = {
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
-      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" },
-      { name: "RAIII30A-RGW6-02外形图", size: "280 KB", icon: "📐", url: "files/RAIII30A-RGW6-02.pdf" },
-      { name: "RAIII30A-RGW7-02外形图", size: "273 KB", icon: "📐", url: "files/RAIII30A-RGW7-02.pdf" },
-      { name: "RAIII35A-RGW8-02外形图", size: "273 KB", icon: "📐", url: "files/RAIII35A-RGW8-02.pdf" }
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
   },
   "rl": {
@@ -260,8 +252,6 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
-      { name: "RQ100-RGW8外形图", size: "160 KB", icon: "📐", url: "files/RQ100-RGW8 外形图.pdf" },
-      { name: "RQ100-RGW8R外形图", size: "165 KB", icon: "📐", url: "files/RQ100-RGW8R 外形图.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
       { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
@@ -288,8 +278,6 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
-      { name: "RQ150-RGW9外形图", size: "149 KB", icon: "📐", url: "files/RQ150-RGW9 外形图.pdf" },
-      { name: "RQ150-RGW10外形图", size: "153 KB", icon: "📐", url: "files/RQ150-RGW10 外形图.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
       { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
@@ -339,25 +327,6 @@ const PRODUCTS = {
       { name: "RQ04外形图", size: "249 KB", icon: "📐", url: "files/rq04-dimension.pdf" },
       { name: "RQ06外形图", size: "235 KB", icon: "📐", url: "files/rq06-dimension.pdf" },
       { name: "RQ150外形图", size: "143 KB", icon: "📐", url: "files/rq150-dimension.pdf" },
-      { name: "RQ03-RGW3外形图", size: "251 KB", icon: "📐", url: "files/RQ03-RGW3外形图.pdf" },
-      { name: "RQ03-RGW4外形图", size: "253 KB", icon: "📐", url: "files/RQ03-RGW4外形图.pdf" },
-      { name: "RQ03-RGW4R外形图", size: "247 KB", icon: "📐", url: "files/RQ03-RGW4R 外形图.pdf" },
-      { name: "RQ03-RGW5外形图", size: "246 KB", icon: "📐", url: "files/RQ03-RGW5外形图.pdf" },
-      { name: "RQ03-RGW5R外形图", size: "249 KB", icon: "📐", url: "files/RQ03-RGW5R 外形图.pdf" },
-      { name: "RQ03-RGW6R外形图", size: "259 KB", icon: "📐", url: "files/RQ03-RGW6R 外形图.pdf" },
-      { name: "RQ04-RGW4外形图", size: "262 KB", icon: "📐", url: "files/RQ04-RGW4外形图.pdf" },
-      { name: "RQ04-RGW4R外形图", size: "263 KB", icon: "📐", url: "files/RQ04-RGW4R 外形图.pdf" },
-      { name: "RQ04-RGW5外形图", size: "263 KB", icon: "📐", url: "files/RQ04-RGW5 外形图.pdf" },
-      { name: "RQ04-RGW5R外形图", size: "261 KB", icon: "📐", url: "files/RQ04-RGW5R 外形图.pdf" },
-      { name: "RQ04-RGW6外形图", size: "261 KB", icon: "📐", url: "files/RQ04-RGW6 外形图.pdf" },
-      { name: "RQ04-RGW6R外形图", size: "267 KB", icon: "📐", url: "files/RQ04-RGW6R 外形图.pdf" },
-      { name: "RQ04-RGW7外形图", size: "261 KB", icon: "📐", url: "files/RQ04-RGW7 外形图.pdf" },
-      { name: "RQ04-RGW7R外形图", size: "263 KB", icon: "📐", url: "files/RQ04-RGW7R 外形图.pdf" },
-      { name: "RQ06-RGW7外形图", size: "257 KB", icon: "📐", url: "files/RQ06-RGW7 外形图.pdf" },
-      { name: "RQ06-RGW7R外形图", size: "264 KB", icon: "📐", url: "files/RQ06-RGW7R 外形图.pdf" },
-      { name: "RQ06-RGW8外形图", size: "257 KB", icon: "📐", url: "files/RQ06-RGW8 外形图.pdf" },
-      { name: "RQ06-RGW8R外形图", size: "261 KB", icon: "📐", url: "files/RQ06-RGW8R 外形图.pdf" },
-      { name: "RQ06-RGW9外形图", size: "258 KB", icon: "📐", url: "files/RQ06-RGW9 外型图.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
       { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
@@ -668,45 +637,50 @@ const PRODUCTS = {
 var ra3Add = [
   ["RAIII13A外形图", "233 KB", "files/RAIII13A外形图.pdf"],
   ["RAIII14A外形图", "248 KB", "files/RAIII14A 外形图.pdf"],
-  ["RAIII30A-RGW6-02", "280 KB", "files/RAIII30A-RGW6-02.pdf"],
-  ["RAIII30A-RGW7-02", "273 KB", "files/RAIII30A-RGW7-02.pdf"],
-  ["RAIII30A外形图", "234 KB", "files/RAIII30A外形图.pdf"],
-  ["RAIII35A-RGW8-02", "273 KB", "files/RAIII35A-RGW8-02.pdf"],
-  ["RAIII40A-RGW8-02", "175 KB", "files/RAIII40A-RGW8-02.pdf"],
-  ["RAIII40A-RGW8-03", "175 KB", "files/RAIII40A-RGW8-03.pdf"],
-  ["RAIII70A-RGW8-02", "175 KB", "files/RAIII70A-RGW8-02.pdf"],
-  ["RAIII70A-RGW8-03", "175 KB", "files/RAIII70A-RGW8-03.pdf"],
-  ["RAIII70A-RGW9-02", "178 KB", "files/RAIII70A-RGW9-02.pdf"]
+  ["RAIII30A外形图", "234 KB", "files/RAIII30A外形图.pdf"]
 ];
 ra3Add.forEach(function(e){ PRODUCTS.ra3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
 
-// === RQ3 add ===
-var rq3Add = [
+// === Gear RGW add (配套系列减速箱外形图) ===
+var gearAdd = [
+  // RA系列配套RGW减速箱
+  ["RAIII30A-RGW6-02外形图", "280 KB", "files/RAIII30A-RGW6-02.pdf"],
+  ["RAIII30A-RGW7-02外形图", "273 KB", "files/RAIII30A-RGW7-02.pdf"],
+  ["RAIII35A-RGW8-02外形图", "273 KB", "files/RAIII35A-RGW8-02.pdf"],
+  ["RAIII40A-RGW8-02外形图", "175 KB", "files/RAIII40A-RGW8-02.pdf"],
+  ["RAIII40A-RGW8-03外形图", "175 KB", "files/RAIII40A-RGW8-03.pdf"],
+  ["RAIII70A-RGW8-02外形图", "175 KB", "files/RAIII70A-RGW8-02.pdf"],
+  ["RAIII70A-RGW8-03外形图", "175 KB", "files/RAIII70A-RGW8-03.pdf"],
+  ["RAIII70A-RGW9-02外形图", "178 KB", "files/RAIII70A-RGW9-02.pdf"],
+  // RQ03系列配套RGW减速箱
   ["RQ03-RGW3外形图", "251 KB", "files/RQ03-RGW3外形图.pdf"],
-  ["RQ03-RGW4R外形图", "247 KB", "files/RQ03-RGW4R 外形图.pdf"],
   ["RQ03-RGW4外形图", "253 KB", "files/RQ03-RGW4外形图.pdf"],
-  ["RQ03-RGW5R外形图", "249 KB", "files/RQ03-RGW5R 外形图.pdf"],
+  ["RQ03-RGW4R外形图", "247 KB", "files/RQ03-RGW4R 外形图.pdf"],
   ["RQ03-RGW5外形图", "246 KB", "files/RQ03-RGW5外形图.pdf"],
+  ["RQ03-RGW5R外形图", "249 KB", "files/RQ03-RGW5R 外形图.pdf"],
   ["RQ03-RGW6R外形图", "259 KB", "files/RQ03-RGW6R 外形图.pdf"],
-  ["RQ04-RGW4R外形图", "263 KB", "files/RQ04-RGW4R 外形图.pdf"],
+  // RQ04系列配套RGW减速箱
   ["RQ04-RGW4外形图", "262 KB", "files/RQ04-RGW4外形图.pdf"],
+  ["RQ04-RGW4R外形图", "263 KB", "files/RQ04-RGW4R 外形图.pdf"],
   ["RQ04-RGW5外形图", "263 KB", "files/RQ04-RGW5 外形图.pdf"],
   ["RQ04-RGW5R外形图", "261 KB", "files/RQ04-RGW5R 外形图.pdf"],
   ["RQ04-RGW6外形图", "261 KB", "files/RQ04-RGW6 外形图.pdf"],
   ["RQ04-RGW6R外形图", "267 KB", "files/RQ04-RGW6R 外形图.pdf"],
   ["RQ04-RGW7外形图", "261 KB", "files/RQ04-RGW7 外形图.pdf"],
   ["RQ04-RGW7R外形图", "263 KB", "files/RQ04-RGW7R 外形图.pdf"],
+  // RQ06系列配套RGW减速箱
   ["RQ06-RGW7外形图", "257 KB", "files/RQ06-RGW7 外形图.pdf"],
   ["RQ06-RGW7R外形图", "264 KB", "files/RQ06-RGW7R 外形图.pdf"],
   ["RQ06-RGW8外形图", "257 KB", "files/RQ06-RGW8 外形图.pdf"],
   ["RQ06-RGW8R外形图", "261 KB", "files/RQ06-RGW8R 外形图.pdf"],
   ["RQ06-RGW9外形图", "258 KB", "files/RQ06-RGW9 外型图.pdf"],
+  // RQ100/RQ150系列配套RGW减速箱
   ["RQ100-RGW8外形图", "160 KB", "files/RQ100-RGW8 外形图.pdf"],
   ["RQ100-RGW8R外形图", "165 KB", "files/RQ100-RGW8R 外形图.pdf"],
-  ["RQ150-RGW10外形图", "149 KB", "files/RQ150-RGW10 外形图.pdf"],
-  ["RQ150-RGW9外形图", "153 KB", "files/RQ150-RGW9 外形图.pdf"]
+  ["RQ150-RGW9外形图", "149 KB", "files/RQ150-RGW9 外形图.pdf"],
+  ["RQ150-RGW10外形图", "153 KB", "files/RQ150-RGW10 外形图.pdf"]
 ];
-rq3Add.forEach(function(e){ PRODUCTS.rq3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
+gearAdd.forEach(function(e){ PRODUCTS.gear.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });
 
 // === RQM3 add ===
 var rqm3Add = [

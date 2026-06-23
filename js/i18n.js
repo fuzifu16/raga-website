@@ -1655,9 +1655,9 @@ i18nData["zh-TW"]["downloads.series_modulating"] = "調節型系列";
 i18nData.zh["downloads.series_onoff"] = "开关型系列";
 i18nData.en["downloads.series_onoff"] = "On-Off Series";
 i18nData["zh-TW"]["downloads.series_onoff"] = "開關型系列";
-i18nData.zh["downloads.series_accessories"] = "配件系列";
+i18nData.zh["downloads.series_accessories"] = "配套系列";
 i18nData.en["downloads.series_accessories"] = "Accessories";
-i18nData["zh-TW"]["downloads.series_accessories"] = "配件系列";
+i18nData["zh-TW"]["downloads.series_accessories"] = "配套系列";
 
 /* DWG/3D panel group titles */
 i18nData.zh["series.ra"] = "RA系列";

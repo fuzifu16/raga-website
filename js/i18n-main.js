@@ -19,6 +19,8 @@ const I18N = {
     this.currentLang = this.getSavedLang();
     this.applyLanguage();
     this.setupSwitcher();
+    // Notify dynamic pages (e.g. preview.html) that language has been initialized
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: this.currentLang } }));
   },
 
   t(key) {

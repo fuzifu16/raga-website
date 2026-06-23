@@ -570,15 +570,14 @@ a { color: inherit; }
         '</div>';
     }
 
-    // Re-render when language changes
+    // Re-render when language changes (only for unsupported-format message)
     window.addEventListener('languageChanged', function() {
       var frame = document.getElementById('preview-frame');
-      if (frame && frame.querySelector('iframe') && frame.querySelector('iframe').style.display === 'none' === false) {
-        // Only re-render if showing unsupported message (no iframe or hidden iframe)
-        var iframe = document.getElementById('pdf-iframe');
-        if (!iframe || iframe.style.display === 'none' || !iframe.src) {
-          renderUnsupported(frame);
-        }
+      if (!frame) return;
+      var iframe = document.getElementById('pdf-iframe');
+      // No iframe or no PDF loaded → showing unsupported message → re-render in new language
+      if (!iframe || !iframe.src || iframe.style.display === 'none') {
+        renderUnsupported(frame);
       }
     });
   } catch(e) {

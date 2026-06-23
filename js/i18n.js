@@ -212,6 +212,23 @@ const i18nData = {
     "contact.form_opt_planetary": "行星轮总承",
     "contact.form_opt_adapter": "葵花接盘",
     "contact.form_opt_other": "其他/不明确",
+    "contact.form_opt_rq3": "RQⅢ 003~014系列",
+    "contact.form_opt_rq3b": "RQⅢ 020~040系列",
+    "contact.form_opt_rq060": "RQⅢ 060系列",
+    "contact.form_opt_rqm3": "RQⅢ 100系列",
+    "contact.form_opt_rq150": "RQⅢ150~RQ300系列",
+    "contact.form_opt_rqml06": "RQMLIII06 调节型",
+    "contact.form_opt_rqml12": "RQMLIII12 调节型",
+    "contact.form_opt_rqml54": "RQMLIII54 调节型",
+    "contact.form_opt_rlml10": "RLML10 调节型",
+    "contact.form_opt_rlml20": "RLML20 调节型",
+    "contact.form_opt_rl": "RL智能角行程",
+    "contact.form_opt_rl100": "RL100智能型角行程",
+    "contact.form_opt_rl150": "RL150智能型角行程",
+    "contact.form_opt_rlm": "RLM智能型",
+    "contact.form_opt_rj": "RJ开关型",
+    "contact.form_opt_rgw": "RGW系列减速箱",
+    "contact.form_opt_rib": "RIB系列减速箱",
 
     /* Preview page */
     "preview.unsupported": "此格式不支持在线预览",
@@ -430,6 +447,23 @@ const i18nData = {
     "contact.form_opt_planetary": "Planetary Gear Assembly",
     "contact.form_opt_adapter": "Sunflower Adapter Plate",
     "contact.form_opt_other": "Others / Unspecified",
+    "contact.form_opt_rq3": "RQⅢ 003~014 Series",
+    "contact.form_opt_rq3b": "RQⅢ 020~040 Series",
+    "contact.form_opt_rq060": "RQⅢ 060 Series",
+    "contact.form_opt_rqm3": "RQⅢ 100 Series",
+    "contact.form_opt_rq150": "RQⅢ150~RQ300 Series",
+    "contact.form_opt_rqml06": "RQMLIII06 Modulating",
+    "contact.form_opt_rqml12": "RQMLIII12 Modulating",
+    "contact.form_opt_rqml54": "RQMLIII54 Modulating",
+    "contact.form_opt_rlml10": "RLML10 Modulating",
+    "contact.form_opt_rlml20": "RLML20 Modulating",
+    "contact.form_opt_rl": "RL Intelligent Quarter-turn",
+    "contact.form_opt_rl100": "RL100 Intelligent Quarter-turn",
+    "contact.form_opt_rl150": "RL150 Intelligent Quarter-turn",
+    "contact.form_opt_rlm": "RLM Intelligent",
+    "contact.form_opt_rj": "RJ On-off",
+    "contact.form_opt_rgw": "RGW Series Gearbox",
+    "contact.form_opt_rib": "RIB Series Gearbox",
 
     /* Preview page */
     "preview.unsupported": "This format does not support online preview",
@@ -637,6 +671,8 @@ i18nData.zh["tech.cert_label_480v_en"] = "480V/60Hz 型式试验报告 (英文)"
 i18nData.zh["tech.cert_label_encoder"] = "绝对编码器试验报告";
 i18nData.zh["tech.cert_label_lowtemp_zh"] = "-50°C 低温型式试验报告 (中文)";
 i18nData.zh["tech.cert_label_lowtemp_en"] = "-50°C 低温型式试验报告 (英文)";
+i18nData.zh["tech.cert_calibration_2000n"] = "2000N 扭矩校准证书";
+i18nData.zh["tech.cert_calibration_torque"] = "扭矩检测台校准证书";
 
 /* Certificate image labels — en */
 i18nData.en["tech.cert_label_wenzhou"] = "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.";
@@ -657,6 +693,8 @@ i18nData.en["tech.cert_label_480v_en"] = "480V/60Hz Type Test Report (English)";
 i18nData.en["tech.cert_label_encoder"] = "Absolute Encoder Test Report";
 i18nData.en["tech.cert_label_lowtemp_zh"] = "-50°C Low-temperature Type Test Report (Chinese)";
 i18nData.en["tech.cert_label_lowtemp_en"] = "-50°C Low-temperature Type Test Report (English)";
+i18nData.en["tech.cert_calibration_2000n"] = "2000N Torque Calibration Certificate";
+i18nData.en["tech.cert_calibration_torque"] = "Torque Test Bench Calibration Certificate";
 i18nData.en["tech.cert_group_company"] = "Company Qualifications";
 i18nData.en["tech.cert_group_iso"] = "Management System Certification";
 i18nData.en["tech.cert_group_ex"] = "Explosion-proof Certification";
@@ -1017,6 +1055,23 @@ i18nData["zh-TW"]["contact.form_opt_remote"] = "遙控器";
 i18nData["zh-TW"]["contact.form_opt_planetary"] = "行星輪總承";
 i18nData["zh-TW"]["contact.form_opt_adapter"] = "葵花接盤";
 i18nData["zh-TW"]["contact.form_opt_other"] = "其他/不明確";
+i18nData["zh-TW"]["contact.form_opt_rq3"] = "RQⅢ 003~014系列";
+i18nData["zh-TW"]["contact.form_opt_rq3b"] = "RQⅢ 020~040系列";
+i18nData["zh-TW"]["contact.form_opt_rq060"] = "RQⅢ 060系列";
+i18nData["zh-TW"]["contact.form_opt_rqm3"] = "RQⅢ 100系列";
+i18nData["zh-TW"]["contact.form_opt_rq150"] = "RQⅢ150~RQ300系列";
+i18nData["zh-TW"]["contact.form_opt_rqml06"] = "RQMLIII06 調節型";
+i18nData["zh-TW"]["contact.form_opt_rqml12"] = "RQMLIII12 調節型";
+i18nData["zh-TW"]["contact.form_opt_rqml54"] = "RQMLIII54 調節型";
+i18nData["zh-TW"]["contact.form_opt_rlml10"] = "RLML10 調節型";
+i18nData["zh-TW"]["contact.form_opt_rlml20"] = "RLML20 調節型";
+i18nData["zh-TW"]["contact.form_opt_rl"] = "RL智能角行程";
+i18nData["zh-TW"]["contact.form_opt_rl100"] = "RL100智慧型角行程";
+i18nData["zh-TW"]["contact.form_opt_rl150"] = "RL150智慧型角行程";
+i18nData["zh-TW"]["contact.form_opt_rlm"] = "RLM智慧型";
+i18nData["zh-TW"]["contact.form_opt_rj"] = "RJ開關型";
+i18nData["zh-TW"]["contact.form_opt_rgw"] = "RGW系列減速箱";
+i18nData["zh-TW"]["contact.form_opt_rib"] = "RIB系列減速箱";
 i18nData["zh-TW"]["preview.unsupported"] = "此格式不支持在線預覽";
 i18nData["zh-TW"]["preview.download_hint"] = "請點擊下方「下載文件」按鈕下載後查看";
 i18nData["zh-TW"]["downloads.breadcrumb"] = "資料下載";
@@ -1214,6 +1269,8 @@ i18nData["zh-TW"]["tech.cert_label_480v_en"] = "480V/60Hz 型式試驗報告 (�
 i18nData["zh-TW"]["tech.cert_label_encoder"] = "絕對編碼器試驗報告";
 i18nData["zh-TW"]["tech.cert_label_lowtemp_zh"] = "-50°C 低溫型式試驗報告 (中文)";
 i18nData["zh-TW"]["tech.cert_label_lowtemp_en"] = "-50°C 低溫型式試驗報告 (英文)";
+i18nData["zh-TW"]["tech.cert_calibration_2000n"] = "2000N 扭矩校準證書";
+i18nData["zh-TW"]["tech.cert_calibration_torque"] = "扭矩檢測台校準證書";
 i18nData["zh-TW"]["tech.comm_full"] = "支持現場總線（Profibus、Modbus等）、工業以太網、無線等多種通信方式。可實現遠程監控、智能診斷與預測性維護，幫助企業實現數字化轉型和智能化升級。";
 i18nData["zh-TW"]["tech.comm_title"] = "多種通信方式";
 i18nData["zh-TW"]["tech.core_desc"] = "創新驅動，品質為本 — 瑞基智能執行機構的核心技術優勢";
@@ -1819,3 +1876,77 @@ i18nData.scrollMap = {
 i18nData.zh["preview.load_error"] = "加载失败";
 i18nData.en["preview.load_error"] = "Failed to load";
 i18nData["zh-TW"]["preview.load_error"] = "加載失敗";
+
+/* Partner names */
+i18nData.zh["partner.ansteel"] = "鞍钢集团";
+i18nData.en["partner.ansteel"] = "Ansteel Group";
+i18nData["zh-TW"]["partner.ansteel"] = "鞍鋼集團";
+i18nData.zh["partner.baosteel"] = "宝钢集团";
+i18nData.en["partner.baosteel"] = "Baosteel Group";
+i18nData["zh-TW"]["partner.baosteel"] = "寶鋼集團";
+i18nData.zh["partner.chn_energy"] = "国家能源集团";
+i18nData.en["partner.chn_energy"] = "CHN Energy";
+i18nData["zh-TW"]["partner.chn_energy"] = "國家能源集團";
+i18nData.zh["partner.cnooc"] = "中国海油";
+i18nData.en["partner.cnooc"] = "CNOOC";
+i18nData["zh-TW"]["partner.cnooc"] = "中國海油";
+i18nData.zh["partner.cr_power"] = "华润电力";
+i18nData.en["partner.cr_power"] = "China Resources Power";
+i18nData["zh-TW"]["partner.cr_power"] = "華潤電力";
+i18nData.zh["partner.datang"] = "大唐集团";
+i18nData.en["partner.datang"] = "Datang Group";
+i18nData["zh-TW"]["partner.datang"] = "大唐集團";
+i18nData.zh["partner.shougang"] = "首钢集团";
+i18nData.en["partner.shougang"] = "Shougang Group";
+i18nData["zh-TW"]["partner.shougang"] = "首鋼集團";
+i18nData.zh["partner.zheneng"] = "浙能集团";
+i18nData.en["partner.zheneng"] = "Zheneng Group";
+i18nData["zh-TW"]["partner.zheneng"] = "浙能集團";
+i18nData.zh["partner.cnnc"] = "中国核电";
+i18nData.en["partner.cnnc"] = "CNNC";
+i18nData["zh-TW"]["partner.cnnc"] = "中國核電";
+i18nData.zh["partner.cgn"] = "中广核";
+i18nData.en["partner.cgn"] = "CGN";
+i18nData["zh-TW"]["partner.cgn"] = "中廣核";
+i18nData.zh["partner.sdnp"] = "山东核电";
+i18nData.en["partner.sdnp"] = "Shandong Nuclear Power";
+i18nData["zh-TW"]["partner.sdnp"] = "山東核電";
+i18nData.zh["partner.qsnp"] = "秦山核电";
+i18nData.en["partner.qsnp"] = "Qinshan Nuclear Power";
+i18nData["zh-TW"]["partner.qsnp"] = "秦山核電";
+i18nData.zh["partner.smnp"] = "三门核电";
+i18nData.en["partner.smnp"] = "Sanmen Nuclear Power";
+i18nData["zh-TW"]["partner.smnp"] = "三門核電";
+i18nData.zh["partner.sinopec"] = "中国石化";
+i18nData.en["partner.sinopec"] = "Sinopec";
+i18nData["zh-TW"]["partner.sinopec"] = "中國石化";
+i18nData.zh["partner.petrochina"] = "中国石油";
+i18nData.en["partner.petrochina"] = "PetroChina";
+i18nData["zh-TW"]["partner.petrochina"] = "中國石油";
+i18nData.zh["partner.csg"] = "南方电网";
+i18nData.en["partner.csg"] = "China Southern Power Grid";
+i18nData["zh-TW"]["partner.csg"] = "南方電網";
+i18nData.zh["partner.snwd"] = "南水北调";
+i18nData.en["partner.snwd"] = "South-to-North Water Diversion";
+i18nData["zh-TW"]["partner.snwd"] = "南水北調";
+i18nData.zh["partner.shwater"] = "上海水务海洋";
+i18nData.en["partner.shwater"] = "Shanghai Water & Ocean";
+i18nData["zh-TW"]["partner.shwater"] = "上海水務海洋";
+i18nData.zh["partner.huaneng"] = "中国华能";
+i18nData.en["partner.huaneng"] = "China Huaneng";
+i18nData["zh-TW"]["partner.huaneng"] = "中國華能";
+i18nData.zh["partner.guodian"] = "中国国电";
+i18nData.en["partner.guodian"] = "China Guodian";
+i18nData["zh-TW"]["partner.guodian"] = "中國國電";
+i18nData.zh["partner.conch"] = "海螺集团";
+i18nData.en["partner.conch"] = "Conch Group";
+i18nData["zh-TW"]["partner.conch"] = "海螺集團";
+i18nData.zh["partner.zpc"] = "浙江石油化工";
+i18nData.en["partner.zpc"] = "Zhejiang Petrochemical (ZPC)";
+i18nData["zh-TW"]["partner.zpc"] = "浙江石油化工";
+i18nData.zh["partner.shanghai_electric"] = "上海电气";
+i18nData.en["partner.shanghai_electric"] = "Shanghai Electric";
+i18nData["zh-TW"]["partner.shanghai_electric"] = "上海電氣";
+i18nData.zh["partner.dongfang_electric"] = "东方电气";
+i18nData.en["partner.dongfang_electric"] = "Dongfang Electric";
+i18nData["zh-TW"]["partner.dongfang_electric"] = "東方電氣";

@@ -531,13 +531,19 @@ a { color: inherit; }
       name = decodeURIComponent(s.split('name=')[1].split('&')[0]);
     }
 
+    // i18n helper: use I18N.t() if available, otherwise fallback to hardcoded value
+    function t(key, fallback) {
+      if (typeof I18N !== 'undefined' && I18N.t) return I18N.t(key) || fallback;
+      return fallback;
+    }
+
     if (file) {
       document.getElementById('file-name').textContent = name || file;
       document.title = (name || file) + ' - RAGA';
       var btn = document.getElementById('download-btn');
       btn.href = file;
 
-      // 检查是否为可在线预览的格式（仅 PDF 浏览器能直接渲染）
+      // Check if format is previewable (browser can render PDF natively)
       var ext = file.split('.').pop().toLowerCase();
       var isPreviewable = (ext === 'pdf');
 
@@ -547,22 +553,36 @@ a { color: inherit; }
         iframe.style.display = 'block';
         document.querySelector('.preview-loading').style.display = 'none';
       } else {
-        // 非 PDF 格式（DWG、3D等），不载入 iframe，提示下载
+        // Non-PDF formats (DWG, 3D etc.): show download hint with i18n support
         document.querySelector('.preview-loading').style.display = 'none';
         var frame = document.getElementById('preview-frame');
-        var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
-        var unsupportedText = (i18nData && i18nData[lang] && i18nData[lang]['preview.unsupported']) ? i18nData[lang]['preview.unsupported'] : '此格式不支持在线预览';
-        var downloadHintText = (i18nData && i18nData[lang] && i18nData[lang]['preview.download_hint']) ? i18nData[lang]['preview.download_hint'] : '请点击下方「下载文件」按钮下载后查看';
-        frame.innerHTML = '<div style="text-align:center;padding:80px 20px;color:var(--gray-600);">' +
-          '<div style="font-size:48px;margin-bottom:16px;">📁</div>' +
-          '<p style="font-size:18px;font-weight:600;margin-bottom:8px;">' + unsupportedText + '</p>' +
-          '<p style="font-size:14px;color:var(--gray-500);">' + downloadHintText + '</p>' +
-          '</div>';
+        renderUnsupported(frame);
       }
     }
+
+    function renderUnsupported(frame) {
+      var unsupportedText = t('preview.unsupported', 'This format does not support online preview');
+      var downloadHintText = t('preview.download_hint', 'Please click the "Download File" button below to download and view');
+      frame.innerHTML = '<div style="text-align:center;padding:80px 20px;color:var(--gray-600);">' +
+        '<div style="font-size:48px;margin-bottom:16px;">📁</div>' +
+        '<p style="font-size:18px;font-weight:600;margin-bottom:8px;">' + unsupportedText + '</p>' +
+        '<p style="font-size:14px;color:var(--gray-500);">' + downloadHintText + '</p>' +
+        '</div>';
+    }
+
+    // Re-render when language changes
+    window.addEventListener('languageChanged', function() {
+      var frame = document.getElementById('preview-frame');
+      if (frame && frame.querySelector('iframe') && frame.querySelector('iframe').style.display === 'none' === false) {
+        // Only re-render if showing unsupported message (no iframe or hidden iframe)
+        var iframe = document.getElementById('pdf-iframe');
+        if (!iframe || iframe.style.display === 'none' || !iframe.src) {
+          renderUnsupported(frame);
+        }
+      }
+    });
   } catch(e) {
-    var lang = (I18N && I18N.currentLang) ? I18N.currentLang : 'zh';
-    var errText = (i18nData && i18nData[lang] && i18nData[lang]["preview.load_error"]) ? i18nData[lang]["preview.load_error"] : '加载失败';
+    var errText = (typeof I18N !== 'undefined' && I18N.t) ? (I18N.t('preview.load_error') || 'Failed to load') : 'Failed to load';
     document.getElementById('file-name').textContent = errText + ': ' + e.message;
   }
 })();

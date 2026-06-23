@@ -74,7 +74,12 @@ const PRODUCTS = {
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
-      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" },
+      { name: "RAIII40A-RGW8-02外形图", size: "175 KB", icon: "📐", url: "files/RAIII40A-RGW8-02.pdf" },
+      { name: "RAIII40A-RGW8-03外形图", size: "175 KB", icon: "📐", url: "files/RAIII40A-RGW8-03.pdf" },
+      { name: "RAIII70A-RGW8-02外形图", size: "175 KB", icon: "📐", url: "files/RAIII70A-RGW8-02.pdf" },
+      { name: "RAIII70A-RGW8-03外形图", size: "175 KB", icon: "📐", url: "files/RAIII70A-RGW8-03.pdf" },
+      { name: "RAIII70A-RGW9-02外形图", size: "178 KB", icon: "📐", url: "files/RAIII70A-RGW9-02.pdf" }
     ]
   },
   "ra35": {
@@ -99,7 +104,10 @@ const PRODUCTS = {
     downloads: [
       { name: "RA系列选型手册", size: "2.7 MB", icon: "📘", url: "files/ra-selection-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
-      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" },
+      { name: "RAIII30A-RGW6-02外形图", size: "280 KB", icon: "📐", url: "files/RAIII30A-RGW6-02.pdf" },
+      { name: "RAIII30A-RGW7-02外形图", size: "273 KB", icon: "📐", url: "files/RAIII30A-RGW7-02.pdf" },
+      { name: "RAIII35A-RGW8-02外形图", size: "273 KB", icon: "📐", url: "files/RAIII35A-RGW8-02.pdf" }
     ]
   },
   "rl": {
@@ -252,6 +260,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "RQ100-RGW8外形图", size: "160 KB", icon: "📐", url: "files/RQ100-RGW8 外形图.pdf" },
+      { name: "RQ100-RGW8R外形图", size: "165 KB", icon: "📐", url: "files/RQ100-RGW8R 外形图.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
       { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
@@ -278,6 +288,8 @@ const PRODUCTS = {
     ],
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
+      { name: "RQ150-RGW9外形图", size: "149 KB", icon: "📐", url: "files/RQ150-RGW9 外形图.pdf" },
+      { name: "RQ150-RGW10外形图", size: "153 KB", icon: "📐", url: "files/RQ150-RGW10 外形图.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
       { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]
@@ -327,6 +339,25 @@ const PRODUCTS = {
       { name: "RQ04外形图", size: "249 KB", icon: "📐", url: "files/rq04-dimension.pdf" },
       { name: "RQ06外形图", size: "235 KB", icon: "📐", url: "files/rq06-dimension.pdf" },
       { name: "RQ150外形图", size: "143 KB", icon: "📐", url: "files/rq150-dimension.pdf" },
+      { name: "RQ03-RGW3外形图", size: "251 KB", icon: "📐", url: "files/RQ03-RGW3外形图.pdf" },
+      { name: "RQ03-RGW4外形图", size: "253 KB", icon: "📐", url: "files/RQ03-RGW4外形图.pdf" },
+      { name: "RQ03-RGW4R外形图", size: "247 KB", icon: "📐", url: "files/RQ03-RGW4R 外形图.pdf" },
+      { name: "RQ03-RGW5外形图", size: "246 KB", icon: "📐", url: "files/RQ03-RGW5外形图.pdf" },
+      { name: "RQ03-RGW5R外形图", size: "249 KB", icon: "📐", url: "files/RQ03-RGW5R 外形图.pdf" },
+      { name: "RQ03-RGW6R外形图", size: "259 KB", icon: "📐", url: "files/RQ03-RGW6R 外形图.pdf" },
+      { name: "RQ04-RGW4外形图", size: "262 KB", icon: "📐", url: "files/RQ04-RGW4外形图.pdf" },
+      { name: "RQ04-RGW4R外形图", size: "263 KB", icon: "📐", url: "files/RQ04-RGW4R 外形图.pdf" },
+      { name: "RQ04-RGW5外形图", size: "263 KB", icon: "📐", url: "files/RQ04-RGW5 外形图.pdf" },
+      { name: "RQ04-RGW5R外形图", size: "261 KB", icon: "📐", url: "files/RQ04-RGW5R 外形图.pdf" },
+      { name: "RQ04-RGW6外形图", size: "261 KB", icon: "📐", url: "files/RQ04-RGW6 外形图.pdf" },
+      { name: "RQ04-RGW6R外形图", size: "267 KB", icon: "📐", url: "files/RQ04-RGW6R 外形图.pdf" },
+      { name: "RQ04-RGW7外形图", size: "261 KB", icon: "📐", url: "files/RQ04-RGW7 外形图.pdf" },
+      { name: "RQ04-RGW7R外形图", size: "263 KB", icon: "📐", url: "files/RQ04-RGW7R 外形图.pdf" },
+      { name: "RQ06-RGW7外形图", size: "257 KB", icon: "📐", url: "files/RQ06-RGW7 外形图.pdf" },
+      { name: "RQ06-RGW7R外形图", size: "264 KB", icon: "📐", url: "files/RQ06-RGW7R 外形图.pdf" },
+      { name: "RQ06-RGW8外形图", size: "257 KB", icon: "📐", url: "files/RQ06-RGW8 外形图.pdf" },
+      { name: "RQ06-RGW8R外形图", size: "261 KB", icon: "📐", url: "files/RQ06-RGW8R 外形图.pdf" },
+      { name: "RQ06-RGW9外形图", size: "258 KB", icon: "📐", url: "files/RQ06-RGW9 外型图.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
       { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
     ]

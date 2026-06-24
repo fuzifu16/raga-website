@@ -129,7 +129,8 @@ const PRODUCTS = {
       { name: "RL操作维护手册", size: "1.3 MB", icon: "📄", url: "files/RLOprationManual.pdf" },
       { name: "RL10系列外形图", size: "140 KB", icon: "📐", url: "files/rl10-dimension.pdf" },
       { name: "RL80系列外形图", size: "48 KB", icon: "📐", url: "files/rl80-dimension.pdf" },
-      { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" }
+      { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" },
+      { name: "RLML10系列-直行程外型图", size: "125 KB", icon: "📐", url: "files/RLML10系列-直行程外型图.pdf" }
     ]
   },
   "rlm": {

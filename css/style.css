@@ -1284,7 +1284,7 @@ a { color: inherit; }
 
 /* ===== Client Marquee ===== */
 .client-marquee {
-  overflow: visible;
+  overflow: hidden;
   padding: 40px 0;
   position: relative;
 }
@@ -1294,9 +1294,8 @@ a { color: inherit; }
 }
 .client-marquee-track {
   display: flex;
-  gap: 60px;
   width: max-content;
-  animation: marqueeScroll 30s linear infinite;
+  animation: marqueeScroll 40s linear infinite;
 }
 .client-marquee:hover .client-marquee-track {
   animation-play-state: paused;
@@ -1305,6 +1304,7 @@ a { color: inherit; }
   flex-shrink: 0;
   width: 200px;
   height: 110px;
+  margin-right: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;

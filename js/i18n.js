@@ -1964,3 +1964,6 @@ i18nData["zh-TW"]["partner.shanghai_electric"] = "上海電氣";
 i18nData.zh["partner.dongfang_electric"] = "东方电气";
 i18nData.en["partner.dongfang_electric"] = "Dongfang Electric";
 i18nData["zh-TW"]["partner.dongfang_electric"] = "東方電氣";
+i18nData.zh["partner.harbin_boiler"] = "哈尔滨锅炉";
+i18nData.en["partner.harbin_boiler"] = "Harbin Boiler";
+i18nData["zh-TW"]["partner.harbin_boiler"] = "哈爾濱鍋爐";

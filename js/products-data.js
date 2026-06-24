@@ -522,7 +522,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RLML10产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📄", url: "files/RL选型安装使用说明书.pdf" },
+      { name: "RL安装及维护手册", size: "1.4 MB", icon: "📄", url: "files/RL安装及维护手册.pdf" }
     ]
   },
   "rlml20": {
@@ -543,7 +544,8 @@ const PRODUCTS = {
       ["基本误差", "≤ ±1.0%"]
     ],
     downloads: [
-      { name: "RLML20产品说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" }
+      { name: "RL选型安装使用说明书", size: "1.6 MB", icon: "📄", url: "files/RL选型安装使用说明书.pdf" },
+      { name: "RL安装及维护手册", size: "1.4 MB", icon: "📄", url: "files/RL安装及维护手册.pdf" }
     ]
   },
 

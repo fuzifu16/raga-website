@@ -780,6 +780,8 @@ i18nData.en["preview.title"] = "File Preview";
 i18nData.en["preview.back"] = "← Back to Downloads";
 i18nData.en["preview.download"] = "Download File";
 i18nData.en["preview.loading"] = "Loading file...";
+i18nData.en["preview.back_detail"] = "← Back to Product Detail";
+i18nData.en["preview.back_detail_bc"] = "Product Detail";
 
 /* Machining Center page */
 i18nData.en["machining.title"] = "Precision Machining Center";
@@ -874,6 +876,8 @@ i18nData.zh["preview.title"] = "文件预览";
 i18nData.zh["preview.back"] = "← 返回资料下载";
 i18nData.zh["preview.download"] = "下载文件";
 i18nData.zh["preview.loading"] = "正在加载文件...";
+i18nData.zh["preview.back_detail"] = "← 返回产品详情";
+i18nData.zh["preview.back_detail_bc"] = "产品详情";
 i18nData.zh["machining.title"] = "精密加工中心";
 i18nData.zh["machining.breadcrumb"] = "精密加工中心";
 i18nData.zh["machining.desc"] = "精密加工中心配备先进加工设备，确保零部件加工精度和产品品质";
@@ -1203,6 +1207,8 @@ i18nData["zh-TW"]["preview.back"] = "← 返回資料下載";
 i18nData["zh-TW"]["preview.download"] = "下載文件";
 i18nData["zh-TW"]["preview.loading"] = "正在加載文件...";
 i18nData["zh-TW"]["preview.title"] = "文件預覽";
+i18nData["zh-TW"]["preview.back_detail"] = "← 返回產品詳情";
+i18nData["zh-TW"]["preview.back_detail_bc"] = "產品詳情";
 i18nData["zh-TW"]["production.back"] = "← 返回首頁";
 i18nData["zh-TW"]["production.breadcrumb"] = "總裝與裝配生產線";
 i18nData["zh-TW"]["production.desc"] = "現代化總裝生產線，確保每一臺產品都經過嚴格的裝配和調試";

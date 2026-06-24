@@ -259,7 +259,7 @@
           '<div class="file-info"><span class="file-icon">' + dl.icon + '</span><div><div class="file-name">' + dlName + '</div><div class="file-size">' + dl.size + '</div></div></div>' +
           (dl.url
             ? (dl.url.toLowerCase().endsWith('.pdf')
-              ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '" target="_blank" class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
+              ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&back=' + encodeURIComponent(window.location.href) + '" target="_blank" class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
               : '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + dlBtnText + '</a>')
             : '<a href="#" onclick="alert((i18nData && i18nData[I18N.currentLang] && i18nData[I18N.currentLang][\'detail.coming_soon\']) || \'Coming Soon\');return false;" class="btn btn-sm btn-primary">' + dlBtnText + '</a>');
         downloadsDiv.appendChild(item);

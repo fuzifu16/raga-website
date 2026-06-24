@@ -531,6 +531,21 @@ a { color: inherit; }
       name = decodeURIComponent(s.split('name=')[1].split('&')[0]);
     }
 
+    if (s.indexOf('back=') !== -1) {
+      var backUrl = decodeURIComponent(s.split('back=')[1].split('&')[0]);
+      var backBtn = document.querySelector('.preview-actions a[data-i18n="preview.back"]');
+      if (backBtn) {
+        backBtn.href = backUrl;
+        backBtn.setAttribute('data-i18n', 'preview.back_detail');
+        // Also update breadcrumb to link to product detail page
+        var crumb = document.querySelector('.breadcrumb a[data-i18n="nav.downloads"]');
+        if (crumb) {
+          crumb.href = backUrl;
+          crumb.setAttribute('data-i18n', 'preview.back_detail_bc');
+        }
+      }
+    }
+
     // i18n helper: use I18N.t() if available, otherwise fallback to hardcoded value
     function t(key, fallback) {
       if (typeof I18N !== 'undefined' && I18N.t) return I18N.t(key) || fallback;

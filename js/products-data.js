@@ -690,6 +690,6 @@ gearAdd.forEach(function(e){ PRODUCTS.gear.downloads.push({name:e[0],size:e[1],i
 var rqm3Add = [
   ["RQML06直行程外形图", "254 KB", "files/RQML06直行程.pdf"],
   ["RQML12直行程外形图", "266 KB", "files/RQML12直行程.pdf"],
-  ["RQML54直行程外形图", "258 KB", "files/RQML54直行程.pdf"]
+  ["RQML54直行程外形图", "258 KB", "files/RQMLIII54直行程.pdf"]
 ];
 rqm3Add.forEach(function(e){ PRODUCTS.rqm3.downloads.push({name:e[0],size:e[1],icon:"📐",url:e[2]}); });

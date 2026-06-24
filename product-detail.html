@@ -119,7 +119,7 @@
         </div>
 
         <div class="product-downloads">
-          <h3 data-i18n="detail.downloads">资料下载</h3>
+          <h3 data-i18n="detail.previews">资料预览</h3>
           <div id="detail-downloads"></div>
         </div>
 
@@ -245,8 +245,8 @@
     // Downloads
     var downloadsDiv = document.getElementById('detail-downloads');
     downloadsDiv.innerHTML = '';
-    var dlBtnText = (i18nData && i18nData[lang] && i18nData[lang]['detail.download']) ? i18nData[lang]['detail.download'] : '下载';
-    var dlNoneText = (i18nData && i18nData[lang] && i18nData[lang]['detail.no_downloads']) ? i18nData[lang]['detail.no_downloads'] : '暂无资料下载';
+    var dlBtnText = (i18nData && i18nData[lang] && i18nData[lang]['detail.preview']) ? i18nData[lang]['detail.preview'] : '预览';
+    var dlNoneText = (i18nData && i18nData[lang] && i18nData[lang]['detail.no_previews']) ? i18nData[lang]['detail.no_previews'] : '暂无资料预览';
     if (product.downloads && product.downloads.length) {
       product.downloads.filter(function(dl) { return dl.icon !== '\uD83D\uDCD0'; }).forEach(function(dl) {
         var dlName = dl.name;
@@ -258,7 +258,9 @@
         item.innerHTML =
           '<div class="file-info"><span class="file-icon">' + dl.icon + '</span><div><div class="file-name">' + dlName + '</div><div class="file-size">' + dl.size + '</div></div></div>' +
           (dl.url
-            ? '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
+            ? (dl.url.toLowerCase().endsWith('.pdf')
+              ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '" target="_blank" class="btn btn-sm btn-primary">' + dlBtnText + '</a>'
+              : '<a href="' + dl.url + '" download class="btn btn-sm btn-primary">' + dlBtnText + '</a>')
             : '<a href="#" onclick="alert((i18nData && i18nData[I18N.currentLang] && i18nData[I18N.currentLang][\'detail.coming_soon\']) || \'Coming Soon\');return false;" class="btn btn-sm btn-primary">' + dlBtnText + '</a>');
         downloadsDiv.appendChild(item);
       });

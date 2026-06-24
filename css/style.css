@@ -1294,6 +1294,7 @@ a { color: inherit; }
 }
 .client-marquee-track {
   display: flex;
+  gap: 60px;
   width: max-content;
   animation: marqueeScroll 40s linear infinite;
 }
@@ -1304,7 +1305,6 @@ a { color: inherit; }
   flex-shrink: 0;
   width: 200px;
   height: 110px;
-  margin-right: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;

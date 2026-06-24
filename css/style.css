@@ -1285,7 +1285,7 @@ a { color: inherit; }
 /* ===== Client Marquee ===== */
 .client-marquee {
   overflow: hidden;
-  padding: 40px 0;
+  padding: 130px 0;
   position: relative;
 }
 .client-marquee::before,

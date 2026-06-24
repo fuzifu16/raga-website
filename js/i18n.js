@@ -179,9 +179,11 @@ const i18nData = {
     "detail.quote": "获取报价 →",
     "detail.specs": "技术参数",
     "detail.downloads": "资料下载",
+    "detail.previews": "资料预览",
     "detail.preview": "预览",
     "detail.download": "下载",
     "detail.no_downloads": "暂无资料下载",
+    "detail.no_previews": "暂无资料预览",
     "detail.coming_soon": "即将上线",
 
     /* Contact — company names in office cards */
@@ -414,9 +416,11 @@ const i18nData = {
     "detail.quote": "Get Quote →",
     "detail.specs": "Technical Specifications",
     "detail.downloads": "Downloads",
+    "detail.previews": "Previews",
     "detail.preview": "Preview",
     "detail.download": "Download",
     "detail.no_downloads": "No downloads available",
+    "detail.no_previews": "No previews available",
     "detail.coming_soon": "Coming Soon",
 
     /* Contact — company names in office cards */
@@ -1020,7 +1024,9 @@ i18nData["zh-TW"]["cta.title"] = "需要專業的閥門執行機構解決方案�
 i18nData["zh-TW"]["detail.back"] = "← 返回產品列表";
 i18nData["zh-TW"]["detail.download"] = "下載";
 i18nData["zh-TW"]["detail.downloads"] = "資料下載";
+i18nData["zh-TW"]["detail.previews"] = "資料預覽";
 i18nData["zh-TW"]["detail.no_downloads"] = "暫無資料下載";
+i18nData["zh-TW"]["detail.no_previews"] = "暫無資料預覽";
 i18nData["zh-TW"]["detail.not_found"] = "產品未找到";
 i18nData["zh-TW"]["detail.not_found_desc"] = "請返回產品列表查看。";
 i18nData["zh-TW"]["detail.not_found_title"] = "未找到該產品";

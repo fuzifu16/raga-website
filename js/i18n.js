@@ -158,6 +158,8 @@ const i18nData = {
     "contact.phone": "电话",
     "contact.fax": "传真",
     "contact.email": "邮箱",
+    "contact.website": "官网",
+    "contact.website_url": "www.raga.com.cn",
     "contact.form_title": "在线留言",
     "contact.office_wenzhou": "温州基地",
     "contact.office_shanghai": "上海基地",
@@ -394,6 +396,8 @@ const i18nData = {
     "contact.phone": "Phone",
     "contact.fax": "Fax",
     "contact.email": "Email",
+    "contact.website": "Website",
+    "contact.website_url": "www.raga.com.cn",
     "contact.form_title": "Online Message",
     "contact.office_wenzhou": "Wenzhou Office",
     "contact.office_shanghai": "Shanghai Office",
@@ -719,10 +723,18 @@ i18nData.zh["section.contact_subtitle"] = "Contact";
 i18nData.en["section.contact_subtitle"] = "Contact";
 
 /* Contact address details */
+i18nData.zh["contact.addr_wenzhou_full"] = "浙江省温州市炬光园中路128号1号楼";
+i18nData.en["contact.addr_wenzhou_full"] = "No.128 Juguangyuan Middle Road, Building 1, Wenzhou, Zhejiang";
+i18nData.zh["contact.company_wenzhou"] = "温州瑞基测控设备有限公司";
+i18nData.en["contact.company_wenzhou"] = "Wenzhou Raga Measurement & Control Equipment Co., Ltd.";
 i18nData.zh["contact.address_wenzhou"] = "温州基地：浙江省温州市";
 i18nData.en["contact.address_wenzhou"] = "Wenzhou Office: Wenzhou, Zhejiang";
 i18nData.zh["contact.address_shanghai"] = "上海基地：上海市";
 i18nData.en["contact.address_shanghai"] = "Shanghai Office: Shanghai";
+i18nData.zh["contact.addr_shanghai_full"] = "上海市沪杭公路755号11幢";
+i18nData.en["contact.addr_shanghai_full"] = "No.755 Huhang Road, Building 11, Shanghai";
+i18nData.zh["contact.company_shanghai"] = "上海瑞基瑞然自动化技术有限公司";
+i18nData.en["contact.company_shanghai"] = "Shanghai Raga Ruiran Automation Technology Co., Ltd.";
 i18nData.zh["contact.address_taicang"] = "太仓基地：江苏省太仓市";
 i18nData.en["contact.address_taicang"] = "Taicang Office: Taicang, Jiangsu";
 
@@ -997,11 +1009,17 @@ i18nData["zh-TW"]["contact.address"] = "公司地址";
 i18nData["zh-TW"]["contact.address_shanghai"] = "上海基地：上海市";
 i18nData["zh-TW"]["contact.address_taicang"] = "太倉基地：江蘇省太倉市";
 i18nData["zh-TW"]["contact.address_wenzhou"] = "溫州基地：浙江省溫州市";
+i18nData["zh-TW"]["contact.addr_wenzhou_full"] = "浙江省溫州市炬光園中路128號1號樓";
+i18nData["zh-TW"]["contact.addr_shanghai_full"] = "上海市滬杭公路755號11幢";
+i18nData["zh-TW"]["contact.company_wenzhou"] = "溫州瑞基測控設備有限公司";
+i18nData["zh-TW"]["contact.company_shanghai"] = "上海瑞基瑞然自動化技術有限公司";
 i18nData["zh-TW"]["contact.alert_success"] = "感謝您的留言，我們會盡快與您聯繫！";
 i18nData["zh-TW"]["contact.breadcrumb"] = "聯繫我們";
 i18nData["zh-TW"]["contact.contact_col"] = "聯繫人";
 i18nData["zh-TW"]["contact.desc"] = "歡迎來電諮詢，我們將竭誠為您服務";
 i18nData["zh-TW"]["contact.email"] = "郵箱";
+i18nData["zh-TW"]["contact.website"] = "官網";
+i18nData["zh-TW"]["contact.website_url"] = "www.raga.com.cn";
 i18nData["zh-TW"]["contact.fax"] = "傳真";
 i18nData["zh-TW"]["contact.form_email"] = "郵箱地址";
 i18nData["zh-TW"]["contact.form_email_placeholder"] = "請輸入您的郵箱";

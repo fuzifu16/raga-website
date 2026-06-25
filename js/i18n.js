@@ -780,6 +780,7 @@ i18nData.en["preview.title"] = "File Preview";
 i18nData.en["preview.back"] = "← Back to Downloads";
 i18nData.en["preview.download"] = "Download File";
 i18nData.en["preview.loading"] = "Loading file...";
+i18nData.en["preview.title_video"] = "Video Playback";
 i18nData.en["preview.back_detail"] = "← Back to Product Detail";
 i18nData.en["preview.back_detail_bc"] = "Product Detail";
 
@@ -876,6 +877,7 @@ i18nData.zh["preview.title"] = "文件预览";
 i18nData.zh["preview.back"] = "← 返回资料下载";
 i18nData.zh["preview.download"] = "下载文件";
 i18nData.zh["preview.loading"] = "正在加载文件...";
+i18nData.zh["preview.title_video"] = "视频播放";
 i18nData.zh["preview.back_detail"] = "← 返回产品详情";
 i18nData.zh["preview.back_detail_bc"] = "产品详情";
 i18nData.zh["machining.title"] = "精密加工中心";
@@ -1206,6 +1208,7 @@ i18nData["zh-TW"]["nav.toggle_label"] = "菜單";
 i18nData["zh-TW"]["preview.back"] = "← 返回資料下載";
 i18nData["zh-TW"]["preview.download"] = "下載文件";
 i18nData["zh-TW"]["preview.loading"] = "正在加載文件...";
+i18nData["zh-TW"]["preview.title_video"] = "視頻播放";
 i18nData["zh-TW"]["preview.title"] = "文件預覽";
 i18nData["zh-TW"]["preview.back_detail"] = "← 返回產品詳情";
 i18nData["zh-TW"]["preview.back_detail_bc"] = "產品詳情";
@@ -1376,6 +1379,7 @@ i18nData.dlMap = {
     "RLML20产品说明书": "RLML20 Product Manual",
     "RL操作维护手册": "RL操作维护手册",
     "RAIII系列接线图": "RAIII系列接线图",
+    "RA系列开关行程调试": "RA系列开关行程调试", "RL系列开关行程调试": "RL系列开关行程调试",
   },
   "en": {
     "RA系列选型手册": "RA Series Selection Guide",
@@ -1397,7 +1401,8 @@ i18nData.dlMap = {
     "RLML10产品说明书": "RLML10 Product Manual",
     "RLML20产品说明书": "RLML20 Product Manual",
     "RL操作维护手册": "RL Operation & Maintenance Manual",
-    "RAIII系列接线图": "RAIII Series Wiring Diagram"
+    "RAIII系列接线图": "RAIII Series Wiring Diagram",
+    "RA系列开关行程调试": "RA Series Stroke Adjustment", "RL系列开关行程调试": "RL Series Stroke Adjustment"
   }
 };
 
@@ -1702,6 +1707,9 @@ i18nData["zh-TW"]["downloads.company_section"] = "公司宣傳冊";
 i18nData.zh["downloads.company_material"] = "公司宣传资料";
 i18nData.en["downloads.company_material"] = "Company Brochure Material";
 i18nData["zh-TW"]["downloads.company_material"] = "公司宣傳資料";
+i18nData.zh["downloads.video_section"] = "视频教程";
+i18nData.en["downloads.video_section"] = "Video Tutorials";
+i18nData["zh-TW"]["downloads.video_section"] = "視頻教程";
 i18nData.zh["downloads.drawings_section"] = "所有外形图";
 i18nData.en["downloads.drawings_section"] = "All Dimension Drawings";
 i18nData["zh-TW"]["downloads.drawings_section"] = "所有外形圖";

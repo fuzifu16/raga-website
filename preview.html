@@ -558,15 +558,26 @@ a { color: inherit; }
       var btn = document.getElementById('download-btn');
       btn.href = file;
 
-      // Check if format is previewable (browser can render PDF natively)
+      // Check if format is previewable (browser can render PDF natively, or video formats)
       var ext = file.split('.').pop().toLowerCase();
       var isPreviewable = (ext === 'pdf');
+      var isVideo = (ext === 'mp4' || ext === 'webm' || ext === 'mov');
 
       if (isPreviewable) {
         var iframe = document.getElementById('pdf-iframe');
         iframe.src = file;
         iframe.style.display = 'block';
         document.querySelector('.preview-loading').style.display = 'none';
+      } else if (isVideo) {
+        document.querySelector('.preview-loading').style.display = 'none';
+        var frame = document.getElementById('preview-frame');
+        frame.innerHTML = '<div style="max-width:900px;margin:0 auto;"><video controls autoplay style="width:100%;max-height:70vh;border-radius:8px;" src="' + file + '">您的浏览器不支持视频播放</video></div>';
+        // Update breadcrumb text for video
+        var bcSpan = document.querySelector('.breadcrumb span');
+        if (bcSpan) {
+          bcSpan.textContent = t('preview.title_video', '视频播放');
+          bcSpan.setAttribute('data-i18n', 'preview.title_video');
+        }
       } else {
         // Non-PDF formats (DWG, 3D etc.): show download hint with i18n support
         document.querySelector('.preview-loading').style.display = 'none';

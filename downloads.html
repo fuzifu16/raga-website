@@ -359,6 +359,35 @@
       renderSection(s.key, items);
     });
 
+    // 视频教程区域
+    var videoSection = document.createElement('div');
+    videoSection.className = 'download-section';
+    var videoTitle = document.createElement('h3');
+    videoTitle.textContent = t('downloads.video_section');
+    videoSection.appendChild(videoTitle);
+    var videoGrid = document.createElement('div');
+    videoGrid.className = 'download-grid';
+    var videoData = [
+      { name: 'RA系列开关行程调试', size: '20.3 MB', icon: '🎬', url: 'videos/RA系列开关行程调试.mp4', series: t('downloads.series_ra') },
+      { name: 'RL系列开关行程调试', size: '19.3 MB', icon: '🎬', url: 'videos/RL系列开关行程调试.mp4', series: t('downloads.series_rl') }
+    ];
+    videoData.forEach(function(v) {
+      var card = document.createElement('div');
+      card.className = 'download-card';
+      card.innerHTML =
+        '<div class="file-icon">' + v.icon + '</div>' +
+        '<div class="file-info">' +
+          '<div class="file-name">' + tlDlName(v.name) + '</div>' +
+          '<div class="file-meta">' + v.size + ' | ' + v.series + '</div>' +
+        '</div>' +
+        '<div class="dl-btns">' +
+          '<a href="preview.html?file=' + encodeURIComponent(v.url) + '&name=' + encodeURIComponent(tlDlName(v.name)) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>' +
+        '</div>';
+      videoGrid.appendChild(card);
+    });
+    videoSection.appendChild(videoGrid);
+    container.appendChild(videoSection);
+
     // 所有外形图区域（PDF + DWG 并排）
     var groups = series.map(function(s) {
       var items = [];

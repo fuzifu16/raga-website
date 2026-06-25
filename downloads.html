@@ -29,6 +29,14 @@
     .download-card .dl-btns { display: flex; gap: 6px; flex-shrink: 0; }
     .btn-preview { background: #2563EB; color: #fff; border: 2px solid #2563EB; }
     .btn-preview:hover { background: #1D4ED8; border-color: #1D4ED8; transform: translateY(-2px); }
+    /* 视频弹窗 */
+    .video-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; align-items: center; justify-content: center; }
+    .video-modal-overlay.active { display: flex; }
+    .video-modal-box { background: #000; border-radius: 8px; overflow: hidden; position: relative; max-width: 90vw; max-height: 85vh; width: 800px; }
+    .video-modal-box video { width: 100%; height: auto; display: block; max-height: 80vh; background: #000; }
+    .video-modal-close { position: absolute; top: 8px; right: 12px; width: 36px; height: 36px; background: rgba(255,255,255,0.2); border: none; border-radius: 50%; color: #fff; font-size: 22px; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10; transition: background 0.2s; }
+    .video-modal-close:hover { background: rgba(255,255,255,0.4); }
+    .video-modal-title { padding: 12px 16px; color: #fff; font-size: 15px; font-weight: 600; background: #1a1a1a; }
     .download-card .btn-sm { padding: 4px 10px; font-size: 11px; }
     @media (max-width: 768px) { .download-grid { grid-template-columns: 1fr; } }
     /* ===== 外形图可折叠下拉面板（仿 select 下拉框格式） ===== */
@@ -381,7 +389,7 @@
           '<div class="file-meta">' + v.size + ' | ' + v.series + '</div>' +
         '</div>' +
         '<div class="dl-btns">' +
-          '<a href="preview.html?file=' + encodeURIComponent(v.url) + '&name=' + encodeURIComponent(tlDlName(v.name)) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>' +
+          '<button class="btn btn-sm btn-preview" onclick="openVideoModal(\'' + encodeURIComponent(v.url) + '\', \'' + tlDlName(v.name).replace(/'/g, "\\'") + '\')">' + t('downloads.btn_preview') + '</button>' +
         '</div>';
       videoGrid.appendChild(card);
     });
@@ -658,6 +666,41 @@
     renderDownloadsPage();
   }
 })();
+</script>
+
+<!-- 视频弹窗 -->
+<div class="video-modal-overlay" id="videoModal">
+  <div class="video-modal-box">
+    <div class="video-modal-title" id="videoModalTitle"></div>
+    <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+    <video id="videoPlayer" controls playsinline></video>
+  </div>
+</div>
+<script>
+function openVideoModal(url, name) {
+  var overlay = document.getElementById('videoModal');
+  var player = document.getElementById('videoPlayer');
+  var title = document.getElementById('videoModalTitle');
+  title.textContent = decodeURIComponent(name || url.split('/').pop());
+  player.src = decodeURIComponent(url);
+  overlay.classList.add('active');
+  player.play();
+}
+function closeVideoModal() {
+  var overlay = document.getElementById('videoModal');
+  var player = document.getElementById('videoPlayer');
+  player.pause();
+  player.src = '';
+  overlay.classList.remove('active');
+}
+// 点击遮罩关闭
+document.getElementById('videoModal').addEventListener('click', function(e) {
+  if (e.target === this) closeVideoModal();
+});
+// ESC 关闭
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeVideoModal();
+});
 </script>
 </body>
 </html>

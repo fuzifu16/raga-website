@@ -390,6 +390,7 @@
         '</div>' +
         '<div class="dl-btns">' +
           '<button class="btn btn-sm btn-preview" onclick="openVideoModal(\'' + encodeURIComponent(v.url) + '\', \'' + tlDlName(v.name).replace(/'/g, "\\'") + '\')">' + t('downloads.btn_preview') + '</button>' +
+          '<a href="' + v.url + '" download class="btn btn-sm" style="border:1px solid #2563EB;color:#2563EB;background:#fff;">' + t('downloads.btn_download') + '</a>' +
         '</div>';
       videoGrid.appendChild(card);
     });

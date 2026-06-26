@@ -1,6 +1,7 @@
 /* ===== RAGA 瑞基 - i18n Translation Data ===== */
 const i18nData = {
   "zh-TW": {},
+  "ru": {},
   "zh": {
     /* Top Bar */
     "topbar.slogan": "温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商",
@@ -2002,3 +2003,643 @@ i18nData["zh-TW"]["partner.ceec"] = "中國能建";
 i18nData.zh["partner.nwepdi"] = "西北电力设计院";
 i18nData.en["partner.nwepdi"] = "NWEPDI";
 i18nData["zh-TW"]["partner.nwepdi"] = "西北電力設計院";
+
+/* ===== Russian translations (ru) ===== */
+i18nData.ru = {
+  /* Top Bar */
+  "topbar.slogan": "Вэньчжоу RAGA — Профессиональный производитель интеллектуальных электроприводов для клапанов",
+  "topbar.phone": "📞 0577-56582698",
+  "topbar.lang_zh": "中文",
+  "topbar.lang_en": "English",
+  "topbar.lang_tw": "繁體",
+  "topbar.lang_ru": "Русский",
+  "topbar.wechat_scan": "Сканировать через WeChat",
+
+  /* Navigation */
+  "nav.home": "Главная",
+  "nav.about": "О компании",
+  "nav.products": "Продукция",
+  "nav.cases": "Примеры внедрения",
+  "nav.tech": "Технологии",
+  "nav.contact": "Контакты",
+  "nav.downloads": "Загрузки",
+  "nav.toggle_label": "Меню",
+
+  /* Footer */
+  "footer.brand": "RAGA — Профессиональный производитель интеллектуальных электроприводов для клапанов, предоставляющий надежные приводные решения для глобальной промышленной автоматизации.",
+  "footer.quick_links": "Быстрые ссылки",
+  "footer.product_series": "Серии продукции",
+  "footer.contact_info": "Контактная информация",
+  "footer.copyright": "Copyright &copy; 2026 Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. | Shanghai RAGA Ruiran Automation Technology Co., Ltd. All Rights Reserved.",
+  "footer.icp": "ICP: ZheICP备2021002987号",
+  "footer.series_ra": "Серия RA Многооборотная",
+  "footer.series_rq": "Серия RQ Прямоходная",
+  "footer.series_rl": "Серия RL/RLM Неполнооборотная",
+  "footer.series_rjm": "Комплектующие серии",
+  "footer.series_accessory": "Аксессуары",
+  "footer.online_msg": "Онлайн сообщение",
+  "footer.shanghai_label": "Шанхай: ",
+  "footer.wenzhou_label": "Вэньчжоу: ",
+
+  /* Home */
+  "hero.tag": "Интеллектуальный привод клапана",
+  "hero.title": "Точный привод<br>Умное управление",
+  "hero.desc": "RAGA — Специализируется на НИОКР и производстве интеллектуальных электроприводов для клапанов, предоставляя надежные, точные и интеллектуальные приводные решения для глобальной промышленной автоматизации.",
+  "hero.btn_products": "Посмотреть продукцию →",
+  "hero.btn_more": "Подробнее",
+
+  "section.about_subtitle": "О нас",
+  "section.about_title": "О RAGA",
+  "section.about_desc": "Сосредоточены на промышленной автоматизации, создавая высококачественные интеллектуальные приводы",
+  "about.company_name": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
+  "about.p1": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. Расположена в Вэньчжоу и Шанхае, имеет современные производственные базы и передовое оборудование.",
+  "about.p2": "Продукция широко используется в нефтяной, электроэнергетической, металлургической, водообрабатывающей отраслях, продается на внутреннем и международном рынках.",
+  "about.stat1_num": "20+",
+  "about.stat1_label": "Лет опыта",
+  "about.stat2_num": "20,000",
+  "about.stat2_label": "Годовая мощность (шт)",
+  "about.stat3_num": "10+",
+  "about.stat3_label": "Серий продукции",
+  "about.btn_more": "Подробнее →",
+
+  "section.products_subtitle": "Продукция",
+  "section.products_title": "Центр продукции",
+  "section.products_desc": "Полная серия интеллектуальных электроприводов для различных промышленных применений",
+  "products.view_all": "Посмотреть всю продукцию →",
+
+  "home.production_subtitle": "Производство",
+  "home.production_title": "Производственные сцены",
+  "home.production_desc": "Современные производственные линии и строгая система контроля качества обеспечивают надежность каждого изделия",
+  "home.prod_1": "Сборка и производственная линия",
+  "home.prod_2": "Прецизионная обработка",
+  "home.prod_3": "Линия сборки",
+  "home.prod_4": "Оборудование для контроля качества",
+
+  "home.news_subtitle": "Новости",
+  "home.news_title": "Новости и события",
+  "home.news_desc": "Последние новости и отраслевая информация от RAGA",
+  "home.news_1_title": "Функция шины Modbus от RAGA",
+  "home.news_1_summary": "Функция шины Modbus от RAGA поддерживает стандартные протоколы связи Modbus RTU/ASCII, обеспечивая бесшовную интеграцию с различными системами DCS и PLC.",
+  "home.news_2_title": "Интеллектуальный электропривод RAGA PROFIBUS",
+  "home.news_2_summary": "Интеллектуальные электроприводы RAGA PROFIBUS поддерживают протокол полевой шины PROFIBUS-DP, обладая высокоскоростными и надежными возможностями связи.",
+  "home.news_3_title": "Система беспроводного управления и эксплуатации RAGA",
+  "home.news_3_summary": "Система беспроводного управления и эксплуатации электроприводов RAGA использует технологию беспроводной связи LoRaWAN.",
+  "home.news_more": "Подробнее →",
+  "news.view_document": "Посмотреть документ →",
+
+  "section.tech_subtitle": "Технологии",
+  "section.tech_title": "Технологии",
+  "section.tech_desc": "Инновационный подход, качество — основные технологии интеллектуальных приводов RAGA",
+  "tech.nonintrusive": "Неинвазивная настройка",
+  "tech.nonintrusive_desc": "Все параметры могут быть установлены без открытия крышки электрического блока, степень защиты IP68.",
+  "tech.lcd": "Графический дисплей",
+  "tech.lcd_desc": "Графический точечно-матричный ЖК-дисплей, многоязычный дисплей, мониторинг рабочего состояния в реальном времени.",
+  "tech.protection": "Многоуровневая защита",
+  "tech.protection_desc": "Защита от перегрузки по моменту, перегрева, пропадания фазы, коррекция последовательности фаз, сертификация по взрывозащите ExdⅡCT4.",
+  "tech.view_all": "Посмотреть все технологии →",
+
+  "cta.title": "Нужны профессиональные решения для приводов клапанов?",
+  "cta.desc": "RAGA имеет более чем 20-летний опыт работы в отрасли, предоставляя индивидуальные решения интеллектуальных приводов.",
+  "cta.btn": "Связаться с нами →",
+
+  /* About Page */
+  "about.page_title": "О компании",
+  "about.breadcrumb": "О компании",
+  "about.full_title": "О RAGA",
+  "about.full_p1": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. Расположена в Вэньчжоу и Шанхае.",
+  "about.full_p2": "Для удовлетворения растущего спроса на поставки компания основала Shanghai RAGA Ruiran Automation Technology Co., Ltd. и RAGA (Taicang) Co., Ltd.",
+  "about.history": "История развития",
+  "about.culture": "Корпоративная культура",
+  "about.culture_vision": "Стать мировым производителем интеллектуальных приводов",
+  "about.culture_mission": "Предоставление надежных приводных решений для глобальной промышленной автоматизации",
+  "about.culture_values": "Честность, Инновации, Точность, Эффективность",
+  "about.culture_vision_label": "Видение: ",
+  "about.culture_mission_label": "Миссия: ",
+  "about.culture_values_label": "Основные ценности: ",
+  "about.production": "Производственные возможности",
+  "about.milestone_2005": "Основана Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd., фокус на НИОКР и производстве электроприводов",
+  "about.milestone_2010": "Запуск серии интеллектуальных электроприводов RA, широко признанная рынком",
+  "about.milestone_2013": "Запуск веб-сайта, расширение линейки продукции до полной серии интеллектуальных приводов",
+  "about.milestone_2018": "Основана RAGA (Taicang) Co., Ltd., новая производственная линия с мощностью 20,000 единиц в год",
+  "about.milestone_2021": "Основана Shanghai RAGA Ruiran Automation Technology Co., Ltd., расширение на рынок Восточного Китая",
+  "about.prod_1": "Три базы в Вэньчжоу, Шанхае и Тайцане с годовой мощностью 20,000 единиц",
+  "about.prod_2": "Современные обрабатывающие центры и специальное ЧПУ оборудование",
+  "about.prod_3": "Полная испытательная лаборатория, строгие заводские испытания для всей продукции",
+  "about.prod_4": "Сертифицировано по системе менеджмента качества ISO9001",
+  "about.prod_5": "Взрывозащита ExdⅡCT4, степень защиты IP68",
+
+  /* Products Page */
+  "products.page_title": "Продукция",
+  "products.breadcrumb": "Продукция",
+  "products.filter_all": "Вся продукция",
+  "products.sub_multi": "Многооборотная серия",
+  "products.sub_partial": "Прямоходная серия",
+  "products.sub_angle": "Неполнооборотная серия",
+  "products.sub_modulating": "Комплектующие серии",
+  "products.sub_accessory": "Аксессуары",
+
+  /* Cases Page */
+  "cases.page_title": "Примеры внедрения",
+  "cases.breadcrumb": "Примеры внедрения",
+  "cases.subtitle": "Отраслевые применения",
+  "cases.desc": "Интеллектуальные электроприводы RAGA широко используются во многих отраслях. Ниже приведены типичные примеры применения.",
+  "section.cases_subtitle": "Примеры внедрения",
+
+  /* Technology Page */
+  "tech.page_title": "Технологии",
+  "tech.breadcrumb": "Технологии",
+  "tech.core_title": "Основные технологии",
+  "tech.core_desc": "Инновационный подход, качество — основные технологические преимущества интеллектуальных приводов RAGA",
+  "tech.nonintrusive_title": "Технология неинвазивной настройки",
+  "tech.lcd_title": "Графический точечно-матричный ЖК-дисплей",
+  "tech.protection_title": "Система многоуровневой защиты",
+  "tech.comm_title": "Мultiple способы связи",
+  "tech.precision_title": "Технология высокоточного управления",
+  "tech.temp_title": "Адаптивность к широкому температурному диапазону",
+  "tech.nonintrusive_full": "Все настройки параметров, отладка и диагностика могут быть завершены с помощью независимого устройства настройки без открытия крышки электрического блока.",
+  "tech.lcd_full": "Оснащен высокоразрешающим графическим точечно-матричным ЖК-дисплеем, поддерживающим китайский, английский и другие языки.",
+  "tech.protection_full": "Встроенная защита от перегрузки по моменту, перегрева, пропадания фазы, автоматическая коррекция последовательности фаз и другое.",
+  "tech.comm_full": "Поддерживает полевую шину (Profibus, Modbus и др.), промышленный Ethernet, беспроводную связь и другие способы связи.",
+  "tech.precision_full": "Основная погрешность ≤ ±1,0%, мертвая зона 0,1%~9,9% регулируемая, погрешность воспроизводимости хода ≤1%.",
+  "tech.temp_full": "Температура окружающей среды -30°C ~ +70°C, влажность окружающей среды ≤ 95%.",
+
+  "tech.cert_subtitle": "Сертификация",
+  "tech.cert_title": "Сертификация",
+  "tech.cert_desc": "Продукция RAGA сертифицирована несколькими международными и национальными органами.",
+  "tech.cert_iso": "Система менеджмента качества ISO9001",
+  "tech.cert_iso_desc": "Компания сертифицирована по ISO9001 с комплексной системой менеджмента качества.",
+  "tech.cert_ex": "Взрывозащита ExdⅡCT4",
+  "tech.cert_ex_desc": "Сертифицировано по взрывозащите ExdⅡCT4, безопасная работа во взрывоопасных средах.",
+  "tech.cert_ip": "Степень защиты IP68",
+  "tech.cert_ip_desc": "Степень защиты IP68 обеспечивает длительную стабильную работу при погружении в воду.",
+
+  "tech.quality_subtitle": "Контроль качества",
+  "tech.quality_title": "Контроль качества",
+  "tech.quality_desc": "Строгая система контроля качества обеспечивает надежность каждого изделия",
+  "tech.quality_inspect": "Входной контроль",
+  "tech.quality_inspect_desc": "Все сырье и компоненты проходят строгий входной контроль.",
+  "tech.quality_process": "Контроль процесса",
+  "tech.quality_process_desc": "Контроль качества всего процесса производства с контрольными точками на ключевых этапах.",
+  "tech.quality_test": "Заводские испытания",
+  "tech.quality_test_desc": "Каждое изделие проходит строгие испытания перед отгрузкой.",
+
+  "tech.cert_group_company": "Квалификация компании",
+  "tech.cert_group_iso": "Сертификация системы менеджмента",
+  "tech.cert_group_ex": "Сертификация взрывозащиты",
+  "tech.cert_group_ip": "Тесты на степень защиты",
+  "tech.cert_group_eac": "Сертификация EAC",
+  "tech.cert_group_corrosion": "Тесты на коррозию и солевой туман",
+  "tech.cert_group_type_test": "Отчеты по типовым испытаниям",
+  "tech.cert_group_calibration": "Сертификаты калибровки",
+
+  /* Contact Page */
+  "contact.page_title": "Контакты",
+  "contact.breadcrumb": "Контакты",
+  "contact.subtitle": "Контактная информация",
+  "contact.desc": "Добро пожаловать, свяжитесь с нами, мы будем рады служить вам",
+  "contact.address": "Адрес",
+  "contact.phone": "Телефон",
+  "contact.fax": "Факс",
+  "contact.email": "Email",
+  "contact.website": "Веб-сайт",
+  "contact.website_url": "www.raga.com.cn",
+  "contact.form_title": "Онлайн сообщение",
+  "contact.office_wenzhou": "Офис в Вэньчжоу",
+  "contact.office_shanghai": "Офис в Шанхае",
+  "contact.office_taicang": "Офис в Тайцане",
+  "contact.form_name": "Ваше имя *",
+  "contact.form_phone": "Телефон *",
+  "contact.form_email": "Email",
+  "contact.form_product": "Интересующая продукция",
+  "contact.form_message": "Сообщение",
+  "contact.form_submit": "Отправить →",
+  "contact.form_name_placeholder": "Пожалуйста, введите ваше имя",
+  "contact.form_phone_placeholder": "Пожалуйста, введите ваш телефон",
+  "contact.form_email_placeholder": "Пожалуйста, введите ваш email",
+  "contact.form_product_placeholder": "Пожалуйста, выберите",
+  "contact.form_message_placeholder": "Опишите ваши требования или запрос...",
+  "contact.offices_title": "Офисы по всей стране",
+  "section.contact_subtitle": "Контакты",
+
+  "contact.company_name_wenzhou": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
+  "contact.company_name_shanghai": "Шанхай RAGA Ruiran Automation Technology Co., Ltd.",
+  "contact.company_name_taicang": "RAGA Measurement & Control Equipment (Taicang) Co., Ltd.",
+  "contact.addr_wenzhou": "Вэньчжоу, провинция Чжэцзян",
+  "contact.addr_shanghai": "Шанхай",
+  "contact.addr_taicang": "Тайцан, провинция Цзянсу",
+  "contact.addr_wenzhou_full": "№128, Juguangyuan Middle Road, Building 1, Вэньчжоу, Чжэцзян",
+  "contact.addr_shanghai_full": "№755, Huhang Road, Building 11, Шанхай",
+  "contact.baidu_map": "Открыть в Baidu Maps",
+  "contact.amap": "Открыть в Amap",
+  "contact.email_copied": "Email скопирован: ",
+  "contact.alert_success": "Спасибо за ваше сообщение. Мы свяжемся с вами вскоре!",
+
+  /* Contact form product options */
+  "contact.form_group_ra": "── Серия RA Многооборотная ──",
+  "contact.form_group_rq": "── Серия RQ Прямоходная ──",
+  "contact.form_group_rl": "── Серия RL/RJ Неполнооборотная ──",
+  "contact.form_group_matching": "── Комплектующие серии ──",
+  "contact.form_group_accessory": "── Аксессуары ──",
+  "contact.form_opt_split_r": "R Series Split-type",
+  "contact.form_opt_split_ra": "RA Series Split-type",
+  "contact.form_opt_split_rl": "RL Series Split-type",
+  "contact.form_opt_matching": "Комплектующие серии",
+  "contact.form_opt_electrical": "Electrical Assembly",
+  "contact.form_opt_ra_board": "RA Main Control Board",
+  "contact.form_opt_ra_power": "RA Power Board",
+  "contact.form_opt_remote": "Remote Controller",
+  "contact.form_opt_planetary": "Planetary Gear Assembly",
+  "contact.form_opt_adapter": "Sunflower Adapter Plate",
+  "contact.form_opt_other": "Другое / Неопределено",
+  "contact.form_opt_rq3": "RQⅢ 003~014 Series",
+  "contact.form_opt_rq3b": "RQⅢ 020~040 Series",
+  "contact.form_opt_rq060": "RQⅢ 060 Series",
+  "contact.form_opt_rqm3": "RQⅢ 100 Series",
+  "contact.form_opt_rq150": "RQⅢ 150~RQ300 Series",
+  "contact.form_opt_rqml06": "RQMLIII06 Modulating",
+  "contact.form_opt_rqml12": "RQMLIII12 Modulating",
+  "contact.form_opt_rqml54": "RQMLIII54 Modulating",
+  "contact.form_opt_rlml10": "RLML10 Modulating",
+  "contact.form_opt_rlml20": "RLML20 Modulating",
+  "contact.form_opt_rl": "RL Intelligent Quarter-turn",
+  "contact.form_opt_rl100": "RL100 Intelligent Quarter-turn",
+  "contact.form_opt_rl150": "RL150 Intelligent Quarter-turn",
+  "contact.form_opt_rlm": "RLM Intelligent",
+  "contact.form_opt_rj": "RJ On/Off",
+  "contact.form_opt_rgw": "RGW Series Gearbox",
+  "contact.form_opt_rib": "RIB Series Gearbox",
+
+  /* Product Detail */
+  "detail.back": "← Назад к продукции",
+  "detail.quote": "Получить цитату →",
+  "detail.specs": "Технические характеристики",
+  "detail.downloads": "Загрузки",
+  "detail.previews": "Превью",
+  "detail.preview": "Превью",
+  "detail.download": "Скачать",
+  "detail.no_downloads": "Нет доступных загрузок",
+  "detail.no_previews": "Нет доступных превью",
+  "detail.coming_soon": "Скоро",
+  "detail.not_found": "Продукция не найдена",
+  "detail.not_found_title": "Продукция не найдена",
+  "detail.not_found_desc": "Пожалуйста, вернитесь к списку продукции.",
+
+  /* Preview page */
+  "preview.unsupported": "Этот формат не поддерживает онлайн-превью",
+  "preview.download_hint": "Пожалуйста, нажмите кнопку «Скачать файл» ниже",
+  "preview.title": "Превью файла",
+  "preview.back": "← Назад к загрузкам",
+  "preview.download": "Скачать файл",
+  "preview.loading": "Загрузка файла...",
+  "preview.title_video": "Воспроизведение видео",
+  "preview.back_detail": "← Назад к деталям продукции",
+  "preview.back_detail_bc": "Детали продукции",
+  "preview.load_error": "Ошибка загрузки",
+
+  /* Machining Center page */
+  "machining.title": "Прецизионный обрабатывающий центр",
+  "machining.breadcrumb": "Обрабатывающий центр",
+  "machining.desc": "Оснащен передовым оборудованием для обеспечения точности компонентов и качества продукции",
+  "machining.back": "← Назад на главную",
+  "machining.subtitle": "Обрабатывающий центр",
+  "machining.label": "Обрабатывающий центр",
+  "machining.label1": "Обрабатывающий центр 1",
+  "machining.label2": "Обрабатывающий центр 2",
+  "machining.label_h": "Горизонтальный обрабатывающий центр",
+  "machining.label_h2": "Горизонтальная обработка",
+  "machining.label_v": "Вертикальный обрабатывающий центр",
+  "machining.label_smt": "SMT Machine",
+  "machining.label_cnc": "ЧПУ обрабатывающий центр",
+
+  /* Production Line page */
+  "production.title": "Линия сборки и производства",
+  "production.breadcrumb": "Линия сборки и производства",
+  "production.subtitle": "Сборка и производство",
+  "production.desc": "Современная линия сборки и производства, обеспечивающая строгий контроль сборки и наладки каждого изделия",
+  "production.back": "← Назад на главную",
+  "production.label": "Сборка и производство",
+  "production.label_smt": "SMT Оборудование",
+  "production.label_monitor": "Производственная комната мониторинга",
+  "production.label_home": "Линия сборки и производства",
+
+  /* Assembly Line page */
+  "assembly.title": "Сборка и наладка",
+  "assembly.breadcrumb": "Линия сборки",
+  "assembly.subtitle": "Сборка и наладка",
+  "assembly.desc": "Профессиональный сборочный цех с строгим контролем точности сборки и качества наладки",
+  "assembly.back": "← Назад на главную",
+
+  /* Quality Inspection page */
+  "quality.title": "Контроль качества",
+  "quality.breadcrumb": "Контроль качества",
+  "quality.subtitle": "Контроль качества",
+  "quality.desc": "Профессиональное оборудование для контроля качества, обеспечивающее строгие испытания каждого изделия перед отгрузкой",
+  "quality.back": "← Назад на главную",
+  "quality.label": "Оборудование для контроля",
+  "quality.label_test": "Испытательное оборудование",
+  "quality.label_vibration": "Вибрационные испытания",
+  "quality.back": "← Назад на главную",
+
+  /* Meta titles */
+  "meta.title_home": "RAGA | Эксперт по интеллектуальным электроприводам клапанов",
+  "meta.title_about": "О компании - RAGA",
+  "meta.title_products": "Продукция - RAGA",
+  "meta.title_cases": "Примеры внедрения - RAGA",
+  "meta.title_tech": "Технологии - RAGA",
+  "meta.title_contact": "Контакты - RAGA",
+  "meta.title_downloads": "Загрузки - RAGA",
+  "meta.title_detail": "Детали продукции - RAGA",
+  "meta.title_machining": "Обрабатывающий центр - RAGA",
+  "meta.title_production": "Производственная линия - RAGA",
+  "meta.title_quality": "Контроль качества - RAGA",
+  "meta.title_assembly": "Линия сборки - RAGA",
+  "meta.title_preview": "Превью файла - RAGA",
+
+  /* Meta descriptions */
+  "meta.desc_home": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональный производитель интеллектуальных электроприводов для клапанов.",
+  "meta.desc_about": "RAGA — высокотехнологичное предприятие, специализирующееся на НИОКР, производстве и продаже интеллектуальных электроприводов.",
+  "meta.desc_products": "Полная линейка продукции RAGA: серия RA многооборотная, серия RQ прямоходная, серия RL/RJ неполнооборотная.",
+  "meta.desc_cases": "Типичные примеры применения интеллектуальных электроприводов RAGA в нефтяной, химической, электроэнергетической, металлургической, водообрабатывающей отраслях.",
+  "meta.desc_tech": "Основные технологические преимущества RAGA: неинвазивная настройка, абсолютный энкодер, защита IP68, сертификация взрывозащиты.",
+  "meta.desc_contact": "Свяжитесь с нами — Вэньчжоу RAGA, Шанхай RAGA Ruiran, Тайцан RAGA.",
+  "meta.desc_downloads": "Скачать технические ресурсы продукции RAGA, включая руководства, руководства по выбору, инструкции по установке.",
+  "meta.desc_machining": "Передовой обрабатывающий центр RAGA с высокоточным ЧПУ оборудованием.",
+  "meta.desc_production": "Современная производственная линия сборки RAGA с строгим контролем качества.",
+  "meta.desc_quality": "Оборудование для контроля качества RAGA, современная производственная линия.",
+  "meta.desc_assembly": "Линия сборки RAGA, современный рабочий процесс, строгий контроль качества.",
+
+  /* Logo & Brand */
+  "logo.text": "RAGA",
+  "logo.subtext": "RAGA · Интеллектуальные приводы",
+
+  /* Cases */
+  "cases.client_subtitle": "Наши клиенты",
+  "cases.client_title": "Наши клиенты",
+  "cases.client_desc": "Спасибо нашим партнерам за доверие и поддержку",
+  "cases.oil": "Нефтяная промышленность",
+  "cases.oil_desc": "Интеллектуальные электроприводы RAGA широко используются в нефтедобыче, транспортировке нефти и газа, нефтепереработке.",
+  "cases.power": "Электроэнергетика",
+  "cases.power_desc": "В тепловой, ядерной, гидроэнергетике и новой энергетике приводы RAGA широко используются.",
+  "cases.metallurgy": "Металлургия",
+  "cases.metallurgy_desc": "В сталелитейной и цветной металлургии приводы RAGA используются в высокотемпературных средах.",
+  "cases.water": "Водообработка",
+  "cases.water_desc": "В муниципальном водоснабжении, очистке сточных вод приводы RAGA широко используются.",
+  "cases.chemical": "Химическая промышленность",
+  "cases.chemical_desc": "В нефтехимии, тонкой химии приводы RAGA используются для критических применений.",
+  "cases.oil_full": "Интеллектуальные электроприводы RAGA широко используются в нефтяной отрасли. Продукция имеет сертификацию взрывозащиты ExdⅡCT4.",
+  "cases.power_full": "В электроэнергетике приводы RAGA широко используются в системах питательной воды котлов, системах охлаждающей воды.",
+  "cases.metallurgy_full": "В металлургии приводы RAGA используются в высокотемпературных и пыльных средах.",
+  "cases.water_full": "В водообработке приводы RAGA идеально подходят для привода дисковых и шаровых клапанов.",
+  "cases.chemical_full": "В химической промышленности приводы RAGA используются для реакторов и трубопроводных клапанов.",
+
+  /* Nav dropdown items */
+  "nav.dd_about_raga": "О RAGA",
+  "nav.dd_history": "История",
+  "nav.dd_culture": "Корпоративная культура",
+  "nav.dd_production": "Производственные возможности",
+  "nav.dd_ra": "Серия RA Многооборотная",
+  "nav.dd_rq": "Серия RQ Прямоходная",
+  "nav.dd_rl": "Серия RL/RLM Неполнооборотная",
+  "nav.dd_rjm": "Комплектующие серии",
+  "nav.dd_ra_menu": "Серия RA Многооборотная",
+  "nav.dd_rq_menu": "Серия RQ Прямоходная",
+  "nav.dd_rl_menu": "Серия RL Неполнооборотная",
+  "nav.dd_oil": "Нефтяная промышленность",
+  "nav.dd_power": "Электроэнергетика",
+  "nav.dd_metallurgy": "Металлургия",
+  "nav.dd_water": "Водообработка",
+  "nav.dd_chemical": "Химическая промышленность",
+  "nav.dd_manuals": "Руководства по продукции",
+  "nav.dd_catalog": "Руководство по выбору",
+  "nav.dd_brochure": "Брошюра компании",
+  "nav.dd_drawings": "Чертежи габаритные",
+  "nav.dd_core_tech": "Основные технологии",
+  "nav.dd_cert": "Сертификация",
+  "nav.dd_quality": "Контроль качества",
+  "nav.dd_contact_info": "Контактная информация",
+  "nav.dd_online_msg": "Онлайн сообщение",
+  "nav.dd_offices": "Офисы по всей стране",
+  "nav.dd_accessory": "Аксессуары",
+  "nav.dd_accessory_menu": "Аксессуары",
+  "nav.dd_accessory_menu2": "Комплектующие серии",
+
+  /* Downloads page */
+  "downloads.page_title": "Загрузки",
+  "downloads.breadcrumb": "Загрузки",
+  "downloads.subtitle": "Загрузки",
+  "downloads.title": "Центр ресурсов",
+  "downloads.desc": "Скачать технические ресурсы для всей продукции RAGA.",
+  "downloads.company_brochure": "Брошюра компании",
+  "downloads.btn_preview": "Превью",
+  "downloads.btn_download": "Скачать",
+  "downloads.deploy_pending": "Загрузка ожидает развертывания",
+  "downloads.company_section": "Брошюра компании",
+  "downloads.company_material": "Материалы компании",
+  "downloads.video_section": "Видео уроки",
+  "downloads.drawings_section": "Все габаритные чертежи",
+  "downloads.drawings_pdf": "Габаритные чертежи PDF",
+  "downloads.drawings_dwg": "Габаритные чертежи DWG",
+  "downloads.drawings_3d": "3D Габаритные модели",
+  "downloads.file_catalog": "Каталог Shanghai Ruiran",
+  "downloads.file_brochure": "Брошюра RAGA",
+  "downloads.file_training": "Учебное руководство по актуаторам RAⅢ",
+  "downloads.series_ra": "Серия RA (Многооборотная)",
+  "downloads.series_rq": "Серия RQ (Прямоходная)",
+  "downloads.series_rl": "Серия RL (Неполнооборотная)",
+  "downloads.series_modulating": "Регулирующая серия",
+  "downloads.series_onoff": "Серия Вкл/Выкл",
+  "downloads.series_accessories": "Комплектующие",
+  "downloads.dwg_group_split": "Раздельного типа / Местный",
+  "downloads.note_7z": "Распаковка 7z",
+
+  /* Certificate image labels */
+  "tech.cert_label_wenzhou": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
+  "tech.cert_label_shanghai": "Шанхай RAGA Ruiran Automation Technology Co., Ltd.",
+  "tech.cert_label_ex1": "Сертификат взрывозащиты GYB23.1992X",
+  "tech.cert_label_ex2": "Сертификат взрывозащиты GYB23.1993X",
+  "tech.cert_label_ex3": "Сертификат взрывозащиты GYB22.1729X",
+  "tech.cert_label_ip66": "Отчет о тестировании IP66",
+  "tech.cert_label_ip68": "Сертификат погружения IP68 7м/72ч",
+  "tech.cert_label_eac_ra": "Отчет RAGA EAC DOC",
+  "tech.cert_label_eac_rl": "Отчет RL/RLM EAC DOC",
+  "tech.cert_label_eac_rl_cert": "Сертификат EAC RL/RLM",
+  "tech.cert_label_wf2": "Сертификат коррозионной защиты WF2",
+  "tech.cert_label_wf2_report": "Отчет о сертификации WF2",
+  "tech.cert_label_salt": "Отчет о солевом тумане ISO12944-C5M",
+  "tech.cert_label_480v_zh": "Отчет по типовым испытаниям 480V/60Hz (китайский)",
+  "tech.cert_label_480v_en": "Отчет по типовым испытаниям 480V/60Hz (английский)",
+  "tech.cert_label_encoder": "Отчет об испытаниях абсолютного энкодера",
+  "tech.cert_label_lowtemp_zh": "Отчет по типовым испытаниям при низких температурах -50°C (китайский)",
+  "tech.cert_label_lowtemp_en": "Отчет по типовым испытаниям при низких температурах -50°C (английский)",
+  "tech.cert_calibration_2000n": "Сертификат калибровки момента 2000N",
+  "tech.cert_calibration_torque": "Сертификат калибровки стенда испытания момента",
+
+  /* Series labels */
+  "series.ra": "Серия RA",
+  "series.rq": "Серия RQ",
+  "series.rl": "Серия RL",
+
+  /* Product names */
+  "name.ra3": "Серия RQⅢ 003~014",
+  "name.rq3": "Серия RQⅢ 020~040",
+  "name.rq060": "Серия RQⅢ 060",
+  "name.rqm3": "Серия RQⅢ 100",
+  "name.rq150": "Серия RQⅢ 150~RQ300",
+  "name.fen": "R Series Split-type",
+  "name.ra-fen": "RA Series Split-type",
+  "name.rl-fen": "RL Series Split-type",
+  "name.rqml06": "RQMLIII06 Modulating",
+  "name.rqml12": "RQMLIII12 Modulating",
+  "name.rqml54": "RQMLIII54 Modulating",
+  "name.rlml10": "RLML10 Modulating",
+  "name.rlml20": "RLML20 Modulating",
+  "name.rl100": "RL100 Smart Quarter-turn",
+  "name.rl150": "RL150 Smart Quarter-turn",
+  "name.rl": "RL Smart Quarter-turn",
+  "name.rlm": "RLM Smart",
+  "name.rj": "RJ On/Off",
+  "name.rjm": "Комплектующие серии",
+  "name.gear": "Серия редукторов RGW",
+  "name.rib": "Серия редукторов RIB",
+  "name.elec-assy": "Electrical Assembly",
+  "name.ra-ctrl": "RA Control Board",
+  "name.ra-power": "RA Power Board",
+  "name.remote": "Remote Controller",
+  "name.planet-gear": "Planetary Gear Assembly",
+  "name.sun-plate": "Sunflower Connector",
+
+  /* Download names */
+  "RA Series Selection Guide": "RA Series Selection Guide (Russian)",
+  "RA Series Installation Manual": "RA Series Installation Manual (Russian)",
+  "RL Series Installation Manual": "RL Series Installation Manual (Russian)",
+  "R Series Split-type Installation Manual": "R Series Split-type Installation Manual (Russian)",
+  "Installation & Commissioning Guide": "Installation & Commissioning Guide (Russian)",
+  "RL Quarter-turn Product Manual": "RL Quarter-turn Product Manual (Russian)",
+  "RL Selection & Installation Guide": "RL Selection & Installation Guide (Russian)",
+  "RL Installation & Maintenance Manual": "RL Installation & Maintenance Manual (Russian)",
+  "RLM Smart Product Manual": "RLM Smart Product Manual (Russian)",
+  "RL100 Smart Quarter-turn Product Manual": "RL100 Smart Quarter-turn Product Manual (Russian)",
+  "RL150 Smart Quarter-turn Product Manual": "RL150 Smart Quarter-turn Product Manual (Russian)",
+  "RQ/RQM Series Installation Manual": "RQ/RQM Series Installation Manual (Russian)",
+  "R Series Gearbox Manual": "R Series Gearbox Manual (Russian)",
+  "RQMLIII06 Product Manual": "RQMLIII06 Product Manual (Russian)",
+  "RQMLIII12 Product Manual": "RQMLIII12 Product Manual (Russian)",
+  "RQMLIII54 Product Manual": "RQMLIII54 Product Manual (Russian)",
+  "RLML10 Product Manual": "RLML10 Product Manual (Russian)",
+  "RLML20 Product Manual": "RLML20 Product Manual (Russian)",
+  "RL Operation & Maintenance Manual": "RL Operation & Maintenance Manual (Russian)",
+  "RAIII Series Wiring Diagram": "RAIII Series Wiring Diagram (Russian)",
+  "RA Series Stroke Adjustment": "RA Series Stroke Adjustment (Russian)",
+  "RL Series Stroke Adjustment": "RL Series Stroke Adjustment (Russian)",
+
+  /* Partner names */
+  "partner.ansteel": "Ansteel Group",
+  "partner.baosteel": "Baosteel Group",
+  "partner.chn_energy": "CHN Energy",
+  "partner.cnooc": "CNOOC",
+  "partner.cr_power": "China Resources Power",
+  "partner.datang": "Datang Group",
+  "partner.shougang": "Shougang Group",
+  "partner.zheneng": "Zheneng Group",
+  "partner.cnnc": "CNNC",
+  "partner.cgn": "CGN",
+  "partner.sdnp": "Shandong Nuclear Power",
+  "partner.qsnp": "Qinshan Nuclear Power",
+  "partner.smnp": "Sanmen Nuclear Power",
+  "partner.sinopec": "Sinopec",
+  "partner.petrochina": "PetroChina",
+  "partner.csg": "China Southern Power Grid",
+  "partner.snwd": "South-to-North Water Diversion",
+  "partner.shwater": "Shanghai Water & Ocean",
+  "partner.huaneng": "China Huaneng",
+  "partner.guodian": "China Guodian",
+  "partner.conch": "Conch Group",
+  "partner.zpc": "Zhejiang Petrochemical (ZPC)",
+  "partner.shanghai_electric": "Shanghai Electric",
+  "partner.dongfang_electric": "Dongfang Electric",
+  "partner.harbin_boiler": "Harbin Electric Corporation",
+  "partner.ceec": "CEEC (China Energy Engineering)",
+  "partner.nwepdi": "NWEPDI"
+};
+
+/* ===== Russian specMap ===== */
+i18nData.specMap["ru"] = {
+  "型号": "Модель", "输出转矩": "Выходной момент", "输出转速": "Выходная скорость",
+  "电机功率": "Мощность двигателя", "电机电流": "Ток двигателя", "供电电源": "Источник питания",
+  "控制方式": "Режим управления", "防护等级": "Степень защиты", "防爆标志": "Взрывозащита",
+  "环境温度": "Темп. окр. среды", "基本误差": "Осн. погрешность", "重复性误差": "Погр. воспр. хода",
+  "类型": "Тип", "传动比": "Передат. число", "位置重复性": "Воспр. позиции",
+  "动作角度": "Угол поворота", "全行程时间": "Время полн. хода", "连接法兰": "Монтаж. фланец",
+  "输入信号": "Входной сигнал", "回差": "Мертвая зона", "死区": "Зона нечувств.",
+  "控制器与执行器距离": "Расст. (контр.-актуат.)", "润滑方式": "Смазка",
+  "工作制式": "Режим работы", "适配执行器": "Совместимые актуаторы", "配套型号": "Сопутств. модель"
+};
+
+/* ===== Russian dlMap (download names) ===== */
+i18nData.dlMap["ru"] = {};
+(function(){
+  var ruDl = i18nData.dlMap.ru;
+  var enDl = i18nData.dlMap.en;
+  var keys = Object.keys(enDl);
+  keys.forEach(function(k) { ruDl[k] = enDl[k]; });
+  /* Override dimension drawing names to Russian */
+  var drawKeys = [
+    "RAIII13A外形图","RAIII14A外形图","RAIII30A外形图",
+    "RAIII35A外形图","RAIII40A外形图","RAIII70A外形图","RAIII90A外形图","RAIII95A外形图",
+    "RL10系列外形图","RL80系列外形图","RL150系列外形图",
+    "RQ03外形图","RQ04外形图","RQ06外形图","RQ150外形图",
+    "RQ03-RGW3外形图","RQ03-RGW4外形图","RQ03-RGW4R外形图",
+    "RQ03-RGW5外形图","RQ03-RGW5R外形图","RQ03-RGW6R外形图",
+    "RQ04-RGW4R外形图","RQ04-RGW4外形图","RQ04-RGW5R外形图",
+    "RQ04-RGW5外形图","RQ04-RGW6R外形图","RQ04-RGW6外形图",
+    "RQ04-RGW7R外形图","RQ04-RGW7外形图",
+    "RQ06-RGW7R外形图","RQ06-RGW7外形图","RQ06-RGW8R外形图",
+    "RQ06-RGW8外形图","RQ06-RGW9外形图",
+    "RQ100-RGW8R外形图","RQ100-RGW8外形图",
+    "RQ150-RGW10外形图","RQ150-RGW9外形图",
+    "RQML06直行程外形图","RQML12直行程外形图","RQML54直行程外形图"
+  ];
+  drawKeys.forEach(function(k) {
+    ruDl[k] = enDl[k].replace("Dimension Drawing", "Габаритный чертёж").replace("Linear-motion", "Прямоходный");
+  });
+})();
+
+/* ===== Russian descMap ===== */
+i18nData.descMap["ru"] = {};
+(function(){
+  var enDesc = i18nData.descMap.en;
+  var ruDesc = i18nData.descMap.ru;
+  var keys = Object.keys(enDesc);
+  keys.forEach(function(k) {
+    /* Use English as placeholder — professional Russian translation can be added later */
+    ruDesc[k] = enDesc[k];
+  });
+})();
+
+/* ===== Russian cardMap ===== */
+i18nData.cardMap["ru"] = {};
+(function(){
+  var enCard = i18nData.cardMap.en;
+  var ruCard = i18nData.cardMap.ru;
+  var keys = Object.keys(enCard);
+  keys.forEach(function(k) { ruCard[k] = enCard[k]; });
+})();
+
+/* ===== Russian tagMap ===== */
+i18nData.tagMap["ru"] = {
+  "tag.smart": "Smart", "tag.gen3": "3rd Gen", "tag.split": "Split-type",
+  "tag.modulating": "Modulating", "tag.smart2": "Smart", "tag.onoff": "On/Off",
+  "tag.hiprec": "High Precision", "tag.accessory": "Accessory", "tag.parts": "Parts"
+};
+
+/* ===== Russian scrollMap ===== */
+i18nData.scrollMap["ru"] = {
+  "scroll.split_r": "R Series Split-type", "scroll.split_ra": "RA Series Split-type",
+  "scroll.split_rl": "RL Series Split-type", "scroll.rqml06": "RQMLIII06 Modulating",
+  "scroll.rqml12": "RQMLIII12 Modulating", "scroll.rlml10": "RLML10 Modulating",
+  "scroll.rl100": "RL100 Smart", "scroll.rl150": "RL150 Smart",
+  "scroll.rl": "RL Smart", "scroll.rj": "RJ On/Off",
+  "scroll.rjm": "Accessory Series", "scroll.rgw": "RGW Gearbox",
+  "scroll.rib": "RIB Gearbox", "scroll.rq150": "RQIII150~RQ300 Series"
+};
+

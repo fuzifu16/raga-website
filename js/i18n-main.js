@@ -6,10 +6,10 @@ const I18N = {
     // Priority: URL param > localStorage > default 'zh'
     const urlParams = new URLSearchParams(window.location.search);
     const fromUrl = urlParams.get('lang');
-    if (fromUrl === 'en' || fromUrl === 'zh' || fromUrl === 'zh-TW') return fromUrl;
+    if (fromUrl === 'en' || fromUrl === 'zh' || fromUrl === 'zh-TW' || fromUrl === 'ru') return fromUrl;
     try {
       const saved = localStorage.getItem('raga_lang');
-      if (saved === 'en' || saved === 'zh' || saved === 'zh-TW') return saved;
+      if (saved === 'en' || saved === 'zh' || saved === 'zh-TW' || saved === 'ru') return saved;
     } catch(e) {}
     return 'zh';
   },
@@ -29,7 +29,7 @@ const I18N = {
 
   applyLanguage() {
     var self = this;
-    document.documentElement.lang = this.currentLang === 'zh' ? 'zh-CN' : this.currentLang === 'zh-TW' ? 'zh-Hant' : 'en';
+    document.documentElement.lang = this.currentLang === 'zh' ? 'zh-CN' : this.currentLang === 'zh-TW' ? 'zh-Hant' : this.currentLang === 'ru' ? 'ru' : 'en';
 
     function lookup(key) {
       var text = self.t(key);

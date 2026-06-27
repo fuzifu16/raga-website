@@ -20,12 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Set active nav based on current page
-  const currentPage = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav > a, .nav-dd > a').forEach(link => {
-    const href = link.getAttribute('href');
+  // Set active nav based on current page (handle URLs with/without .html)
+  function getPageName() {
+    var path = location.pathname;
+    if (path === '/' || path === '') return 'index';
+    return path.split('/').pop().replace(/\.html$/, '');
+  }
+  var currentPage = getPageName();
+  document.querySelectorAll('.nav > a, .nav-dd > a').forEach(function(link) {
+    var href = link.getAttribute('href');
     if (href) {
-      link.classList.toggle('active', href.split('#')[0] === currentPage);
+      var hrefPage = href.split('#')[0].replace(/\.html$/, '');
+      link.classList.toggle('active', hrefPage === currentPage);
     }
   });
 

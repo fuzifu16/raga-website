@@ -976,7 +976,7 @@ i18nData["zh-TW"]["about.production"] = "生產實力";
 i18nData["zh-TW"]["about.stat1_label"] = "年行業經驗";
 i18nData["zh-TW"]["about.stat1_num"] = "20+";
 i18nData["zh-TW"]["about.stat2_label"] = "年產能（臺）";
-i18nData["zh-TW"]["about.stat2_num"] = "20,000";
+i18nData["zh-TW"]["about.stat2_num"] = "40,000";
 i18nData["zh-TW"]["about.stat3_label"] = "產品系列";
 i18nData["zh-TW"]["about.stat3_num"] = "10+";
 i18nData["zh-TW"]["assembly.back"] = "← 返回首頁";
@@ -2060,7 +2060,7 @@ i18nData.ru = {
   "about.p2": "Продукция широко используется в нефтяной, электроэнергетической, металлургической, водообрабатывающей отраслях, продается на внутреннем и международном рынках.",
   "about.stat1_num": "20+",
   "about.stat1_label": "Лет опыта",
-  "about.stat2_num": "20,000",
+  "about.stat2_num": "40,000",
   "about.stat2_label": "Годовая мощность (шт)",
   "about.stat3_num": "10+",
   "about.stat3_label": "Серий продукции",

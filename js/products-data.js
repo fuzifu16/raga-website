@@ -7,6 +7,10 @@ const PRODUCTS = {
     category: "多回转",
     tag: "智能型",
     desc: "RAIII7A/RAIII11A/RAIII13A 智能型多回转电动执行机构，结构紧凑，体积小、重量轻，适用于中小口径阀门及闸阀、截止阀等的控制。采用非侵入式设定方式，无需打开电气箱盖即可完成所有调试。",
+    desc_en: "RAIII7A/RAIII11A/RAIII13A intelligent multi-turn electric actuators, compact structure, small size and light weight, suitable for small and medium caliber valves and gate valves, globe valves, etc. Adopting non-intrusive setting method, all debugging can be completed without opening the electrical box cover.",
+    desc_ru: "RAIII7A/RAIII11A/RAIII13A интеллектуальные многооборотные электрические актуаторы, компактная конструкция, малый размер и вес, подходят для клапанов среднего и малого диаметра, задвижек, вентилей и т.д.",
+    desc_en: "RAIII7A/RAIII11A/RAIII13A intelligent multi-turn electric actuators, compact structure, small size and light weight, suitable for small and medium caliber valves and gate valves, globe valves, etc. Adopting non-intrusive setting method, all debugging can be completed without opening the electrical box cover.",
+    desc_ru: "RAIII7A/RAIII11A/RAIII13A интеллектуальные многооборотные электрические актуаторы, компактная конструкция, малый размер и вес, подходят для клапанов среднего и малого диаметра, задвижек, вентилей и т.д. Используется неинвазивный метод настройки, все отладки можно завершить, не открывая крышку электрического блока.",
     specs: [
       ["型号", "RAIII7A / RAIII11A / RAIII13A"],
       ["输出转矩", "34 ~ 108 N·m (380VAC)"],
@@ -34,6 +38,8 @@ const PRODUCTS = {
     category: "多回转",
     tag: "中型",
     desc: "RAIII14A/RAIII15A/RAIII16A 中型多回转智能执行机构，输出转矩大，性能稳定可靠，适用于各类工业阀门控制。支持多种通信协议，可实现远程监控与智能诊断。",
+    desc_en: "RAIII14A/RAIII15A/RAIII16A medium-sized multi-turn intelligent actuators with large output torque, stable and reliable performance, suitable for various industrial valve controls.",
+    desc_ru: "RAIII14A/RAIII15A/RAIII16A средние многооборотные интеллектуальные актуаторы с большим выходным моментом, стабильные и надежные.",
     specs: [
       ["型号", "RAIII14A / RAIII15A / RAIII16A"],
       ["输出转矩", "203 ~ 400 N·m (380VAC)"],
@@ -60,6 +66,8 @@ const PRODUCTS = {
     category: "多回转",
     tag: "大转矩",
     desc: "RAIII40A/RAIII70A/RAIII90A/RAIII95A 大转矩智能执行机构，专为大型阀门及重载工业应用设计。可配RGW/RGD系列减速箱。具备强大的输出能力和卓越的耐用性，适用于石油、化工、电力等行业的关键工位。",
+    desc_en: "RAIII40A/RAIII70A/RAIII90A/RAIII95A large torque intelligent actuators, designed for large valves and heavy-duty industrial applications.",
+    desc_ru: "RAIII40A/RAIII70A/RAIII90A/RAIII95A интеллектуальные актуаторы большого момента, разработанные для крупных клапанов.",
     specs: [
       ["型号", "RAIII40A / RAIII70A / RAIII90A / RAIII95A"],
       ["输出转矩", "1020 ~ 3500 N·m (380VAC)"],
@@ -84,6 +92,8 @@ const PRODUCTS = {
     category: "多回转",
     tag: "智能型",
     desc: "RAIII30A/RAIII35A 智能型多回转电动执行机构，性能稳定可靠，适用于中等口径阀门控制。采用非侵入式设定方式，支持多种通信协议。",
+    desc_en: "RAIII30A/RAIII35A intelligent multi-turn electric actuators, stable and reliable performance, suitable for medium caliber valve control.",
+    desc_ru: "RAIII30A/RAIII35A интеллектуальные многооборотные электрические актуаторы, стабильные и надежные.",
     specs: [
       ["型号", "RAIII30A / RAIII35A"],
       ["输出转矩", "610 / 900 N·m (380VAC)"],
@@ -109,6 +119,8 @@ const PRODUCTS = {
     category: "角行程",
     tag: "智能",
     desc: "RL智能角行程执行机构，精确控制90°旋转阀门，特别适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速，广泛应用于水处理、暖通等行业。",
+    desc_en: "RL intelligent angular stroke actuator, precise control of 90° rotary valves, especially suitable for butterfly valves, ball valves.",
+    desc_ru: "RL интеллектуальный угловой ход актуатор, точное управление 90° поворотными клапанами.",
     specs: [
       ["型号", "RL10 / RL20 / RL40 / RL60 / RL80 / RL100 / RL150 / RL200 / RL250"],
       ["输出转矩", "100 ~ 2000 N·m"],
@@ -140,6 +152,8 @@ const PRODUCTS = {
     category: "角行程",
     tag: "智能",
     desc: "RLM智能型调节角行程执行机构，支持4~20mA模拟量控制，精确控制90°旋转阀门，适用于蝶阀、球阀等部分回转阀门。高精度定位控制，响应迅速。",
+    desc_en: "RLM intelligent regulating type angular stroke actuator, supports 4~20mA analog control.",
+    desc_ru: "RLM интеллектуальный регулирующий тип углового хода актуатор, поддерживает 4~20мА аналоговое управление.",
     specs: [
       ["型号", "RLM10 / RLM20 / RLM40 / RLM60 / RLM80 / RLM100 / RLM150 / RLM200 / RLM250"],
       ["输出转矩", "90 ~ 1650 N·m (调节)"],
@@ -167,6 +181,8 @@ const PRODUCTS = {
     category: "角行程",
     tag: "智能",
     desc: "RL100智能型角行程执行机构，额定转矩800N·m，精确控制90°旋转阀门。适用于蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
+    desc_en: "RL100 intelligent angular stroke actuator, rated torque 800N·m, precise control of 90° rotary valves.",
+    desc_ru: "RL100 интеллектуальный угловой ход актуатор, номинальный момент 800Н·м.",
     specs: [
       ["型号", "RL100 / RLM100"],
       ["输出转矩", "800 N·m (调节720 N·m)"],
@@ -193,6 +209,8 @@ const PRODUCTS = {
     category: "角行程",
     tag: "智能",
     desc: "RL150智能型角行程执行机构，额定转矩1000N·m，大转矩输出，适用于大型蝶阀、球阀等部分回转阀门，广泛应用于水处理、石油化工等行业。",
+    desc_en: "RL150 intelligent angular stroke actuator, rated torque 1000N·m, large torque output.",
+    desc_ru: "RL150 интеллектуальный угловой ход актуатор, номинальный момент 1000Н·м.",
     specs: [
       ["型号", "RL150 / RLM150"],
       ["输出转矩", "1000 N·m (调节900 N·m)"],
@@ -219,6 +237,8 @@ const PRODUCTS = {
     category: "配套",
     tag: "高精度",
     desc: "RJM调节型智能执行机构，支持4-20mA模拟量信号控制，调节精度高，响应速度快。适用于需要对阀门开度进行精确控制的工艺流程。",
+    desc_en: "RJM regulating type intelligent actuator, supports 4-20mA analog signal control, high regulation precision.",
+    desc_ru: "RJM регулирующий тип интеллектуальный актуатор, поддерживает 4-20мА аналоговый сигнал управления.",
     specs: [
       ["输入信号", "4mA~20mA / 1VDC~5VDC"],
       ["输出转矩", "60N·m ~ 250N·m"],
@@ -238,6 +258,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "调节型",
     desc: "RQⅢ100大转矩直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于大口径阀门及重载工业过程控制场景。防护等级IP68。",
+    desc_en: "RQⅢ100 series large torque linear intelligent actuator, supports 4~20mA analog control and switch control.",
+    desc_ru: "RQⅢ100 серия большого момента прямоходный интеллектуальный актуатор.",
     specs: [
       ["型号", "RQⅢ100"],
       ["类型", "直行程 (线性输出)"],
@@ -264,6 +286,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "第三代",
     desc: "RQⅢ150~RQ300超大型直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于超大口径重载阀门及工业过程控制场景。防护等级IP68。",
+    desc_en: "RQⅢ150~RQ300 series extra-large linear intelligent actuator, suitable for extra-large caliber heavy-duty valves.",
+    desc_ru: "RQⅢ150~RQ300 серия сверхкрупный прямоходный интеллектуальный актуатор.",
     specs: [
       ["型号", "RQⅢ150 / RQⅢ200 / RQⅢ300"],
       ["类型", "直行程 (线性输出)"],
@@ -291,6 +315,8 @@ const PRODUCTS = {
     category: "角行程",
     tag: "开关型",
     desc: "RJ开关型角行程执行机构，结构简单，操作方便，性价比高。适用于仅需开关控制的蝶阀、球阀等阀门，可靠耐用。",
+    desc_en: "RJ switch type angular stroke actuator, simple structure, convenient operation, high cost performance.",
+    desc_ru: "RJ переключающий тип углового хода актуатор, простая конструкция, высокая экономическая эффективность.",
     specs: [
       ["型号", "RJ10 / RJ20 / RJ40 / RJ60 / RJ80 / RJ100 / RJ150 / RJ200"],
       ["类型", "角行程开关型"],
@@ -311,6 +337,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "智能型",
     desc: "RQⅢ020/RQⅢ030/RQⅢ040中型直行程执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。适用于各类直行程阀门控制。",
+    desc_en: "RQⅢ 020~040 series medium linear actuator, integrates field control and remote control.",
+    desc_ru: "RQⅢ 020~040 серия средний прямоходный актуатор.",
     specs: [
       ["型号", "RQⅢ020 / RQⅢ030 / RQⅢ040"],
       ["输出转矩", "203 ~ 400 N·m (380VAC)"],
@@ -340,6 +368,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "智能型",
     desc: "RQⅢ060大型直行程智能执行机构，适用于大口径阀门控制。具备非侵入式设定、图形化显示、智能诊断等先进功能，防护等级IP68。",
+    desc_en: "RQⅢ 060 series large linear intelligent actuator, suitable for large caliber valve control.",
+    desc_ru: "RQⅢ 060 серия крупный прямоходный интеллектуальный актуатор.",
     specs: [
       ["型号", "RQⅢ060"],
       ["输出转矩", "474 ~ 610 N·m (380VAC)"],
@@ -365,6 +395,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "智能型",
     desc: "RQⅢ003~014系列智能型直行程电动执行机构，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。",
+    desc_en: "RQⅢ 003~014 series intelligent linear electric actuator, integrates non-intrusive setting.",
+    desc_ru: "RQⅢ 003~014 серия интеллектуальный прямоходный электрический актуатор.",
     specs: [
       ["型号", "RQⅢ003 / RQⅢ008 / RQⅢ014"],
       ["输出转矩", "34 ~ 108 N·m (380VAC)"],
@@ -390,6 +422,8 @@ const PRODUCTS = {
     category: "多回转",
     tag: "分体式",
     desc: "R系列分体式执行机构，控制器与执行器分体设计，可适应特殊安装环境。控制器可安装在便于操作的位置，执行器安装在阀门现场，灵活可靠。",
+    desc_en: "R series split type actuator, controller and actuator are split design, can adapt to special installation environment.",
+    desc_ru: "R серия раздельного типа актуатор, контроллер и актуатор раздельной конструкции.",
     specs: [
       ["类型", "分体式多回转"],
       ["控制器与执行器距离", "最长50m"],
@@ -411,6 +445,8 @@ const PRODUCTS = {
     category: "多回转",
     tag: "分体式",
     desc: "RA系列多回转分体式执行机构，控制器与执行器分离安装，适用于高温、震动、狭小空间等特殊工况，安装灵活，维护方便。",
+    desc_en: "RA series multi-turn split type actuator, controller and actuator separated installation.",
+    desc_ru: "RA серия многооборотный раздельного типа актуатор.",
     specs: [
       ["类型", "分体式多回转"],
       ["控制器与执行器距离", "最长50m"],
@@ -431,6 +467,8 @@ const PRODUCTS = {
     category: "角行程",
     tag: "分体式",
     desc: "RL系列角行程分体式执行机构，控制器与执行器分离安装，适用于高温、震动、狭小空间等特殊工况，安装灵活，维护方便。",
+    desc_en: "RL series angular stroke split type actuator, controller and actuator separated installation.",
+    desc_ru: "RL серия углового хода раздельного типа актуатор.",
     specs: [
       ["类型", "分体式角行程"],
       ["控制器与执行器距离", "最长50m"],
@@ -451,6 +489,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "调节型",
     desc: "RQMLIII06调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。适用于需要精确调节的工业控制场景，结构紧凑，响应迅速。",
+    desc_en: "RQMLIII06 regulating type linear actuator, adopts intelligent control technology.",
+    desc_ru: "RQMLIII06 регулирующий тип прямоходный актуатор.",
     specs: [
       ["类型", "直行程调节型"],
       ["输出转矩", "60N·m"],
@@ -472,6 +512,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "调节型",
     desc: "RQMLIII12调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。",
+    desc_en: "RQMLIII12 regulating type linear actuator, adopts intelligent control technology.",
+    desc_ru: "RQMLIII12 регулирующий тип прямоходный актуатор.",
     specs: [
       ["类型", "直行程调节型"],
       ["供电电源", "380VAC/50Hz"],
@@ -492,6 +534,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "调节型",
     desc: "RQMLIII54调节型直行程执行机构，采用智能控制技术，实现高精度阀门定位。",
+    desc_en: "RQMLIII54 regulating type linear actuator, adopts intelligent control technology.",
+    desc_ru: "RQMLIII54 регулирующий тип прямоходный актуатор.",
     specs: [
       ["类型", "直行程调节型"],
       ["供电电源", "380VAC/50Hz"],
@@ -512,6 +556,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "调节型",
     desc: "RLML10调节型直行程执行机构，精密调节控制能力，适用于对阀门开度有精确控制要求的自动化控制系统。",
+    desc_en: "RLML10 regulating type linear actuator, precise regulation control capability.",
+    desc_ru: "RLML10 регулирующий тип прямоходный актуатор.",
     specs: [
       ["类型", "直行程调节型"],
       ["供电电源", "380VAC/50Hz"],
@@ -533,6 +579,8 @@ const PRODUCTS = {
     category: "直行程",
     tag: "调节型",
     desc: "RLML20调节型直行程执行机构，精密的调节控制能力，支持多种信号输入。适用于对阀门开度有精确控制要求的自动化控制系统。",
+    desc_en: "RLML20 regulating type linear actuator, precise regulation control capability.",
+    desc_ru: "RLML20 регулирующий тип прямоходный актуатор.",
     specs: [
       ["类型", "直行程调节型"],
       ["输出转矩", "200N·m"],
@@ -556,6 +604,8 @@ const PRODUCTS = {
     category: "配套",
     tag: "配套",
     desc: "配套用减速箱系列，与瑞基各型号电动执行机构完美匹配。传动效率高，运行噪音低，使用寿命长，是阀门自动化系统的关键传动部件。",
+    desc_en: "RGW series gearbox, perfectly matches with various RAGA electric actuators.",
+    desc_ru: "Серия редукторов RGW, идеально сочетается с электрическими актуаторами RAGA.",
     specs: [
       ["配套型号", "RGW系列"],
       ["传动比", "根据型号定制"],
@@ -576,6 +626,8 @@ const PRODUCTS = {
     category: "配套",
     tag: "配套",
     desc: "RIB系列减速箱，专为阀门电动执行机构配套设计。传动效率高，运行平稳可靠，适配多种执行器型号，满足不同工况下的传动需求。",
+    desc_en: "RIB series gearbox, specially designed for valve electric actuators.",
+    desc_ru: "Серия редукторов RIB, специально разработанная для электрических актуаторов клапанов.",
     specs: [
       ["配套型号", "RIB系列"],
       ["传动比", "根据型号定制"],
@@ -594,7 +646,9 @@ const PRODUCTS = {
     image: "images/电器总承.png",
     category: "配件",
     tag: "配件",
-    desc: "瑞基电动执行机构电器总承组件，包含核心电气控制部件，确保执行机构可靠运行。"
+    desc: "瑞基电动执行机构电器总承组件，包含核心电气控制部件，确保执行机构可靠运行。",
+    desc_en: "RAGA electric actuator electrical assembly component.",
+    desc_ru: "Компонент электрической сборки электрического актуатора RAGA."
   },
   "ra-ctrl": {
     id: "ra-ctrl",
@@ -602,7 +656,9 @@ const PRODUCTS = {
     image: "images/RA主控板.jpg",
     category: "配件",
     tag: "配件",
-    desc: "RA系列电动执行机构主控制板，集成控制逻辑与通信接口，支持多种控制模式切换。"
+    desc: "RA系列电动执行机构主控制板，集成控制逻辑与通信接口，支持多种控制模式切换。",
+    desc_en: "RA series electric actuator main control board.",
+    desc_ru: "Главная плата управления электрического актуатора серии RA."
   },
   "ra-power": {
     id: "ra-power",
@@ -610,7 +666,9 @@ const PRODUCTS = {
     image: "images/RA电源板.jpg",
     category: "配件",
     tag: "配件",
-    desc: "RA系列电动执行机构电源板，为执行机构提供稳定可靠的电源供应与保护功能。"
+    desc: "RA系列电动执行机构电源板，为执行机构提供稳定可靠的电源供应与保护功能。",
+    desc_en: "RA series electric actuator power board.",
+    desc_ru: "Силовая плата электрического актуатора серии RA."
   },
   "remote": {
     id: "remote",
@@ -618,7 +676,9 @@ const PRODUCTS = {
     image: "images/遥控器.png",
     category: "配件",
     tag: "配件",
-    desc: "瑞基智能型电动执行机构专用遥控器，支持非侵入式设定与操作，方便现场调试与参数设置。"
+    desc: "瑞基智能型电动执行机构专用遥控器，支持非侵入式设定与操作，方便现场调试与参数设置。",
+    desc_en: "Special remote control for RAGA intelligent electric actuators.",
+    desc_ru: "Специальный пульт дистанционного управления для интеллектуальных электрических актуаторов RAGA."
   },
   "planet-gear": {
     id: "planet-gear",
@@ -626,7 +686,9 @@ const PRODUCTS = {
     image: "images/行星轮总承.png",
     category: "配件",
     tag: "配件",
-    desc: "行星轮总承传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。"
+    desc: "行星轮总承传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。",
+    desc_en: "Planetary gear assembly, adopts precision planetary gear structure.",
+    desc_ru: "Сборка планетарной передачи, прецизионная структура планетарной передачи."
   },
   "sun-plate": {
     id: "sun-plate",
@@ -634,7 +696,9 @@ const PRODUCTS = {
     image: "images/葵花接盘.png",
     category: "配件",
     tag: "配件",
-    desc: "葵花接盘连接组件，用于执行机构与外部电源信号连接，结构精密，安装方便。"
+    desc: "葵花接盘连接组件，用于执行机构与外部电源信号连接，结构精密，安装方便。",
+    desc_en: "Sunflower connection plate, used for connection between actuator and external power signal.",
+    desc_ru: "Соединительная плита подсолнуха."
   }
 };
 // === RAIII add ===

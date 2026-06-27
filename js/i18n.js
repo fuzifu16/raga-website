@@ -2392,6 +2392,13 @@ i18nData.ru = {
   "cases.water_full": "В водообработке приводы RAGA идеально подходят для привода дисковых и шаровых клапанов.",
   "cases.chemical_full": "В химической промышленности приводы RAGA используются для реакторов и трубопроводных клапанов.",
 
+  /* Case card titles */
+  "case.petroleum": "Нефтяная промышленность",
+  "case.power_gen": "Электроэнергетика",
+  "case.metallurgy": "Металлургия",
+  "case.water_treatment": "Водообработка",
+  "case.chemical": "Химическая промышленность",
+
   /* Nav dropdown items */
   "nav.dd_about_raga": "О RAGA",
   "nav.dd_history": "История",
@@ -2533,33 +2540,33 @@ i18nData.ru = {
   "RL Series Stroke Adjustment": "RL Series Stroke Adjustment (Russian)",
 
   /* Partner names */
-  "partner.ansteel": "Ansteel Group",
-  "partner.baosteel": "Baosteel Group",
-  "partner.chn_energy": "CHN Energy",
-  "partner.cnooc": "CNOOC",
-  "partner.cr_power": "China Resources Power",
-  "partner.datang": "Datang Group",
-  "partner.shougang": "Shougang Group",
-  "partner.zheneng": "Zheneng Group",
-  "partner.cnnc": "CNNC",
-  "partner.cgn": "CGN",
-  "partner.sdnp": "Shandong Nuclear Power",
-  "partner.qsnp": "Qinshan Nuclear Power",
-  "partner.smnp": "Sanmen Nuclear Power",
-  "partner.sinopec": "Sinopec",
-  "partner.petrochina": "PetroChina",
-  "partner.csg": "China Southern Power Grid",
-  "partner.snwd": "South-to-North Water Diversion",
-  "partner.shwater": "Shanghai Water & Ocean",
-  "partner.huaneng": "China Huaneng",
-  "partner.guodian": "China Guodian",
-  "partner.conch": "Conch Group",
+  "partner.ansteel": "Аньган Группа (Ansteel)",
+  "partner.baosteel": "Баоштил Группа (Baosteel)",
+  "partner.chn_energy": "CHN Energy (Группа национальной энергии)",
+  "partner.cnooc": "CNOOC (КНООК)",
+  "partner.cr_power": "China Resources Power (Китайские ресурсы электроэнергии)",
+  "partner.datang": "Датан Группа (Datang)",
+  "partner.shougang": "Шоуган Группа (Shougang)",
+  "partner.zheneng": "Чжэнэн Группа (Zheneng)",
+  "partner.cnnc": "CNNC (КНАЭ)",
+  "partner.cgn": "CGN (КГАЭ)",
+  "partner.sdnp": "Шаньдунская атомная электростанция",
+  "partner.qsnp": "Циньшаньская атомная электростанция",
+  "partner.smnp": "Саньмэньская атомная электростанция",
+  "partner.sinopec": "Sinopec (Синопек)",
+  "partner.petrochina": "PetroChina (ПетроЦитай)",
+  "partner.csg": "China Southern Power Grid (Южная сетевая корпорация)",
+  "partner.snwd": "Проект переброски воды с юга на север",
+  "partner.shwater": "Шанхайское водное управление",
+  "partner.huaneng": "China Huaneng (Китайская Хуанэн)",
+  "partner.guodian": "China Guodian (Китайская Годянь)",
+  "partner.conch": "Conch Group (Конх Группа)",
   "partner.zpc": "Zhejiang Petrochemical (ZPC)",
-  "partner.shanghai_electric": "Shanghai Electric",
-  "partner.dongfang_electric": "Dongfang Electric",
-  "partner.harbin_boiler": "Harbin Electric Corporation",
-  "partner.ceec": "CEEC (China Energy Engineering)",
-  "partner.nwepdi": "NWEPDI"
+  "partner.shanghai_electric": "Shanghai Electric (Шанхайская электрическая)",
+  "partner.dongfang_electric": "Dongfang Electric (Дунфанская электрическая)",
+  "partner.harbin_boiler": "Harbin Electric Corporation (Харбинская электрическая)",
+  "partner.ceec": "CEEC (Китайская энергетическая инженерная)",
+  "partner.nwepdi": "NWEPDI (Северо-Западный институт проектирования электроэнергетики)",
 };
 
 /* ===== Russian specMap ===== */
@@ -2599,9 +2606,13 @@ i18nData.dlMap["ru"] = {};
     "RQ150-RGW10外形图","RQ150-RGW9外形图",
     "RQML06直行程外形图","RQML12直行程外形图","RQML54直行程外形图"
   ];
-  drawKeys.forEach(function(k) {
-    ruDl[k] = enDl[k].replace("Dimension Drawing", "Габаритный чертёж").replace("Linear-motion", "Прямоходный");
-  });
+  if (enDl) {
+    drawKeys.forEach(function(k) {
+      if (enDl[k]) {
+        ruDl[k] = enDl[k].replace("Dimension Drawing", "Габаритный чертёж").replace("Linear-motion", "Прямоходный");
+      }
+    });
+  }
 })();
 
 /* ===== Russian descMap ===== */
@@ -2609,11 +2620,13 @@ i18nData.descMap["ru"] = {};
 (function(){
   var enDesc = i18nData.descMap.en;
   var ruDesc = i18nData.descMap.ru;
-  var keys = Object.keys(enDesc);
-  keys.forEach(function(k) {
-    /* Use English as placeholder — professional Russian translation can be added later */
-    ruDesc[k] = enDesc[k];
-  });
+  if (enDesc) {
+    var keys = Object.keys(enDesc);
+    keys.forEach(function(k) {
+      /* Use English as placeholder — professional Russian translation can be added later */
+      ruDesc[k] = enDesc[k];
+    });
+  }
 })();
 
 /* ===== Russian cardMap ===== */
@@ -2621,8 +2634,10 @@ i18nData.cardMap["ru"] = {};
 (function(){
   var enCard = i18nData.cardMap.en;
   var ruCard = i18nData.cardMap.ru;
-  var keys = Object.keys(enCard);
-  keys.forEach(function(k) { ruCard[k] = enCard[k]; });
+  if (enCard) {
+    var keys = Object.keys(enCard);
+    keys.forEach(function(k) { ruCard[k] = enCard[k]; });
+  }
 })();
 
 /* ===== Russian tagMap ===== */
@@ -2641,5 +2656,26 @@ i18nData.scrollMap["ru"] = {
   "scroll.rl": "RL Smart", "scroll.rj": "RJ On/Off",
   "scroll.rjm": "Accessory Series", "scroll.rgw": "RGW Gearbox",
   "scroll.rib": "RIB Gearbox", "scroll.rq150": "RQIII150~RQ300 Series"
+
+
+
+
+
+
 };
 
+
+
+
+/* ===== Russian translations for i18nData.ru ===== */
+i18nData.ru["topbar.slogan"] = "Вэнчжоу RAGA — Профессиональный производитель интеллектуальных электроприводов для клапанов";
+i18nData.ru["nav.home"] = "Главная";
+i18nData.ru["nav.about"] = "О компании";
+i18nData.ru["nav.products"] = "Продукция";
+i18nData.ru["nav.tech"] = "Технологии";
+i18nData.ru["tech.nonintrusive_title"] = "Технология неинвазивной настройки";
+i18nData.ru["tech.lcd_title"] = "Графический точечно-матричный ЖК-дисплей";
+i18nData.ru["tech.protection_title"] = "Многофункциональная интеллектуальная защита";
+i18nData.ru["tech.comm_title"] = "Множественные способы связи";
+i18nData.ru["tech.precision_title"] = "Технология высокоточного управления";
+i18nData.ru["tech.temp_title"] = "Адаптивность к широкому температурному диапазону";

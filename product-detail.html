@@ -223,7 +223,10 @@
     var descEl = document.getElementById('detail-desc');
     if (descEl) {
       var descText = product.desc;
-      if (i18nData && i18nData.descMap && i18nData.descMap[lang]) {
+      // Try to use language-specific description if available
+      if (product['desc_' + lang]) {
+        descText = product['desc_' + lang];
+      } else if (i18nData && i18nData.descMap && i18nData.descMap[lang]) {
         descText = i18nData.descMap[lang][product.desc] || product.desc;
       }
       descEl.textContent = descText;

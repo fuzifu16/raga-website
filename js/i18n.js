@@ -42,11 +42,12 @@ const i18nData = {
     "section.about_title": "关于瑞基",
     "section.about_desc": "专注工业自动化领域，打造高品质智能执行机构",
     "about.company_name": "温州瑞基测控设备有限公司",
+    "about.company_name_shanghai": "上海瑞基瑞然自动化技术有限公司",
     "about.p1": "温州瑞基测控设备有限公司是一家专业研制、开发、生产智能型电动阀门执行机构的企业。公司位于温州市和上海市，拥有现代化的生产基地和先进的加工设备。",
     "about.p2": "产品广泛应用于石油、电力、冶金、水处理等行业，远销国内外市场。",
     "about.stat1_num": "20+",
     "about.stat1_label": "年行业经验",
-    "about.stat2_num": "20,000",
+    "about.stat2_num": "40,000",
     "about.stat2_label": "年产能（台）",
     "about.stat3_num": "10+",
     "about.stat3_label": "产品系列",
@@ -99,7 +100,7 @@ const i18nData = {
     "about.breadcrumb": "公司简介",
     "about.full_title": "关于瑞基",
     "about.full_p1": "温州瑞基测控设备有限公司是一家专业研制、开发、生产智能型电动阀门执行机构的企业。公司位于温州市和上海市，拥有现代化的生产基地和先进的加工设备，技术力量雄厚，生产工艺先进，检测手段完善。",
-    "about.full_p2": "为满足国内外市场不断增长的供货需求，公司成立了上海瑞基瑞然自动化技术有限公司和瑞基测控设备（太仓）有限公司，建有年产2万台的智能电动执行机构生产线，形成温州、上海、太仓多基地运营模式，确保产品交期和质量。",
+    "about.full_p2": "为满足国内外市场不断增长的供货需求，公司成立了上海瑞基瑞然自动化技术有限公司和瑞基测控设备（太仓）有限公司，建有年产4万台的智能电动执行机构生产线，形成温州、上海、太仓多基地运营模式，确保产品交期和质量。",
     "about.history": "发展历程",
     "about.culture": "企业文化",
     "about.culture_vision": "成为国际一流的智能执行机构制造商",
@@ -109,9 +110,9 @@ const i18nData = {
     "about.milestone_2005": "温州瑞基测控设备有限公司成立，专注于电动执行机构研发制造",
     "about.milestone_2010": "推出RA系列智能型电动执行机构，获得市场广泛认可",
     "about.milestone_2013": "网站上线，产品线扩展至全系列智能执行机构",
-    "about.milestone_2018": "成立瑞基测控设备（太仓）有限公司，年产2万台新产线投产",
+    "about.milestone_2018": "成立瑞基测控设备（太仓）有限公司，年产4万台新产线投产",
     "about.milestone_2021": "成立上海瑞基瑞然自动化技术有限公司，拓展华东市场",
-    "about.prod_1": "温州、上海、太仓三基地运营，年产能力20,000台",
+    "about.prod_1": "温州、上海、太仓三基地运营，年产能力40,000台",
     "about.prod_2": "现代化加工中心及专用数控设备",
     "about.prod_3": "完善的检测实验室，全系列产品出厂前严格测试",
     "about.prod_4": "通过ISO9001质量管理体系认证",
@@ -280,11 +281,12 @@ const i18nData = {
     "section.about_title": "About RAGA",
     "section.about_desc": "Focused on industrial automation, creating high-quality smart actuators",
     "about.company_name": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.",
+    "about.company_name_shanghai": "Shanghai RAGA Ruiran Automation Technology Co., Ltd.",
     "about.p1": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. is a professional enterprise specializing in R&D, production of smart electric valve actuators. Located in Wenzhou and Shanghai, with modern production bases and advanced processing equipment.",
     "about.p2": "Products are widely used in petroleum, power, metallurgy, water treatment industries, sold both domestically and internationally.",
     "about.stat1_num": "20+",
     "about.stat1_label": "Years Experience",
-    "about.stat2_num": "20,000",
+    "about.stat2_num": "40,000",
     "about.stat2_label": "Annual Capacity",
     "about.stat3_num": "10+",
     "about.stat3_label": "Product Series",
@@ -337,7 +339,7 @@ const i18nData = {
     "about.breadcrumb": "About Us",
     "about.full_title": "About RAGA",
     "about.full_p1": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. is a professional enterprise specializing in the R&D, production of smart electric valve actuators. Located in Wenzhou and Shanghai with modern production bases and advanced processing equipment.",
-    "about.full_p2": "To meet growing market demand, the company established Shanghai RAGA Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., with an annual production capacity of 20,000 smart electric actuators.",
+    "about.full_p2": "To meet growing market demand, the company established Shanghai RAGA Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., with an annual production capacity of 40,000 smart electric actuators.",
     "about.history": "Milestones",
     "about.culture": "Corporate Culture",
     "about.culture_vision": "To become a world-class smart actuator manufacturer",
@@ -347,9 +349,9 @@ const i18nData = {
     "about.milestone_2005": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. was founded, focusing on R&D and manufacturing of electric actuators",
     "about.milestone_2010": "Launched RA series smart electric actuators, widely recognized by the market",
     "about.milestone_2013": "Website launched, product line expanded to full series of smart actuators",
-    "about.milestone_2018": "Established RAGA (Taicang) Co., Ltd., new production line with 20,000 units annual capacity",
+    "about.milestone_2018": "Established RAGA (Taicang) Co., Ltd., new production line with 40,000 units annual capacity",
     "about.milestone_2021": "Established Shanghai RAGA Automation Technology Co., Ltd., expanding into East China market",
-    "about.prod_1": "Three bases in Wenzhou, Shanghai and Taicang with 20,000 units annual capacity",
+    "about.prod_1": "Three bases in Wenzhou, Shanghai and Taicang with 40,000 units annual capacity",
     "about.prod_2": "Modern machining centers and dedicated CNC equipment",
     "about.prod_3": "Comprehensive testing laboratory, rigorous factory testing for all products",
     "about.prod_4": "ISO9001 quality management system certified",
@@ -945,6 +947,7 @@ i18nData.en["downloads.company_brochure"] = "Company Brochure";
 i18nData["zh-TW"]["about.breadcrumb"] = "公司簡介";
 i18nData["zh-TW"]["about.btn_more"] = "瞭解更多 →";
 i18nData["zh-TW"]["about.company_name"] = "溫州瑞基測控設備有限公司";
+i18nData["zh-TW"]["about.company_name_shanghai"] = "上海瑞基瑞然自動化技術有限公司";
 i18nData["zh-TW"]["about.culture"] = "企業文化";
 i18nData["zh-TW"]["about.culture_mission"] = "為全球工業自動化提供可靠的驅動解決方案";
 i18nData["zh-TW"]["about.culture_mission_label"] = "企業使命：";
@@ -953,18 +956,18 @@ i18nData["zh-TW"]["about.culture_values_label"] = "核心價值觀：";
 i18nData["zh-TW"]["about.culture_vision"] = "成為國際一流的智能執行機構製造商";
 i18nData["zh-TW"]["about.culture_vision_label"] = "企業願景：";
 i18nData["zh-TW"]["about.full_p1"] = "溫州瑞基測控設備有限公司是一家專業研製、開發、生產智能型電動閥門執行機構的企業。公司位於溫州市和上海市，擁有現代化的生產基地和先進的加工設備，技術力量雄厚，生產工藝先進，檢測手段完善。";
-i18nData["zh-TW"]["about.full_p2"] = "為滿足國內外市場不斷增長的供貨需求，公司成立了上海瑞基瑞然自動化技術有限公司和瑞基測控設備（太倉）有限公司，建有年產2萬臺的智能電動執行機構生產線，形成溫州、上海、太倉多基地運營模式，確保產品交期和質量。";
+i18nData["zh-TW"]["about.full_p2"] = "為滿足國內外市場不斷增長的供貨需求，公司成立了上海瑞基瑞然自動化技術有限公司和瑞基測控設備（太倉）有限公司，建有年產4萬臺的智能電動執行機構生產線，形成溫州、上海、太倉多基地運營模式，確保產品交期和質量。";
 i18nData["zh-TW"]["about.full_title"] = "關於瑞基";
 i18nData["zh-TW"]["about.history"] = "發展歷程";
 i18nData["zh-TW"]["about.milestone_2005"] = "溫州瑞基測控設備有限公司成立，專注於電動執行機構研發製造";
 i18nData["zh-TW"]["about.milestone_2010"] = "推出RA系列智能型電動執行機構，獲得市場廣泛認可";
 i18nData["zh-TW"]["about.milestone_2013"] = "網站上線，產品線擴展至全系列智能執行機構";
-i18nData["zh-TW"]["about.milestone_2018"] = "成立瑞基測控設備（太倉）有限公司，年產2萬臺新產線投產";
+i18nData["zh-TW"]["about.milestone_2018"] = "成立瑞基測控設備（太倉）有限公司，年產4萬臺新產線投產";
 i18nData["zh-TW"]["about.milestone_2021"] = "成立上海瑞基瑞然自動化技術有限公司，拓展華東市場";
 i18nData["zh-TW"]["about.p1"] = "溫州瑞基測控設備有限公司是一家專業研製、開發、生產智能型電動閥門執行機構的企業。公司位於溫州市和上海市，擁有現代化的生產基地和先進的加工設備。";
 i18nData["zh-TW"]["about.p2"] = "產品廣泛應用於石油、電力、冶金、水處理等行業，遠銷國內外市場。";
 i18nData["zh-TW"]["about.page_title"] = "公司簡介";
-i18nData["zh-TW"]["about.prod_1"] = "溫州、上海、太倉三基地運營，年產能力20,000臺";
+i18nData["zh-TW"]["about.prod_1"] = "溫州、上海、太倉三基地運營，年產能力40,000臺";
 i18nData["zh-TW"]["about.prod_2"] = "現代化加工中心及專用數控設備";
 i18nData["zh-TW"]["about.prod_3"] = "完善的檢測實驗室，全系列產品出廠前嚴格測試";
 i18nData["zh-TW"]["about.prod_4"] = "通過ISO9001質量管理體系認證";
@@ -2052,6 +2055,7 @@ i18nData.ru = {
   "section.about_title": "О RAGA",
   "section.about_desc": "Сосредоточены на промышленной автоматизации, создавая высококачественные интеллектуальные приводы",
   "about.company_name": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
+  "about.company_name_shanghai": "Shanghai RAGA Ruiran Automation Technology Co., Ltd.",
   "about.p1": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. Расположена в Вэньчжоу и Шанхае, имеет современные производственные базы и передовое оборудование.",
   "about.p2": "Продукция широко используется в нефтяной, электроэнергетической, металлургической, водообрабатывающей отраслях, продается на внутреннем и международном рынках.",
   "about.stat1_num": "20+",
@@ -2120,9 +2124,9 @@ i18nData.ru = {
   "about.milestone_2005": "Основана Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd., фокус на НИОКР и производстве электроприводов",
   "about.milestone_2010": "Запуск серии интеллектуальных электроприводов RA, широко признанная рынком",
   "about.milestone_2013": "Запуск веб-сайта, расширение линейки продукции до полной серии интеллектуальных приводов",
-  "about.milestone_2018": "Основана RAGA (Taicang) Co., Ltd., новая производственная линия с мощностью 20,000 единиц в год",
+  "about.milestone_2018": "Основана RAGA (Taicang) Co., Ltd., новая производственная линия с мощностью 40,000 единиц в год",
   "about.milestone_2021": "Основана Shanghai RAGA Ruiran Automation Technology Co., Ltd., расширение на рынок Восточного Китая",
-  "about.prod_1": "Три базы в Вэньчжоу, Шанхае и Тайцане с годовой мощностью 20,000 единиц",
+  "about.prod_1": "Три базы в Вэньчжоу, Шанхае и Тайцане с годовой мощностью 40,000 единиц",
   "about.prod_2": "Современные обрабатывающие центры и специальное ЧПУ оборудование",
   "about.prod_3": "Полная испытательная лаборатория, строгие заводские испытания для всей продукции",
   "about.prod_4": "Сертифицировано по системе менеджмента качества ISO9001",

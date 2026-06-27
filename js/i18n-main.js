@@ -108,12 +108,17 @@ const I18N = {
       el.classList.toggle('active', el.dataset.lang === self.currentLang);
     });
 
-    // Set active nav based on current page (fix: ensure it runs after i18n apply)
-    var currentPage = location.pathname.split('/').pop() || 'index.html';
+    // Set active nav based on current page (handle URLs with/without .html)
+    var currentPage = (function() {
+      var path = location.pathname;
+      if (path === '/' || path === '') return 'index';
+      return path.split('/').pop().replace(/\.html$/, '');
+    })();
     document.querySelectorAll('.nav > a, .nav-dd > a').forEach(function(link) {
       var href = link.getAttribute('href');
       if (href) {
-        link.classList.toggle('active', href.split('#')[0] === currentPage);
+        var hrefPage = href.split('#')[0].replace(/\.html$/, '');
+        link.classList.toggle('active', hrefPage === currentPage);
       }
     });
   },

@@ -142,6 +142,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }, { threshold: 0.1 });
       aObserver.observe(aboutGrid);
     }
+
+    // Case cards: each card reveals individually when scrolled to
+    var caseCards = document.querySelectorAll('.case-card');
+    if (caseCards.length) {
+      caseCards.forEach(function(c) { c.classList.add('reveal-ready'); });
+      var cObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-up');
+            cObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px 80px 0px' });
+      caseCards.forEach(function(c) { cObserver.observe(c); });
+    }
   })();
 
   // Mobile nav toggle

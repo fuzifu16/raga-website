@@ -1,21 +1,147 @@
 /* ===== RAGA 瑞基 - Main JS ===== */
 document.addEventListener('DOMContentLoaded', function() {
-  // Page reveal animation — sections slide up one by one
+  // Scroll-triggered reveal — sections animate in when scrolled into view
   (function() {
-    var sections = document.querySelectorAll(
-      '.hero-content, .page-hero-content, .section, .products-section, .cert-gallery, ' +
-      '.about-grid > *, .tech-grid > *, .case-grid > *, .contact-grid > *, ' +
+    var targets = document.querySelectorAll(
+      '.hero-content, .page-hero-content, .section, .products-section, .cert-gallery, .cta-banner-content, ' +
+      '.tech-grid > *, .case-grid > *, .contact-grid > *, ' +
       '.product-detail, .download-list, .machining-gallery > *, ' +
       '.production-gallery > *'
     );
-    sections.forEach(function(el, i) {
-      if (el.classList.contains('reveal-up')) return;
-      var delayClass = '';
-      var step = i % 8;
-      if (step === 0) delayClass = '';
-      else delayClass = ' reveal-d' + step;
-      el.classList.add('reveal-up' + delayClass);
+    if (!targets.length) return;
+
+    // Add ready state (hidden)
+    targets.forEach(function(el) {
+      el.classList.add('reveal-ready');
     });
+
+    // Observe and reveal on scroll
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px 100px 0px' });
+
+    targets.forEach(function(el) { observer.observe(el); });
+
+    // Timeline special: reveal items one by one when timeline enters view
+    var timeline = document.querySelector('.timeline');
+    if (timeline) {
+      var items = timeline.querySelectorAll('.timeline-item');
+      items.forEach(function(item) { item.classList.add('reveal-ready'); });
+
+      var tlObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          items.forEach(function(item, i) {
+            setTimeout(function() {
+              item.classList.add('reveal-up');
+            }, i * 800);
+          });
+          tlObserver.unobserve(timeline);
+        }
+      }, { threshold: 0.1 });
+      tlObserver.observe(timeline);
+    }
+
+    // Product cards: reveal one by one when grid enters view
+    var productGrids = document.querySelectorAll('.products-grid');
+    if (productGrids.length) {
+      productGrids.forEach(function(grid) {
+        var cards = grid.querySelectorAll('.product-card');
+        cards.forEach(function(card) { card.classList.add('reveal-ready'); });
+
+        var pgObserver = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            cards.forEach(function(card, i) {
+              setTimeout(function() {
+                card.classList.add('reveal-up');
+              }, i * 180);
+            });
+            pgObserver.unobserve(grid);
+          }
+        }, { threshold: 0.05 });
+        pgObserver.observe(grid);
+      });
+    }
+
+    // Production grid: reveal items one by one
+    var prodGrid = document.querySelector('.production-grid');
+    if (prodGrid) {
+      var pItems = prodGrid.querySelectorAll('.production-item');
+      pItems.forEach(function(p) { p.classList.add('reveal-ready'); });
+      var pObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          pItems.forEach(function(p, i) {
+            setTimeout(function() {
+              p.classList.add('reveal-up');
+            }, i * 600);
+          });
+          pObserver.unobserve(prodGrid);
+        }
+      }, { threshold: 0.1 });
+      pObserver.observe(prodGrid);
+    }
+
+    // News grid: reveal cards one by one
+    var newsGrid = document.querySelector('.news-grid');
+    if (newsGrid) {
+      var nCards = newsGrid.querySelectorAll('.news-card');
+      nCards.forEach(function(n) { n.classList.add('reveal-ready'); });
+      var nObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          nCards.forEach(function(n, i) {
+            setTimeout(function() {
+              n.classList.add('reveal-up');
+            }, i * 600);
+          });
+          nObserver.unobserve(newsGrid);
+        }
+      }, { threshold: 0.1 });
+      nObserver.observe(newsGrid);
+    }
+
+    // About grid: reveal in groups — image → names → text → stats
+    var aboutGrid = document.querySelector('.about-grid');
+    if (aboutGrid) {
+      var aImg   = aboutGrid.querySelector('.about-image');
+      var aH3    = aboutGrid.querySelector('.about-text > h3');
+      var aSub   = aboutGrid.querySelector('.about-text > .about-subtitle');
+      var aParas = aboutGrid.querySelectorAll('.about-text > p:not(.about-subtitle)');
+      var aStats = aboutGrid.querySelector('.about-stats');
+
+      var groups = [];
+      if (aImg) groups.push([aImg]);
+      if (aH3) {
+        var g2 = [aH3];
+        if (aSub) g2.push(aSub);
+        groups.push(g2);
+      }
+      if (aParas.length) groups.push([].slice.call(aParas));
+      if (aStats) groups.push([aStats]);
+
+      groups.forEach(function(g) {
+        g.forEach(function(el) { el.classList.add('reveal-ready'); });
+      });
+
+      var aObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          var delay = 0;
+          groups.forEach(function(g) {
+            g.forEach(function(el) {
+              (function(d) {
+                setTimeout(function() { el.classList.add('reveal-up'); }, d);
+              })(delay);
+            });
+            delay += 700;
+          });
+          aObserver.unobserve(aboutGrid);
+        }
+      }, { threshold: 0.1 });
+      aObserver.observe(aboutGrid);
+    }
   })();
 
   // Mobile nav toggle

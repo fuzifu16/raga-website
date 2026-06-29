@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
       el.classList.add('reveal-ready');
     });
 
+    // Remove reveal-ready from sections that have their own child reveal logic
+    // (production-grid, news-grid, about-grid, case-cards) — only children should animate
+    document.querySelectorAll('#production.section, .news-section, .about-grid, .case-cards').forEach(function(el) {
+      el.classList.remove('reveal-ready');
+    });
+
     // Observe and reveal on scroll
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {

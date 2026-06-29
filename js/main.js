@@ -1,5 +1,23 @@
 /* ===== RAGA 瑞基 - Main JS ===== */
 document.addEventListener('DOMContentLoaded', function() {
+  // Page reveal animation — sections slide up one by one
+  (function() {
+    var sections = document.querySelectorAll(
+      '.hero-content, .page-hero-content, .section, .products-section, .cert-gallery, ' +
+      '.about-grid > *, .tech-grid > *, .case-grid > *, .contact-grid > *, ' +
+      '.product-detail, .download-list, .machining-gallery > *, ' +
+      '.production-gallery > *'
+    );
+    sections.forEach(function(el, i) {
+      if (el.classList.contains('reveal-up')) return;
+      var delayClass = '';
+      var step = i % 8;
+      if (step === 0) delayClass = '';
+      else delayClass = ' reveal-d' + step;
+      el.classList.add('reveal-up' + delayClass);
+    });
+  })();
+
   // Mobile nav toggle
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');

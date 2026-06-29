@@ -321,10 +321,16 @@ a { color: inherit; }
 .btn-primary:hover { background: var(--primary-dark); color: var(--white); }
 .btn-outline-dark {
   background: transparent;
-  border: 2px solid var(--dark);
-  color: var(--dark);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 28px;
 }
-.btn-outline-dark:hover { background: var(--dark); color: var(--white); }
+.btn-outline-dark:hover {
+  background: var(--primary);
+  color: #fff;
+}
 .btn-sm { padding: 8px 18px; font-size: 13px; }
 
 /* ===== Preview Page ===== */

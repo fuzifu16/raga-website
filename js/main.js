@@ -157,6 +157,48 @@ document.addEventListener('DOMContentLoaded', function() {
       }, { threshold: 0.1, rootMargin: '0px 0px 80px 0px' });
       caseCards.forEach(function(c) { cObserver.observe(c); });
     }
+
+    // About page: 企业文化 — reveal h2 + each p one by one
+    var cultureH2 = document.querySelector('#culture');
+    if (cultureH2) {
+      var cItems = [cultureH2];
+      var next = cultureH2.nextElementSibling;
+      while (next && next.tagName !== 'H2') {
+        cItems.push(next);
+        next = next.nextElementSibling;
+      }
+      cItems.forEach(function(el) { el.classList.add('reveal-ready'); });
+      var culObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          cItems.forEach(function(el, i) {
+            setTimeout(function() { el.classList.add('reveal-up'); }, i * 700);
+          });
+          culObserver.unobserve(cultureH2);
+        }
+      }, { threshold: 0.1 });
+      culObserver.observe(cultureH2);
+    }
+
+    // About page: 生产实力 — reveal h2 + each li one by one
+    var prodH2 = document.querySelector('#production');
+    if (prodH2) {
+      var pItems = [prodH2];
+      var ul = prodH2.nextElementSibling;
+      if (ul && ul.tagName === 'UL') {
+        var lis = ul.querySelectorAll('li');
+        [].slice.call(lis).forEach(function(li) { pItems.push(li); });
+      }
+      pItems.forEach(function(el) { el.classList.add('reveal-ready'); });
+      var prodObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          pItems.forEach(function(el, i) {
+            setTimeout(function() { el.classList.add('reveal-up'); }, i * 350);
+          });
+          prodObserver.unobserve(prodH2);
+        }
+      }, { threshold: 0.1 });
+      prodObserver.observe(prodH2);
+    }
   })();
 
   // Mobile nav toggle

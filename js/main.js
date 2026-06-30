@@ -73,40 +73,34 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    // Production grid: reveal items one by one
-    var prodGrid = document.querySelector('.production-grid');
-    if (prodGrid) {
-      var pItems = prodGrid.querySelectorAll('.production-item');
+    // Production grid: each item reveals individually when scrolled to
+    var pItems = document.querySelectorAll('.production-item');
+    if (pItems.length) {
       pItems.forEach(function(p) { p.classList.add('reveal-ready'); });
       var pObserver = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-          pItems.forEach(function(p, i) {
-            setTimeout(function() {
-              p.classList.add('reveal-up');
-            }, i * 600);
-          });
-          pObserver.unobserve(prodGrid);
-        }
-      }, { threshold: 0.05, rootMargin: '0px 0px 100px 0px' });
-      pObserver.observe(prodGrid);
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-up');
+            pObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: '0px 0px 80px 0px' });
+      pItems.forEach(function(p) { pObserver.observe(p); });
     }
 
-    // News grid: reveal cards one by one
-    var newsGrid = document.querySelector('.news-grid');
-    if (newsGrid) {
-      var nCards = newsGrid.querySelectorAll('.news-card');
+    // News grid: each card reveals individually when scrolled to
+    var nCards = document.querySelectorAll('.news-card');
+    if (nCards.length) {
       nCards.forEach(function(n) { n.classList.add('reveal-ready'); });
       var nObserver = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-          nCards.forEach(function(n, i) {
-            setTimeout(function() {
-              n.classList.add('reveal-up');
-            }, i * 600);
-          });
-          nObserver.unobserve(newsGrid);
-        }
-      }, { threshold: 0.05, rootMargin: '0px 0px 100px 0px' });
-      nObserver.observe(newsGrid);
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-up');
+            nObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: '0px 0px 80px 0px' });
+      nCards.forEach(function(n) { nObserver.observe(n); });
     }
 
     // About grid: reveal in groups — image → names → text → stats
@@ -205,6 +199,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }, { threshold: 0.1 });
       prodObserver.observe(prodH2);
     }
+
+    // Safety fallback: after 5s, force-show anything still hidden
+    setTimeout(function() {
+      document.querySelectorAll('.reveal-ready:not(.reveal-up)').forEach(function(el) {
+        el.classList.add('reveal-up');
+      });
+    }, 5000);
   })();
 
   // Mobile nav toggle

@@ -167,16 +167,36 @@
     </div>
     <script>
     (function(){
-      var offices=[['西安办（西安卓石机电成套设备有限公司）','黄立波','📱 13991922624<br>📞 029-86562677/78<br>📠 029-86537458<br>✉️ lyangmei@xazhuoshi.com'],['北京办（北京瑞基测控设备有限公司）','陈良','📱 15811111878 / 13515777743<br>📠 010-58773016'],['浙江办/福建办（杭州瑞基自动化科技有限公司）','王许','📱 15888812770<br>📞 0571-86070107<br>📠 0571-86090095<br>✉️ raga@hzraga.com.cn'],['新疆办（新疆瑞基测控设备有限公司）','叶月香','📱 13899578318<br>📞 0991-4506075<br>✉️ 157548163@qq.com'],['宁波办（阿尔法科技发展有限公司）','应瑛','📱 15869333466<br>📞 0574-86264581<br>📠 0574-86295396<br>✉️ nbaefkj@126.com'],['上海办（上海图华仪表电器有限公司）','吴天琛','📱 17701628237<br>📞 021-64565448<br>📠 021-54122301<br>✉️ 521042294@qq.com'],['上海办（上海瑞鼓机电成套设备有限公司）','徐志会','📱 13918283699<br>📞 021-54739293/54739830<br>📠 021-54842896<br>✉️ shanghairaga@163.com'],['山西办/广西办（杭州中景嘉创电力设备有限公司）','郑珍英','📱 13968112474<br>📞 0571-65020255<br>📠 0571-65020620<br>✉️ ragazzy@126.com'],['山东办（山东瑞基测控设备有限公司）','徐建军','📱 15069192692<br>📞 0531-85922012<br>📠 0531-85922010<br>✉️ rjshandong@163.com'],['安徽办（上海森德倍电力设备有限公司）','马齐阳','📱 13917356462<br>📞 0550-7031310<br>📠 0550-7041223<br>✉️ maqiyang008@163.com'],['河南办（上海宝岛电嚣仪表有限公司）','甘良清','📱 13901734706<br>📞 0371-55683706<br>📠 0371-55683706<br>✉️ bd1701@126.com'],['哈尔滨办（哈尔滨恒源嵘丰电力科技有限公司）','李昕泠','📱 13804559007<br>📞 0451-87975157<br>📠 0451-87975157<br>✉️ hyrf_power@163.com'],['武汉办（清能浩宇(湖北)科技开发有限公司）','吴琳','📱 18627815050<br>📞 027-86617199<br>📠 027-86617198<br>✉️ hbqnhy@163.com'],['长沙办（湖南华德自动化科技有限公司）','罗薇','📱 13808451016<br>📞 0731-85682559<br>✉️ luowei408@163.com'],['东营办（东营胜凯达石油机械设备有限公司）','李蔚','📱 13345065628<br>✉️ skd88@126.com'],['扬州办（扬州亚控科技有限公司）','苏在华','📱 15189871872<br>✉️ yzykkj@126.com']];
+      var lang = (typeof I18N !== 'undefined' && I18N.currentLang) ? I18N.currentLang : 'zh';
+      var offices=[
+        {zh:'西安办（西安卓石机电成套设备有限公司）',en:"Xi'an Office (Xi'an Zhuoshi M&E Co., Ltd.)",ru:"Офис Сиань (Xi'an Zhuoshi M&E Co., Ltd.)",person:'黄立波',contact:'📱 13991922624<br>📞 029-86562677/78<br>📠 029-86537458<br>✉️ lyangmei@xazhuoshi.com'},
+        {zh:'北京办（北京瑞基测控设备有限公司）',en:'Beijing Office (Beijing Raga Measurement & Control Co., Ltd.)',ru:'Офис Пекин (Beijing Raga Co., Ltd.)',person:'陈良',contact:'📱 15811111878 / 13515777743<br>📠 010-58773016'},
+        {zh:'浙江办/福建办（杭州瑞基自动化科技有限公司）',en:'Zhejiang/Fujian Office (Hangzhou Raga Automation Tech Co., Ltd.)',ru:'Офис Чжэцзян/Фуцзянь (Hangzhou Raga Automation)',person:'王许',contact:'📱 15888812770<br>📞 0571-86070107<br>📠 0571-86090095<br>✉️ raga@hzraga.com.cn'},
+        {zh:'新疆办（新疆瑞基测控设备有限公司）',en:'Xinjiang Office (Xinjiang Raga Measurement & Control Co., Ltd.)',ru:'Офис Синьцзян (Xinjiang Raga Co., Ltd.)',person:'叶月香',contact:'📱 13899578318<br>📞 0991-4506075<br>✉️ 157548163@qq.com'},
+        {zh:'宁波办（阿尔法科技发展有限公司）',en:'Ningbo Office (Alpha Tech Development Co., Ltd.)',ru:'Офис Нинбо (Alpha Tech Development)',person:'应瑛',contact:'📱 15869333466<br>📞 0574-86264581<br>📠 0574-86295396<br>✉️ nbaefkj@126.com'},
+        {zh:'上海办（上海图华仪表电器有限公司）',en:'Shanghai Office (Shanghai Tuhua Instrument & Electrical Co., Ltd.)',ru:'Офис Шанхай (Shanghai Tuhua Instrument)',person:'吴天琛',contact:'📱 17701628237<br>📞 021-64565448<br>📠 021-54122301<br>✉️ 521042294@qq.com'},
+        {zh:'上海办（上海瑞鼓机电成套设备有限公司）',en:'Shanghai Office (Shanghai Ruigu M&E Equipment Co., Ltd.)',ru:'Офис Шанхай (Shanghai Ruigu M&E)',person:'徐志会',contact:'📱 13918283699<br>📞 021-54739293/54739830<br>📠 021-54842896<br>✉️ shanghairaga@163.com'},
+        {zh:'山西办/广西办（杭州中景嘉创电力设备有限公司）',en:'Shanxi/Guangxi Office (Hangzhou Zhongjing Jiachuang Power Co., Ltd.)',ru:'Офис Шаньси/Гуанси (Hangzhou Zhongjing Power)',person:'郑珍英',contact:'📱 13968112474<br>📞 0571-65020255<br>📠 0571-65020620<br>✉️ ragazzy@126.com'},
+        {zh:'山东办（山东瑞基测控设备有限公司）',en:'Shandong Office (Shandong Raga Measurement & Control Co., Ltd.)',ru:'Офис Шаньдун (Shandong Raga Co., Ltd.)',person:'徐建军',contact:'📱 15069192692<br>📞 0531-85922012<br>📠 0531-85922010<br>✉️ rjshandong@163.com'},
+        {zh:'安徽办（上海森德倍电力设备有限公司）',en:'Anhui Office (Shanghai Sendbei Power Equipment Co., Ltd.)',ru:'Офис Аньхой (Shanghai Sendbei Power)',person:'马齐阳',contact:'📱 13917356462<br>📞 0550-7031310<br>📠 0550-7041223<br>✉️ maqiyang008@163.com'},
+        {zh:'河南办（上海宝岛电嚣仪表有限公司）',en:'Henan Office (Shanghai Baodao Instrument Co., Ltd.)',ru:'Офис Хэнань (Shanghai Baodao Instrument)',person:'甘良清',contact:'📱 13901734706<br>📞 0371-55683706<br>📠 0371-55683706<br>✉️ bd1701@126.com'},
+        {zh:'哈尔滨办（哈尔滨恒源嵘丰电力科技有限公司）',en:'Harbin Office (Harbin Hengyuan Rongfeng Power Tech Co., Ltd.)',ru:'Офис Харбин (Harbin Hengyuan Rongfeng Power)',person:'李昕泠',contact:'📱 13804559007<br>📞 0451-87975157<br>📠 0451-87975157<br>✉️ hyrf_power@163.com'},
+        {zh:'武汉办（清能浩宇(湖北)科技开发有限公司）',en:'Wuhan Office (Qingneng Haoyu (Hubei) Tech Co., Ltd.)',ru:'Офис Ухань (Qingneng Haoyu Tech)',person:'吴琳',contact:'📱 18627815050<br>📞 027-86617199<br>📠 027-86617198<br>✉️ hbqnhy@163.com'},
+        {zh:'长沙办（湖南华德自动化科技有限公司）',en:'Changsha Office (Hunan Huade Automation Tech Co., Ltd.)',ru:'Офис Чанша (Hunan Huade Automation)',person:'罗薇',contact:'📱 13808451016<br>📞 0731-85682559<br>✉️ luowei408@163.com'},
+        {zh:'东营办（东营胜凯达石油机械设备有限公司）',en:'Dongying Office (Dongying Shengkaida Petroleum Machinery Co., Ltd.)',ru:'Офис Дунъин (Dongying Shengkaida Petroleum)',person:'李蔚',contact:'📱 13345065628<br>✉️ skd88@126.com'},
+        {zh:'扬州办（扬州亚控科技有限公司）',en:'Yangzhou Office (Yangzhou Yakong Tech Co., Ltd.)',ru:'Офис Янчжоу (Yangzhou Yakong Tech)',person:'苏在华',contact:'📱 15189871872<br>✉️ yzykkj@126.com'}
+      ];
       var tbody=document.getElementById('office-tbody');
       var html='';
       offices.forEach(function(o,i){
         var bg=i%2?' style="background:#f8f9fa;"':'';
+        var officeName = o[lang] || o['zh'];
+        if(lang==='zh-TW'){ officeName = o['zh'].replace(/办/g,'辦'); }
         // 把纯文本邮箱转成可点击复制的链接
-        var contact=o[2].replace(/✉️\s*([^\s<]+)/g,function(m,email){
+        var contact=o.contact.replace(/✉️\s*([^\s<]+)/g,function(m,email){
           return '✉️ <a href="mailto:'+email+'" class="office-email">'+email+'</a>';
         });
-        html+='<tr'+bg+'><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+o[0]+'</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+o[1]+'</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+contact+'</td></tr>';
+        html+='<tr'+bg+'><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+officeName+'</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+o.person+'</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+contact+'</td></tr>';
       });
       tbody.innerHTML=html;
     })();
@@ -299,6 +319,10 @@
 
     var labels = lang === 'zh'
       ? { wz: '温州基地<br>浙江省温州市', sh: '上海基地<br>上海瑞基瑞然自动化技术有限公司', tc: '太仓基地<br>瑞基测控设备（太仓）有限公司' }
+      : lang === 'zh-TW'
+      ? { wz: '溫州基地<br>浙江省溫州市', sh: '上海基地<br>上海瑞基瑞然自動化技術有限公司', tc: '太倉基地<br>瑞基測控設備（太倉）有限公司' }
+      : lang === 'ru'
+      ? { wz: 'Офис Вэньчжоу<br>Вэньчжоу, Чжэцзян', sh: 'Офис Шанхай<br>Шанхай', tc: 'Офис Тайцан<br>Тайцан, Цзянсу' }
       : { wz: 'Wenzhou Office<br>Wenzhou, Zhejiang', sh: 'Shanghai Office<br>Shanghai', tc: 'Taicang Office<br>Taicang, Jiangsu' };
 
     L.marker([28.0, 120.7]).addTo(mapInstance).bindPopup(labels.wz);

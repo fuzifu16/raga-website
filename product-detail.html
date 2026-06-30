@@ -110,8 +110,8 @@
         <img src="" alt="">
       </div>
       <div class="product-detail-info">
-        <h1 id="detail-name">产品名称</h1>
-        <p class="desc" id="detail-desc">产品描述</p>
+        <h1 id="detail-name">Loading...</h1>
+        <p class="desc" id="detail-desc"></p>
 
         <div class="product-specs">
           <h3 data-i18n="detail.specs">技术参数</h3>
@@ -191,8 +191,8 @@
   if (!product) {
     const lang = I18N ? I18N.currentLang : 'zh';
     const t = i18nData[lang];
-    document.getElementById('detail-title').textContent = t['detail.not_found'] || '产品未找到';
-    document.getElementById('product-detail-root').innerHTML = '<div class="container" style="text-align:center;padding:60px 0;"><h2>' + (t['detail.not_found_title'] || '未找到该产品') + '</h2><p style="margin:20px 0;">' + (t['detail.not_found_desc'] || '请返回产品列表查看。') + '</p><a href="products.html" class="btn btn-primary">' + (t['detail.back'] || '← 返回产品列表') + '</a></div>';
+    document.getElementById('detail-title').textContent = t['detail.not_found'] || 'Product Not Found';
+    document.getElementById('product-detail-root').innerHTML = '<div class="container" style="text-align:center;padding:60px 0;"><h2>' + (t['detail.not_found_title'] || 'Product Not Found') + '</h2><p style="margin:20px 0;">' + (t['detail.not_found_desc'] || 'Please go back to product list.') + '</p><a href="products.html" class="btn btn-primary">' + (t['detail.back'] || '← Back to Products') + '</a></div>';
     return;
   }
 
@@ -248,8 +248,8 @@
     // Downloads
     var downloadsDiv = document.getElementById('detail-downloads');
     downloadsDiv.innerHTML = '';
-    var dlBtnText = (i18nData && i18nData[lang] && i18nData[lang]['detail.preview']) ? i18nData[lang]['detail.preview'] : '预览';
-    var dlNoneText = (i18nData && i18nData[lang] && i18nData[lang]['detail.no_previews']) ? i18nData[lang]['detail.no_previews'] : '暂无资料预览';
+    var dlBtnText = (i18nData && i18nData[lang] && i18nData[lang]['detail.preview']) ? i18nData[lang]['detail.preview'] : 'Preview';
+    var dlNoneText = (i18nData && i18nData[lang] && i18nData[lang]['detail.no_previews']) ? i18nData[lang]['detail.no_previews'] : 'No previews available';
     if (product.downloads && product.downloads.length) {
       product.downloads.filter(function(dl) { return dl.icon !== '\uD83D\uDCD0'; }).forEach(function(dl) {
         var dlName = dl.name;

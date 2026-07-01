@@ -240,8 +240,12 @@
       if (i18nData && i18nData.specMap && i18nData.specMap[lang]) {
         label = i18nData.specMap[lang][spec[0]] || spec[0];
       }
+      var value = spec[1];
+      if (i18nData && i18nData.specValueMap && i18nData.specValueMap[lang]) {
+        value = i18nData.specValueMap[lang][spec[1]] || spec[1];
+      }
       var tr = document.createElement('tr');
-      tr.innerHTML = '<td>' + label + '</td><td>' + spec[1] + '</td>';
+      tr.innerHTML = '<td>' + label + '</td><td>' + value + '</td>';
       specsTbody.appendChild(tr);
     });
 

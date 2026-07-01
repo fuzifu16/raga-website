@@ -166,9 +166,7 @@
       </div>
     </div>
     <script>
-    (function(){
-      var lang = (typeof I18N !== 'undefined' && I18N.currentLang) ? I18N.currentLang : 'zh';
-      var offices=[
+    var offices=[
         {zh:'西安办（西安卓石机电成套设备有限公司）',en:"Xi'an Office (Xi'an Zhuoshi M&E Co., Ltd.)",ru:"Офис Сиань (Xi'an Zhuoshi M&E Co., Ltd.)",person:'黄立波',contact:'📱 13991922624<br>📞 029-86562677/78<br>📠 029-86537458<br>✉️ lyangmei@xazhuoshi.com'},
         {zh:'北京办（北京瑞基测控设备有限公司）',en:'Beijing Office (Beijing Raga Measurement & Control Co., Ltd.)',ru:'Офис Пекин (Beijing Raga Co., Ltd.)',person:'陈良',contact:'📱 15811111878 / 13515777743<br>📠 010-58773016'},
         {zh:'浙江办/福建办（杭州瑞基自动化科技有限公司）',en:'Zhejiang/Fujian Office (Hangzhou Raga Automation Tech Co., Ltd.)',ru:'Офис Чжэцзян/Фуцзянь (Hangzhou Raga Automation)',person:'王许',contact:'📱 15888812770<br>📞 0571-86070107<br>📠 0571-86090095<br>✉️ raga@hzraga.com.cn'},
@@ -186,20 +184,36 @@
         {zh:'东营办（东营胜凯达石油机械设备有限公司）',en:'Dongying Office (Dongying Shengkaida Petroleum Machinery Co., Ltd.)',ru:'Офис Дунъин (Dongying Shengkaida Petroleum)',person:'李蔚',contact:'📱 13345065628<br>✉️ skd88@126.com'},
         {zh:'扬州办（扬州亚控科技有限公司）',en:'Yangzhou Office (Yangzhou Yakong Tech Co., Ltd.)',ru:'Офис Янчжоу (Yangzhou Yakong Tech)',person:'苏在华',contact:'📱 15189871872<br>✉️ yzykkj@126.com'}
       ];
-      var tbody=document.getElementById('office-tbody');
-      var html='';
-      offices.forEach(function(o,i){
-        var bg=i%2?' style="background:#f8f9fa;"':'';
+
+    // 简繁映射表
+    var s2tMap = {"机":"機","电":"電","设":"設","备":"備","动":"動","测":"測","控":"控","制":"制","有":"有","限":"限","公":"公","司":"司","杭":"杭","州":"州","瑞":"瑞","基":"基","自":"自","化":"化","科":"科","技":"技","宁":"寧","波":"波","阿":"阿","尔":"爾","法":"法","发":"發","展":"展","图":"圖","华":"華","仪":"儀","器":"器","鼓":"鼓","成":"成","套":"套","嘉":"嘉","创":"創","力":"力","山":"山","东":"東","西":"西","广":"廣","新":"新","疆":"疆","安":"安","徽":"徽","河":"河","南":"南","哈":"哈","滨":"濱","恒":"恆","源":"源","嵘":"嶸","丰":"豐","达":"達","凯":"凱","石":"石","油":"油","机":"機","械":"械","亚":"亞","扬":"揚","州":"州","宝":"寶","岛":"島","嚣":"囂","森":"森","德":"德","倍":"倍","卓":"卓","胜":"勝","东":"東","营":"營","太":"太","苍":"倉","仪":"儀","表":"表","温":"溫","州":"州","上":"上","海":"海","北":"北","京":"京","西":"西","安":"安","浙":"浙","福":"福","建":"建","贵":"貴","州":"州","云":"雲","南":"南","四":"四","川":"川","重":"重","庆":"慶","湖":"湖","北":"北","湖":"湖","南":"南","江":"江","苏":"蘇","江":"江","西":"西","辽":"遼","宁":"寧","吉":"吉","林":"林","黑":"黑","龙":"龍","江":"江","内蒙古":"內蒙古","河":"河","北":"北","天":"天","津":"津","重":"重","庆":"慶","陕":"陝","甘":"甘","肃":"肅","青":"青","海":"海","宁":"寧","夏":"夏","藏":"藏","办":"辦","陈":"陳","徐":"徐","吴":"吳","黄":"黃","马":"馬","郑":"鄭","应":"應","叶":"葉","李":"李","王":"王","苏":"蘇","甘":"甘","马":"馬","郑":"鄭","徐":"徐","李":"李","苏":"蘇","甘":"甘","马":"馬","郑":"鄭","徐":"徐","李":"李","苏":"蘇","甘":"甘","马":"馬","郑":"鄭","徐":"徐"};
+    function s2t(t) { return t.split('').map(function(c) { return s2tMap[c] || c; }).join(''); }
+
+    function renderOffices() {
+      var lang = (typeof I18N !== 'undefined' && I18N.currentLang) ? I18N.currentLang : 'zh';
+      var tbody = document.getElementById('office-tbody');
+      if (!tbody) return;
+      var html = '';
+      offices.forEach(function(o, i) {
+        var bg = i % 2 ? ' style="background:#f8f9fa;"' : '';
         var officeName = o[lang] || o['zh'];
-        if(lang==='zh-TW'){ officeName = o['zh'].replace(/办/g,'辦'); }
+        if (lang === 'zh-TW') { officeName = s2t(o['zh']); }
         // 把纯文本邮箱转成可点击复制的链接
-        var contact=o.contact.replace(/✉️\s*([^\s<]+)/g,function(m,email){
-          return '✉️ <a href="mailto:'+email+'" class="office-email">'+email+'</a>';
+        var contact = o.contact.replace(/✉️\s*([^\s<]+)/g, function(m, email) {
+          return '✉️ <a href="mailto:' + email + '" class="office-email">' + email + '</a>';
         });
-        html+='<tr'+bg+'><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+officeName+'</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+o.person+'</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">'+contact+'</td></tr>';
+        html += '<tr' + bg + '><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">' + officeName + '</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">' + o.person + '</td><td style="padding:10px 16px;border-bottom:1px solid #e9ecef;">' + contact + '</td></tr>';
       });
-      tbody.innerHTML=html;
-    })();
+      tbody.innerHTML = html;
+    }
+
+    // 初始渲染 + 语言切换时重新渲染
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', renderOffices);
+    } else {
+      renderOffices();
+    }
+    window.addEventListener('languageChanged', renderOffices);
     </script>
 
     <div id="form" class="contact-form-wrapper">

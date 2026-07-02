@@ -95,6 +95,11 @@ const i18nData = {
     "cta.desc": "瑞基测控拥有20余年行业经验，为您量身定制最合适的智能执行机构方案。",
     "cta.btn": "联系我们 →",
 
+    /* Floating Action Buttons */
+    "float.phone": "电话咨询",
+    "float.chat": "在线留言",
+    "float.top": "回到顶部",
+
     /* About Page */
     "about.page_title": "公司简介",
     "about.breadcrumb": "公司简介",
@@ -333,6 +338,11 @@ const i18nData = {
     "cta.title": "Need Professional Valve Actuator Solutions?",
     "cta.desc": "RAGA has over 20 years of industry experience, providing tailored smart actuator solutions for you.",
     "cta.btn": "Contact Us →",
+
+    /* Floating Action Buttons */
+    "float.phone": "Call Us",
+    "float.chat": "Leave a Message",
+    "float.top": "Back to Top",
 
     /* About Page */
     "about.page_title": "About Us",
@@ -1052,6 +1062,9 @@ i18nData["zh-TW"]["contact.page_title"] = "聯繫我們";
 i18nData["zh-TW"]["contact.phone"] = "電話";
 i18nData["zh-TW"]["contact.subtitle"] = "聯繫方式";
 i18nData["zh-TW"]["cta.btn"] = "聯繫我們 →";
+i18nData["zh-TW"]["float.phone"] = "電話諮詢";
+i18nData["zh-TW"]["float.chat"] = "在線留言";
+i18nData["zh-TW"]["float.top"] = "回到頂部";
 i18nData["zh-TW"]["cta.desc"] = "瑞基測控擁有20餘年行業經驗，為您量身定製最合適的智能執行機構方案。";
 i18nData["zh-TW"]["cta.title"] = "需要專業的閥門執行機構解決方案？";
 i18nData["zh-TW"]["detail.back"] = "← 返回產品列表";
@@ -2118,6 +2131,11 @@ i18nData.ru = {
   "cta.title": "Нужны профессиональные решения для приводов клапанов?",
   "cta.desc": "RAGA имеет более чем 20-летний опыт работы в отрасли, предоставляя индивидуальные решения интеллектуальных приводов.",
   "cta.btn": "Связаться с нами →",
+
+  /* Floating Action Buttons */
+  "float.phone": "Позвонить",
+  "float.chat": "Оставить сообщение",
+  "float.top": "Наверх",
 
   /* About Page */
   "about.page_title": "О компании",

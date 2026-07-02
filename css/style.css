@@ -1102,29 +1102,86 @@ a { color: inherit; }
 .footer-bottom a { color: rgba(255,255,255,0.5); text-decoration: none; }
 .footer-bottom a:hover { color: var(--primary); }
 
-/* ===== Back to Top ===== */
-.back-to-top {
+/* ===== Floating Action Buttons ===== */
+.float-actions {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 48px;
-  height: 48px;
-  background: var(--primary);
-  color: var(--white);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.float-btn {
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(231,0,51,0.3);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+  cursor: pointer;
+  position: relative;
+  border: none;
+  outline: none;
+}
+.float-btn svg { width: 24px; height: 24px; }
+.float-btn-phone {
+  background: #07C160;
+  color: #fff;
+}
+.float-btn-phone:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(7,193,96,0.4); }
+.float-btn-chat {
+  background: var(--primary);
+  color: var(--white);
+}
+.float-btn-chat:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(231,0,51,0.4); }
+.float-btn-top {
+  background: #1A1A2E;
+  color: #fff;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s;
-  z-index: 999;
-  font-size: 20px;
 }
-.back-to-top.visible { opacity: 1; visibility: visible; }
-.back-to-top:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(231,0,51,0.4); }
+.float-btn-top.visible { opacity: 1; visibility: visible; }
+.float-btn-top:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(26,26,46,0.4); }
+
+/* tooltip */
+.float-btn .float-tooltip {
+  position: absolute;
+  right: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1A1A2E;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+.float-btn .float-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 5px solid #1A1A2E;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.float-btn:hover .float-tooltip { opacity: 1; visibility: visible; right: 68px; }
+
+@media (max-width: 768px) {
+  .float-actions { bottom: 20px; right: 20px; gap: 10px; }
+  .float-btn { width: 46px; height: 46px; }
+  .float-btn svg { width: 20px; height: 20px; }
+  .float-btn .float-tooltip { display: none; }
+}
 
 /* ===== Product Filters ===== */
 .product-filters {

@@ -1136,8 +1136,6 @@ a { color: inherit; }
 .float-btn-chat {
   background: transparent;
   color: var(--white);
-  overflow: hidden;
-  padding: 0;
 }
 .float-btn-chat img {
   width: 100%;

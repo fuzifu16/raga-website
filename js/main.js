@@ -220,11 +220,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Back to top
-  const backToTop = document.querySelector('.back-to-top');
-  if (backToTop) {
+  // Back to top (floating action button)
+  const floatTop = document.querySelector('.float-btn-top');
+  if (floatTop) {
     window.addEventListener('scroll', function() {
-      backToTop.classList.toggle('visible', window.scrollY > 400);
+      floatTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    floatTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 

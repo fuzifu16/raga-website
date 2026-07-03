@@ -108,8 +108,8 @@ const i18nData = {
     "about.full_p2": "为满足国内外市场不断增长的供货需求，公司成立了上海瑞基瑞然自动化技术有限公司和瑞基测控设备（太仓）有限公司，建有年产4万台的智能电动执行机构生产线，形成温州、上海、太仓多基地运营模式，确保产品交期和质量。",
     "about.history": "发展历程",
     "about.culture": "企业文化",
-    "about.culture_vision": "成为国际一流的智能执行机构制造商",
-    "about.culture_mission": "为全球工业自动化提供可靠的驱动解决方案",
+    "about.culture_vision": "打造100年企业，成为国际一流的智能执行机构制造商",
+    "about.culture_mission": "为全球工业自动化提供性能可靠的驱动解决方案",
     "about.culture_values": "诚信、创新、精准、高效",
     "about.production": "生产实力",
     "about.milestone_2005": "温州瑞基测控设备有限公司成立，专注于电动执行机构研发制造",
@@ -352,8 +352,8 @@ const i18nData = {
     "about.full_p2": "To meet growing market demand, the company established Shanghai RAGA Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., with an annual production capacity of 40,000 smart electric actuators.",
     "about.history": "Milestones",
     "about.culture": "Corporate Culture",
-    "about.culture_vision": "To become a world-class smart actuator manufacturer",
-    "about.culture_mission": "Providing reliable drive solutions for global industrial automation",
+    "about.culture_vision": "Building a century-old enterprise, becoming a world-class smart actuator manufacturer",
+    "about.culture_mission": "Providing reliable-performance drive solutions for global industrial automation",
     "about.culture_values": "Integrity, Innovation, Precision, Efficiency",
     "about.production": "Production Capabilities",
     "about.milestone_2005": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. was founded, focusing on R&D and manufacturing of electric actuators",
@@ -962,11 +962,11 @@ i18nData["zh-TW"]["about.btn_more"] = "瞭解更多 →";
 i18nData["zh-TW"]["about.company_name"] = "溫州瑞基測控設備有限公司";
 i18nData["zh-TW"]["about.company_name_shanghai"] = "上海瑞基瑞然自動化技術有限公司";
 i18nData["zh-TW"]["about.culture"] = "企業文化";
-i18nData["zh-TW"]["about.culture_mission"] = "為全球工業自動化提供可靠的驅動解決方案";
+i18nData["zh-TW"]["about.culture_mission"] = "為全球工業自動化提供性能可靠的驅動解決方案";
 i18nData["zh-TW"]["about.culture_mission_label"] = "企業使命：";
 i18nData["zh-TW"]["about.culture_values"] = "誠信、創新、精準、高效";
 i18nData["zh-TW"]["about.culture_values_label"] = "核心價值觀：";
-i18nData["zh-TW"]["about.culture_vision"] = "成為國際一流的智能執行機構製造商";
+i18nData["zh-TW"]["about.culture_vision"] = "打造100年企業，成為國際一流的智能執行機構製造商";
 i18nData["zh-TW"]["about.culture_vision_label"] = "企業願景：";
 i18nData["zh-TW"]["about.full_p1"] = "溫州瑞基測控設備有限公司是一家專業研製、開發、生產智能型電動閥門執行機構的企業。公司位於溫州市和上海市，擁有現代化的生產基地和先進的加工設備，技術力量雄厚，生產工藝先進，檢測手段完善。";
 i18nData["zh-TW"]["about.full_p2"] = "為滿足國內外市場不斷增長的供貨需求，公司成立了上海瑞基瑞然自動化技術有限公司和瑞基測控設備（太倉）有限公司，建有年產4萬臺的智能電動執行機構生產線，形成溫州、上海、太倉多基地運營模式，確保產品交期和質量。";
@@ -2145,8 +2145,8 @@ i18nData.ru = {
   "about.full_p2": "Для удовлетворения растущего спроса на поставки компания основала Shanghai RAGA Ruiran Automation Technology Co., Ltd. и RAGA (Taicang) Co., Ltd.",
   "about.history": "История развития",
   "about.culture": "Корпоративная культура",
-  "about.culture_vision": "Стать мировым производителем интеллектуальных приводов",
-  "about.culture_mission": "Предоставление надежных приводных решений для глобальной промышленной автоматизации",
+  "about.culture_vision": "Создать вековое предприятие, стать мировым производителем интеллектуальных приводов",
+  "about.culture_mission": "Предоставление надежных и производительных приводных решений для глобальной промышленной автоматизации",
   "about.culture_values": "Честность, Инновации, Точность, Эффективность",
   "about.culture_vision_label": "Видение: ",
   "about.culture_mission_label": "Миссия: ",

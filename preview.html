@@ -549,9 +549,26 @@ a { color: inherit; }
       return fallback;
     }
 
+    // Translate file name using dlMap based on current language
+    function translateFileName(origName) {
+      var lang = (typeof I18N !== 'undefined' && I18N.currentLang) ? I18N.currentLang : 'zh';
+      if (typeof i18nData !== 'undefined' && i18nData.dlMap && i18nData.dlMap[lang]) {
+        return i18nData.dlMap[lang][origName] || origName;
+      }
+      return origName;
+    }
+
+    // Save original name for re-translation on language change
+    var origFileName = name || file;
+
+    function updateFileName() {
+      var displayName = translateFileName(origFileName);
+      document.getElementById('file-name').textContent = displayName;
+      document.title = displayName + ' - RAGA';
+    }
+
     if (file) {
-      document.getElementById('file-name').textContent = name || file;
-      document.title = (name || file) + ' - RAGA';
+      updateFileName();
       var btn = document.getElementById('download-btn');
       btn.href = file;
 
@@ -593,8 +610,9 @@ a { color: inherit; }
         '</div>';
     }
 
-    // Re-render when language changes (only for unsupported-format message)
+    // Re-render when language changes (file name + unsupported-format message)
     window.addEventListener('languageChanged', function() {
+      updateFileName();
       var frame = document.getElementById('preview-frame');
       if (!frame) return;
       var iframe = document.getElementById('pdf-iframe');

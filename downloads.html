@@ -315,7 +315,7 @@
       '<div class="dl-btns">' +
         (dl.url
           ? (isPdf
-            ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(tlDlName(dl.name)) + '" class="btn btn-sm btn-preview">' + previewText + '</a>'
+            ? '<a href="preview.html?file=' + encodeURIComponent(dl.url) + '&name=' + encodeURIComponent(dl.name) + '" class="btn btn-sm btn-preview">' + previewText + '</a>'
             : '<a href="' + dl.url + '" download class="btn btn-sm btn-preview">' + downloadText + '</a>')
           : '<a href="#" onclick="alert(\'' + pendingText + '\');return false;" class="btn btn-sm btn-preview">' + downloadText + '</a>') +
       '</div>' +
@@ -530,7 +530,7 @@
             '<div class="dl-btns">' +
               (item.dl.url
                 ? (isPdf
-                  ? '<a href="preview.html?file=' + encodeURIComponent(item.dl.url) + '&name=' + encodeURIComponent(tlDlName(item.dl.name)) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>'
+                  ? '<a href="preview.html?file=' + encodeURIComponent(item.dl.url) + '&name=' + encodeURIComponent(item.dl.name) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>'
                   : '<a href="' + item.dl.url + '" download class="btn btn-sm btn-preview">' + t('downloads.btn_download') + '</a>')
                 : '<a href="#" onclick="alert(\'' + t('downloads.deploy_pending') + '\');return false;" class="btn btn-sm btn-preview">' + t('downloads.btn_download') + '</a>') +
             '</div>';
@@ -563,7 +563,7 @@
         dwgBody.appendChild(sep);
         group.files.forEach(function(file) {
           var encodedDwgUrl = encodeURIComponent(file.url);
-          var encodedDwgName = encodeURIComponent(tlDlName(file.name));
+          var encodedDwgName = encodeURIComponent(file.name);
           var row = document.createElement('div');
           row.className = 'drawings-item';
           row.innerHTML =
@@ -630,7 +630,7 @@
           var fileName = file.name + file.ext;
           var displayName = tlDlName(file.name) + (file.note ? ' (' + t('downloads.note_7z') + ')' : '');
           var encodedFile = encodeURIComponent(d3dRoot + fileName);
-          var encodedName = encodeURIComponent(tlDlName(file.name));
+          var encodedName = encodeURIComponent(file.name);
           var row = document.createElement('div');
           row.className = 'drawings-item';
           row.innerHTML =

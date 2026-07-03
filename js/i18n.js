@@ -96,7 +96,7 @@ const i18nData = {
     "cta.btn": "联系我们 →",
 
     /* Floating Action Buttons */
-    "float.phone": "电话咨询",
+    "float.phone": "0577-56582698",
     "float.chat": "在线留言",
     "float.top": "回到顶部",
 
@@ -340,7 +340,7 @@ const i18nData = {
     "cta.btn": "Contact Us →",
 
     /* Floating Action Buttons */
-    "float.phone": "Call Us",
+    "float.phone": "0577-56582698",
     "float.chat": "Leave a Message",
     "float.top": "Back to Top",
 
@@ -1062,7 +1062,7 @@ i18nData["zh-TW"]["contact.page_title"] = "聯繫我們";
 i18nData["zh-TW"]["contact.phone"] = "電話";
 i18nData["zh-TW"]["contact.subtitle"] = "聯繫方式";
 i18nData["zh-TW"]["cta.btn"] = "聯繫我們 →";
-i18nData["zh-TW"]["float.phone"] = "電話諮詢";
+i18nData["zh-TW"]["float.phone"] = "0577-56582698";
 i18nData["zh-TW"]["float.chat"] = "在線留言";
 i18nData["zh-TW"]["float.top"] = "回到頂部";
 i18nData["zh-TW"]["cta.desc"] = "瑞基測控擁有20餘年行業經驗，為您量身定製最合適的智能執行機構方案。";
@@ -2133,7 +2133,7 @@ i18nData.ru = {
   "cta.btn": "Связаться с нами →",
 
   /* Floating Action Buttons */
-  "float.phone": "Позвонить",
+  "float.phone": "0577-56582698",
   "float.chat": "Оставить сообщение",
   "float.top": "Наверх",
 

@@ -263,14 +263,13 @@ a { color: inherit; }
   inset: 0;
 }
 .page-hero-slide {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
   filter: brightness(0.9);
   opacity: 0;
-  transition: opacity 0.8s;
+  transition: opacity 1.5s ease-in-out;
 }
+.page-hero-slide.active { opacity: 1; }
 
 /* ===== Main Hero ===== */
 .hero {

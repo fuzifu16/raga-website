@@ -262,7 +262,10 @@ a { color: inherit; }
   background-position: center;
   filter: brightness(0.9);
   opacity: 0;
-  transition: opacity 0.8s;
+  transition: opacity 1.5s ease-in-out;
+}
+.page-hero-slide.active {
+  opacity: 1;
 }
 
 /* ===== Main Hero ===== */

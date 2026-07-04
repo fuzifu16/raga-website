@@ -354,15 +354,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hero.insertBefore(slider, hero.firstChild);
 
-    // JS-driven cycling for reliability
+    // JS-driven cycling with rotation effect
     var slides = slider.querySelectorAll('.page-hero-slide');
     var current = 0;
-    slides[0].style.opacity = '1';
+    slides[0].classList.add('active');
 
     setInterval(function() {
-      slides[current].style.opacity = '0';
+      slides[current].classList.remove('active');
       current = (current + 1) % slides.length;
-      slides[current].style.opacity = '1';
-    }, 4000);
+      slides[current].classList.add('active');
+    }, 10000);
   })();
 });

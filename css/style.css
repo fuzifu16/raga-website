@@ -292,34 +292,25 @@ a { color: inherit; }
 .hero-video-triangle {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
   width: 45%;
-  height: 100%;
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 35% 100%);
+  transform: translateY(-50%);
   z-index: 1;
   overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
 }
 .hero-video-triangle video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-.hero-video-triangle::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, transparent 50%);
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   color: var(--white);
-  max-width: 700px;
+  max-width: 52%;
 }
 .hero-content .tag {
   display: inline-block;

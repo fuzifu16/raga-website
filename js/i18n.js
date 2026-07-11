@@ -778,6 +778,7 @@ i18nData.en["nav.dd_drawings"] = "Dimension Drawings";
 i18nData.en["nav.dd_core_tech"] = "Core Technology";
 i18nData.en["nav.dd_cert"] = "Certifications";
 i18nData.en["nav.dd_quality"] = "Quality Control";
+i18nData.en["nav.dd_service"] = "After-sales Service";
 i18nData.en["nav.dd_contact_info"] = "Contact Info";
 i18nData.en["nav.dd_online_msg"] = "Online Message";
 i18nData.en["nav.dd_offices"] = "Offices Nationwide";
@@ -802,6 +803,16 @@ i18nData.en["tech.quality_process"] = "Process Control";
 i18nData.en["tech.quality_process_desc"] = "Full-process quality control is implemented throughout production, with quality checkpoints at key stages for real-time monitoring.";
 i18nData.en["tech.quality_test"] = "Factory Testing";
 i18nData.en["tech.quality_test_desc"] = "Every product undergoes rigorous full-performance testing before shipment, including torque testing, sealing tests, and insulation tests.";
+
+/* After-sales service */
+i18nData.en["tech.service_title"] = "Quality After-sales Service";
+i18nData.en["tech.service_desc"] = "RAGA Service, Trustworthy — Providing all-round, rapid response after-sales service guarantee for users";
+i18nData.en["tech.service_item1"] = "All-round Service System";
+i18nData.en["tech.service_item1_desc"] = "The company has a complete service mechanism and team to provide users with all-round services. We can provide flexible and convenient services for users' requirements on actuator selection, on-site design and special processing.";
+i18nData.en["tech.service_item2"] = "Rapid Response Service";
+i18nData.en["tech.service_item2_desc"] = "In addition, the company's offices and agents across China can communicate users' needs to the company in a timely manner, and dispatch personnel to the user's site as quickly as possible to carry out commissioning, maintenance, Q&A, training and other best free services for the company's actuators, improving users' work efficiency and ensuring 100% user satisfaction.";
+i18nData.en["tech.service_item3"] = "Free Training Service";
+i18nData.en["tech.service_item3_desc"] = "For users of the company's actuators, the company provides free training services. According to users' requirements, the company can send personnel to the site for training; users are also welcome to come to the company headquarters for training.";
 
 /* Preview page */
 i18nData.en["preview.title"] = "File Preview";
@@ -884,6 +895,7 @@ i18nData.zh["nav.dd_drawings"] = "外形图";
 i18nData.zh["nav.dd_core_tech"] = "核心技术";
 i18nData.zh["nav.dd_cert"] = "资质认证";
 i18nData.zh["nav.dd_quality"] = "质量控制";
+i18nData.zh["nav.dd_service"] = "售后服务";
 i18nData.zh["nav.dd_contact_info"] = "联系方式";
 i18nData.zh["nav.dd_online_msg"] = "在线留言";
 i18nData.zh["nav.dd_offices"] = "全国办事处";
@@ -902,6 +914,16 @@ i18nData.zh["tech.quality_process"] = "过程控制";
 i18nData.zh["tech.quality_process_desc"] = "生产过程实施全流程质量控制，关键工序设立品质控制点，实时监控产品参数。";
 i18nData.zh["tech.quality_test"] = "出厂检测";
 i18nData.zh["tech.quality_test_desc"] = "每台产品出厂前均经过严格的全性能测试，包括转矩测试、密封测试、绝缘测试等，确保产品性能达标。";
+
+/* 售后服务 */
+i18nData.zh["tech.service_title"] = "优质的售后服务";
+i18nData.zh["tech.service_desc"] = "瑞基服务，值得信赖 — 为用户提供全方位、快速响应的售后服务保障";
+i18nData.zh["tech.service_item1"] = "全方位服务机制";
+i18nData.zh["tech.service_item1_desc"] = "公司拥有为用户提供全方位服务机制和队伍。用户对执行机构的选型配套、现场设计、另行加工的要求，公司都可以提供灵活方便的服务。";
+i18nData.zh["tech.service_item2"] = "快速响应服务";
+i18nData.zh["tech.service_item2_desc"] = "此外，公司在中国各地的办事机构和代理商都能够将用户的意愿及时与公司进行沟通，并以最快速度派员到达用户现场，对公司的执行机构进行调试、维护、答疑、辅导等各项最佳的免费服务，提高用户的工作效率，确保用户百分之百的满意度。";
+i18nData.zh["tech.service_item3"] = "免费培训服务";
+i18nData.zh["tech.service_item3_desc"] = "对使用本公司执行机构的用户，公司将提供免费的培训服务。根据用户的要求，公司可派员到现场为用户提供培训；公司也欢迎用户自行到公司总部接受培训。";
 i18nData.zh["preview.title"] = "文件预览";
 i18nData.zh["preview.back"] = "← 返回资料下载";
 i18nData.zh["preview.download"] = "下载文件";
@@ -1233,6 +1255,7 @@ i18nData["zh-TW"]["nav.dd_online_msg"] = "在線留言";
 i18nData["zh-TW"]["nav.dd_power"] = "電力行業";
 i18nData["zh-TW"]["nav.dd_production"] = "生產實力";
 i18nData["zh-TW"]["nav.dd_quality"] = "質量控制";
+i18nData["zh-TW"]["nav.dd_service"] = "售後服務";
 i18nData["zh-TW"]["nav.dd_ra"] = "RA系列多回轉";
 i18nData["zh-TW"]["nav.dd_ra_menu"] = "RA系列多回轉";
 i18nData["zh-TW"]["nav.dd_rjm"] = "配套系列";
@@ -1356,6 +1379,17 @@ i18nData["zh-TW"]["tech.quality_subtitle"] = "質量控制";
 i18nData["zh-TW"]["tech.quality_test"] = "出廠檢測";
 i18nData["zh-TW"]["tech.quality_test_desc"] = "每臺產品出廠前均經過嚴格的全性能測試，包括轉矩測試、密封測試、絕緣測試等，確保產品性能達標。";
 i18nData["zh-TW"]["tech.quality_title"] = "質量控制";
+
+/* 售後服務 */
+i18nData["zh-TW"]["tech.service_title"] = "優質的售後服務";
+i18nData["zh-TW"]["tech.service_desc"] = "瑞基服務，值得信賴 — 為用戶提供全方位、快速響應的售後服務保障";
+i18nData["zh-TW"]["tech.service_item1"] = "全方位服務機制";
+i18nData["zh-TW"]["tech.service_item1_desc"] = "公司擁有為用戶提供全方位服務機制和隊伍。用戶對執行機構的選型配套、現場設計、另行加工的要求，公司都可以提供靈活方便的服務。";
+i18nData["zh-TW"]["tech.service_item2"] = "快速響應服務";
+i18nData["zh-TW"]["tech.service_item2_desc"] = "此外，公司在中國各地的辦事機構和代理商都能夠將用戶的意願及時與公司進行溝通，並以最快的速度派員到達用戶現場，對公司的執行機構進行調試、維護、答疑、輔導等各項最佳的免費服務，提高用戶的工作效率，確保用戶百分之百的滿意度。";
+i18nData["zh-TW"]["tech.service_item3"] = "免費培訓服務";
+i18nData["zh-TW"]["tech.service_item3_desc"] = "對使用本公司執行機構的用戶，公司將提供免費的培訓服務。根據用戶的要求，公司可派員到現場為用戶提供培訓；公司也歡迎用戶自行到公司總部接受培訓。";
+
 i18nData["zh-TW"]["tech.temp_full"] = "環境溫度-30℃~+70℃，使用環境溼度≤95%。通過嚴格的溫度循環測試和鹽霧測試，確保產品在各種嚴苛工業環境中保持穩定可靠的運行性能。";
 i18nData["zh-TW"]["tech.temp_title"] = "寬溫域環境適應性";
 i18nData["zh-TW"]["tech.view_all"] = "查看全部技術優勢 →";
@@ -2218,6 +2252,15 @@ i18nData.ru = {
   "tech.quality_test": "Заводские испытания",
   "tech.quality_test_desc": "Каждое изделие проходит строгие испытания перед отгрузкой.",
 
+  "tech.service_title": "Качественное послепродажное обслуживание",
+  "tech.service_desc": "Сервис RAGA, заслуживающий доверия — Всестороннее и быстрое послепродажное обслуживание для пользователей",
+  "tech.service_item1": "Всесторонняя сервисная система",
+  "tech.service_item1_desc": "Компания имеет полный сервисный механизм и команду для предоставления пользователям всестороннего обслуживания. Мы можем предоставить гибкие и удобные услуги в соответствии с требованиями пользователей к подбору приводов, проектированию на месте и специальной обработке.",
+  "tech.service_item2": "Быстрая реакция",
+  "tech.service_item2_desc": "Кроме того, офисы и агенты компании по всему Китаю могут своевременно передавать пожелания пользователей компании, и как можно быстрее направлять специалистов на объект пользователя для проведения пусконаладки, технического обслуживания, консультаций, обучения и других бесплатных услуг, повышая эффективность работы пользователей и обеспечивая стопроцентное удовлетворение пользователей.",
+  "tech.service_item3": "Бесплатное обучение",
+  "tech.service_item3_desc": "Для пользователей продукции компании предоставляются бесплатные услуги по обучению. По требованию пользователей компания может направить специалистов на объект для обучения; пользователи также могут приехать в штаб-квартиру компании для обучения.",
+
   "tech.cert_group_company": "Квалификация компании",
   "tech.cert_group_iso": "Сертификация системы менеджмента",
   "tech.cert_group_ex": "Сертификация взрывозащиты",
@@ -2466,6 +2509,7 @@ i18nData.ru = {
   "nav.dd_core_tech": "Основные технологии",
   "nav.dd_cert": "Сертификация",
   "nav.dd_quality": "Контроль качества",
+  "nav.dd_service": "Послепродажное обслуживание",
   "nav.dd_contact_info": "Контактная информация",
   "nav.dd_online_msg": "Онлайн сообщение",
   "nav.dd_offices": "Офисы по всей стране",

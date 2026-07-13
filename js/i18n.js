@@ -243,7 +243,7 @@ const i18nData = {
 
     /* Preview page */
     "preview.unsupported": "此格式不支持在线预览",
-    "preview.download_hint": "请点击下方「下载文件」按钮下载后查看"
+    "preview.download_hint": "请点击「下载文件」按钮下载后查看"
   },
 
   "en": {
@@ -491,7 +491,7 @@ const i18nData = {
 
     /* Preview page */
     "preview.unsupported": "This format does not support online preview",
-    "preview.download_hint": "Please click the \"Download File\" button below to download and view"
+    "preview.download_hint": "Please click the \"Download File\" button to download and view"
   }
 };
 
@@ -1147,7 +1147,7 @@ i18nData["zh-TW"]["contact.form_opt_rj"] = "RJ開關型";
 i18nData["zh-TW"]["contact.form_opt_rgw"] = "RGW系列減速箱";
 i18nData["zh-TW"]["contact.form_opt_rib"] = "RIB系列減速箱";
 i18nData["zh-TW"]["preview.unsupported"] = "此格式不支持在線預覽";
-i18nData["zh-TW"]["preview.download_hint"] = "請點擊下方「下載文件」按鈕下載後查看";
+i18nData["zh-TW"]["preview.download_hint"] = "請點擊「下載文件」按鈕下載後查看";
 i18nData["zh-TW"]["downloads.breadcrumb"] = "資料下載";
 i18nData["zh-TW"]["downloads.company_brochure"] = "公司宣傳資料";
 i18nData["zh-TW"]["downloads.desc"] = "瑞基全系列產品技術資料下載，包含產品說明書、選型手冊、安裝指南等";
@@ -2372,7 +2372,7 @@ i18nData.ru = {
 
   /* Preview page */
   "preview.unsupported": "Этот формат не поддерживает онлайн-превью",
-  "preview.download_hint": "Пожалуйста, нажмите кнопку «Скачать файл» ниже",
+  "preview.download_hint": "Пожалуйста, нажмите кнопку «Скачать файл»",
   "preview.title": "Превью файла",
   "preview.back": "← Назад к загрузкам",
   "preview.download": "Скачать файл",

@@ -328,7 +328,8 @@ document.addEventListener('DOMContentLoaded', function() {
       'images/52.png',
       'images/banner-6.jpeg',
       'images/134.jpg',
-      'images/12.jpg'
+      'images/12.jpg',
+      'images/banner-factory.jpg'
     ];
 
     // Remove original bg

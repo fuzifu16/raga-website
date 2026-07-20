@@ -1604,23 +1604,23 @@ i18nData.descMap = {
     "RJM调节型智能执行机构，支持4-20mA模拟量信号控制，调节精度高，响应速度快。适用于需要对阀门开度进行精确控制的工艺流程。":
       "RJM modulating smart actuator, supports 4-20mA analog signal control with high regulation accuracy and fast response. Suitable for process flows requiring precise valve positioning control.",
 
-    "RQⅢ100大转矩直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于大口径阀门及重载工业过程控制场景。防护等级IP68。":
-      "RQⅢ100 high-torque linear-motion smart actuator, supports 4~20mA analog and on/off control, suitable for large-diameter valves and heavy-duty industrial process control. IP68 protection rating.",
+    "RQⅢ100大转矩多回转调节型智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于大口径阀门及重载工业过程控制场景。防护等级IP68。":
+      "RQⅢ100 high-torque multi-turn modulating smart actuator, supports 4~20mA analog and on/off control, suitable for large-diameter valves and heavy-duty industrial process control. IP68 protection rating.",
 
-    "RQⅢ150~RQ300超大型直行程智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于超大口径重载阀门及工业过程控制场景。防护等级IP68。":
-      "RQⅢ150~RQ300 ultra-large linear-motion smart actuator, supports 4~20mA analog and on/off control, suitable for ultra-large heavy-duty valves and industrial process control. IP68 protection rating.",
+    "RQⅢ150~RQ300超大型多回转调节型智能执行机构，支持4~20mA模拟量控制及开关型控制，适用于超大口径重载阀门及工业过程控制场景。防护等级IP68。":
+      "RQⅢ150~RQ300 ultra-large multi-turn modulating smart actuator, supports 4~20mA analog and on/off control, suitable for ultra-large heavy-duty valves and industrial process control. IP68 protection rating.",
 
     "RJ开关型角行程执行机构，结构简单，操作方便，性价比高。适用于仅需开关控制的蝶阀、球阀等阀门，可靠耐用。":
       "RJ on/off quarter-turn actuator, simple structure, easy operation, cost-effective. Suitable for butterfly and ball valves requiring on/off control only, reliable and durable.",
 
-    "RQⅢ020/RQⅢ030/RQⅢ040中型直行程执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。适用于各类直行程阀门控制。":
-      "RQⅢ020/RQⅢ030/RQⅢ040 medium linear-motion actuator, integrating field and remote control. Features non-intrusive setup, graphic display, intelligent diagnostics and more. Suitable for various linear-motion valve control applications.",
+    "RQⅢ020/RQⅢ030/RQⅢ040中型多回转调节型执行机构，集现场控制和远程控制于一体。具备非侵入式设定、图形化显示、智能诊断等先进功能。适用于各类多回转调节型阀门控制。":
+      "RQⅢ020/RQⅢ030/RQⅢ040 medium multi-turn modulating actuator, integrating field and remote control. Features non-intrusive setup, graphic display, intelligent diagnostics and more. Suitable for various multi-turn modulating valve control applications.",
 
-    "RQⅢ060大型直行程智能执行机构，适用于大口径阀门控制。具备非侵入式设定、图形化显示、智能诊断等先进功能，防护等级IP68。":
-      "RQⅢ060 large linear-motion smart actuator, suitable for large-diameter valve control. Features non-intrusive setup, graphic display, intelligent diagnostics and more, IP68 protection rating.",
+    "RQⅢ060大型多回转调节型智能执行机构，适用于大口径阀门控制。具备非侵入式设定、图形化显示、智能诊断等先进功能，防护等级IP68。":
+      "RQⅢ060 large multi-turn modulating smart actuator, suitable for large-diameter valve control. Features non-intrusive setup, graphic display, intelligent diagnostics and more, IP68 protection rating.",
 
-    "RQⅢ003~014系列智能型直行程电动执行机构，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。":
-      "RQⅢ003~014 series smart linear-motion electric actuator, integrating non-intrusive setup, graphic display, intelligent diagnostics and more. Suitable for small valve control, IP68 protection rating.",
+    "RQⅢ003~014系列智能型多回转调节型电动执行机构，集非侵入式设定、图形化显示、智能诊断等先进功能于一体。适用于小型阀门控制，防护等级IP68。":
+      "RQⅢ003~014 series smart multi-turn modulating electric actuator, integrating non-intrusive setup, graphic display, intelligent diagnostics and more. Suitable for small valve control, IP68 protection rating.",
 
     "R系列分体式执行机构，控制器与执行器分体设计，可适应特殊安装环境。控制器可安装在便于操作的位置，执行器安装在阀门现场，灵活可靠。":
       "R series split-type actuator with separate controller and actuator design, adaptable to special installation environments. Controller can be installed in an accessible location while actuator mounts at the valve, offering flexibility and reliability.",
@@ -1863,11 +1863,11 @@ i18nData.cardMap = {
     "card.desc_ra40": "中型多回转智能执行机构，输出转矩大，适用于各类工业阀门",
     "card.desc_ra35": "智能型多回转电动执行机构，性能稳定，适用于中等口径阀门控制",
     "card.desc_ra100": "大转矩智能执行机构，适用于大型阀门及重载工业应用",
-    "card.desc_ra3": "智能型直行程，转矩34~108N·m，适用于小型阀门控制",
-    "card.desc_rq3": "中型直行程执行机构，转矩203~400N·m，性能稳定可靠",
-    "card.desc_rq060": "大型直行程执行机构，转矩474~610N·m，适用于大口径阀门",
-    "card.desc_rqm3": "大型直行程执行机构，转矩1020N·m，适用于重载工况",
-    "card.desc_rq150": "超大型直行程执行机构，转矩1500~3500N·m，适用于超大口径重载阀门",
+    "card.desc_ra3": "智能型多回转调节型，转矩34~108N·m，适用于小型阀门控制",
+    "card.desc_rq3": "中型多回转调节型执行机构，转矩203~400N·m，性能稳定可靠",
+    "card.desc_rq060": "大型多回转调节型执行机构，转矩474~610N·m，适用于大口径阀门",
+    "card.desc_rqm3": "大型多回转调节型执行机构，转矩1020N·m，适用于重载工况",
+    "card.desc_rq150": "超大型多回转调节型执行机构，转矩1500~3500N·m，适用于超大口径重载阀门",
     "card.desc_fen": "控制器与执行器分体设计，适应特殊安装环境，灵活可靠",
     "card.desc_ra-fen": "RA多回转分体式设计，控制器与执行器分离安装，适应高温、震动等特殊工况",
     "card.desc_rl-fen": "RL角行程分体式设计，控制器与执行器分离安装，适用于高温、震动、空间受限等特殊工况",
@@ -2676,6 +2676,7 @@ i18nData.specMap["ru"] = {
 i18nData.specValueMap = {
   "zh": {
     "直行程调节型": "直行程调节型",
+    "多回转调节型": "多回转调节型",
     "直行程 (线性输出)": "直行程 (线性输出)",
     "角行程开关型": "角行程开关型",
     "分体式多回转": "分体式多回转",
@@ -2695,6 +2696,7 @@ i18nData.specValueMap = {
   },
   "en": {
     "直行程调节型": "Linear modulating type",
+    "多回转调节型": "Multi-turn modulating",
     "直行程 (线性输出)": "Linear (linear output)",
     "角行程开关型": "Quarter-turn on/off type",
     "分体式多回转": "Split-type multi-turn",
@@ -2714,6 +2716,7 @@ i18nData.specValueMap = {
   },
   "ru": {
     "直行程调节型": "Прямоходный регулирующий",
+    "多回转调节型": "Многооборотный регулирующий",
     "直行程 (线性输出)": "Прямоходный (линейный выход)",
     "角行程开关型": "Поворотный вкл/выкл тип",
     "分体式多回转": "Многооборотный разделённого типа",

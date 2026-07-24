@@ -108,9 +108,9 @@ const i18nData = {
     "about.full_p2": "为满足国内外市场不断增长的供货需求，公司成立了上海瑞基瑞然自动化技术有限公司和瑞基测控设备（太仓）有限公司，建有年产4万台的智能电动执行机构生产线，形成温州、上海、太仓多基地运营模式，确保产品交期和质量。",
     "about.history": "发展历程",
     "about.culture": "企业文化",
-    "about.culture_vision": "打造100年企业，成为国际一流的智能执行机构制造商",
-    "about.culture_mission": "为全球工业自动化提供性能可靠的驱动解决方案",
-    "about.culture_values": "诚信、创新、精准、高效",
+    "about.culture_vision": "立足温州，面向全球，瑞基测控致力于打造百年企业，成为国际一流的智能执行机构制造商。我们以技术创新为引擎，以品质为根基，持续深耕工业自动化领域，为全球客户提供智能化、高可靠性的执行机构产品与解决方案，努力在行业中树立标杆，推动中国制造走向世界舞台。",
+    "about.culture_mission": "为全球工业自动化提供性能可靠的驱动解决方案。瑞基测控始终坚持以客户需求为导向，依托自主研发的技术平台和完善的质量管理体系，不断推出高性能、高精度、高防护等级的智能执行机构产品。从产品设计、生产制造到售后服务，我们贯穿每一个环节的精益求精，确保每一台产品都能在严苛工况下稳定运行，为客户的工业自动化进程保驾护航。",
+    "about.culture_values": "诚信、创新、精准、高效。诚信是我们的立业之本，对客户负责、对合作伙伴负责，言出必行；创新是我们的发展之源，持续加大研发投入，以技术创新驱动产品升级；精准是我们的品质追求，从零部件检验到成品出厂，每一道工序都严格把控；高效是我们的服务承诺，快速响应客户需求，以专业团队和完善的售后服务体系，确保客户获得最佳的使用体验。",
     "about.production": "生产实力",
     "about.milestone_2005": "温州瑞基测控设备有限公司成立，专注于电动执行机构研发制造",
     "about.milestone_2010": "推出RA系列智能型电动执行机构，获得市场广泛认可",
@@ -352,9 +352,9 @@ const i18nData = {
     "about.full_p2": "To meet growing market demand, the company established Shanghai RAGA Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., with an annual production capacity of 40,000 smart electric actuators.",
     "about.history": "Milestones",
     "about.culture": "Corporate Culture",
-    "about.culture_vision": "Building a century-old enterprise, becoming a world-class smart actuator manufacturer",
-    "about.culture_mission": "Providing reliable-performance drive solutions for global industrial automation",
-    "about.culture_values": "Integrity, Innovation, Precision, Efficiency",
+    "about.culture_vision": "Based in Wenzhou and looking to the global market, RAGA is committed to building a century-old enterprise and becoming a world-class smart actuator manufacturer. Driven by technological innovation and grounded in quality, we continue to deepen our expertise in industrial automation, providing global customers with intelligent, highly reliable actuator products and solutions. We strive to set industry benchmarks and propel Chinese manufacturing onto the world stage.",
+    "about.culture_mission": "Providing reliable-performance drive solutions for global industrial automation. RAGA consistently adheres to a customer-oriented approach, leveraging our self-developed technology platform and comprehensive quality management system to continuously deliver high-performance, high-precision, high-protection-grade intelligent actuator products. From product design and manufacturing to after-sales service, we pursue excellence in every step, ensuring every product operates stably under demanding conditions and safeguarding our customers' industrial automation journey.",
+    "about.culture_values": "Integrity, Innovation, Precision, Efficiency. Integrity is our foundation — we are accountable to our customers and partners, honoring every commitment. Innovation is our growth engine — we continuously increase R&D investment, driving product upgrades through technological innovation. Precision is our quality pursuit — from component inspection to final product testing, every process is strictly controlled. Efficiency is our service promise — we respond rapidly to customer needs, supported by a professional team and comprehensive after-sales service system, ensuring customers achieve the best possible experience.",
     "about.production": "Production Capabilities",
     "about.milestone_2005": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. was founded, focusing on R&D and manufacturing of electric actuators",
     "about.milestone_2010": "Launched RA series smart electric actuators, widely recognized by the market",
@@ -984,11 +984,11 @@ i18nData["zh-TW"]["about.btn_more"] = "瞭解更多 →";
 i18nData["zh-TW"]["about.company_name"] = "溫州瑞基測控設備有限公司";
 i18nData["zh-TW"]["about.company_name_shanghai"] = "上海瑞基瑞然自動化技術有限公司";
 i18nData["zh-TW"]["about.culture"] = "企業文化";
-i18nData["zh-TW"]["about.culture_mission"] = "為全球工業自動化提供性能可靠的驅動解決方案";
+i18nData["zh-TW"]["about.culture_mission"] = "為全球工業自動化提供性能可靠的驅動解決方案。瑞基測控始終堅持以客戶需求為導向，依託自主研發的技術平台和完善的質量管理體系，不斷推出高性能、高精度、高防護等級的智能執行機構產品。從產品設計、生產製造到售後服務，我們貫穿每一個環節的精益求精，確保每一台產品都能在嚴苛工況下穩定運行，為客戶的工業自動化進程保駕護航。";
 i18nData["zh-TW"]["about.culture_mission_label"] = "企業使命：";
-i18nData["zh-TW"]["about.culture_values"] = "誠信、創新、精準、高效";
+i18nData["zh-TW"]["about.culture_values"] = "誠信、創新、精準、高效。誠信是我們的立業之本，對客戶負責、對合作夥伴負責，言出必行；創新是我們的發展之源，持續加大研發投入，以技術創新驅動產品升級；精準是我們的品質追求，從零部件檢驗到成品出廠，每一道工序都嚴格把控；高效是我們的服務承諾，快速響應客戶需求，以專業團隊和完善的售後服務體系，確保客戶獲得最佳的使用體驗。";
 i18nData["zh-TW"]["about.culture_values_label"] = "核心價值觀：";
-i18nData["zh-TW"]["about.culture_vision"] = "打造100年企業，成為國際一流的智能執行機構製造商";
+i18nData["zh-TW"]["about.culture_vision"] = "立足溫州，面向全球，瑞基測控致力於打造百年企業，成為國際一流的智能執行機構製造商。我們以技術創新為引擎，以品質為根基，持續深耕工業自動化領域，為全球客戶提供智能化、高可靠性的執行機構產品與解決方案，努力在行業中樹立標杆，推動中國製造走向世界舞台。";
 i18nData["zh-TW"]["about.culture_vision_label"] = "企業願景：";
 i18nData["zh-TW"]["about.full_p1"] = "溫州瑞基測控設備有限公司是一家專業研製、開發、生產智能型電動閥門執行機構的企業。公司位於溫州市和上海市，擁有現代化的生產基地和先進的加工設備，技術力量雄厚，生產工藝先進，檢測手段完善。";
 i18nData["zh-TW"]["about.full_p2"] = "為滿足國內外市場不斷增長的供貨需求，公司成立了上海瑞基瑞然自動化技術有限公司和瑞基測控設備（太倉）有限公司，建有年產4萬臺的智能電動執行機構生產線，形成溫州、上海、太倉多基地運營模式，確保產品交期和質量。";
@@ -2179,9 +2179,9 @@ i18nData.ru = {
   "about.full_p2": "Для удовлетворения растущего спроса на поставки компания основала Shanghai RAGA Ruiran Automation Technology Co., Ltd. и RAGA (Taicang) Co., Ltd.",
   "about.history": "История развития",
   "about.culture": "Корпоративная культура",
-  "about.culture_vision": "Создать вековое предприятие, стать мировым производителем интеллектуальных приводов",
-  "about.culture_mission": "Предоставление надежных и производительных приводных решений для глобальной промышленной автоматизации",
-  "about.culture_values": "Честность, Инновации, Точность, Эффективность",
+  "about.culture_vision": "Опираясь на корни в Вэньчжоу и ориентируясь на мировой рынок, компания RAGA стремится создать вековое предприятие и стать мировым производителем интеллектуальных приводов высшего класса. Двигателем нашего развития являются технологические инновации, а фундаментом — качество. Мы продолжаем углублять экспертизу в области промышленной автоматизации, предоставляя клиентам по всему миру интеллектуальные высоконадежные приводы и решения, стремясь установить отраслевые эталоны и вывести китайское производство на мировую арену.",
+  "about.culture_mission": "Предоставление надежных и производительных приводных решений для глобальной промышленной автоматизации. RAGA неизменно ориентируется на потребности клиентов, опираясь на собственную технологическую платформу и комплексную систему управления качеством, постоянно предлагая высокопроизводительные, высокоточные интеллектуальные приводы с высоким классом защиты. От проектирования и производства до послепродажного обслуживания мы стремимся к совершенству на каждом этапе, обеспечивая стабильную работу каждого продукта в тяжелых условиях и поддерживая процесс промышленной автоматизации наших клиентов.",
+  "about.culture_values": "Честность, Инновации, Точность, Эффективность. Честность — наш фундамент: мы несем ответственность перед клиентами и партнерами, выполняя каждое обязательство. Инновации — двигатель нашего развития: мы непрерывно увеличиваем инвестиции в НИОКР, совершенствуя продукцию через технологические инновации. Точность — наше стремление к качеству: от проверки комплектующих до тестирования готовой продукции каждый процесс находится под строгим контролем. Эффективность — наше сервисное обязательство: мы оперативно реагируем на потребности клиентов, обеспечивая профессиональную команду и комплексную систему послепродажного обслуживания для достижения наилучшего опыта использования.",
   "about.culture_vision_label": "Видение: ",
   "about.culture_mission_label": "Миссия: ",
   "about.culture_values_label": "Основные ценности: ",

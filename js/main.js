@@ -33,23 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     targets.forEach(function(el) { observer.observe(el); });
 
-    // Timeline special: reveal items one by one when timeline enters view
-    var timeline = document.querySelector('.timeline');
-    if (timeline) {
-      var items = timeline.querySelectorAll('.timeline-item');
-      items.forEach(function(item) { item.classList.add('reveal-ready'); });
-
-      var tlObserver = new IntersectionObserver(function(entries) {
+    // Timeline K-line chart: trigger animation when chart enters view
+    var tlChart = document.querySelector('#timelineChart');
+    if (tlChart) {
+      var chartObserver = new IntersectionObserver(function(entries) {
         if (entries[0].isIntersecting) {
-          items.forEach(function(item, i) {
-            setTimeout(function() {
-              item.classList.add('reveal-up');
-            }, i * 800);
-          });
-          tlObserver.unobserve(timeline);
+          tlChart.classList.add('tl-animate');
+          chartObserver.unobserve(tlChart);
         }
-      }, { threshold: 0.1 });
-      tlObserver.observe(timeline);
+      }, { threshold: 0.2 });
+      chartObserver.observe(tlChart);
     }
 
     // Product cards: reveal one by one when grid enters view

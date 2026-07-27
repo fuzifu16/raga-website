@@ -602,11 +602,11 @@ a { color: inherit; }
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 .tl-animate .tl-desc { opacity: 1; transform: translateY(0); }
-.tl-animate .tl-descs > foreignObject:nth-child(1) .tl-desc { transition-delay: 0.6s; }
-.tl-animate .tl-descs > foreignObject:nth-child(2) .tl-desc { transition-delay: 1.3s; }
-.tl-animate .tl-descs > foreignObject:nth-child(3) .tl-desc { transition-delay: 2.0s; }
-.tl-animate .tl-descs > foreignObject:nth-child(4) .tl-desc { transition-delay: 2.7s; }
-.tl-animate .tl-descs > foreignObject:nth-child(5) .tl-desc { transition-delay: 3.4s; }
+.tl-animate .tl-descs > foreignObject:nth-child(1) .tl-desc { transition-delay: 2.4s; }
+.tl-animate .tl-descs > foreignObject:nth-child(2) .tl-desc { transition-delay: 3.2s; }
+.tl-animate .tl-descs > foreignObject:nth-child(3) .tl-desc { transition-delay: 4.0s; }
+.tl-animate .tl-descs > foreignObject:nth-child(4) .tl-desc { transition-delay: 4.8s; }
+.tl-animate .tl-descs > foreignObject:nth-child(5) .tl-desc { transition-delay: 5.6s; }
 
 /* ===== Product Scroll Strip (Marquee) ===== */
 .product-scroll-wrapper {

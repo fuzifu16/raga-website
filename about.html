@@ -119,42 +119,78 @@
     </div>
 
         <h2 id="history" data-i18n="about.history">发展历程</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2005</div>
-        <div class="timeline-content">
-          <p data-i18n="about.milestone_2005">温州瑞基测控设备有限公司成立，专注于电动执行机构研发制造</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2010</div>
-        <div class="timeline-content">
-          <p data-i18n="about.milestone_2010">推出RA系列智能型电动执行机构，获得市场广泛认可</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2013</div>
-        <div class="timeline-content">
-          <p data-i18n="about.milestone_2013">网站上线，产品线扩展至全系列智能执行机构</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2018</div>
-        <div class="timeline-content">
-          <p data-i18n="about.milestone_2018">成立瑞基测控设备（太仓）有限公司，年产2万台新产线投产</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2021</div>
-        <div class="timeline-content">
-          <p data-i18n="about.milestone_2021">成立上海瑞基瑞然自动化技术有限公司，拓展华东市场</p>
-        </div>
-      </div>
+    <div class="timeline-chart" id="timelineChart">
+      <svg class="tl-svg" viewBox="0 0 900 460" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="tlGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#E70033" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#E70033" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Grid lines -->
+        <g class="tl-grid">
+          <line x1="40" y1="40" x2="860" y2="40"/>
+          <line x1="40" y1="110" x2="860" y2="110"/>
+          <line x1="40" y1="180" x2="860" y2="180"/>
+          <line x1="40" y1="250" x2="860" y2="250"/>
+          <line x1="40" y1="320" x2="860" y2="320" class="tl-baseline"/>
+        </g>
+
+        <!-- Area fill under trend line -->
+        <polygon class="tl-area" points="80,290 260,230 440,170 620,110 800,50 800,320 80,320"/>
+
+        <!-- K-line bars (rising from baseline) -->
+        <g class="tl-bars">
+          <rect class="tl-bar" x="65" y="290" width="30" height="30" rx="4"/>
+          <rect class="tl-bar" x="245" y="230" width="30" height="90" rx="4"/>
+          <rect class="tl-bar" x="425" y="170" width="30" height="150" rx="4"/>
+          <rect class="tl-bar" x="605" y="110" width="30" height="210" rx="4"/>
+          <rect class="tl-bar" x="785" y="50" width="30" height="270" rx="4"/>
+        </g>
+
+        <!-- Trend line (45° rising) -->
+        <polyline class="tl-line" points="80,290 260,230 440,170 620,110 800,50"
+                  fill="none" stroke="#E70033" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Dots at each milestone -->
+        <g class="tl-dots">
+          <circle class="tl-dot" cx="80" cy="290" r="8" fill="#fff" stroke="#E70033" stroke-width="3"/>
+          <circle class="tl-dot" cx="260" cy="230" r="8" fill="#fff" stroke="#E70033" stroke-width="3"/>
+          <circle class="tl-dot" cx="440" cy="170" r="8" fill="#fff" stroke="#E70033" stroke-width="3"/>
+          <circle class="tl-dot" cx="620" cy="110" r="8" fill="#fff" stroke="#E70033" stroke-width="3"/>
+          <circle class="tl-dot" cx="800" cy="50" r="8" fill="#fff" stroke="#E70033" stroke-width="3"/>
+        </g>
+
+        <!-- Year labels -->
+        <g class="tl-years">
+          <text class="tl-year" x="80" y="272" text-anchor="middle">2005</text>
+          <text class="tl-year" x="260" y="212" text-anchor="middle">2010</text>
+          <text class="tl-year" x="440" y="152" text-anchor="middle">2013</text>
+          <text class="tl-year" x="620" y="92" text-anchor="middle">2018</text>
+          <text class="tl-year" x="800" y="32" text-anchor="middle">2021</text>
+        </g>
+
+        <!-- Description text below each bar -->
+        <g class="tl-descs">
+          <foreignObject x="10" y="340" width="140" height="120">
+            <div class="tl-desc" data-i18n="about.milestone_2005" xmlns="http://www.w3.org/1999/xhtml">温州瑞基测控设备有限公司成立，专注于电动执行机构研发制造</div>
+          </foreignObject>
+          <foreignObject x="190" y="340" width="140" height="120">
+            <div class="tl-desc" data-i18n="about.milestone_2010" xmlns="http://www.w3.org/1999/xhtml">推出RA系列智能型电动执行机构，获得市场广泛认可</div>
+          </foreignObject>
+          <foreignObject x="370" y="340" width="140" height="120">
+            <div class="tl-desc" data-i18n="about.milestone_2013" xmlns="http://www.w3.org/1999/xhtml">网站上线，产品线扩展至全系列智能执行机构</div>
+          </foreignObject>
+          <foreignObject x="550" y="340" width="140" height="120">
+            <div class="tl-desc" data-i18n="about.milestone_2018" xmlns="http://www.w3.org/1999/xhtml">成立瑞基测控设备（太仓）有限公司，年产2万台新产线投产</div>
+          </foreignObject>
+          <foreignObject x="730" y="340" width="140" height="120">
+            <div class="tl-desc" data-i18n="about.milestone_2021" xmlns="http://www.w3.org/1999/xhtml">成立上海瑞基瑞然自动化技术有限公司，拓展华东市场</div>
+          </foreignObject>
+        </g>
+      </svg>
     </div>
     
     <h2 id="culture" data-i18n="about.culture">企业文化</h2>

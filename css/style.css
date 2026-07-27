@@ -539,26 +539,26 @@ a { color: inherit; }
   transform-box: fill-box;
   transform-origin: center bottom;
   transform: scaleY(0);
-  transition: transform 1.0s cubic-bezier(0.34, 1.2, 0.64, 1), opacity 0.6s ease;
+  transition: transform 1.3s cubic-bezier(0.34, 1.2, 0.64, 1), opacity 0.8s ease;
 }
 .tl-animate .tl-bar { transform: scaleY(1); opacity: 0.18; }
-.tl-animate .tl-bar:nth-child(1) { transition-delay: 0.4s; }
-.tl-animate .tl-bar:nth-child(2) { transition-delay: 0.9s; }
-.tl-animate .tl-bar:nth-child(3) { transition-delay: 1.4s; }
-.tl-animate .tl-bar:nth-child(4) { transition-delay: 1.9s; }
-.tl-animate .tl-bar:nth-child(5) { transition-delay: 2.4s; }
+.tl-animate .tl-bar:nth-child(1) { transition-delay: 0.6s; }
+.tl-animate .tl-bar:nth-child(2) { transition-delay: 1.3s; }
+.tl-animate .tl-bar:nth-child(3) { transition-delay: 2.0s; }
+.tl-animate .tl-bar:nth-child(4) { transition-delay: 2.7s; }
+.tl-animate .tl-bar:nth-child(5) { transition-delay: 3.4s; }
 
 .tl-area {
   fill: url(#tlGrad);
   opacity: 0;
-  transition: opacity 1.2s ease 4.0s;
+  transition: opacity 1.5s ease 5.8s;
 }
 .tl-animate .tl-area { opacity: 1; }
 
 .tl-line {
   stroke-dasharray: 820;
   stroke-dashoffset: 820;
-  transition: stroke-dashoffset 4.5s ease 0.6s;
+  transition: stroke-dashoffset 6.0s ease 0.8s;
 }
 .tl-animate .tl-line { stroke-dashoffset: 0; }
 
@@ -567,14 +567,14 @@ a { color: inherit; }
   transform-box: fill-box;
   transform-origin: center;
   transform: scale(0);
-  transition: opacity 0.4s ease, transform 0.6s cubic-bezier(0.34, 1.6, 0.64, 1);
+  transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.34, 1.6, 0.64, 1);
 }
 .tl-animate .tl-dot { opacity: 1; transform: scale(1); }
-.tl-animate .tl-dot:nth-child(1) { transition-delay: 1.2s; }
-.tl-animate .tl-dot:nth-child(2) { transition-delay: 1.8s; }
-.tl-animate .tl-dot:nth-child(3) { transition-delay: 2.4s; }
-.tl-animate .tl-dot:nth-child(4) { transition-delay: 3.0s; }
-.tl-animate .tl-dot:nth-child(5) { transition-delay: 3.6s; }
+.tl-animate .tl-dot:nth-child(1) { transition-delay: 1.8s; }
+.tl-animate .tl-dot:nth-child(2) { transition-delay: 2.6s; }
+.tl-animate .tl-dot:nth-child(3) { transition-delay: 3.4s; }
+.tl-animate .tl-dot:nth-child(4) { transition-delay: 4.2s; }
+.tl-animate .tl-dot:nth-child(5) { transition-delay: 5.0s; }
 
 .tl-year {
   font-size: 19px;
@@ -582,14 +582,14 @@ a { color: inherit; }
   fill: #E70033;
   font-family: var(--font);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.5s ease;
 }
 .tl-animate .tl-year { opacity: 1; }
-.tl-animate .tl-year:nth-child(1) { transition-delay: 1.6s; }
-.tl-animate .tl-year:nth-child(2) { transition-delay: 2.2s; }
-.tl-animate .tl-year:nth-child(3) { transition-delay: 2.8s; }
-.tl-animate .tl-year:nth-child(4) { transition-delay: 3.4s; }
-.tl-animate .tl-year:nth-child(5) { transition-delay: 4.0s; }
+.tl-animate .tl-year:nth-child(1) { transition-delay: 2.4s; }
+.tl-animate .tl-year:nth-child(2) { transition-delay: 3.2s; }
+.tl-animate .tl-year:nth-child(3) { transition-delay: 4.0s; }
+.tl-animate .tl-year:nth-child(4) { transition-delay: 4.8s; }
+.tl-animate .tl-year:nth-child(5) { transition-delay: 5.6s; }
 
 .tl-desc {
   font-size: 13px;
@@ -599,14 +599,14 @@ a { color: inherit; }
   padding: 0 4px;
   opacity: 0;
   transform: translateY(8px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 .tl-animate .tl-desc { opacity: 1; transform: translateY(0); }
-.tl-animate .tl-descs > foreignObject:nth-child(1) .tl-desc { transition-delay: 0.4s; }
-.tl-animate .tl-descs > foreignObject:nth-child(2) .tl-desc { transition-delay: 0.9s; }
-.tl-animate .tl-descs > foreignObject:nth-child(3) .tl-desc { transition-delay: 1.4s; }
-.tl-animate .tl-descs > foreignObject:nth-child(4) .tl-desc { transition-delay: 1.9s; }
-.tl-animate .tl-descs > foreignObject:nth-child(5) .tl-desc { transition-delay: 2.4s; }
+.tl-animate .tl-descs > foreignObject:nth-child(1) .tl-desc { transition-delay: 0.6s; }
+.tl-animate .tl-descs > foreignObject:nth-child(2) .tl-desc { transition-delay: 1.3s; }
+.tl-animate .tl-descs > foreignObject:nth-child(3) .tl-desc { transition-delay: 2.0s; }
+.tl-animate .tl-descs > foreignObject:nth-child(4) .tl-desc { transition-delay: 2.7s; }
+.tl-animate .tl-descs > foreignObject:nth-child(5) .tl-desc { transition-delay: 3.4s; }
 
 /* ===== Product Scroll Strip (Marquee) ===== */
 .product-scroll-wrapper {

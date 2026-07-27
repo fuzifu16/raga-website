@@ -104,8 +104,9 @@ const i18nData = {
     "about.page_title": "公司简介",
     "about.breadcrumb": "公司简介",
     "about.full_title": "关于瑞基",
-    "about.full_p1": "温州瑞基测控设备有限公司是一家专业研制、开发、生产智能型电动阀门执行机构的企业。公司位于温州市和上海市，拥有现代化的生产基地和先进的加工设备，技术力量雄厚，生产工艺先进，检测手段完善。",
-    "about.full_p2": "为满足国内外市场不断增长的供货需求，公司成立了上海瑞基瑞然自动化技术有限公司和瑞基测控设备（太仓）有限公司，建有年产4万台的智能电动执行机构生产线，形成温州、上海、太仓多基地运营模式，确保产品交期和质量。",
+    "about.full_p1": "温州瑞基测控设备有限公司是一家专业研制、开发、生产智能型电动阀门执行机构的高新技术企业。自2005年成立以来，公司始终专注于工业自动化控制领域，致力于为全球客户提供高性能、高可靠性的智能执行机构产品及解决方案。公司总部位于浙江省温州市，在上海设有研发中心，拥有现代化的生产基地和先进的加工设备，技术力量雄厚，生产工艺先进，检测手段完善。",
+    "about.full_p2": "为满足国内外市场不断增长的供货需求，公司先后成立了上海瑞基瑞然自动化技术有限公司和瑞基测控设备（太仓）有限公司，建有年产4万台的智能电动执行机构生产线，形成温州、上海、太仓多基地运营模式。公司产品涵盖RQ系列多回转调节型、RA系列分体式、RL系列直行程等多个系列，转矩范围覆盖34N·m至3500N·m，广泛应用于石油化工、电力、冶金、水务、制药等行业，防护等级达IP68，可满足各种严苛工况环境下的控制需求。",
+    "about.full_p3": "公司秉承"诚信、创新、精准、高效"的核心价值观，建立了完善的质量管理体系，通过了ISO9001质量管理体系认证、CE认证等多项国际认证。凭借卓越的产品品质和专业的技术服务，瑞基产品已远销俄罗斯、中东、东南亚等多个国家和地区，赢得了国内外客户的广泛信赖与好评。未来，瑞基将继续加大研发投入，深耕智能执行机构领域，以技术创新驱动产业升级，努力成为国际一流的智能执行机构制造商。",
     "about.history": "发展历程",
     "about.culture": "企业文化",
     "about.culture_vision": "立足温州，面向全球，瑞基测控致力于打造百年企业，成为国际一流的智能执行机构制造商。我们以技术创新为引擎，以品质为根基，持续深耕工业自动化领域，为全球客户提供智能化、高可靠性的执行机构产品与解决方案，努力在行业中树立标杆，推动中国制造走向世界舞台。",
@@ -348,8 +349,9 @@ const i18nData = {
     "about.page_title": "About Us",
     "about.breadcrumb": "About Us",
     "about.full_title": "About RAGA",
-    "about.full_p1": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. is a professional enterprise specializing in the R&D, production of smart electric valve actuators. Located in Wenzhou and Shanghai with modern production bases and advanced processing equipment.",
-    "about.full_p2": "To meet growing market demand, the company established Shanghai RAGA Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., with an annual production capacity of 40,000 smart electric actuators.",
+    "about.full_p1": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. is a high-tech enterprise specializing in the R&D and production of intelligent electric valve actuators. Since its establishment in 2005, the company has been dedicated to the industrial automation control field, committed to providing high-performance, high-reliability intelligent actuator products and solutions to customers worldwide. Headquartered in Wenzhou, Zhejiang Province, with an R&D center in Shanghai, the company operates modern production bases equipped with advanced processing equipment, backed by strong technical expertise, sophisticated manufacturing processes, and comprehensive testing capabilities.",
+    "about.full_p2": "To meet the growing market demand at home and abroad, the company has successively established Shanghai RAGA Ruiran Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., building a production line with an annual capacity of 40,000 intelligent electric actuators, forming a multi-base operational model across Wenzhou, Shanghai, and Taicang. The product lineup covers multiple series including RQ series multi-turn regulating type, RA series split type, and RL series linear type, with torque ranging from 34N·m to 3500N·m, widely applied in petrochemical, electric power, metallurgy, water treatment, pharmaceutical and other industries, with protection ratings up to IP68 for demanding environments.",
+    "about.full_p3": "Adhering to the core values of \"Integrity, Innovation, Precision, Efficiency,\" the company has established a comprehensive quality management system, passing ISO9001 quality management system certification, CE certification and other international certifications. With outstanding product quality and professional technical service, RAGA products have been exported to Russia, the Middle East, Southeast Asia and other countries and regions, earning widespread trust and praise from customers worldwide. Looking ahead, RAGA will continue to increase R&D investment, deepen its expertise in intelligent actuators, drive industrial upgrading through technological innovation, and strive to become a world-class intelligent actuator manufacturer.",
     "about.history": "Milestones",
     "about.culture": "Corporate Culture",
     "about.culture_vision": "Based in Wenzhou and looking to the global market, RAGA is committed to building a century-old enterprise and becoming a world-class smart actuator manufacturer. Driven by technological innovation and grounded in quality, we continue to deepen our expertise in industrial automation, providing global customers with intelligent, highly reliable actuator products and solutions. We strive to set industry benchmarks and propel Chinese manufacturing onto the world stage.",
@@ -990,8 +992,9 @@ i18nData["zh-TW"]["about.culture_values"] = "誠信、創新、精準、高效�
 i18nData["zh-TW"]["about.culture_values_label"] = "核心價值觀：";
 i18nData["zh-TW"]["about.culture_vision"] = "立足溫州，面向全球，瑞基測控致力於打造百年企業，成為國際一流的智能執行機構製造商。我們以技術創新為引擎，以品質為根基，持續深耕工業自動化領域，為全球客戶提供智能化、高可靠性的執行機構產品與解決方案，努力在行業中樹立標杆，推動中國製造走向世界舞台。";
 i18nData["zh-TW"]["about.culture_vision_label"] = "企業願景：";
-i18nData["zh-TW"]["about.full_p1"] = "溫州瑞基測控設備有限公司是一家專業研製、開發、生產智能型電動閥門執行機構的企業。公司位於溫州市和上海市，擁有現代化的生產基地和先進的加工設備，技術力量雄厚，生產工藝先進，檢測手段完善。";
-i18nData["zh-TW"]["about.full_p2"] = "為滿足國內外市場不斷增長的供貨需求，公司成立了上海瑞基瑞然自動化技術有限公司和瑞基測控設備（太倉）有限公司，建有年產4萬臺的智能電動執行機構生產線，形成溫州、上海、太倉多基地運營模式，確保產品交期和質量。";
+i18nData["zh-TW"]["about.full_p1"] = "溫州瑞基測控設備有限公司是一家專業研製、開發、生產智能型電動閥門執行機構的高新技術企業。自2005年成立以來，公司始終專注於工業自動化控制領域，致力於為全球客戶提供高性能、高可靠性的智能執行機構產品及解決方案。公司總部位於浙江省溫州市，在上海設有研發中心，擁有現代化的生產基地和先進的加工設備，技術力量雄厚，生產工藝先進，檢測手段完善。";
+i18nData["zh-TW"]["about.full_p2"] = "為滿足國內外市場不斷增長的供貨需求，公司先後成立了上海瑞基瑞然自動化技術有限公司和瑞基測控設備（太倉）有限公司，建有年產4萬臺的智能電動執行機構生產線，形成溫州、上海、太倉多基地運營模式。公司產品涵蓋RQ系列多回轉調節型、RA系列分體式、RL系列直行程等多個系列，轉矩範圍覆蓋34N·m至3500N·m，廣泛應用於石油化工、電力、冶金、水務、製藥等行業，防護等級達IP68，可滿足各種嚴苛工況環境下的控制需求。";
+i18nData["zh-TW"]["about.full_p3"] = "公司秉承「誠信、創新、精準、高效」的核心價值觀，建立了完善的質量管理體系，通過了ISO9001質量管理體系認證、CE認證等多項國際認證。憑藉卓越的產品品質和專業的技術服務，瑞基產品已遠銷俄羅斯、中東、東南亞等多個國家和地區，贏得了國內外客戶的廣泛信賴與好評。未來，瑞基將繼續加大研發投入，深耕智能執行機構領域，以技術創新驅動產業升級，努力成為國際一流的智能執行機構製造商。";
 i18nData["zh-TW"]["about.full_title"] = "關於瑞基";
 i18nData["zh-TW"]["about.history"] = "發展歷程";
 i18nData["zh-TW"]["about.milestone_2005"] = "溫州瑞基測控設備有限公司成立，專注於電動執行機構研發製造";
@@ -2175,8 +2178,9 @@ i18nData.ru = {
   "about.page_title": "О компании",
   "about.breadcrumb": "О компании",
   "about.full_title": "О RAGA",
-  "about.full_p1": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. Расположена в Вэньчжоу и Шанхае.",
-  "about.full_p2": "Для удовлетворения растущего спроса на поставки компания основала Shanghai RAGA Ruiran Automation Technology Co., Ltd. и RAGA (Taicang) Co., Ltd.",
+  "about.full_p1": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — высокотехнологичное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. С момента основания в 2005 году компания посвятила себя сфере промышленной автоматизации, стремясь предоставлять клиентам по всему миру высокопроизводительные и надёжные интеллектуальные приводы и решения. Штаб-квартира расположена в г. Вэньчжоу, провинция Чжэцзян, с исследовательским центром в Шанхае. Компания располагает современными производственными базами, передовым оборудованием, мощным техническим потенциалом, передовыми технологиями производства и всесторонними средствами испытаний.",
+  "about.full_p2": "Для удовлетворения растущего спроса на рынке компания последовательно основала Shanghai RAGA Ruiran Automation Technology Co., Ltd. и RAGA (Taicang) Co., Ltd., создав производственную линию годовой мощностью 40 000 интеллектуальных электроприводов, сформировав много базовую операционную модель в Вэньчжоу, Шанхае и Тайцане. Продукция компании охватывает несколько серий, включая серии RQ (многооборотный регулирующий), RA (раздельный), RL (прямоходный), с крутящим моментом от 34 Н·м до 3500 Н·м, широко применяемых в нефтехимии, электроэнергетике, металлургии, водоснабжении, фармацевтике и других отраслях, со степенью защиты до IP68 для суровых условий эксплуатации.",
+  "about.full_p3": "Придерживаясь основных ценностей «Честность, Инновации, Точность, Эффективность», компания создала совершенную систему управления качеством, пройдя сертификацию системы менеджмента качества ISO9001, сертификацию CE и другие международные сертификации. Благодаря выдающемуся качеству продукции и профессиональному техническому обслуживанию, продукция RAGA экспортируется в Россию, страны Ближнего Востока, Юго-Восточной Азии и другие страны и регионы, заслужив широкое доверие и признание клиентов внутри страны и за рубежом. В будущем RAGA продолжит увеличивать инвестиции в НИОКР, углублять специализацию в области интеллектуальных приводов, стимулировать модернизацию отрасли за счёт технологических инноваций и стремиться стать мировым производителем интеллектуальных приводов высшего класса.",
   "about.history": "История развития",
   "about.culture": "Корпоративная культура",
   "about.culture_vision": "Опираясь на корни в Вэньчжоу и ориентируясь на мировой рынок, компания RAGA стремится создать вековое предприятие и стать мировым производителем интеллектуальных приводов высшего класса. Двигателем нашего развития являются технологические инновации, а фундаментом — качество. Мы продолжаем углублять экспертизу в области промышленной автоматизации, предоставляя клиентам по всему миру интеллектуальные высоконадежные приводы и решения, стремясь установить отраслевые эталоны и вывести китайское производство на мировую арену.",

@@ -142,7 +142,8 @@ const PRODUCTS = {
       { name: "RL10系列外形图", size: "140 KB", icon: "📐", url: "files/rl10-dimension.pdf" },
       { name: "RL80系列外形图", size: "48 KB", icon: "📐", url: "files/rl80-dimension.pdf" },
       { name: "RL150系列外形图", size: "158 KB", icon: "📐", url: "files/rl150-dimension.pdf" },
-      { name: "RLML10系列-直行程外型图", size: "125 KB", icon: "📐", url: "files/RLML10系列-直行程外型图.pdf" }
+      { name: "RLML10系列-直行程外型图", size: "125 KB", icon: "📐", url: "files/RLML10系列-直行程外型图.pdf" },
+      { name: "RLML10爆炸图", size: "316 KB", icon: "📄", url: "files/RLML10爆炸图.pdf" }
     ]
   },
   "rlm": {
@@ -276,7 +277,8 @@ const PRODUCTS = {
     downloads: [
       { name: "RQ/RQM系列安装使用说明书", size: "666 KB", icon: "📄", url: "files/rq-rqm-manual.pdf" },
       { name: "安装与调试指南", size: "1.3 MB", icon: "🔧", url: "files/ra-installation.pdf" },
-      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" }
+      { name: "RAIII系列接线图", size: "81 KB", icon: "🔌", url: "files/RAIII系列接线图.pdf" },
+      { name: "RQML03主装爆炸图", size: "623 KB", icon: "📄", url: "files/RQML03主装爆炸.pdf" }
     ]
   },
   "rq150": {

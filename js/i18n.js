@@ -1459,6 +1459,7 @@ i18nData.dlMap = {
     "RL操作维护手册": "RL操作维护手册",
     "RAIII系列接线图": "RAIII系列接线图",
     "RA系列开关行程调试": "RA系列开关行程调试", "RL系列开关行程调试": "RL系列开关行程调试",
+    "RQML03主装爆炸图": "RQML03主装爆炸图", "RLML10爆炸图": "RLML10爆炸图",
   },
   "en": {
     "RA系列选型手册": "RA Series Selection Guide",
@@ -1481,7 +1482,9 @@ i18nData.dlMap = {
     "RLML20产品说明书": "RLML20 Product Manual",
     "RL操作维护手册": "RL Operation & Maintenance Manual",
     "RAIII系列接线图": "RAIII Series Wiring Diagram",
-    "RA系列开关行程调试": "RA Series Stroke Adjustment", "RL系列开关行程调试": "RL Series Stroke Adjustment"
+    "RA系列开关行程调试": "RA Series Stroke Adjustment", "RL系列开关行程调试": "RL Series Stroke Adjustment",
+    "RQML03主装爆炸图": "RQML03 Assembly Explosion Diagram",
+    "RLML10爆炸图": "RLML10 Explosion Diagram"
   }
 };
 

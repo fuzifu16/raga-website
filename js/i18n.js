@@ -88,7 +88,7 @@ const i18nData = {
     "tech.lcd": "图形化显示",
     "tech.lcd_desc": "图形点阵式LCD，多语言、数字、图形显示，实时监控工作状态。",
     "tech.protection": "多重保护",
-    "tech.protection_desc": "过转矩保护、过热保护、缺相保护、相序自纠正，防爆ExdⅡCT4。",
+    "tech.protection_desc": "过转矩保护、过热保护、缺相保护、相序自纠正，防爆Ex db IIC T4/T6 Gb。",
     "tech.view_all": "查看全部技术优势 →",
 
     "cta.title": "需要专业的阀门执行机构解决方案？",
@@ -122,7 +122,7 @@ const i18nData = {
     "about.prod_2": "现代化加工中心及专用数控设备",
     "about.prod_3": "完善的检测实验室，全系列产品出厂前严格测试",
     "about.prod_4": "通过ISO9001质量管理体系认证",
-    "about.prod_5": "产品防爆标志ExdⅡCT4，防护等级IP68",
+    "about.prod_5": "产品防爆标志Ex db IIC T4/T6 Gb，防护等级IP68",
 
     /* Products Page */
     "products.page_title": "公司产品",
@@ -152,7 +152,7 @@ const i18nData = {
     "tech.temp_title": "宽温域环境适应性",
     "tech.nonintrusive_full": "通过独立设定器进行操作，无需打开电气箱盖即可完成全部参数设置、调试和诊断。这一设计从根本上避免了因开盖操作导致的密封失效和电子元件暴露风险，确保执行机构的防护等级长期保持在IP68水平。",
     "tech.lcd_full": "配备高分辨率图形点阵式液晶显示器，支持中文、英文等多语言显示。可实时显示输出转矩、阀门位置、限位设定等工作状态，以及完整的报警和诊断信息，让用户对设备状态一目了然。",
-    "tech.protection_full": "内置过转矩保护、过热保护、缺相保护、相序自动纠正等多重保护功能。防爆标志 ExdⅡCT4，适用于含有爆炸性气体环境的工业现场，确保设备和人员安全。",
+    "tech.protection_full": "内置过转矩保护、过热保护、缺相保护、相序自动纠正等多重保护功能。防爆标志 Ex db IIC T4/T6 Gb，适用于含有爆炸性气体环境的工业现场，确保设备和人员安全。",
     "tech.comm_full": "支持现场总线（Profibus、Modbus等）、工业以太网、无线等多种通信方式。可实现远程监控、智能诊断与预测性维护，帮助企业实现数字化转型和智能化升级。",
     "tech.precision_full": "基本误差限≤±1.0%，死区0.1%~9.9%可调，行程重复性误差≤1%。采用先进的伺服控制算法，确保在各种工况下都能实现精确、稳定的阀门位置控制。",
     "tech.temp_full": "环境温度-30℃~+70℃，使用环境湿度≤95%。通过严格的温度循环测试和盐雾测试，确保产品在各种严苛工业环境中保持稳定可靠的运行性能。",
@@ -333,7 +333,7 @@ const i18nData = {
     "tech.lcd": "Graphic Display",
     "tech.lcd_desc": "Graphic dot-matrix LCD, multilingual display, real-time monitoring of working status.",
     "tech.protection": "Multi Protection",
-    "tech.protection_desc": "Over-torque, overheat, phase loss protection, phase sequence correction, ExdIICT4 certified.",
+    "tech.protection_desc": "Over-torque, overheat, phase loss protection, phase sequence correction, Ex db IIC T4/T6 Gb certified.",
     "tech.view_all": "View All Technology →",
 
     "cta.title": "Need Professional Valve Actuator Solutions?",
@@ -367,7 +367,7 @@ const i18nData = {
     "about.prod_2": "Modern machining centers and dedicated CNC equipment",
     "about.prod_3": "Comprehensive testing laboratory, rigorous factory testing for all products",
     "about.prod_4": "ISO9001 quality management system certified",
-    "about.prod_5": "ExdIICT4 explosion-proof, IP68 protection rating",
+    "about.prod_5": "Ex db IIC T4/T6 Gb explosion-proof, IP68 protection rating",
 
     /* Products Page */
     "products.page_title": "Products",
@@ -397,7 +397,7 @@ const i18nData = {
     "tech.temp_title": "Wide Temperature Adaptability",
     "tech.nonintrusive_full": "All parameter settings, debugging and diagnostics can be completed via an independent setting tool without opening the electrical cover. This design fundamentally eliminates the risk of seal failure and electronic component exposure caused by cover opening, ensuring the actuator maintains IP68 protection level long-term.",
     "tech.lcd_full": "Equipped with a high-resolution graphic dot-matrix LCD supporting Chinese, English and other languages. Real-time display of output torque, valve position, limit settings, complete alarm and diagnostic information — giving users full visibility of equipment status.",
-    "tech.protection_full": "Built-in over-torque protection, overheat protection, phase loss protection, automatic phase sequence correction and more. ExdIICT4 explosion-proof certified, suitable for industrial sites with explosive gas environments, ensuring equipment and personnel safety.",
+    "tech.protection_full": "Built-in over-torque protection, overheat protection, phase loss protection, automatic phase sequence correction and more. Ex db IIC T4/T6 Gb explosion-proof certified, suitable for industrial sites with explosive gas environments, ensuring equipment and personnel safety.",
     "tech.comm_full": "Supports fieldbus (Profibus, Modbus, etc.), industrial Ethernet, wireless and other communication methods. Enables remote monitoring, intelligent diagnosis and predictive maintenance, helping enterprises achieve digital transformation.",
     "tech.precision_full": "Basic error ≤ ±1.0%, dead band adjustable 0.1%~9.9%, travel repeatability error ≤ 1%. Advanced servo control algorithm ensures precise and stable valve position control under various working conditions.",
     "tech.temp_full": "Ambient temperature -30°C to +70°C, ambient humidity ≤ 95%. Passed rigorous temperature cycling and salt spray tests, ensuring stable and reliable performance in harsh industrial environments.",
@@ -499,9 +499,9 @@ const i18nData = {
 
 /* Cases page English translations */
 i18nData.en["cases.oil"] = "Petroleum Industry";
-i18nData.en["cases.oil_desc"] = "RAGA smart electric actuators are widely used in oil field extraction, oil & gas transportation, and refining. With ExdIICT4 explosion-proof certification, they operate safely in hazardous environments. RA series multi-turn actuators control large-diameter pipeline valves, while RL quarter-turn series are used for tank farm butterfly valve control.";
+i18nData.en["cases.oil_desc"] = "RAGA smart electric actuators are widely used in oil field extraction, oil & gas transportation, and refining. With Ex db IIC T4/T6 Gb explosion-proof certification, they operate safely in hazardous environments. RA series multi-turn actuators control large-diameter pipeline valves, while RL quarter-turn series are used for tank farm butterfly valve control.";
 i18nData.zh["cases.oil"] = "石油行业";
-i18nData.zh["cases.oil_desc"] = "瑞基智能电动执行机构在石油行业的油田开采、油气输送、炼油化工等环节得到广泛应用。产品具备防爆ExdⅡCT4认证，可在危险气体环境中安全可靠运行。";
+i18nData.zh["cases.oil_desc"] = "瑞基智能电动执行机构在石油行业的油田开采、油气输送、炼油化工等环节得到广泛应用。产品具备防爆Ex db IIC T4/T6 Gb认证，可在危险气体环境中安全可靠运行。";
 
 i18nData.en["cases.power"] = "Power Industry";
 i18nData.en["cases.power_desc"] = "In thermal, nuclear, hydro and new energy power generation, RAGA actuators are widely used in boiler feedwater systems, cooling water systems, and FGD systems. RQⅢ linear-motion actuators for flue gas damper control, RQM modulating type for feedwater regulating valve precise control.";
@@ -524,8 +524,8 @@ i18nData.zh["cases.chemical"] = "化工行业";
 i18nData.zh["cases.chemical_desc"] = "在石油化工、精细化工、煤化工等领域，瑞基执行机构用于反应釜进料控制、管道输送阀门、储罐区安全阀等关键工位。";
 
 /* Cases full descriptions (cases page) */
-i18nData.zh["cases.oil_full"] = "瑞基智能电动执行机构在石油行业的油田开采、油气输送、炼油化工等环节得到广泛应用。产品具备防爆ExdⅡCT4认证，可在危险气体环境中安全可靠运行。RA系列多回转执行机构用于大口径管线阀门控制，RL角行程系列用于油罐区蝶阀控制，为石油行业提供全方位的阀门自动化解决方案。";
-i18nData.en["cases.oil_full"] = "RAGA smart electric actuators are widely used in oil field extraction, oil & gas transportation, and refining. With ExdIICT4 explosion-proof certification, they operate safely in hazardous environments. RA series multi-turn actuators control large-diameter pipeline valves, while RL quarter-turn series are used for tank farm butterfly valve control, providing comprehensive valve automation solutions for the petroleum industry.";
+i18nData.zh["cases.oil_full"] = "瑞基智能电动执行机构在石油行业的油田开采、油气输送、炼油化工等环节得到广泛应用。产品具备防爆Ex db IIC T4/T6 Gb认证，可在危险气体环境中安全可靠运行。RA系列多回转执行机构用于大口径管线阀门控制，RL角行程系列用于油罐区蝶阀控制，为石油行业提供全方位的阀门自动化解决方案。";
+i18nData.en["cases.oil_full"] = "RAGA smart electric actuators are widely used in oil field extraction, oil & gas transportation, and refining. With Ex db IIC T4/T6 Gb explosion-proof certification, they operate safely in hazardous environments. RA series multi-turn actuators control large-diameter pipeline valves, while RL quarter-turn series are used for tank farm butterfly valve control, providing comprehensive valve automation solutions for the petroleum industry.";
 i18nData.zh["cases.power_full"] = "在火电、核电、水电及新能源发电领域，瑞基执行机构广泛用于锅炉给水系统、冷却水系统、烟气脱硫脱硝系统等关键工位。RQⅢ直行程执行机构用于烟道挡板控制，RQM调节型用于给水调节阀精确控制，产品已在多家大型发电企业稳定运行多年。";
 i18nData.en["cases.power_full"] = "In thermal, nuclear, hydro and new energy power generation, RAGA actuators are widely used in boiler feedwater systems, cooling water systems, and FGD systems. RQⅢ linear-motion actuators for flue gas damper control, RQM modulating type for feedwater regulating valve precise control. Products have been running stably in many large power generation enterprises for years.";
 i18nData.zh["cases.metallurgy_full"] = "在钢铁冶炼和有色金属加工领域，瑞基执行机构用于高炉送风系统、转炉烟气回收、连铸冷却水控制等高温、高粉尘的严苛环境。RAⅢ第三代智能执行机构凭借其IP68高防护等级和宽温域适应性（-30℃~+70℃），在冶金行业表现出色。";
@@ -673,8 +673,8 @@ i18nData.zh["tech.cert_group_calibration"] = "校准证书";
 /* Certification text card translations */
 i18nData.zh["tech.cert_iso"] = "ISO9001 质量管理体系";
 i18nData.zh["tech.cert_iso_desc"] = "公司通过ISO9001质量管理体系认证，建立了完善的质量管理体系，覆盖从原材料进厂到成品出厂的全过程质量控制。";
-i18nData.zh["tech.cert_ex"] = "防爆认证 ExdⅡCT4";
-i18nData.zh["tech.cert_ex_desc"] = "产品通过ExdⅡCT4防爆认证，可在含爆炸性气体环境中安全运行，适用于石油、化工等高安全要求行业。";
+i18nData.zh["tech.cert_ex"] = "防爆认证 Ex db IIC T4/T6 Gb";
+i18nData.zh["tech.cert_ex_desc"] = "产品通过Ex db IIC T4/T6 Gb防爆认证，可在含爆炸性气体环境中安全运行，适用于石油、化工等高安全要求行业。";
 i18nData.zh["tech.cert_ip"] = "防护等级 IP68";
 i18nData.zh["tech.cert_ip_desc"] = "产品防护等级达到IP68，可在深度水浸环境下长期稳定运行，适应户外及潮湿环境。";
 
@@ -731,8 +731,8 @@ i18nData.en["tech.cert_group_type_test"] = "Type Test Reports";
 i18nData.en["tech.cert_group_calibration"] = "Calibration Certificates";
 i18nData.en["tech.cert_iso"] = "ISO9001 Quality Management System";
 i18nData.en["tech.cert_iso_desc"] = "The company is ISO9001 certified with a comprehensive quality management system covering the entire process from raw material inspection to finished product delivery.";
-i18nData.en["tech.cert_ex"] = "Explosion-proof ExdⅡCT4";
-i18nData.en["tech.cert_ex_desc"] = "ExdⅡCT4 explosion-proof certified, safe for operation in explosive gas environments, suitable for petroleum, chemical and other high-safety industries.";
+i18nData.en["tech.cert_ex"] = "Explosion-proof Ex db IIC T4/T6 Gb";
+i18nData.en["tech.cert_ex_desc"] = "Ex db IIC T4/T6 Gb explosion-proof certified, safe for operation in explosive gas environments, suitable for petroleum, chemical and other high-safety industries.";
 i18nData.en["tech.cert_ip"] = "IP68 Protection Rating";
 i18nData.en["tech.cert_ip_desc"] = "IP68 protection rating enables long-term stable operation under deep water immersion, suitable for outdoor and humid environments.";
 
@@ -1009,7 +1009,7 @@ i18nData["zh-TW"]["about.prod_1"] = "溫州、上海、太倉三基地運營，�
 i18nData["zh-TW"]["about.prod_2"] = "現代化加工中心及專用數控設備";
 i18nData["zh-TW"]["about.prod_3"] = "完善的檢測實驗室，全系列產品出廠前嚴格測試";
 i18nData["zh-TW"]["about.prod_4"] = "通過ISO9001質量管理體系認證";
-i18nData["zh-TW"]["about.prod_5"] = "產品防爆標誌ExdⅡCT4，防護等級IP68";
+i18nData["zh-TW"]["about.prod_5"] = "產品防爆標誌Ex db IIC T4/T6 Gb，防護等級IP68";
 i18nData["zh-TW"]["about.production"] = "生產實力";
 i18nData["zh-TW"]["about.stat1_label"] = "年行業經驗";
 i18nData["zh-TW"]["about.stat1_num"] = "20+";
@@ -1039,8 +1039,8 @@ i18nData["zh-TW"]["cases.metallurgy"] = "冶金行業";
 i18nData["zh-TW"]["cases.metallurgy_desc"] = "在鋼鐵冶煉和有色金屬加工領域，瑞基執行機構用於高爐送風系統、轉爐煙氣回收、連鑄冷卻水控制等高溫、高粉塵的嚴苛環境。";
 i18nData["zh-TW"]["cases.metallurgy_full"] = "在鋼鐵冶煉和有色金屬加工領域，瑞基執行機構用於高爐送風系統、轉爐煙氣回收、連鑄冷卻水控制等高溫、高粉塵的嚴苛環境。RAⅢ第三代智能執行機構憑藉其IP68高防護等級和寬溫域適應性（-30℃~+70℃），在冶金行業表現出色。";
 i18nData["zh-TW"]["cases.oil"] = "石油行業";
-i18nData["zh-TW"]["cases.oil_desc"] = "瑞基智能電動執行機構在石油行業的油田開採、油氣輸送、煉油化工等環節得到廣泛應用。產品具備防爆ExdⅡCT4認證，可在危險氣體環境中安全可靠運行。";
-i18nData["zh-TW"]["cases.oil_full"] = "瑞基智能電動執行機構在石油行業的油田開採、油氣輸送、煉油化工等環節得到廣泛應用。產品具備防爆ExdⅡCT4認證，可在危險氣體環境中安全可靠運行。RA系列多回轉執行機構用於大口徑管線閥門控制，RL角行程系列用於油罐區蝶閥控制，為石油行業提供全方位的閥門自動化解決方案。";
+i18nData["zh-TW"]["cases.oil_desc"] = "瑞基智能電動執行機構在石油行業的油田開採、油氣輸送、煉油化工等環節得到廣泛應用。產品具備防爆Ex db IIC T4/T6 Gb認證，可在危險氣體環境中安全可靠運行。";
+i18nData["zh-TW"]["cases.oil_full"] = "瑞基智能電動執行機構在石油行業的油田開採、油氣輸送、煉油化工等環節得到廣泛應用。產品具備防爆Ex db IIC T4/T6 Gb認證，可在危險氣體環境中安全可靠運行。RA系列多回轉執行機構用於大口徑管線閥門控制，RL角行程系列用於油罐區蝶閥控制，為石油行業提供全方位的閥門自動化解決方案。";
 i18nData["zh-TW"]["cases.page_title"] = "使用案例";
 i18nData["zh-TW"]["cases.power"] = "電力行業";
 i18nData["zh-TW"]["cases.power_desc"] = "在火電、核電、水電及新能源發電領域，瑞基執行機構廣泛用於鍋爐給水系統、冷卻水系統、煙氣脫硫脫硝系統等關鍵工位。";
@@ -1318,8 +1318,8 @@ i18nData["zh-TW"]["section.tech_subtitle"] = "技術優勢";
 i18nData["zh-TW"]["section.tech_title"] = "技術優勢";
 i18nData["zh-TW"]["tech.breadcrumb"] = "技術優勢";
 i18nData["zh-TW"]["tech.cert_desc"] = "瑞基產品通過多項國際國內權威認證，品質值得信賴";
-i18nData["zh-TW"]["tech.cert_ex"] = "防爆認證 ExdⅡCT4";
-i18nData["zh-TW"]["tech.cert_ex_desc"] = "產品通過ExdⅡCT4防爆認證，可在含爆炸性氣體環境中安全運行，適用於石油、化工等高安全要求行業。";
+i18nData["zh-TW"]["tech.cert_ex"] = "防爆認證 Ex db IIC T4/T6 Gb";
+i18nData["zh-TW"]["tech.cert_ex_desc"] = "產品通過Ex db IIC T4/T6 Gb防爆認證，可在含爆炸性氣體環境中安全運行，適用於石油、化工等高安全要求行業。";
 i18nData["zh-TW"]["tech.cert_group_calibration"] = "校準證書";
 i18nData["zh-TW"]["tech.cert_group_company"] = "公司資質";
 i18nData["zh-TW"]["tech.cert_group_corrosion"] = "防腐與鹽霧測試";
@@ -1370,8 +1370,8 @@ i18nData["zh-TW"]["tech.page_title"] = "技術優勢";
 i18nData["zh-TW"]["tech.precision_full"] = "基本誤差限≤±1.0%，死區0.1%~9.9%可調，行程重複性誤差≤1%。採用先進的伺服控制算法，確保在各種工況下都能實現精確、穩定的閥門位置控制。";
 i18nData["zh-TW"]["tech.precision_title"] = "高精度控制技術";
 i18nData["zh-TW"]["tech.protection"] = "多重保護";
-i18nData["zh-TW"]["tech.protection_desc"] = "過轉矩保護、過熱保護、缺相保護、相序自糾正，防爆ExdⅡCT4。";
-i18nData["zh-TW"]["tech.protection_full"] = "內置過轉矩保護、過熱保護、缺相保護、相序自動糾正等多重保護功能。防爆標誌 ExdⅡCT4，適用於含有爆炸性氣體環境的工業現場，確保設備和人員安全。";
+i18nData["zh-TW"]["tech.protection_desc"] = "過轉矩保護、過熱保護、缺相保護、相序自糾正，防爆Ex db IIC T4/T6 Gb。";
+i18nData["zh-TW"]["tech.protection_full"] = "內置過轉矩保護、過熱保護、缺相保護、相序自動糾正等多重保護功能。防爆標誌 Ex db IIC T4/T6 Gb，適用於含有爆炸性氣體環境的工業現場，確保設備和人員安全。";
 i18nData["zh-TW"]["tech.protection_title"] = "多重智能保護系統";
 i18nData["zh-TW"]["tech.quality_desc"] = "嚴格品控體系，確保每一臺產品都值得信賴";
 i18nData["zh-TW"]["tech.quality_inspect"] = "來料檢驗";
@@ -2165,7 +2165,7 @@ i18nData.ru = {
   "tech.lcd": "Графический дисплей",
   "tech.lcd_desc": "Графический точечно-матричный ЖК-дисплей, многоязычный дисплей, мониторинг рабочего состояния в реальном времени.",
   "tech.protection": "Многоуровневая защита",
-  "tech.protection_desc": "Защита от перегрузки по моменту, перегрева, пропадания фазы, коррекция последовательности фаз, сертификация по взрывозащите ExdⅡCT4.",
+  "tech.protection_desc": "Защита от перегрузки по моменту, перегрева, пропадания фазы, коррекция последовательности фаз, сертификация по взрывозащите Ex db IIC T4/T6 Gb.",
   "tech.view_all": "Посмотреть все технологии →",
 
   "cta.title": "Нужны профессиональные решения для приводов клапанов?",
@@ -2202,7 +2202,7 @@ i18nData.ru = {
   "about.prod_2": "Современные обрабатывающие центры и специальное ЧПУ оборудование",
   "about.prod_3": "Полная испытательная лаборатория, строгие заводские испытания для всей продукции",
   "about.prod_4": "Сертифицировано по системе менеджмента качества ISO9001",
-  "about.prod_5": "Взрывозащита ExdⅡCT4, степень защиты IP68",
+  "about.prod_5": "Взрывозащита Ex db IIC T4/T6 Gb, степень защиты IP68",
 
   /* Products Page */
   "products.page_title": "Продукция",
@@ -2244,8 +2244,8 @@ i18nData.ru = {
   "tech.cert_desc": "Продукция RAGA сертифицирована несколькими международными и национальными органами.",
   "tech.cert_iso": "Система менеджмента качества ISO9001",
   "tech.cert_iso_desc": "Компания сертифицирована по ISO9001 с комплексной системой менеджмента качества.",
-  "tech.cert_ex": "Взрывозащита ExdⅡCT4",
-  "tech.cert_ex_desc": "Сертифицировано по взрывозащите ExdⅡCT4, безопасная работа во взрывоопасных средах.",
+  "tech.cert_ex": "Взрывозащита Ex db IIC T4/T6 Gb",
+  "tech.cert_ex_desc": "Сертифицировано по взрывозащите Ex db IIC T4/T6 Gb, безопасная работа во взрывоопасных средах.",
   "tech.cert_ip": "Степень защиты IP68",
   "tech.cert_ip_desc": "Степень защиты IP68 обеспечивает длительную стабильную работу при погружении в воду.",
 
@@ -2479,7 +2479,7 @@ i18nData.ru = {
   "cases.water_desc": "В муниципальном водоснабжении, очистке сточных вод приводы RAGA широко используются.",
   "cases.chemical": "Химическая промышленность",
   "cases.chemical_desc": "В нефтехимии, тонкой химии приводы RAGA используются для критических применений.",
-  "cases.oil_full": "Интеллектуальные электроприводы RAGA широко используются в нефтяной отрасли. Продукция имеет сертификацию взрывозащиты ExdⅡCT4.",
+  "cases.oil_full": "Интеллектуальные электроприводы RAGA широко используются в нефтяной отрасли. Продукция имеет сертификацию взрывозащиты Ex db IIC T4/T6 Gb.",
   "cases.power_full": "В электроэнергетике приводы RAGA широко используются в системах питательной воды котлов, системах охлаждающей воды.",
   "cases.metallurgy_full": "В металлургии приводы RAGA используются в высокотемпературных и пыльных средах.",
   "cases.water_full": "В водообработке приводы RAGA идеально подходят для привода дисковых и шаровых клапанов.",

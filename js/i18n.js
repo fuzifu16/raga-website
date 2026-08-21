@@ -578,8 +578,8 @@ i18nData.zh["downloads.subtitle"] = "Downloads";
 i18nData.en["downloads.subtitle"] = "Downloads";
 i18nData.zh["downloads.title"] = "资料中心";
 i18nData.en["downloads.title"] = "Resource Center";
-i18nData.zh["downloads.desc"] = "瑞基全系列产品技术资料下载，包含产品说明书、选型手册、安装指南等";
-i18nData.en["downloads.desc"] = "Download technical resources for all RAGA products, including product manuals, selection guides, installation instructions and more.";
+i18nData.zh["downloads.desc"] = "瑞基全系列产品技术资料下载，包含产品说明书、选型手册、安装指南、视频教程等";
+i18nData.en["downloads.desc"] = "Download technical resources for all RAGA products, including product manuals, selection guides, installation instructions, video tutorials and more.";
 i18nData.zh["meta.title_detail"] = "产品详情 - 瑞基测控 RAGA";
 i18nData.en["meta.title_detail"] = "Product Detail - RAGA";
 i18nData.zh["meta.title_machining"] = "加工中心 - 瑞基测控 RAGA";
@@ -1153,7 +1153,7 @@ i18nData["zh-TW"]["preview.unsupported"] = "此格式不支持在線預覽";
 i18nData["zh-TW"]["preview.download_hint"] = "請點擊「下載文件」按鈕下載後查看";
 i18nData["zh-TW"]["downloads.breadcrumb"] = "資料下載";
 i18nData["zh-TW"]["downloads.company_brochure"] = "公司宣傳資料";
-i18nData["zh-TW"]["downloads.desc"] = "瑞基全系列產品技術資料下載，包含產品說明書、選型手冊、安裝指南等";
+i18nData["zh-TW"]["downloads.desc"] = "瑞基全系列產品技術資料下載，包含產品說明書、選型手冊、安裝指南、視頻教程等";
 i18nData["zh-TW"]["downloads.page_title"] = "資料下載";
 i18nData["zh-TW"]["downloads.subtitle"] = "資料下載";
 i18nData["zh-TW"]["downloads.title"] = "資料中心";
@@ -2529,7 +2529,7 @@ i18nData.ru = {
   "downloads.breadcrumb": "Загрузки",
   "downloads.subtitle": "Загрузки",
   "downloads.title": "Центр ресурсов",
-  "downloads.desc": "Скачать технические ресурсы для всей продукции RAGA.",
+  "downloads.desc": "Скачать технические ресурсы для всей продукции RAGA, включая руководства по продукции, руководства по выбору, инструкции по установке, видеоуроки и многое другое.",
   "downloads.company_brochure": "Брошюра компании",
   "downloads.btn_preview": "Превью",
   "downloads.btn_download": "Скачать",

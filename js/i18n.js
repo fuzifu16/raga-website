@@ -757,7 +757,7 @@ i18nData.zh["contact.address_taicang"] = "太仓基地：江苏省太仓市";
 i18nData.en["contact.address_taicang"] = "Taicang Office: Taicang, Jiangsu";
 
 /* Nav dropdown items */
-i18nData.en["nav.dd_about_raga"] = "About RAGA";
+i18nData.en["nav.dd_about_raga"] = "RAGA Profile";
 i18nData.en["nav.dd_history"] = "History";
 i18nData.en["nav.dd_culture"] = "Corporate Culture";
 i18nData.en["nav.dd_production"] = "Production Capabilities";
@@ -874,7 +874,7 @@ i18nData.en["section.contact_subtitle"] = "Contact";
 i18nData.en["downloads.subtitle"] = "Downloads";
 
 /* Chinese versions for new keys */
-i18nData.zh["nav.dd_about_raga"] = "关于瑞基";
+i18nData.zh["nav.dd_about_raga"] = "瑞基简介";
 i18nData.zh["nav.dd_history"] = "发展历程";
 i18nData.zh["nav.dd_culture"] = "企业文化";
 i18nData.zh["nav.dd_production"] = "生产实力";
@@ -1234,7 +1234,7 @@ i18nData["zh-TW"]["meta.desc_assembly"] = "瑞基測控裝配生產線，現代�
 i18nData["zh-TW"]["nav.about"] = "公司簡介";
 i18nData["zh-TW"]["nav.cases"] = "使用案例";
 i18nData["zh-TW"]["nav.contact"] = "聯繫我們";
-i18nData["zh-TW"]["nav.dd_about_raga"] = "關於瑞基";
+i18nData["zh-TW"]["nav.dd_about_raga"] = "瑞基簡介";
 i18nData.zh["nav.dd_accessory"] = "配件系列";
 i18nData.en["nav.dd_accessory"] = "Accessories";
 i18nData.zh["nav.dd_accessory_menu"] = "配件系列";
@@ -2493,7 +2493,7 @@ i18nData.ru = {
   "case.chemical": "Химическая промышленность",
 
   /* Nav dropdown items */
-  "nav.dd_about_raga": "О RAGA",
+  "nav.dd_about_raga": "Профиль RAGA",
   "nav.dd_history": "История",
   "nav.dd_culture": "Корпоративная культура",
   "nav.dd_production": "Производственные возможности",

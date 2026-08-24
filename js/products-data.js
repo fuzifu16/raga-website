@@ -312,7 +312,7 @@ const PRODUCTS = {
   },
   "rj": {
     id: "rj",
-    name: "RJ开关型",
+    name: "RJ开关型（已停产）",
     image: "images/20130701094818803.jpg",
     category: "角行程",
     tag: "开关型",

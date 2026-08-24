@@ -239,7 +239,7 @@ const i18nData = {
     "contact.form_opt_rl100": "RL100智能型角行程",
     "contact.form_opt_rl150": "RL150智能型角行程",
     "contact.form_opt_rlm": "RLM智能型",
-    "contact.form_opt_rj": "RJ开关型",
+    "contact.form_opt_rj": "RJ开关型（已停产）",
     "contact.form_opt_rgw": "RGW系列减速箱",
     "contact.form_opt_rib": "RIB系列减速箱",
 
@@ -489,7 +489,7 @@ const i18nData = {
     "contact.form_opt_rl100": "RL100 Intelligent Quarter-turn",
     "contact.form_opt_rl150": "RL150 Intelligent Quarter-turn",
     "contact.form_opt_rlm": "RLM Intelligent",
-    "contact.form_opt_rj": "RJ On-off",
+    "contact.form_opt_rj": "RJ On-off (Discontinued)",
     "contact.form_opt_rgw": "RGW Series Gearbox",
     "contact.form_opt_rib": "RIB Series Gearbox",
 
@@ -1149,7 +1149,7 @@ i18nData["zh-TW"]["contact.form_opt_rl"] = "RL智能角行程";
 i18nData["zh-TW"]["contact.form_opt_rl100"] = "RL100智慧型角行程";
 i18nData["zh-TW"]["contact.form_opt_rl150"] = "RL150智慧型角行程";
 i18nData["zh-TW"]["contact.form_opt_rlm"] = "RLM智慧型";
-i18nData["zh-TW"]["contact.form_opt_rj"] = "RJ開關型";
+i18nData["zh-TW"]["contact.form_opt_rj"] = "RJ開關型（已停產）";
 i18nData["zh-TW"]["contact.form_opt_rgw"] = "RGW系列減速箱";
 i18nData["zh-TW"]["contact.form_opt_rib"] = "RIB系列減速箱";
 i18nData["zh-TW"]["preview.unsupported"] = "此格式不支持在線預覽";
@@ -1745,9 +1745,9 @@ i18nData["zh-TW"]["name.rl"] = "RL智能角行程";
 i18nData.zh["name.rlm"] = "RLM智能型";
 i18nData.en["name.rlm"] = "RLM Smart";
 i18nData["zh-TW"]["name.rlm"] = "RLM智能型";
-i18nData.zh["name.rj"] = "RJ开关型";
-i18nData.en["name.rj"] = "RJ On/Off";
-i18nData["zh-TW"]["name.rj"] = "RJ開關型";
+i18nData.zh["name.rj"] = "RJ开关型（已停产）";
+i18nData.en["name.rj"] = "RJ On/Off (Discontinued)";
+i18nData["zh-TW"]["name.rj"] = "RJ開關型（已停產）";
 i18nData.zh["name.rjm"] = "配套系列";
 i18nData.en["name.rjm"] = "Accessories Series";
 i18nData["zh-TW"]["name.rjm"] = "配套系列";
@@ -1962,7 +1962,7 @@ i18nData.scrollMap = {
     "scroll.split_rl": "RL系列分体式", "scroll.rqml06": "RQMLIII06 调节型",
     "scroll.rqml12": "RQMLIII12 调节型", "scroll.rlml10": "RLML10 调节型",
     "scroll.rl100": "RL100 智能型", "scroll.rl150": "RL150 智能型",
-    "scroll.rl": "RL 智能型", "scroll.rj": "RJ 开关型",
+    "scroll.rl": "RL 智能型", "scroll.rj": "RJ 开关型（已停产）",
     "scroll.rjm": "配套系列", "scroll.rgw": "RGW 减速箱",
     "scroll.rib": "RIB 减速箱", "scroll.rq150": "RQIII150~RQ300 系列"
   },
@@ -1971,7 +1971,7 @@ i18nData.scrollMap = {
     "scroll.split_rl": "RL Series Split-type", "scroll.rqml06": "RQMLIII06 Modulating",
     "scroll.rqml12": "RQMLIII12 Modulating", "scroll.rlml10": "RLML10 Modulating",
     "scroll.rl100": "RL100 Smart", "scroll.rl150": "RL150 Smart",
-    "scroll.rl": "RL Smart", "scroll.rj": "RJ On/Off",
+    "scroll.rl": "RL Smart", "scroll.rj": "RJ On/Off (Discontinued)",
     "scroll.rjm": "Accessory Series", "scroll.rgw": "RGW Gearbox",
     "scroll.rib": "RIB Gearbox", "scroll.rq150": "RQIII150~RQ300 Series"
   },
@@ -2362,7 +2362,7 @@ i18nData.ru = {
   "contact.form_opt_rl100": "RL100 Intelligent Quarter-turn",
   "contact.form_opt_rl150": "RL150 Intelligent Quarter-turn",
   "contact.form_opt_rlm": "RLM Intelligent",
-  "contact.form_opt_rj": "RJ On/Off",
+  "contact.form_opt_rj": "RJ двухпозиционный (снят с производства)",
   "contact.form_opt_rgw": "RGW Series Gearbox",
   "contact.form_opt_rib": "RIB Series Gearbox",
 
@@ -2605,7 +2605,7 @@ i18nData.ru = {
   "name.rl150": "RL150 интеллектуальный неполнооборотный",
   "name.rl": "RL интеллектуальный неполнооборотный",
   "name.rlm": "RLM интеллектуальный",
-  "name.rj": "RJ двухпозиционный",
+  "name.rj": "RJ двухпозиционный (снят с производства)",
   "name.rjm": "Серия комплектующих",
   "name.gear": "Редуктор серии RGW",
   "name.rib": "Редуктор серии RIB",
@@ -2827,7 +2827,7 @@ i18nData.scrollMap["ru"] = {
   "scroll.split_rl": "Серия RL раздельного типа", "scroll.rqml06": "RQMLIII06 регулирующий",
   "scroll.rqml12": "RQMLIII12 регулирующий", "scroll.rlml10": "RLML10 регулирующий",
   "scroll.rl100": "RL100 интеллектуальный", "scroll.rl150": "RL150 интеллектуальный",
-  "scroll.rl": "RL интеллектуальный", "scroll.rj": "RJ двухпозиционный",
+  "scroll.rl": "RL интеллектуальный", "scroll.rj": "RJ двухпозиционный (снят с производства)",
   "scroll.rjm": "Серия комплектующих", "scroll.rgw": "Редуктор RGW",
   "scroll.rib": "Редуктор RIB", "scroll.rq150": "Серия RQIII 150~RQ300"
 

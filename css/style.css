@@ -493,6 +493,10 @@ a { color: inherit; }
   line-height: 1.9;
   margin-bottom: 16px;
 }
+.full-about p strong {
+  font-size: 19px;
+  color: var(--dark);
+}
 .full-about ul {
   list-style: none;
   padding: 0;
@@ -547,18 +551,19 @@ a { color: inherit; }
 .tl-animate .tl-bar:nth-child(3) { transition-delay: 2.0s; }
 .tl-animate .tl-bar:nth-child(4) { transition-delay: 2.7s; }
 .tl-animate .tl-bar:nth-child(5) { transition-delay: 3.4s; }
+.tl-animate .tl-bar:nth-child(6) { transition-delay: 4.1s; }
 
 .tl-area {
   fill: url(#tlGrad);
   opacity: 0;
-  transition: opacity 1.5s ease 5.8s;
+  transition: opacity 1.5s ease 6.6s;
 }
 .tl-animate .tl-area { opacity: 1; }
 
 .tl-line {
-  stroke-dasharray: 820;
-  stroke-dashoffset: 820;
-  transition: stroke-dashoffset 6.0s ease 0.8s;
+  stroke-dasharray: 920;
+  stroke-dashoffset: 920;
+  transition: stroke-dashoffset 6.5s ease 0.8s;
 }
 .tl-animate .tl-line { stroke-dashoffset: 0; }
 
@@ -575,6 +580,7 @@ a { color: inherit; }
 .tl-animate .tl-dot:nth-child(3) { transition-delay: 3.4s; }
 .tl-animate .tl-dot:nth-child(4) { transition-delay: 4.2s; }
 .tl-animate .tl-dot:nth-child(5) { transition-delay: 5.0s; }
+.tl-animate .tl-dot:nth-child(6) { transition-delay: 5.8s; }
 
 .tl-year {
   font-size: 19px;
@@ -590,6 +596,7 @@ a { color: inherit; }
 .tl-animate .tl-year:nth-child(3) { transition-delay: 4.0s; }
 .tl-animate .tl-year:nth-child(4) { transition-delay: 4.8s; }
 .tl-animate .tl-year:nth-child(5) { transition-delay: 5.6s; }
+.tl-animate .tl-year:nth-child(6) { transition-delay: 6.4s; }
 
 .tl-desc {
   font-size: 13px;
@@ -607,6 +614,7 @@ a { color: inherit; }
 .tl-animate .tl-descs > foreignObject:nth-child(3) .tl-desc { transition-delay: 4.0s; }
 .tl-animate .tl-descs > foreignObject:nth-child(4) .tl-desc { transition-delay: 4.8s; }
 .tl-animate .tl-descs > foreignObject:nth-child(5) .tl-desc { transition-delay: 5.6s; }
+.tl-animate .tl-descs > foreignObject:nth-child(6) .tl-desc { transition-delay: 6.4s; }
 
 /* ===== Product Scroll Strip (Marquee) ===== */
 .product-scroll-wrapper {

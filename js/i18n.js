@@ -218,11 +218,11 @@ const i18nData = {
     "contact.form_opt_split_ra": "RA系列分体式",
     "contact.form_opt_split_rl": "RL系列分体式",
     "contact.form_opt_matching": "配套系列",
-    "contact.form_opt_electrical": "电器总承",
+    "contact.form_opt_electrical": "电器总成",
     "contact.form_opt_ra_board": "RA主控板",
     "contact.form_opt_ra_power": "RA电源板",
     "contact.form_opt_remote": "遥控器",
-    "contact.form_opt_planetary": "行星轮总承",
+    "contact.form_opt_planetary": "行星轮总成",
     "contact.form_opt_adapter": "葵花接盘",
     "contact.form_opt_other": "其他/不明确",
     "contact.form_opt_rq3": "RQⅢ 003~014系列",
@@ -1128,11 +1128,11 @@ i18nData["zh-TW"]["contact.form_opt_split_r"] = "R系列分體式";
 i18nData["zh-TW"]["contact.form_opt_split_ra"] = "RA系列分體式";
 i18nData["zh-TW"]["contact.form_opt_split_rl"] = "RL系列分體式";
 i18nData["zh-TW"]["contact.form_opt_matching"] = "配套系列";
-i18nData["zh-TW"]["contact.form_opt_electrical"] = "電器總承";
+i18nData["zh-TW"]["contact.form_opt_electrical"] = "電器總成";
 i18nData["zh-TW"]["contact.form_opt_ra_board"] = "RA主控板";
 i18nData["zh-TW"]["contact.form_opt_ra_power"] = "RA電源板";
 i18nData["zh-TW"]["contact.form_opt_remote"] = "遙控器";
-i18nData["zh-TW"]["contact.form_opt_planetary"] = "行星輪總承";
+i18nData["zh-TW"]["contact.form_opt_planetary"] = "行星輪總成";
 i18nData["zh-TW"]["contact.form_opt_adapter"] = "葵花接盤";
 i18nData["zh-TW"]["contact.form_opt_other"] = "其他/不明確";
 i18nData["zh-TW"]["contact.form_opt_rq3"] = "RQⅢ 003~014系列";
@@ -1661,7 +1661,7 @@ i18nData.descMap = {
     "RIB系列减速箱，专为阀门电动执行机构配套设计。传动效率高，运行平稳可靠，适配多种执行器型号，满足不同工况下的传动需求。":
       "RIB series gearbox, designed specifically for valve electric actuator support. High transmission efficiency, stable and reliable operation, compatible with multiple actuator models to meet various operating requirements.",
 
-    "瑞基电动执行机构电器总承组件，包含核心电气控制部件，确保执行机构可靠运行。":
+    "瑞基电动执行机构电器总成组件，包含核心电气控制部件，确保执行机构可靠运行。":
       "RAGA electric actuator electrical assembly, containing core electrical control components to ensure reliable actuator operation.",
 
     "RA系列电动执行机构主控制板，集成控制逻辑与通信接口，支持多种控制模式切换。":
@@ -1673,7 +1673,7 @@ i18nData.descMap = {
     "瑞基智能型电动执行机构专用遥控器，支持非侵入式设定与操作，方便现场调试与参数设置。":
       "RAGA smart electric actuator remote control, supporting non-intrusive setup and operation, convenient for on-site commissioning and parameter configuration.",
 
-    "行星轮总承传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。":
+    "行星轮总成传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。":
       "Planetary gear assembly transmission component, utilizing precision planetary gear structure with high transmission efficiency and smooth operation, suitable for actuator reduction drive.",
 
     "葵花接盘连接组件，用于执行机构与外部电源信号连接，结构精密，安装方便。":
@@ -1757,9 +1757,9 @@ i18nData["zh-TW"]["name.gear"] = "RGW系列減速箱";
 i18nData.zh["name.rib"] = "RIB系列减速箱";
 i18nData.en["name.rib"] = "RIB Series Gearbox";
 i18nData["zh-TW"]["name.rib"] = "RIB系列減速箱";
-i18nData.zh["name.elec-assy"] = "电器总承";
+i18nData.zh["name.elec-assy"] = "电器总成";
 i18nData.en["name.elec-assy"] = "Electrical Assembly";
-i18nData["zh-TW"]["name.elec-assy"] = "電器總承";
+i18nData["zh-TW"]["name.elec-assy"] = "電器總成";
 i18nData.zh["name.ra-ctrl"] = "RA主控板";
 i18nData.en["name.ra-ctrl"] = "RA Control Board";
 i18nData["zh-TW"]["name.ra-ctrl"] = "RA主控板";
@@ -1769,9 +1769,9 @@ i18nData["zh-TW"]["name.ra-power"] = "RA電源板";
 i18nData.zh["name.remote"] = "遥控器";
 i18nData.en["name.remote"] = "Remote Controller";
 i18nData["zh-TW"]["name.remote"] = "遙控器";
-i18nData.zh["name.planet-gear"] = "行星轮总承";
+i18nData.zh["name.planet-gear"] = "行星轮总成";
 i18nData.en["name.planet-gear"] = "Planetary Gear Assembly";
-i18nData["zh-TW"]["name.planet-gear"] = "行星輪總承";
+i18nData["zh-TW"]["name.planet-gear"] = "行星輪總成";
 i18nData.zh["name.sun-plate"] = "葵花接盘";
 i18nData.en["name.sun-plate"] = "Sunflower Connector";
 i18nData["zh-TW"]["name.sun-plate"] = "葵花接盤";

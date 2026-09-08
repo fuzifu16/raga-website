@@ -1997,9 +1997,12 @@ i18nData["zh-TW"]["preview.load_error"] = "加載失敗";
 i18nData.zh["partner.ansteel"] = "鞍钢集团";
 i18nData.en["partner.ansteel"] = "Ansteel Group";
 i18nData["zh-TW"]["partner.ansteel"] = "鞍鋼集團";
-i18nData.zh["partner.baosteel"] = "宝钢集团";
-i18nData.en["partner.baosteel"] = "Baosteel Group";
-i18nData["zh-TW"]["partner.baosteel"] = "寶鋼集團";
+i18nData.zh["partner.baosteel"] = "宝武集团";
+i18nData.en["partner.baosteel"] = "Baowu Steel Group";
+i18nData["zh-TW"]["partner.baosteel"] = "寶武集團";
+i18nData.zh["partner.powerchina"] = "中国电建";
+i18nData.en["partner.powerchina"] = "PowerChina";
+i18nData["zh-TW"]["partner.powerchina"] = "中國電建";
 i18nData.zh["partner.chn_energy"] = "国家能源集团";
 i18nData.en["partner.chn_energy"] = "CHN Energy";
 i18nData["zh-TW"]["partner.chn_energy"] = "國家能源集團";
@@ -2642,7 +2645,8 @@ i18nData.ru = {
 
   /* Partner names */
   "partner.ansteel": "Анстил Груп (Ansteel)",
-  "partner.baosteel": "Баостил Груп (Baosteel)",
+  "partner.baosteel": "Баову Груп (Baowu Steel)",
+  "partner.powerchina": "PowerChina (Китайская электростроительная корпорация)",
   "partner.chn_energy": "CHN Energy (Госэнерго Китая)",
   "partner.cnooc": "CNOOC (Китайская шельфовая нефть)",
   "partner.cr_power": "CR Power (Хуажунь Энерджи)",

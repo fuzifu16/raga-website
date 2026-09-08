@@ -4,7 +4,7 @@ const i18nData = {
   "ru": {},
   "zh": {
     /* Top Bar */
-    "topbar.slogan": "温州瑞基测控设备有限公司 — 智能电动阀门执行机构专业制造商",
+    "topbar.slogan": "温州瑞基测控设备有限公司，上海瑞基瑞然自动化技术有限公司 — 智能电动阀门执行机构专业制造商",
     "topbar.phone": "📞 0577-56582698",
     "topbar.lang_zh": "中文",
     "topbar.lang_en": "English",
@@ -250,7 +250,7 @@ const i18nData = {
 
   "en": {
     /* Top Bar */
-    "topbar.slogan": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. — Smart Electric Valve Actuator Manufacturer",
+    "topbar.slogan": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd., Shanghai RAGA Ruiran Automation Technology Co., Ltd. — Smart Electric Valve Actuator Manufacturer",
     "topbar.phone": "📞 0577-56582698",
     "topbar.lang_zh": "中文",
     "topbar.lang_en": "English",
@@ -1403,7 +1403,7 @@ i18nData["zh-TW"]["topbar.lang_en"] = "English";
 i18nData["zh-TW"]["topbar.lang_tw"] = "繁體";
 i18nData["zh-TW"]["topbar.lang_zh"] = "中文";
 i18nData["zh-TW"]["topbar.phone"] = "📞 0577-56582698";
-i18nData["zh-TW"]["topbar.slogan"] = "溫州瑞基測控設備有限公司 — 智能電動閥門執行機構專業製造商";
+i18nData["zh-TW"]["topbar.slogan"] = "溫州瑞基測控設備有限公司，上海瑞基瑞然自動化技術有限公司 — 智能電動閥門執行機構專業製造商";
 i18nData.zh["footer.series_accessory"] = "配件系列";
 i18nData.en["footer.series_accessory"] = "Accessories";
 i18nData.zh["nav.dd_accessory_menu2"] = "配套系列";
@@ -2079,7 +2079,7 @@ i18nData["zh-TW"]["partner.nwepdi"] = "西北電力設計院";
 /* ===== Russian translations (ru) ===== */
 i18nData.ru = {
   /* Top Bar */
-  "topbar.slogan": "Вэньчжоу RAGA — Профессиональный производитель интеллектуальных электроприводов для клапанов",
+  "topbar.slogan": "Вэньчжоу RAGA и Шанхай RAGA Жуйжань — Профессиональный производитель интеллектуальных электроприводов для клапанов",
   "topbar.phone": "📞 0577-56582698",
   "topbar.lang_zh": "中文",
   "topbar.lang_en": "English",
@@ -2842,7 +2842,7 @@ i18nData.scrollMap["ru"] = {
 
 
 /* ===== Russian translations for i18nData.ru ===== */
-i18nData.ru["topbar.slogan"] = "Вэньчжоу RAGA — Профессиональный производитель интеллектуальных электроприводов для клапанов";
+i18nData.ru["topbar.slogan"] = "Вэньчжоу RAGA и Шанхай RAGA Жуйжань — Профессиональный производитель интеллектуальных электроприводов для клапанов";
 i18nData.ru["nav.home"] = "Главная";
 i18nData.ru["nav.about"] = "О компании";
 i18nData.ru["nav.products"] = "Продукция";

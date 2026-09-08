@@ -644,11 +644,11 @@ const PRODUCTS = {
   },
   "elec-assy": {
     id: "elec-assy",
-    name: "电器总承",
-    image: "images/电器总承.png",
+    name: "电器总成",
+    image: "images/电器总成.png",
     category: "配件",
     tag: "配件",
-    desc: "瑞基电动执行机构电器总承组件，包含核心电气控制部件，确保执行机构可靠运行。",
+    desc: "瑞基电动执行机构电器总成组件，包含核心电气控制部件，确保执行机构可靠运行。",
     desc_en: "RAGA electric actuator electrical assembly component.",
     desc_ru: "Компонент электрической сборки электрического актуатора RAGA."
   },
@@ -684,11 +684,11 @@ const PRODUCTS = {
   },
   "planet-gear": {
     id: "planet-gear",
-    name: "行星轮总承",
-    image: "images/行星轮总承.png",
+    name: "行星轮总成",
+    image: "images/行星轮总成.png",
     category: "配件",
     tag: "配件",
-    desc: "行星轮总承传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。",
+    desc: "行星轮总成传动组件，采用精密行星齿轮结构，传动效率高，运行平稳，适用于执行机构减速传动。",
     desc_en: "Planetary gear assembly, adopts precision planetary gear structure.",
     desc_ru: "Сборка планетарной передачи, прецизионная структура планетарной передачи."
   },

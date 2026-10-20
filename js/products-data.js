@@ -655,7 +655,7 @@ const PRODUCTS = {
   "ra-ctrl": {
     id: "ra-ctrl",
     name: "RA主控板",
-    image: "images/RA主控板.jpg",
+    image: "images/RA主控板.png",
     category: "配件",
     tag: "配件",
     desc: "RA系列电动执行机构主控制板，集成控制逻辑与通信接口，支持多种控制模式切换。",
@@ -665,7 +665,7 @@ const PRODUCTS = {
   "ra-power": {
     id: "ra-power",
     name: "RA电源板",
-    image: "images/RA电源板.jpg",
+    image: "images/RA电源板.png",
     category: "配件",
     tag: "配件",
     desc: "RA系列电动执行机构电源板，为执行机构提供稳定可靠的电源供应与保护功能。",

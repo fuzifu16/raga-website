@@ -593,9 +593,9 @@
         { name: 'RQ04 外型图', ext: '.7z', group: 'rq', size: '20.4MB', note: '7z解压', glb: 'models/rq04.glb' },
         { name: 'RQ06 外型图', ext: '.zip', group: 'rq', size: '22.0MB', glb: 'models/rq06.glb' },
         { name: 'RQ150 外型图', ext: '.zip', group: 'rq', size: '22.1MB', glb: 'models/rq150.glb' },
-        { name: 'RL10 外型图', ext: '.zip', group: 'rl', size: '3.1MB', glb: 'models/rl10.glb' },
-        { name: 'RL80 外型图', ext: '.zip', group: 'rl', size: '8.2MB', glb: 'models/rl80.glb' },
-        { name: 'RL150 外型图', ext: '.zip', group: 'rl', size: '12.1MB', glb: 'models/rl150.glb' },
+        { name: 'RL10 外型图', ext: '.zip', group: 'rl', size: '5.4MB', glb: 'models/rl10.glb' },
+        { name: 'RL80 外型图', ext: '.zip', group: 'rl', size: '16.5MB', glb: 'models/rl80.glb' },
+        { name: 'RL150 外型图', ext: '.zip', group: 'rl', size: '21.8MB', glb: 'models/rl150.glb' },
         { name: 'RL150总装（就地）', ext: '.zip', group: 'rl', size: '9.1MB' },
         { name: 'RLML10 外型图', ext: '.zip', group: 'rl', size: '3.6MB' }
       ];
@@ -643,7 +643,7 @@
             '</div>' +
             '<div class="dl-btns">' +
               (file.glb
-                ? '<a href="3d-viewer.html?file=' + encodeURIComponent(file.glb) + '&name=' + encodeURIComponent(file.name) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>'
+                ? '<a href="3d-viewer.html?file=' + encodeURIComponent(file.glb) + '&name=' + encodeURIComponent(file.name) + '&dl=' + encodedFile + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>'
                 : '<a href="preview.html?file=' + encodedFile + '&name=' + encodedName + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>') +
             '</div>';
           d3dBody.appendChild(row);

@@ -181,6 +181,10 @@
         <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
         <span class="btn-label" id="v3d-reset-label">重置</span>
       </button>
+      <a class="v3d-btn" id="v3d-dl" title="下载三维文件" style="display:none;text-decoration:none" download>
+        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        <span class="btn-label" id="v3d-dl-label">下载三维文件</span>
+      </a>
     </div>
   </div>
 
@@ -208,10 +212,10 @@
     // ---- 多语言文案 ----
     var LANG = (localStorage.getItem('raga-lang') || document.documentElement.lang || 'zh').slice(0, 2);
     var T = {
-      zh: { back: '返回下载页', loading: '正在加载三维模型…', errTitle: '模型加载失败', errDesc: '该模型文件暂未提供在线预览，可返回下载页获取三维文件。', name: '三维模型', nofile: '未指定模型文件' },
-      en: { back: 'Back to Downloads', loading: 'Loading 3D model…', errTitle: 'Failed to load model', errDesc: 'This model is not available for online preview yet. Please download the 3D file from the downloads page.', name: '3D Model', nofile: 'No model file specified' },
-      zht: { back: '返回下載頁', loading: '正在載入三維模型…', errTitle: '模型載入失敗', errDesc: '該模型檔案暫未提供線上預覽，可返回下載頁取得三維檔案。', name: '三維模型', nofile: '未指定模型檔案' },
-      ru: { back: 'Назад к загрузкам', loading: 'Загрузка 3D-модели…', errTitle: 'Не удалось загрузить модель', errDesc: 'Онлайн-просмотр этой модели пока недоступен. Скачайте 3D-файл на странице загрузок.', name: '3D-модель', nofile: 'Файл модели не указан' }
+      zh: { back: '返回下载页', loading: '正在加载三维模型…', errTitle: '模型加载失败', errDesc: '该模型文件暂未提供在线预览，可返回下载页获取三维文件。', name: '三维模型', nofile: '未指定模型文件', dl: '下载三维文件' },
+      en: { back: 'Back to Downloads', loading: 'Loading 3D model…', errTitle: 'Failed to load model', errDesc: 'This model is not available for online preview yet. Please download the 3D file from the downloads page.', name: '3D Model', nofile: 'No model file specified', dl: 'Download 3D File' },
+      zht: { back: '返回下載頁', loading: '正在載入三維模型…', errTitle: '模型載入失敗', errDesc: '該模型檔案暫未提供線上預覽，可返回下載頁取得三維檔案。', name: '三維模型', nofile: '未指定模型檔案', dl: '下載三維檔案' },
+      ru: { back: 'Назад к загрузкам', loading: 'Загрузка 3D-модели…', errTitle: 'Не удалось загрузить модель', errDesc: 'Онлайн-просмотр этой модели пока недоступен. Скачайте 3D-файл на странице загрузок.', name: '3D-модель', nofile: 'Файл модели не указан', dl: 'Скачать 3D-файл' }
     };
     var t = T[LANG] || T.zh;
 
@@ -235,6 +239,16 @@
     document.getElementById('v3d-back-label').textContent = t.back;
     document.getElementById('v3d-load-text').textContent = t.loading;
     document.getElementById('v3d-name').textContent = name || t.name;
+
+    // 下载三维文件按钮（dl 参数为原始 CAD 文件地址）
+    var dlUrl = params.get('dl') || '';
+    var dlBtn = document.getElementById('v3d-dl');
+    if (dlUrl) {
+      dlBtn.href = dlUrl;
+      dlBtn.setAttribute('download', '');
+      document.getElementById('v3d-dl-label').textContent = t.dl;
+      dlBtn.style.display = '';
+    }
 
     var overlay = document.getElementById('v3d-overlay');
     var spinner = document.getElementById('v3d-spinner');

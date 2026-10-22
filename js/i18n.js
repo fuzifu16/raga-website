@@ -189,6 +189,16 @@ const i18nData = {
     "detail.back": "← 返回产品列表",
     "detail.quote": "获取报价 →",
     "detail.specs": "技术参数",
+    "detail.view_2d": "产品图片",
+    "detail.view_3d": "3D 模型",
+    "detail.model_loading": "3D 模型加载中…",
+    "detail.model_failed": "3D 模型加载失败",
+    "detail.model_coming": "3D 模型即将上线",
+    "detail.model_hint": "拖动旋转 · 滚轮缩放 · 右键平移",
+    "detail.model_auto_rotate": "自动旋转",
+    "detail.model_reset": "复位视角",
+    "detail.model_screenshot": "截图",
+    "detail.model_fullscreen": "全屏",
     "detail.downloads": "资料下载",
     "detail.previews": "资料预览",
     "detail.preview": "预览",
@@ -439,6 +449,16 @@ const i18nData = {
     "detail.back": "← Back to Products",
     "detail.quote": "Get Quote →",
     "detail.specs": "Technical Specifications",
+    "detail.view_2d": "Product Image",
+    "detail.view_3d": "3D Model",
+    "detail.model_loading": "Loading 3D model…",
+    "detail.model_failed": "Failed to load 3D model",
+    "detail.model_coming": "3D model coming soon",
+    "detail.model_hint": "Drag to rotate · Scroll to zoom · Right-drag to pan",
+    "detail.model_auto_rotate": "Auto rotate",
+    "detail.model_reset": "Reset view",
+    "detail.model_screenshot": "Screenshot",
+    "detail.model_fullscreen": "Fullscreen",
     "detail.downloads": "Downloads",
     "detail.previews": "Previews",
     "detail.preview": "Preview",
@@ -1096,6 +1116,16 @@ i18nData["zh-TW"]["float.top"] = "回到頂部";
 i18nData["zh-TW"]["cta.desc"] = "瑞基測控擁有20餘年行業經驗，為您量身定製最合適的智能執行機構方案。";
 i18nData["zh-TW"]["cta.title"] = "需要專業的閥門執行機構解決方案？";
 i18nData["zh-TW"]["detail.back"] = "← 返回產品列表";
+i18nData["zh-TW"]["detail.view_2d"] = "產品圖片";
+i18nData["zh-TW"]["detail.view_3d"] = "3D 模型";
+i18nData["zh-TW"]["detail.model_loading"] = "3D 模型加載中…";
+i18nData["zh-TW"]["detail.model_failed"] = "3D 模型加載失敗";
+i18nData["zh-TW"]["detail.model_coming"] = "3D 模型即將上線";
+i18nData["zh-TW"]["detail.model_hint"] = "拖動旋轉 · 滾輪縮放 · 右鍵平移";
+i18nData["zh-TW"]["detail.model_auto_rotate"] = "自動旋轉";
+i18nData["zh-TW"]["detail.model_reset"] = "復位視角";
+i18nData["zh-TW"]["detail.model_screenshot"] = "截圖";
+i18nData["zh-TW"]["detail.model_fullscreen"] = "全屏";
 i18nData["zh-TW"]["detail.download"] = "下載";
 i18nData["zh-TW"]["detail.downloads"] = "資料下載";
 i18nData["zh-TW"]["detail.previews"] = "資料預覽";
@@ -1537,7 +1567,8 @@ i18nData.dlMap = {
     "RA 分体式外型","RAIII90A-RIB10-01外型图",
     "RQ03 外型图","RQ03-RGW4 外型图","RQ04 外型图",
     "RQ06 外型图","RQ150 外型图",
-    "RL10 外型图","RL80 外型图","RL150 外型图","RL150总装（就地）","RLML10 外型图"
+    "RL10 外型图","RL80 外型图","RL150 外型图","RL150总装（就地）","RLML10 外型图",
+    "RLML20 外型图","RQML06 主装爆炸图"
   ];
   zhDl.forEach(function(zh) {
     var en = zh
@@ -1557,6 +1588,8 @@ i18nData.dlMap = {
     enDl[zh] = en;
     i18nData.dlMap.zh[zh] = zh;
   });
+  /* 爆炸图等特殊命名（正则规则覆盖不到） */
+  enDl["RQML06 主装爆炸图"] = "RQML06 Assembly Exploded View";
 })();
 
 /* ===== zh-TW spec labels ===== */
@@ -2373,6 +2406,16 @@ i18nData.ru = {
   "detail.back": "← Назад к продукции",
   "detail.quote": "Получить цитату →",
   "detail.specs": "Технические характеристики",
+  "detail.view_2d": "Изображение",
+  "detail.view_3d": "3D-модель",
+  "detail.model_loading": "Загрузка 3D-модели…",
+  "detail.model_failed": "Не удалось загрузить 3D-модель",
+  "detail.model_coming": "3D-модель скоро будет доступна",
+  "detail.model_hint": "Вращение перетаскиванием · Масштаб колесом · Панорамирование правой кнопкой",
+  "detail.model_auto_rotate": "Автовращение",
+  "detail.model_reset": "Сбросить вид",
+  "detail.model_screenshot": "Скриншот",
+  "detail.model_fullscreen": "Полный экран",
   "detail.downloads": "Загрузки",
   "detail.previews": "Превью",
   "detail.preview": "Превью",

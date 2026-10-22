@@ -1568,7 +1568,7 @@ i18nData.dlMap = {
     "RQ03 外型图","RQ03-RGW4 外型图","RQ04 外型图",
     "RQ06 外型图","RQ150 外型图",
     "RL10 外型图","RL80 外型图","RL150 外型图","RL150总装（就地）","RLML10 外型图",
-    "RLML20 外型图","RQML06 主装爆炸图"
+    "RLML20 外型图","RQML06 外型图"
   ];
   zhDl.forEach(function(zh) {
     var en = zh
@@ -1589,7 +1589,6 @@ i18nData.dlMap = {
     i18nData.dlMap.zh[zh] = zh;
   });
   /* 爆炸图等特殊命名（正则规则覆盖不到） */
-  enDl["RQML06 主装爆炸图"] = "RQML06 Assembly Exploded View";
 })();
 
 /* ===== zh-TW spec labels ===== */

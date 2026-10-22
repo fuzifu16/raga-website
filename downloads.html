@@ -586,7 +586,7 @@
       // 3D 面板
       var d3dRoot = 'downloads/3d/';
       var d3dFilesAll = [
-        { name: 'RA 分体式外型', ext: '.zip', group: 'ra', size: '22.2MB' },
+        { name: 'RA 分体式外型', ext: '.zip', group: 'ra', size: '22.2MB', glb: 'models/ra-fenti.glb' },
         { name: 'RAIII90A-RIB10-01外型图', ext: '.7z', group: 'ra', size: '18.5MB', note: '7z解压' },
         { name: 'RQ03 外型图', ext: '.7z', group: 'rq', size: '19.5MB', note: '7z解压' },
         { name: 'RQ03-RGW4 外型图', ext: '.zip', group: 'rq', size: '22.6MB' },
@@ -642,7 +642,9 @@
               '<div class="file-meta">' + file.size + '</div>' +
             '</div>' +
             '<div class="dl-btns">' +
-              '<a href="preview.html?file=' + encodedFile + '&name=' + encodedName + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>' +
+              (file.glb
+                ? '<a href="3d-viewer.html?file=' + encodeURIComponent(file.glb) + '&name=' + encodeURIComponent(file.name) + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>'
+                : '<a href="preview.html?file=' + encodedFile + '&name=' + encodedName + '" class="btn btn-sm btn-preview">' + t('downloads.btn_preview') + '</a>') +
             '</div>';
           d3dBody.appendChild(row);
         });

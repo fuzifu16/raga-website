@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>三维模型预览 - 瑞基测控 RAGA</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #E70033;
+      --primary-dark: #C4002A;
+      --dark: #1A1A2E;
+      --gray-100: #F8F9FA;
+      --gray-200: #E9ECEF;
+      --gray-300: #DEE2E6;
+      --gray-500: #ADB5BD;
+      --gray-600: #6C757D;
+      --gray-700: #495057;
+      --white: #FFFFFF;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      font-family: var(--font);
+      color: var(--dark);
+      background: var(--gray-100);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== 顶部工具栏 ===== */
+    .v3d-topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+      height: 60px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--gray-200);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 14px;
+    }
+    .v3d-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      height: 36px; padding: 0 14px;
+      background: var(--white);
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      color: var(--gray-700); font-size: 14px; font-weight: 500;
+      text-decoration: none; cursor: pointer;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+    .v3d-back:hover { border-color: var(--primary); color: var(--primary); }
+    .v3d-title {
+      flex: 1; min-width: 0;
+      font-size: 15px; font-weight: 600; color: var(--dark);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .v3d-title small {
+      display: block; font-size: 12px; font-weight: 400; color: var(--gray-500);
+      margin-top: 1px;
+    }
+    .v3d-tools { display: flex; gap: 8px; align-items: center; }
+    .v3d-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      height: 36px; min-width: 36px; padding: 0 12px;
+      background: var(--white);
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      color: var(--gray-700); font-size: 13px; font-weight: 500;
+      cursor: pointer; transition: all .2s;
+      font-family: var(--font);
+      white-space: nowrap;
+    }
+    .v3d-btn:hover { border-color: var(--primary); color: var(--primary); }
+    .v3d-btn.active {
+      background: var(--primary); border-color: var(--primary); color: #fff;
+    }
+    .v3d-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+    /* ===== 3D 画布 ===== */
+    #v3d-canvas-wrap {
+      position: fixed; inset: 60px 0 0 0;
+      background: radial-gradient(circle at 50% 38%, #ffffff 0%, #f1f3f6 55%, #e4e7eb 100%);
+    }
+    #v3d-canvas-wrap canvas { display: block; touch-action: none; }
+
+    /* ===== 加载 / 错误浮层 ===== */
+    .v3d-overlay {
+      position: absolute; inset: 0; z-index: 10;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 16px;
+      background: rgba(248,249,250,0.9);
+      transition: opacity .35s;
+    }
+    .v3d-overlay.hide { opacity: 0; pointer-events: none; }
+    .v3d-spinner {
+      width: 42px; height: 42px;
+      border: 3px solid var(--gray-300);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .v3d-load-text { font-size: 14px; color: var(--gray-600); }
+    .v3d-progress {
+      width: 220px; height: 4px; border-radius: 2px;
+      background: var(--gray-200); overflow: hidden;
+    }
+    .v3d-progress-bar {
+      height: 100%; width: 0%;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: width .2s;
+    }
+    .v3d-error-icon { font-size: 40px; }
+    .v3d-error-title { font-size: 16px; font-weight: 600; color: var(--dark); }
+    .v3d-error-desc { font-size: 13px; color: var(--gray-600); max-width: 420px; text-align: center; line-height: 1.7; }
+
+    /* ===== 底部提示 ===== */
+    .v3d-hint {
+      position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+      z-index: 15;
+      display: flex; gap: 20px;
+      padding: 9px 20px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--gray-200);
+      border-radius: 100px;
+      box-shadow: var(--shadow);
+      font-size: 12.5px; color: var(--gray-600);
+      white-space: nowrap;
+    }
+    .v3d-hint span { display: inline-flex; align-items: center; gap: 6px; }
+    .v3d-hint kbd {
+      display: inline-block; padding: 1px 6px;
+      background: var(--gray-100); border: 1px solid var(--gray-300);
+      border-radius: 4px; font-size: 11px; font-family: var(--font); color: var(--gray-700);
+    }
+
+    /* ===== 移动端 ===== */
+    @media (max-width: 720px) {
+      .v3d-topbar { height: 54px; padding: 0 10px; gap: 8px; }
+      .v3d-back { padding: 0 10px; font-size: 13px; }
+      .v3d-back span { display: none; }
+      .v3d-title { font-size: 13px; }
+      .v3d-title small { display: none; }
+      .v3d-btn { padding: 0 9px; height: 34px; }
+      .v3d-btn .btn-label { display: none; }
+      #v3d-canvas-wrap { inset: 54px 0 0 0; }
+      .v3d-hint { gap: 12px; padding: 7px 14px; font-size: 11.5px; bottom: 12px; }
+      .v3d-hint .hide-mobile { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="v3d-topbar">
+    <a class="v3d-back" id="v3d-back" href="downloads.html">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      <span id="v3d-back-label">返回下载页</span>
+    </a>
+    <div class="v3d-title">
+      <span id="v3d-name">三维模型</span>
+      <small id="v3d-sub">鼠标左键旋转 · 滚轮缩放 · 右键平移</small>
+    </div>
+    <div class="v3d-tools">
+      <button class="v3d-btn active" id="v3d-rotate" title="自动旋转">
+        <svg viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        <span class="btn-label" id="v3d-rotate-label">自动旋转</span>
+      </button>
+      <button class="v3d-btn" id="v3d-wire" title="线框模式">
+        <svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg>
+        <span class="btn-label" id="v3d-wire-label">线框</span>
+      </button>
+      <button class="v3d-btn" id="v3d-reset" title="重置视角">
+        <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+        <span class="btn-label" id="v3d-reset-label">重置</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="v3d-canvas-wrap">
+    <div class="v3d-overlay" id="v3d-overlay">
+      <div class="v3d-spinner" id="v3d-spinner"></div>
+      <div class="v3d-load-text" id="v3d-load-text">正在加载三维模型…</div>
+      <div class="v3d-progress" id="v3d-progress"><div class="v3d-progress-bar" id="v3d-progress-bar"></div></div>
+    </div>
+    <div class="v3d-hint">
+      <span><kbd>拖拽</kbd> 旋转</span>
+      <span><kbd>滚轮</kbd> 缩放</span>
+      <span class="hide-mobile"><kbd>右键</kbd> 平移</span>
+      <span class="hide-mobile"><kbd>双击</kbd> 复位</span>
+    </div>
+  </div>
+
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/vendor/OrbitControls.js"></script>
+  <script src="js/vendor/GLTFLoader.js"></script>
+  <script>
+  (function () {
+    'use strict';
+
+    // ---- 多语言文案 ----
+    var LANG = (localStorage.getItem('raga-lang') || document.documentElement.lang || 'zh').slice(0, 2);
+    var T = {
+      zh: { back: '返回下载页', loading: '正在加载三维模型…', errTitle: '模型加载失败', errDesc: '该模型文件暂未提供在线预览，可返回下载页获取三维文件。', name: '三维模型', nofile: '未指定模型文件' },
+      en: { back: 'Back to Downloads', loading: 'Loading 3D model…', errTitle: 'Failed to load model', errDesc: 'This model is not available for online preview yet. Please download the 3D file from the downloads page.', name: '3D Model', nofile: 'No model file specified' },
+      zht: { back: '返回下載頁', loading: '正在載入三維模型…', errTitle: '模型載入失敗', errDesc: '該模型檔案暫未提供線上預覽，可返回下載頁取得三維檔案。', name: '三維模型', nofile: '未指定模型檔案' },
+      ru: { back: 'Назад к загрузкам', loading: 'Загрузка 3D-модели…', errTitle: 'Не удалось загрузить модель', errDesc: 'Онлайн-просмотр этой модели пока недоступен. Скачайте 3D-файл на странице загрузок.', name: '3D-модель', nofile: 'Файл модели не указан' }
+    };
+    var t = T[LANG] || T.zh;
+
+    var params = new URLSearchParams(location.search);
+    var file = params.get('file') || '';
+    var name = params.get('name') || '';
+    var backUrl = params.get('back') || 'downloads.html';
+
+    // file:// 协议下浏览器禁止加载模型文件，必须通过 HTTP 服务器访问
+    if (location.protocol === 'file:') {
+      document.getElementById('v3d-load-text').textContent = '';
+      document.getElementById('v3d-load-text').innerHTML =
+        '<div class="v3d-error-icon">🔒</div>' +
+        '<div class="v3d-error-title" style="margin-top:10px">请通过网站地址访问</div>' +
+        '<div class="v3d-error-desc" style="margin-top:6px">当前是本地文件方式打开，浏览器不允许加载三维模型。<br>请访问 http:// 开头的网站地址后再试。</div>';
+      document.getElementById('v3d-overlay').classList.remove('hide');
+      throw new Error('file protocol blocked');
+    }
+
+    document.getElementById('v3d-back').href = backUrl;
+    document.getElementById('v3d-back-label').textContent = t.back;
+    document.getElementById('v3d-load-text').textContent = t.loading;
+    document.getElementById('v3d-name').textContent = name || t.name;
+
+    var overlay = document.getElementById('v3d-overlay');
+    var spinner = document.getElementById('v3d-spinner');
+    var loadText = document.getElementById('v3d-load-text');
+    var progressWrap = document.getElementById('v3d-progress');
+    var progressBar = document.getElementById('v3d-progress-bar');
+
+    function showError(msg) {
+      spinner.style.display = 'none';
+      progressWrap.style.display = 'none';
+      loadText.innerHTML = '<div class="v3d-error-icon">🧊</div>' +
+        '<div class="v3d-error-title" style="margin-top:10px">' + t.errTitle + '</div>' +
+        '<div class="v3d-error-desc" style="margin-top:6px">' + (msg || t.errDesc) + '</div>';
+      overlay.classList.remove('hide');
+    }
+
+    if (!file) { showError(t.nofile); return; }
+
+    // ---- Three.js 场景 ----
+    var wrap = document.getElementById('v3d-canvas-wrap');
+    var W = wrap.clientWidth, H = wrap.clientHeight;
+
+    var scene = new THREE.Scene();
+
+    var camera = new THREE.PerspectiveCamera(42, W / H, 0.1, 100000);
+    camera.position.set(3, 2, 5);
+
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    } catch (e) {
+      showError('您的浏览器不支持 WebGL，无法显示三维模型。');
+      return;
+    }
+    renderer.setSize(W, H);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    wrap.insertBefore(renderer.domElement, wrap.firstChild);
+
+    // 灯光
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x9aa2ae, 0.5));
+    var keyLight = new THREE.DirectionalLight(0xffffff, 0.9);
+    keyLight.position.set(5, 8, 6);
+    scene.add(keyLight);
+    var fillLight = new THREE.DirectionalLight(0xffffff, 0.35);
+    fillLight.position.set(-6, 3, -4);
+    scene.add(fillLight);
+    var rimLight = new THREE.DirectionalLight(0xffffff, 0.25);
+    rimLight.position.set(0, -6, 3);
+    scene.add(rimLight);
+
+    // 控制器
+    var controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.08;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.1;
+    controls.minDistance = 0.001;
+    controls.maxDistance = 1e6;
+
+    var model = null;
+    var homeCam = null;      // 初始视角快照
+    var homeTarget = null;
+    var wireOn = false;
+
+    function fitCameraToObject(obj) {
+      var box = new THREE.Box3().setFromObject(obj);
+      if (box.isEmpty()) { showError(); return; }
+      var size = box.getSize(new THREE.Vector3());
+      var center = box.getCenter(new THREE.Vector3());
+
+      var maxDim = Math.max(size.x, size.y, size.z);
+      var fov = camera.fov * Math.PI / 180;
+      var dist = (maxDim / 2) / Math.tan(fov / 2) * 1.55;
+
+      var dir = new THREE.Vector3(1, 0.55, 1.15).normalize();
+      camera.position.copy(center).addScaledVector(dir, dist);
+      camera.near = dist / 200;
+      camera.far = dist * 40;
+      camera.updateProjectionMatrix();
+
+      controls.target.copy(center);
+      controls.minDistance = dist * 0.18;
+      controls.maxDistance = dist * 5;
+      controls.update();
+
+      homeCam = camera.position.clone();
+      homeTarget = center.clone();
+    }
+
+    var loader = new THREE.GLTFLoader();
+    loader.load(
+      file,
+      function (gltf) {
+        model = gltf.scene;
+
+        // 保留 GLB 自带的分件颜色，仅为缺失材质的件补默认工程灰
+        model.traverse(function (o) {
+          if (o.isMesh) {
+            if (!o.material) {
+              o.material = new THREE.MeshStandardMaterial({
+                color: 0xb9bec6, metalness: 0.42, roughness: 0.46
+              });
+            }
+            // 双面渲染：防止薄壁件背面被剔除产生穿透感
+            if (o.material.side !== undefined) { o.material.side = THREE.DoubleSide; }
+            o.geometry.computeVertexNormals();
+            o.castShadow = false;
+            o.receiveShadow = false;
+          }
+        });
+
+        scene.add(model);
+        fitCameraToObject(model);
+
+        overlay.classList.add('hide');
+      },
+      function (evt) {
+        if (evt.lengthComputable && evt.total > 0) {
+          var pct = Math.round(evt.loaded / evt.total * 100);
+          progressBar.style.width = pct + '%';
+          loadText.textContent = t.loading + ' ' + pct + '%';
+        } else if (evt.loaded) {
+          var mb = (evt.loaded / 1048576).toFixed(1);
+          loadText.textContent = t.loading + ' ' + mb + ' MB';
+        }
+      },
+      function (err) {
+        console.error('[3D] load error:', err);
+        // 提取具体错误信息方便诊断
+        var detail = '';
+        try {
+          if (err && err.message) detail = err.message;
+          else if (err && err.target && err.target.statusText) detail = 'HTTP ' + err.target.status + ' ' + err.target.statusText;
+          else if (typeof err === 'string') detail = err;
+        } catch (e) {}
+        showError((detail ? '<b style="font-size:13px;color:#c0392b">' + detail + '</b><br><br>' : '') + t.errDesc);
+      }
+    );
+
+    // ---- 工具栏交互 ----
+    var btnRotate = document.getElementById('v3d-rotate');
+    var btnWire = document.getElementById('v3d-wire');
+    var btnReset = document.getElementById('v3d-reset');
+
+    btnRotate.addEventListener('click', function () {
+      controls.autoRotate = !controls.autoRotate;
+      btnRotate.classList.toggle('active', controls.autoRotate);
+    });
+
+    btnWire.addEventListener('click', function () {
+      wireOn = !wireOn;
+      btnWire.classList.toggle('active', wireOn);
+      if (!model) return;
+      model.traverse(function (o) {
+        if (o.isMesh && o.material) o.material.wireframe = wireOn;
+      });
+    });
+
+    function resetView() {
+      if (!homeCam) return;
+      camera.position.copy(homeCam);
+      controls.target.copy(homeTarget);
+      controls.update();
+    }
+    btnReset.addEventListener('click', resetView);
+    renderer.domElement.addEventListener('dblclick', resetView);
+
+    // ---- 渲染循环 ----
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // ---- 自适应 ----
+    window.addEventListener('resize', function () {
+      W = wrap.clientWidth; H = wrap.clientHeight;
+      camera.aspect = W / H;
+      camera.updateProjectionMatrix();
+      renderer.setSize(W, H);
+    });
+  })();
+  </script>
+</body>
+</html>

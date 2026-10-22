@@ -355,7 +355,10 @@
             }
             // 双面渲染：防止薄壁件背面被剔除产生穿透感
             if (o.material.side !== undefined) { o.material.side = THREE.DoubleSide; }
-            o.geometry.computeVertexNormals();
+            // 模型自带 CAD 曲面法线时保留（曲面光滑、棱边锐利）；缺失才重算
+            if (!o.geometry.getAttribute('normal')) {
+              o.geometry.computeVertexNormals();
+            }
             o.castShadow = false;
             o.receiveShadow = false;
           }

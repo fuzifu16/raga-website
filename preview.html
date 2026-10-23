@@ -614,11 +614,81 @@ a { color: inherit; }
     }
 
     // DWG: show pre-rendered CAD-style (black background) preview image
+    // with zoom toolbar: buttons + wheel zoom + drag pan, mobile pinch via native scroll
     function renderDwgPreview(frame) {
-      var tip = t('preview.dwg_tip', '预览图为 CAD 黑底渲染效果，点击下方按钮下载 DWG 原文件');
-      frame.innerHTML = '<div style="max-width:1100px;margin:0 auto;text-align:center;">' +
-        '<img src="' + dwgPreviewSrc + '" style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.35);" alt="DWG Preview">' +
-        '<p style="font-size:13px;color:var(--gray-500);margin-top:12px;">' + tip + '</p></div>';
+      var tip = t('preview.dwg_tip', '预览图为 CAD 黑底渲染效果，可滚轮缩放查看细节');
+      frame.innerHTML =
+        '<div class="dwg-viewer" style="max-width:1100px;margin:0 auto;">' +
+          '<div class="dwg-toolbar" style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:#1c1c1e;border-radius:8px 8px 0 0;user-select:none;">' +
+            '<button type="button" data-z="out" style="width:32px;height:32px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:18px;cursor:pointer;">−</button>' +
+            '<span class="dwg-zoom-label" style="min-width:52px;text-align:center;color:#eee;font-size:13px;">100%</span>' +
+            '<button type="button" data-z="in" style="width:32px;height:32px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:18px;cursor:pointer;">＋</button>' +
+            '<button type="button" data-z="fit" style="height:32px;padding:0 12px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:13px;cursor:pointer;">' + t('preview.dwg_fit', '适应宽度') + '</button>' +
+            '<button type="button" data-z="full" style="height:32px;padding:0 12px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:13px;cursor:pointer;">' + t('preview.dwg_full', '查看原图') + '</button>' +
+          '</div>' +
+          '<div class="dwg-stage" style="overflow:auto;background:#0a0a0a;border-radius:0 0 8px 8px;cursor:grab;-webkit-overflow-scrolling:touch;">' +
+            '<img class="dwg-img" src="' + dwgPreviewSrc + '" style="display:block;width:100%;height:auto;" alt="DWG Preview" draggable="false">' +
+          '</div>' +
+          '<p style="font-size:13px;color:var(--gray-500);margin-top:12px;">' + tip + '</p>' +
+        '</div>';
+
+      var stage = frame.querySelector('.dwg-stage');
+      var img = frame.querySelector('.dwg-img');
+      var label = frame.querySelector('.dwg-zoom-label');
+      var zoom = 100;
+      var ZMIN = 50, ZMAX = 800;
+
+      function apply() {
+        img.style.width = zoom + '%';
+        label.textContent = zoom + '%';
+      }
+
+      // 按钮缩放
+      frame.querySelectorAll('.dwg-toolbar [data-z]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var z = btn.getAttribute('data-z');
+          if (z === 'in') zoom = Math.min(ZMAX, zoom + 50);
+          else if (z === 'out') zoom = Math.max(ZMIN, zoom - 50);
+          else if (z === 'fit') zoom = 100;
+          else if (z === 'full') { window.open(dwgPreviewSrc, '_blank'); return; }
+          apply();
+        });
+      });
+
+      // 滚轮缩放（在图纸区域上）
+      stage.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        var old = zoom;
+        zoom = e.deltaY < 0 ? Math.min(ZMAX, zoom + 25) : Math.max(ZMIN, zoom - 25);
+        if (zoom === old) return;
+        // 以鼠标位置为中心缩放
+        var rect = stage.getBoundingClientRect();
+        var ratio = zoom / old;
+        var mx = e.clientX - rect.left + stage.scrollLeft;
+        var my = e.clientY - rect.top + stage.scrollTop;
+        apply();
+        requestAnimationFrame(function() {
+          stage.scrollLeft = mx * ratio - (e.clientX - rect.left);
+          stage.scrollTop = my * ratio - (e.clientY - rect.top);
+        });
+      }, { passive: false });
+
+      // 拖拽平移
+      var dragging = false, sx = 0, sy = 0, sl = 0, st = 0;
+      stage.addEventListener('mousedown', function(e) {
+        dragging = true; sx = e.clientX; sy = e.clientY; sl = stage.scrollLeft; st = stage.scrollTop;
+        stage.style.cursor = 'grabbing';
+        e.preventDefault();
+      });
+      window.addEventListener('mousemove', function(e) {
+        if (!dragging) return;
+        stage.scrollLeft = sl - (e.clientX - sx);
+        stage.scrollTop = st - (e.clientY - sy);
+      });
+      window.addEventListener('mouseup', function() {
+        dragging = false;
+        stage.style.cursor = 'grab';
+      });
     }
 
     function renderUnsupported(frame) {

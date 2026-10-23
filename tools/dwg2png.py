@@ -16,7 +16,7 @@ os.makedirs(OUT_DIR, exist_ok=True)
 def convert_one(dwg_path, tmpdir):
     base = os.path.splitext(os.path.basename(dwg_path))[0]
     out_png = os.path.join(OUT_DIR, base + '.png')
-    if os.path.exists(out_png):
+    if os.path.exists(out_png) and not os.environ.get('DWG_FORCE'):
         return 'skip'
     # 1) DWG -> DXF（ASCII 临时名，避免中文路径问题）
     t_dwg = os.path.join(tmpdir, 'in.dwg')
@@ -93,7 +93,7 @@ def convert_one(dwg_path, tmpdir):
             print('[skip %d bad ents]' % bad, end=' ')
     out.finalize()
     buf = io.BytesIO()
-    fig.savefig(buf, format='png', dpi=170, transparent=True)
+    fig.savefig(buf, format='png', dpi=420, transparent=True)
     plt.close(fig)
     buf.seek(0)
     img = Image.open(buf).convert('RGBA')
@@ -112,10 +112,8 @@ def convert_one(dwg_path, tmpdir):
             my = int(0.03 * (by1 - by0)) + 8
             comp = comp.crop((max(0, bx0 - mx), max(0, by0 - my),
                               min(comp.width, bx1 + mx), min(comp.height, by1 + my)))
-            if comp.width < 900:
-                r = 900 / comp.width
-                comp = comp.resize((900, int(comp.height * r)), Image.LANCZOS)
-    comp.save(out_png, optimize=True)
+    # 64 色索引 PNG：线稿压缩率极高（高清体积反而小于低清全彩）
+    comp.convert('P', palette=Image.ADAPTIVE, colors=64).save(out_png, optimize=True)
     os.remove(t_dxf)
     return 'ok %.0fKB' % (os.path.getsize(out_png) / 1024)
 

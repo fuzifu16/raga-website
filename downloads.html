@@ -633,7 +633,7 @@
         d3dBody.appendChild(sep);
         group.files.forEach(function(file) {
           var fileName = file.name + file.ext;
-          var displayName = tlDlName(file.name) + (file.note ? ' (' + t('downloads.note_7z') + ')' : '');
+          var displayName = tlDlName(file.name);
           var encodedFile = encodeURIComponent(d3dRoot + fileName);
           var encodedName = encodeURIComponent(file.name);
           var row = document.createElement('div');

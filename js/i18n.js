@@ -255,7 +255,8 @@ const i18nData = {
 
     /* Preview page */
     "preview.unsupported": "此格式不支持在线预览",
-    "preview.download_hint": "请点击「下载文件」按钮下载后查看"
+    "preview.download_hint": "请点击「下载文件」按钮下载后查看",
+    "preview.dwg_tip": "预览图为 CAD 黑底渲染效果，点击下方按钮下载 DWG 原文件"
   },
 
   "en": {
@@ -515,7 +516,8 @@ const i18nData = {
 
     /* Preview page */
     "preview.unsupported": "This format does not support online preview",
-    "preview.download_hint": "Please click the \"Download File\" button to download and view"
+    "preview.download_hint": "Please click the \"Download File\" button to download and view",
+    "preview.dwg_tip": "The preview shows a CAD-style rendering on black background. Click the button below to download the original DWG file."
   }
 };
 
@@ -1184,6 +1186,7 @@ i18nData["zh-TW"]["contact.form_opt_rgw"] = "RGW系列減速箱";
 i18nData["zh-TW"]["contact.form_opt_rib"] = "RIB系列減速箱";
 i18nData["zh-TW"]["preview.unsupported"] = "此格式不支持在線預覽";
 i18nData["zh-TW"]["preview.download_hint"] = "請點擊「下載文件」按鈕下載後查看";
+i18nData["zh-TW"]["preview.dwg_tip"] = "預覽圖為 CAD 黑底渲染效果，點擊下方按鈕下載 DWG 原始文件";
 i18nData["zh-TW"]["downloads.breadcrumb"] = "資料下載";
 i18nData["zh-TW"]["downloads.company_brochure"] = "公司宣傳資料";
 i18nData["zh-TW"]["downloads.desc"] = "瑞基全系列產品技術資料下載，包含產品說明書、選型手冊、安裝指南、視頻教程等";
@@ -2429,6 +2432,7 @@ i18nData.ru = {
   /* Preview page */
   "preview.unsupported": "Этот формат не поддерживает онлайн-превью",
   "preview.download_hint": "Пожалуйста, нажмите кнопку «Скачать файл»",
+  "preview.dwg_tip": "Предварительный просмотр — это рендер в стиле CAD на чёрном фоне. Нажмите кнопку ниже, чтобы скачать исходный файл DWG.",
   "preview.title": "Превью файла",
   "preview.back": "← Назад к загрузкам",
   "preview.download": "Скачать файл",

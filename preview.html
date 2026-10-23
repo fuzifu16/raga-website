@@ -561,6 +561,8 @@ a { color: inherit; }
 
     // Save original name for re-translation on language change
     var origFileName = name || file;
+    // DWG: pre-rendered CAD-style (black background) preview image
+    var dwgPreviewSrc = null;
 
     function updateFileName() {
       var displayName = translateFileName(origFileName);
@@ -577,6 +579,7 @@ a { color: inherit; }
       var ext = file.split('.').pop().toLowerCase();
       var isPreviewable = (ext === 'pdf');
       var isVideo = (ext === 'mp4' || ext === 'webm' || ext === 'mov');
+      var isDwg = (ext === 'dwg');
 
       if (isPreviewable) {
         var iframe = document.getElementById('pdf-iframe');
@@ -593,12 +596,29 @@ a { color: inherit; }
           bcSpan.textContent = t('preview.title_video', '视频播放');
           bcSpan.setAttribute('data-i18n', 'preview.title_video');
         }
+      } else if (isDwg) {
+        document.querySelector('.preview-loading').style.display = 'none';
+        var frame = document.getElementById('preview-frame');
+        var base = file.substring(file.lastIndexOf('/') + 1).replace(/\.dwg$/i, '');
+        dwgPreviewSrc = 'downloads/dwg-preview/' + encodeURIComponent(base) + '.png';
+        var probe = new Image();
+        probe.onload = function() { renderDwgPreview(frame); };
+        probe.onerror = function() { dwgPreviewSrc = null; renderUnsupported(frame); };
+        probe.src = dwgPreviewSrc;
       } else {
         // Non-PDF formats (DWG, 3D etc.): show download hint with i18n support
         document.querySelector('.preview-loading').style.display = 'none';
         var frame = document.getElementById('preview-frame');
         renderUnsupported(frame);
       }
+    }
+
+    // DWG: show pre-rendered CAD-style (black background) preview image
+    function renderDwgPreview(frame) {
+      var tip = t('preview.dwg_tip', '预览图为 CAD 黑底渲染效果，点击下方按钮下载 DWG 原文件');
+      frame.innerHTML = '<div style="max-width:1100px;margin:0 auto;text-align:center;">' +
+        '<img src="' + dwgPreviewSrc + '" style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,.35);" alt="DWG Preview">' +
+        '<p style="font-size:13px;color:var(--gray-500);margin-top:12px;">' + tip + '</p></div>';
     }
 
     function renderUnsupported(frame) {
@@ -619,7 +639,7 @@ a { color: inherit; }
       var iframe = document.getElementById('pdf-iframe');
       // No iframe or no PDF loaded → showing unsupported message → re-render in new language
       if (!iframe || !iframe.src || iframe.style.display === 'none') {
-        renderUnsupported(frame);
+        if (dwgPreviewSrc) { renderDwgPreview(frame); } else { renderUnsupported(frame); }
       }
     });
   } catch(e) {

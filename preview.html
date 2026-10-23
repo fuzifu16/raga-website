@@ -388,9 +388,71 @@ a { color: inherit; }
   .preview-header { flex-direction: column; align-items: flex-start; }
   .preview-frame { height: 50vh; }
 }
+
+/* ===== 沉浸式预览布局（与三维预览页一致：无站点导航，整屏铺满） ===== */
+body.pv-immersive { overflow: hidden; }
+body.pv-immersive .top-bar,
+body.pv-immersive .header,
+body.pv-immersive .page-hero,
+body.pv-immersive .footer,
+body.pv-immersive .float-actions { display: none !important; }
+
+body.pv-immersive .preview-section { position: fixed; inset: 0; padding: 0; }
+body.pv-immersive .preview-section > .container { max-width: none; padding: 0; }
+
+body.pv-immersive .preview-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 30;
+  height: 60px; margin: 0; padding: 0 16px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: nowrap;
+  background: rgba(255,255,255,0.94);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gray-200);
+}
+body.pv-immersive .preview-header h2 {
+  flex: 1; min-width: 0;
+  font-size: 15px; font-weight: 600; color: var(--dark);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+body.pv-immersive .preview-actions { flex-shrink: 0; gap: 8px; }
+body.pv-immersive .preview-actions .btn {
+  height: 36px; padding: 0 14px; display: inline-flex; align-items: center;
+  border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap;
+}
+body.pv-immersive .preview-frame {
+  position: fixed; inset: 60px 0 0 0;
+  width: auto; height: auto; margin: 0;
+  border: 0; border-radius: 0;
+  background: var(--gray-100); overflow: hidden;
+}
+body.pv-immersive .preview-frame iframe { width: 100%; height: 100%; border: none; display: block; }
+
+/* DWG 全屏查看器 */
+body.pv-immersive .dwg-viewer {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+}
+body.pv-immersive .dwg-toolbar {
+  display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+  padding: 7px 12px; background: #1c1c1e; user-select: none;
+}
+body.pv-immersive .dwg-stage {
+  flex: 1 1 auto; min-height: 0;
+  display: flex; overflow: auto;
+  background: #0a0a0a; cursor: grab;
+  -webkit-overflow-scrolling: touch;
+}
+body.pv-immersive .dwg-img { display: block; margin: auto; flex: 0 0 auto; }
+
+@media (max-width: 768px) {
+  body.pv-immersive .preview-header { height: 54px; padding: 0 10px; gap: 8px; }
+  body.pv-immersive .preview-frame { inset: 54px 0 0 0; }
+  body.pv-immersive .preview-actions .btn { height: 32px; padding: 0 10px; font-size: 12px; }
+  body.pv-immersive .dwg-tip { display: none; }
+}
   </style>
 </head>
-<body>
+<body class="pv-immersive">
 
 <div class="top-bar">
   <div class="container">
@@ -589,7 +651,7 @@ a { color: inherit; }
       } else if (isVideo) {
         document.querySelector('.preview-loading').style.display = 'none';
         var frame = document.getElementById('preview-frame');
-        frame.innerHTML = '<div style="max-width:900px;margin:0 auto;"><video controls autoplay style="width:100%;max-height:70vh;border-radius:8px;" src="' + file + '">您的浏览器不支持视频播放</video></div>';
+        frame.innerHTML = '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;"><video controls autoplay style="max-width:100%;max-height:100%;border-radius:8px;" src="' + file + '">您的浏览器不支持视频播放</video></div>';
         // Update breadcrumb text for video
         var bcSpan = document.querySelector('.breadcrumb span');
         if (bcSpan) {
@@ -613,35 +675,49 @@ a { color: inherit; }
       }
     }
 
-    // DWG: show pre-rendered CAD-style (black background) preview image
-    // with zoom toolbar: buttons + wheel zoom + drag pan, mobile pinch via native scroll
+    // DWG: 全屏黑底查看器（与三维预览页一致的沉浸式布局）
+    // 100% = 适应窗口；支持按钮缩放 + 滚轮（以鼠标为中心）+ 拖拽平移
     function renderDwgPreview(frame) {
       var tip = t('preview.dwg_tip', '预览图为 CAD 黑底渲染效果，可滚轮缩放查看细节');
       frame.innerHTML =
-        '<div class="dwg-viewer" style="max-width:1100px;margin:0 auto;">' +
-          '<div class="dwg-toolbar" style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:#1c1c1e;border-radius:8px 8px 0 0;user-select:none;">' +
+        '<div class="dwg-viewer">' +
+          '<div class="dwg-toolbar">' +
             '<button type="button" data-z="out" style="width:32px;height:32px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:18px;cursor:pointer;">−</button>' +
             '<span class="dwg-zoom-label" style="min-width:52px;text-align:center;color:#eee;font-size:13px;">100%</span>' +
             '<button type="button" data-z="in" style="width:32px;height:32px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:18px;cursor:pointer;">＋</button>' +
-            '<button type="button" data-z="fit" style="height:32px;padding:0 12px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:13px;cursor:pointer;">' + t('preview.dwg_fit', '适应宽度') + '</button>' +
+            '<button type="button" data-z="fit" style="height:32px;padding:0 12px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:13px;cursor:pointer;">' + t('preview.dwg_fit', '适应窗口') + '</button>' +
             '<button type="button" data-z="full" style="height:32px;padding:0 12px;border:none;border-radius:6px;background:#2c2c2e;color:#eee;font-size:13px;cursor:pointer;">' + t('preview.dwg_full', '查看原图') + '</button>' +
+            '<span class="dwg-tip" style="margin-left:auto;color:#8a8a8e;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + tip + '</span>' +
           '</div>' +
-          '<div class="dwg-stage" style="overflow:auto;background:#0a0a0a;border-radius:0 0 8px 8px;cursor:grab;-webkit-overflow-scrolling:touch;">' +
-            '<img class="dwg-img" src="' + dwgPreviewSrc + '" style="display:block;width:100%;height:auto;" alt="DWG Preview" draggable="false">' +
+          '<div class="dwg-stage">' +
+            '<img class="dwg-img" src="' + dwgPreviewSrc + '" alt="DWG Preview" draggable="false">' +
           '</div>' +
-          '<p style="font-size:13px;color:var(--gray-500);margin-top:12px;">' + tip + '</p>' +
         '</div>';
 
       var stage = frame.querySelector('.dwg-stage');
       var img = frame.querySelector('.dwg-img');
       var label = frame.querySelector('.dwg-zoom-label');
-      var zoom = 100;
+      var zoom = 100;              // 100% = 适应窗口
       var ZMIN = 50, ZMAX = 800;
+      var fitW = 0, fitH = 0;
 
+      function computeFit() {
+        var r = stage.getBoundingClientRect();
+        var iw = img.naturalWidth || 1, ih = img.naturalHeight || 1;
+        var s = Math.min(r.width / iw, r.height / ih);
+        fitW = iw * s;
+        fitH = ih * s;
+      }
       function apply() {
-        img.style.width = zoom + '%';
+        if (!fitW) computeFit();
+        if (!fitW) return;
+        img.style.width = Math.round(fitW * zoom / 100) + 'px';
+        img.style.height = Math.round(fitH * zoom / 100) + 'px';
         label.textContent = zoom + '%';
       }
+      if (img.complete && img.naturalWidth) { computeFit(); apply(); }
+      else { img.addEventListener('load', function() { computeFit(); apply(); }); }
+      window.addEventListener('resize', function() { computeFit(); apply(); });
 
       // 按钮缩放
       frame.querySelectorAll('.dwg-toolbar [data-z]').forEach(function(btn) {
@@ -655,13 +731,12 @@ a { color: inherit; }
         });
       });
 
-      // 滚轮缩放（在图纸区域上）
+      // 滚轮缩放（以鼠标位置为中心）
       stage.addEventListener('wheel', function(e) {
         e.preventDefault();
         var old = zoom;
         zoom = e.deltaY < 0 ? Math.min(ZMAX, zoom + 25) : Math.max(ZMIN, zoom - 25);
         if (zoom === old) return;
-        // 以鼠标位置为中心缩放
         var rect = stage.getBoundingClientRect();
         var ratio = zoom / old;
         var mx = e.clientX - rect.left + stage.scrollLeft;

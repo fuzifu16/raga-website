@@ -99,19 +99,36 @@ def convert_one(dwg_path, tmpdir):
     img = Image.open(buf).convert('RGBA')
     black = Image.new('RGBA', img.size, (5, 5, 5, 255))
     comp = Image.alpha_composite(black, img).convert('RGB')
-    # 内容聚焦裁剪：内容 bbox 占比过小时裁剪放大
+    # 内容铺满裁剪：先裁到内容边界，再迭代向内收缩去掉图框线及贴边残留（与三维图一致，整幅无边框）
     import numpy as np
     g = np.asarray(comp.convert('L'))
     ys, xs = np.where(g > 18)
     if len(xs):
+        comp = comp.crop((int(xs.min()), int(ys.min()),
+                          int(xs.max()) + 1, int(ys.max()) + 1))
+    for _ in range(6):
+        g = np.asarray(comp.convert('L'))
+        ys, xs = np.where(g > 18)
+        if not len(xs):
+            break
         bx0, bx1 = int(xs.min()), int(xs.max())
         by0, by1 = int(ys.min()), int(ys.max())
-        area = (bx1 - bx0) * (by1 - by0)
-        if area < 0.55 * g.size and area > 0:
-            mx = int(0.03 * (bx1 - bx0)) + 8
-            my = int(0.03 * (by1 - by0)) + 8
-            comp = comp.crop((max(0, bx0 - mx), max(0, by0 - my),
-                              min(comp.width, bx1 + mx), min(comp.height, by1 + my)))
+        w, h = comp.width, comp.height
+        left = bx0 <= 6
+        right = (w - 1 - bx1) <= 6
+        top = by0 <= 6
+        bottom = (h - 1 - by1) <= 6
+        # 四边均未贴边 → 无框残留，停止（逐边独立收缩，避免误切不贴边侧的内容）
+        if not (left or right or top or bottom):
+            break
+        cw, ch = bx1 - bx0, by1 - by0
+        if cw <= 20 or ch <= 20:
+            break
+        cx0 = bx0 + (int(0.008 * cw) + 4 if left else 0)
+        cx1 = bx1 - (int(0.008 * cw) + 4 if right else 0)
+        cy0 = by0 + (int(0.008 * ch) + 4 if top else 0)
+        cy1 = by1 - (int(0.008 * ch) + 4 if bottom else 0)
+        comp = comp.crop((cx0, cy0, cx1, cy1))
     # 64 色索引 PNG：线稿压缩率极高（高清体积反而小于低清全彩）
     comp.convert('P', palette=Image.ADAPTIVE, colors=64).save(out_png, optimize=True)
     os.remove(t_dxf)

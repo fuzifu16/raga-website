@@ -73,7 +73,11 @@ def convert_one(dwg_path, tmpdir):
     ax = fig.add_axes([0, 0, 1, 1])
     ctx = RenderContext(doc)
     out = MatplotlibBackend(ax)
-    fe = Frontend(ctx, out)
+    from ezdxf.addons.drawing.config import Configuration
+    # 高清：线宽加粗 1.6 + 最小线宽 0.25 + 圆弧 512 段逼近，提升放大后清晰度
+    cfg = Configuration(lineweight_scaling=1.6, min_lineweight=0.25,
+                        circle_approximation_count=512)
+    fe = Frontend(ctx, out, config=cfg)
     try:
         fe.draw_entities(msp)
     except Exception:
@@ -82,7 +86,7 @@ def convert_one(dwg_path, tmpdir):
         fig = plt.figure(figsize=(16, 11.32))
         ax = fig.add_axes([0, 0, 1, 1])
         out = MatplotlibBackend(ax)
-        fe = Frontend(ctx, out)
+        fe = Frontend(ctx, out, config=cfg)
         bad = 0
         for ent in msp:
             try:
@@ -93,7 +97,7 @@ def convert_one(dwg_path, tmpdir):
             print('[skip %d bad ents]' % bad, end=' ')
     out.finalize()
     buf = io.BytesIO()
-    fig.savefig(buf, format='png', dpi=420, transparent=True)
+    fig.savefig(buf, format='png', dpi=900, transparent=True)
     plt.close(fig)
     buf.seek(0)
     img = Image.open(buf).convert('RGBA')
@@ -112,8 +116,8 @@ def convert_one(dwg_path, tmpdir):
             my = int(0.03 * (by1 - by0)) + 8
             comp = comp.crop((max(0, bx0 - mx), max(0, by0 - my),
                               min(comp.width, bx1 + mx), min(comp.height, by1 + my)))
-    # 64 色索引 PNG：线稿压缩率极高（高清体积反而小于低清全彩）
-    comp.convert('P', palette=Image.ADAPTIVE, colors=64).save(out_png, optimize=True)
+    # 128 色索引 PNG：线稿压缩率高，兼顾色彩保真与体积
+    comp.convert('P', palette=Image.ADAPTIVE, colors=128).save(out_png, optimize=True)
     os.remove(t_dxf)
     return 'ok %.0fKB' % (os.path.getsize(out_png) / 1024)
 

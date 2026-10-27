@@ -263,7 +263,7 @@ const i18nData = {
 
   "en": {
     /* Top Bar */
-    "topbar.slogan": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd., Shanghai RAGA Ruiran Automation Technology Co., Ltd. — Smart Electric Valve Actuator Manufacturer",
+    "topbar.slogan": "Wenzhou RICH Measure & Control Equipment Co., Ltd., Shanghai RAGA Automation Co., Ltd. — Smart Electric Valve Actuator Manufacturer",
     "topbar.phone": "📞 0577-56582698",
     "topbar.lang_zh": "中文",
     "topbar.lang_en": "English",
@@ -282,7 +282,7 @@ const i18nData = {
     "footer.quick_links": "Quick Links",
     "footer.product_series": "Product Series",
     "footer.contact_info": "Contact Info",
-    "footer.copyright": "Copyright &copy; 2026 Wenzhou RAGA Measurement & Control Equipment Co., Ltd. All Rights Reserved.",
+    "footer.copyright": "Copyright &copy; 2026 Wenzhou RICH Measure & Control Equipment Co., Ltd. All Rights Reserved.",
     "footer.icp": "ICP: ZheICP备2021002987号",
     "footer.series_ra": "RA Multi-turn",
     "footer.series_rq": "RQ Linear-motion",
@@ -300,9 +300,9 @@ const i18nData = {
     "section.about_subtitle": "About Us",
     "section.about_title": "About RAGA",
     "section.about_desc": "Focused on industrial automation, creating high-quality smart actuators",
-    "about.company_name": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.",
-    "about.company_name_shanghai": "Shanghai RAGA Ruiran Automation Technology Co., Ltd.",
-    "about.p1": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. is a professional enterprise specializing in R&D, production of smart electric valve actuators. Located in Wenzhou and Shanghai, with modern production bases and advanced processing equipment.",
+    "about.company_name": "Wenzhou RICH Measure & Control Equipment Co., Ltd.",
+    "about.company_name_shanghai": "Shanghai RAGA Automation Co., Ltd.",
+    "about.p1": "Wenzhou RICH Measure & Control Equipment Co., Ltd. is a professional enterprise specializing in R&D, production of smart electric valve actuators. Located in Wenzhou and Shanghai, with modern production bases and advanced processing equipment.",
     "about.p2": "Products are widely used in petroleum, power, metallurgy, water treatment industries, sold both domestically and internationally.",
     "about.stat1_num": "20+",
     "about.stat1_label": "Years Experience",
@@ -363,8 +363,8 @@ const i18nData = {
     "about.page_title": "About Us",
     "about.breadcrumb": "About Us",
     "about.full_title": "RAGA Profile",
-    "about.full_p1": "RAGA's history dates back to 1935 — that year, in the south of Zhejiang, China, a small workshop dedicated to mechanical manufacturing quietly opened its doors. With an old lathe, a few files, and an almost obsessive pursuit of precision mechanics, it laid down RAGA's earliest manufacturing DNA. Over the following century, generations of craftsmen held fast to the creed of \"solid craftsmanship and products that stand the test of time,\" passing down the skills of precision machining and reliable quality, and building a deep and distinctive manufacturing heritage. Today's Wenzhou RAGA Measurement & Control Equipment Co., Ltd. carries on that DNA as a high-tech enterprise specializing in the development and production of intelligent electric valve actuators, headquartered in Wenzhou, Zhejiang, with an R&D center in Shanghai, backed by strong technical expertise, advanced manufacturing processes and comprehensive testing capabilities.",
-    "about.full_p2": "Entering the new century, RAGA completed its transformation into a modern enterprise in 2005, focusing on the development and production of intelligent electric valve actuators. To meet growing market demand at home and abroad, the company successively established Shanghai RAGA Ruiran Automation Technology Co., Ltd. and RAGA (Taicang) Co., Ltd., building an intelligent actuator production line with an annual capacity of 40,000 units and forming a collaborative industrial pattern across Wenzhou, Shanghai, and Taicang. The product lineup covers multiple series including RQ series multi-turn regulating type, RA series split type, and RL series linear type, with torque ranging from 34N·m to 3500N·m and protection ratings up to IP68, meeting the control demands of demanding working conditions in petrochemical, electric power, metallurgy, water treatment, pharmaceutical and other industries.",
+    "about.full_p1": "RAGA's history dates back to 1935 — that year, in the south of Zhejiang, China, a small workshop dedicated to mechanical manufacturing quietly opened its doors. With an old lathe, a few files, and an almost obsessive pursuit of precision mechanics, it laid down RAGA's earliest manufacturing DNA. Over the following century, generations of craftsmen held fast to the creed of \"solid craftsmanship and products that stand the test of time,\" passing down the skills of precision machining and reliable quality, and building a deep and distinctive manufacturing heritage. Today's Wenzhou RICH Measure & Control Equipment Co., Ltd. carries on that DNA as a high-tech enterprise specializing in the development and production of intelligent electric valve actuators, headquartered in Wenzhou, Zhejiang, with an R&D center in Shanghai, backed by strong technical expertise, advanced manufacturing processes and comprehensive testing capabilities.",
+    "about.full_p2": "Entering the new century, RAGA completed its transformation into a modern enterprise in 2005, focusing on the development and production of intelligent electric valve actuators. To meet growing market demand at home and abroad, the company successively established Shanghai RAGA Automation Co., Ltd. and RAGA (Taicang) Co., Ltd., building an intelligent actuator production line with an annual capacity of 40,000 units and forming a collaborative industrial pattern across Wenzhou, Shanghai, and Taicang. The product lineup covers multiple series including RQ series multi-turn regulating type, RA series split type, and RL series linear type, with torque ranging from 34N·m to 3500N·m and protection ratings up to IP68, meeting the control demands of demanding working conditions in petrochemical, electric power, metallurgy, water treatment, pharmaceutical and other industries.",
     "about.full_p3": "From workshop lathes to CNC machining centers, from hand files to intelligent manufacturing, what has changed is the equipment and technology; what remains unchanged is the craftsman heritage of \"Integrity, Innovation, Precision, Efficiency.\" The company has established a comprehensive quality management system and passed ISO9001 quality management system certification, CE certification and other international certifications. With outstanding product quality and professional technical service, RAGA products have been exported to Russia, the Middle East, Southeast Asia and other countries and regions, earning widespread trust and praise from customers worldwide. Today, RAGA is steadily advancing toward its goal of becoming a \"century-old enterprise\" by 2035, continuously increasing R&D investment, deepening its expertise in intelligent actuators, and driving industrial upgrading through technological innovation, striving to become a world-class professional intelligent actuator supplier worthy of the long-term trust of customers worldwide.",
     "about.history": "Milestones",
     "about.culture": "Corporate Culture",
@@ -373,10 +373,10 @@ const i18nData = {
     "about.culture_values": "Integrity, Innovation, Precision, Efficiency. Integrity is our foundation — we are accountable to our customers and partners, honoring every commitment. Innovation is our growth engine — we continuously increase R&D investment, driving product upgrades through technological innovation. Precision is our quality pursuit — from component inspection to final product testing, every process is strictly controlled. Efficiency is our service promise — we respond rapidly to customer needs, supported by a professional team and comprehensive after-sales service system, ensuring customers achieve the best possible experience.",
     "about.production": "Production Capabilities",
     "about.milestone_1935": "A small machinery workshop founded in southern Zhejiang — the start of a century of craftsmanship",
-    "about.milestone_2005": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. was founded, focusing on R&D and manufacturing of intelligent actuators",
+    "about.milestone_2005": "Wenzhou RICH Measure & Control Equipment Co., Ltd. was founded, focusing on R&D and manufacturing of intelligent actuators",
     "about.milestone_2010": "Launched RA series smart electric actuators, widely recognized by the market",
     "about.milestone_2018": "Established RAGA (Taicang) Co., Ltd., new production line with 40,000 units annual capacity",
-    "about.milestone_2021": "Established Shanghai RAGA Automation Technology Co., Ltd., expanding into East China market",
+    "about.milestone_2021": "Established Shanghai RAGA Automation Co., Ltd., expanding into East China market",
     "about.milestone_2035": "Advancing toward a century-old enterprise — a world-class professional intelligent actuator supplier",
     "about.prod_1": "Three bases in Wenzhou, Shanghai and Taicang with 40,000 units annual capacity",
     "about.prod_2": "Modern machining centers and dedicated CNC equipment",
@@ -471,8 +471,8 @@ const i18nData = {
     "detail.coming_soon": "Coming Soon",
 
     /* Contact — company names in office cards */
-    "contact.company_name_wenzhou": "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.",
-    "contact.company_name_shanghai": "Shanghai RAGA Ruiran Automation Technology Co., Ltd.",
+    "contact.company_name_wenzhou": "Wenzhou RICH Measure & Control Equipment Co., Ltd.",
+    "contact.company_name_shanghai": "Shanghai RAGA Automation Co., Ltd.",
     "contact.company_name_taicang": "RAGA Measurement & Control Equipment (Taicang) Co., Ltd.",
     "contact.addr_wenzhou": "Wenzhou, Zhejiang Province",
     "contact.addr_shanghai": "Shanghai",
@@ -623,7 +623,7 @@ i18nData.en["meta.title_preview"] = "File Preview - RAGA";
 
 /* Meta descriptions */
 i18nData.zh["meta.desc_home"] = "温州瑞基测控设备有限公司专业研制智能电动阀门执行机构，RA多回转、RQ直行程、RL角行程系列产品，广泛应用于石油化工、电力、水处理等领域。";
-i18nData.en["meta.desc_home"] = "Wenzhou RAGA Measurement & Control Equipment Co., Ltd. — professional manufacturer of smart electric valve actuators, RA multi-turn, RQ linear, RL quarter-turn series for petrochemical, power, water treatment industries.";
+i18nData.en["meta.desc_home"] = "Wenzhou RICH Measure & Control Equipment Co., Ltd. — professional manufacturer of smart electric valve actuators, RA multi-turn, RQ linear, RL quarter-turn series for petrochemical, power, water treatment industries.";
 i18nData.zh["meta.desc_about"] = "瑞基测控是专注于智能电动执行机构研发、生产、销售的高新技术企业，拥有自主知识产权和国际认证。";
 i18nData.en["meta.desc_about"] = "RAGA is a high-tech enterprise specializing in R&D, manufacturing and sales of smart electric actuators with independent IP rights and international certifications.";
 i18nData.zh["meta.desc_products"] = "瑞基测控全系列产品：RA多回转、RQ直行程、RL/RJ角行程智能电动执行机构，RGW/RIB减速箱，配套配件等。";
@@ -633,7 +633,7 @@ i18nData.en["meta.desc_cases"] = "Typical application cases of RAGA smart electr
 i18nData.zh["meta.desc_tech"] = "瑞基核心技术优势：非侵入式设定、绝对编码器、IP68防护、防爆认证、智能诊断等。";
 i18nData.en["meta.desc_tech"] = "RAGA core technology advantages: non-intrusive setup, absolute encoder, IP68 protection, explosion-proof certification, intelligent diagnostics.";
 i18nData.zh["meta.desc_contact"] = "联系我们 — 温州瑞基测控设备有限公司，上海瑞基瑞然自动化技术有限公司，瑞基测控设备（太仓）有限公司。";
-i18nData.en["meta.desc_contact"] = "Contact Us — Wenzhou RAGA, Shanghai RAGA Ruiran, Taicang RAGA. Your smart valve actuator partner.";
+i18nData.en["meta.desc_contact"] = "Contact Us — Wenzhou RICH, Shanghai RAGA, Taicang RAGA. Your smart valve actuator partner.";
 i18nData.zh["meta.desc_downloads"] = "瑞基测控产品说明书、选型手册、技术参数表、外形图等资料下载。";
 i18nData.en["meta.desc_downloads"] = "Download RAGA product manuals, selection guides, technical specifications, dimension drawings and more.";
 i18nData.zh["meta.desc_machining"] = "瑞基测控先进加工中心，高精度数控设备，确保零部件加工精度和质量。";
@@ -729,8 +729,8 @@ i18nData.zh["tech.cert_calibration_2000n"] = "2000N 扭矩校准证书";
 i18nData.zh["tech.cert_calibration_torque"] = "扭矩检测台校准证书";
 
 /* Certificate image labels — en */
-i18nData.en["tech.cert_label_wenzhou"] = "Wenzhou RAGA Measurement & Control Equipment Co., Ltd.";
-i18nData.en["tech.cert_label_shanghai"] = "Shanghai RAGA Ruiran Automation Technology Co., Ltd.";
+i18nData.en["tech.cert_label_wenzhou"] = "Wenzhou RICH Measure & Control Equipment Co., Ltd.";
+i18nData.en["tech.cert_label_shanghai"] = "Shanghai RAGA Automation Co., Ltd.";
 i18nData.en["tech.cert_label_ex1"] = "Explosion-proof Certificate GYB23.1992X";
 i18nData.en["tech.cert_label_ex2"] = "Explosion-proof Certificate GYB23.1993X";
 i18nData.en["tech.cert_label_ex3"] = "Explosion-proof Certificate GYB22.1729X";
@@ -770,17 +770,17 @@ i18nData.en["section.contact_subtitle"] = "Contact";
 
 /* Contact address details */
 i18nData.zh["contact.addr_wenzhou_full"] = "浙江省温州市炬光园中路128号1号楼";
-i18nData.en["contact.addr_wenzhou_full"] = "No.128 Juguangyuan Middle Road, Building 1, Wenzhou, Zhejiang";
+i18nData.en["contact.addr_wenzhou_full"] = "Building 1, No.128 Juguangyuan Middle Road, Wenzhou, Zhejiang, China";
 i18nData.zh["contact.company_wenzhou"] = "温州瑞基测控设备有限公司";
-i18nData.en["contact.company_wenzhou"] = "Wenzhou Raga Measurement & Control Equipment Co., Ltd.";
+i18nData.en["contact.company_wenzhou"] = "Wenzhou RICH Measure & Control Equipment Co., Ltd.";
 i18nData.zh["contact.address_wenzhou"] = "温州基地：浙江省温州市";
 i18nData.en["contact.address_wenzhou"] = "Wenzhou Office: Wenzhou, Zhejiang";
 i18nData.zh["contact.address_shanghai"] = "上海基地：上海市";
 i18nData.en["contact.address_shanghai"] = "Shanghai Office: Shanghai";
 i18nData.zh["contact.addr_shanghai_full"] = "上海市沪杭公路755号11幢";
-i18nData.en["contact.addr_shanghai_full"] = "No.755 Huhang Road, Building 11, Shanghai";
+i18nData.en["contact.addr_shanghai_full"] = "Building 11, No.755 Huhang Gonglu, Shanghai, China";
 i18nData.zh["contact.company_shanghai"] = "上海瑞基瑞然自动化技术有限公司";
-i18nData.en["contact.company_shanghai"] = "Shanghai Raga Ruiran Automation Technology Co., Ltd.";
+i18nData.en["contact.company_shanghai"] = "Shanghai RAGA Automation Co., Ltd.";
 i18nData.zh["contact.address_taicang"] = "太仓基地：江苏省太仓市";
 i18nData.en["contact.address_taicang"] = "Taicang Office: Taicang, Jiangsu";
 
@@ -1849,7 +1849,7 @@ i18nData.zh["downloads.drawings_3d"] = "三维外形图";
 i18nData.en["downloads.drawings_3d"] = "3D Dimension Drawings";
 i18nData["zh-TW"]["downloads.drawings_3d"] = "三維外形圖";
 i18nData.zh["downloads.file_catalog"] = "上海瑞基瑞然样本";
-i18nData.en["downloads.file_catalog"] = "Shanghai Ruiji Ruiran Catalog";
+i18nData.en["downloads.file_catalog"] = "Shanghai RAGA Catalog";
 i18nData["zh-TW"]["downloads.file_catalog"] = "上海瑞基瑞然樣本";
 i18nData.zh["downloads.file_brochure"] = "瑞基RAGA宣传册";
 i18nData.en["downloads.file_brochure"] = "RAGA Brochure";
@@ -2146,7 +2146,7 @@ i18nData.ru = {
   "footer.quick_links": "Быстрые ссылки",
   "footer.product_series": "Серии продукции",
   "footer.contact_info": "Контактная информация",
-  "footer.copyright": "Copyright &copy; 2026 Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. | Shanghai RAGA Ruiran Automation Technology Co., Ltd. All Rights Reserved.",
+  "footer.copyright": "Copyright &copy; 2026 Wenzhou RICH Measure & Control Equipment Co., Ltd. | Shanghai RAGA Automation Co., Ltd. All Rights Reserved.",
   "footer.icp": "ICP: ZheICP备2021002987号",
   "footer.series_ra": "Серия RA Многооборотная",
   "footer.series_rq": "Серия RQ Прямоходная",
@@ -2167,9 +2167,9 @@ i18nData.ru = {
   "section.about_subtitle": "О нас",
   "section.about_title": "О RAGA",
   "section.about_desc": "Сосредоточены на промышленной автоматизации, создавая высококачественные интеллектуальные приводы",
-  "about.company_name": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
-  "about.company_name_shanghai": "Shanghai RAGA Ruiran Automation Technology Co., Ltd.",
-  "about.p1": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. Расположена в Вэньчжоу и Шанхае, имеет современные производственные базы и передовое оборудование.",
+  "about.company_name": "Wenzhou RICH Measure & Control Equipment Co., Ltd.",
+  "about.company_name_shanghai": "Shanghai RAGA Automation Co., Ltd.",
+  "about.p1": "Wenzhou RICH Measure & Control Equipment Co., Ltd. — профессиональное предприятие, специализирующееся на НИОКР и производстве интеллектуальных электроприводов для клапанов. Расположена в Вэньчжоу и Шанхае, имеет современные производственные базы и передовое оборудование.",
   "about.p2": "Продукция широко используется в нефтяной, электроэнергетической, металлургической, водообрабатывающей отраслях, продается на внутреннем и международном рынках.",
   "about.stat1_num": "20+",
   "about.stat1_label": "Лет опыта",
@@ -2228,8 +2228,8 @@ i18nData.ru = {
   "about.page_title": "О компании",
   "about.breadcrumb": "О компании",
   "about.full_title": "Профиль RAGA",
-  "about.full_p1": "История RAGA уходит корнями в 1935 год — в том году на юге провинции Чжэцзян, Китай, тихо открылась небольшая мастерская, посвящённая машиностроению. Обладая старым токарным станком, несколькими напильниками и почти одержимым стремлением к точной механике, она заложила первоначальные основы производства RAGA. На протяжении почти столетия поколения мастеров твёрдо придерживались принципа «надёжное мастерство и изделия, выдерживающие испытание временем», передавая из поколения в поколение навыки точной обработки и безупречного качества и создав глубокое и уникальное производственное наследие. Сегодняшняя компания Wenzhou RAGA Measurement & Control Equipment Co., Ltd. продолжает эту традицию, являясь высокотехнологичным предприятием, специализирующимся на разработке и производстве интеллектуальных электроприводов для трубопроводной арматуры, со штаб-квартирой в Вэньчжоу, провинция Чжэцзян, исследовательским центром в Шанхае, мощным техническим потенциалом, передовыми технологиями производства и всесторонними средствами испытаний.",
-  "about.full_p2": "Вступив в новый век, RAGA в 2005 году завершила трансформацию в современное предприятие, сосредоточившись на разработке и производстве интеллектуальных электроприводов для трубопроводной арматуры. Для удовлетворения растущего спроса на рынке компания последовательно основала Shanghai RAGA Ruiran Automation Technology Co., Ltd. и RAGA (Taicang) Co., Ltd., создав производственную линию годовой мощностью 40 000 интеллектуальных электроприводов и сформировав согласованную промышленную структуру «Вэньчжоу — Шанхай — Тайцань». Продукция охватывает несколько серий, включая серии RQ (многооборотный регулирующий), RA (раздельный), RL (прямоходный), с крутящим моментом от 34 Н·м до 3500 Н·м и степенью защиты до IP68, отвечая требованиям самых суровых условий эксплуатации в нефтехимии, электроэнергетике, металлургии, водоснабжении, фармацевтике и других отраслях.",
+  "about.full_p1": "История RAGA уходит корнями в 1935 год — в том году на юге провинции Чжэцзян, Китай, тихо открылась небольшая мастерская, посвящённая машиностроению. Обладая старым токарным станком, несколькими напильниками и почти одержимым стремлением к точной механике, она заложила первоначальные основы производства RAGA. На протяжении почти столетия поколения мастеров твёрдо придерживались принципа «надёжное мастерство и изделия, выдерживающие испытание временем», передавая из поколения в поколение навыки точной обработки и безупречного качества и создав глубокое и уникальное производственное наследие. Сегодняшняя компания Wenzhou RICH Measure & Control Equipment Co., Ltd. продолжает эту традицию, являясь высокотехнологичным предприятием, специализирующимся на разработке и производстве интеллектуальных электроприводов для трубопроводной арматуры, со штаб-квартирой в Вэньчжоу, провинция Чжэцзян, исследовательским центром в Шанхае, мощным техническим потенциалом, передовыми технологиями производства и всесторонними средствами испытаний.",
+  "about.full_p2": "Вступив в новый век, RAGA в 2005 году завершила трансформацию в современное предприятие, сосредоточившись на разработке и производстве интеллектуальных электроприводов для трубопроводной арматуры. Для удовлетворения растущего спроса на рынке компания последовательно основала Shanghai RAGA Automation Co., Ltd. и RAGA (Taicang) Co., Ltd., создав производственную линию годовой мощностью 40 000 интеллектуальных электроприводов и сформировав согласованную промышленную структуру «Вэньчжоу — Шанхай — Тайцань». Продукция охватывает несколько серий, включая серии RQ (многооборотный регулирующий), RA (раздельный), RL (прямоходный), с крутящим моментом от 34 Н·м до 3500 Н·м и степенью защиты до IP68, отвечая требованиям самых суровых условий эксплуатации в нефтехимии, электроэнергетике, металлургии, водоснабжении, фармацевтике и других отраслях.",
   "about.full_p3": "От токарных станков мастерской до обрабатывающих центров с ЧПУ, от ручных напильников до интеллектуального производства — меняются оборудование и технологии, но неизменным остаётся наследие мастерства «Честность, Инновации, Точность, Эффективность». Компания создала совершенную систему управления качеством и прошла сертификацию системы менеджмента качества ISO9001, сертификацию CE и другие международные сертификации. Благодаря выдающемуся качеству продукции и профессиональному техническому обслуживанию продукция RAGA экспортируется в Россию, страны Ближнего Востока, Юго-Восточной Азии и другие страны и регионы, заслужив широкое доверие и признание клиентов во всём мире. Сегодня RAGA уверенно движется к цели стать «столетним предприятием» к 2035 году, продолжая наращивать инвестиции в НИОКР, углублять специализацию в области интеллектуальных приводов и стимулировать модернизацию отрасли за счёт технологических инноваций, стремясь стать мировым поставщиком интеллектуальных приводов высшего класса, достойным долгосрочного доверия клиентов во всём мире.",
   "about.history": "История развития",
   "about.culture": "Корпоративная культура",
@@ -2241,10 +2241,10 @@ i18nData.ru = {
   "about.culture_values_label": "Основные ценности: ",
   "about.production": "Производственные возможности",
   "about.milestone_1935": "Основана небольшая механическая мастерская на юге Чжэцзяна — начало столетней традиции мастерства",
-  "about.milestone_2005": "Основана Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd., фокус на НИОКР и производстве интеллектуальных приводов",
+  "about.milestone_2005": "Основана Wenzhou RICH Measure & Control Equipment Co., Ltd., фокус на НИОКР и производстве интеллектуальных приводов",
   "about.milestone_2010": "Запуск серии интеллектуальных электроприводов RA, широко признанная рынком",
   "about.milestone_2018": "Основана RAGA (Taicang) Co., Ltd., новая производственная линия с мощностью 40,000 единиц в год",
-  "about.milestone_2021": "Основана Shanghai RAGA Ruiran Automation Technology Co., Ltd., расширение на рынок Восточного Китая",
+  "about.milestone_2021": "Основана Shanghai RAGA Automation Co., Ltd., расширение на рынок Восточного Китая",
   "about.milestone_2035": "Движение к столетнему предприятию — мировой профессиональный поставщик интеллектуальных приводов",
   "about.prod_1": "Три базы в Вэньчжоу, Шанхае и Тайцане с годовой мощностью 40,000 единиц",
   "about.prod_2": "Современные обрабатывающие центры и специальное ЧПУ оборудование",
@@ -2336,9 +2336,9 @@ i18nData.ru = {
   "contact.email": "Email",
   "contact.website": "Веб-сайт",
   "contact.website_url": "www.raga.com.cn",
-  "contact.company_wenzhou": "Wenzhou Raga Measurement & Control Equipment Co., Ltd.",
+  "contact.company_wenzhou": "Wenzhou RICH Measure & Control Equipment Co., Ltd.",
   "contact.address_wenzhou": "Вэньчжоу: Вэньчжоу, провинция Чжэцзян",
-  "contact.company_shanghai": "Shanghai Raga Ruiran Automation Technology Co., Ltd.",
+  "contact.company_shanghai": "Shanghai RAGA Automation Co., Ltd.",
   "contact.address_shanghai": "Шанхай: Шанхай",
   "contact.address_taicang": "Тайцан: Тайцан, провинция Цзянсу",
   "contact.form_title": "Онлайн сообщение",
@@ -2362,14 +2362,14 @@ i18nData.ru = {
   "contact.info_col": "Контактная информация",
   "section.contact_subtitle": "Контакты",
 
-  "contact.company_name_wenzhou": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
-  "contact.company_name_shanghai": "Шанхай RAGA Ruiran Automation Technology Co., Ltd.",
+  "contact.company_name_wenzhou": "Wenzhou RICH Measure & Control Equipment Co., Ltd.",
+  "contact.company_name_shanghai": "Шанхай RAGA Automation Co., Ltd.",
   "contact.company_name_taicang": "RAGA Measurement & Control Equipment (Taicang) Co., Ltd.",
   "contact.addr_wenzhou": "Вэньчжоу, провинция Чжэцзян",
   "contact.addr_shanghai": "Шанхай",
   "contact.addr_taicang": "Тайцан, провинция Цзянсу",
-  "contact.addr_wenzhou_full": "№128, Juguangyuan Middle Road, Building 1, Вэньчжоу, Чжэцзян",
-  "contact.addr_shanghai_full": "№755, Huhang Road, Building 11, Шанхай",
+  "contact.addr_wenzhou_full": "Building 1, №128 Juguangyuan Middle Road, Вэньчжоу, Чжэцзян, Китай",
+  "contact.addr_shanghai_full": "Building 11, №755 Huhang Gonglu, Шанхай, Китай",
   "contact.baidu_map": "Открыть в Baidu Maps",
   "contact.amap": "Открыть в Amap",
   "contact.email_copied": "Email скопирован: ",
@@ -2510,12 +2510,12 @@ i18nData.ru = {
   "meta.title_preview": "Превью файла - RAGA",
 
   /* Meta descriptions */
-  "meta.desc_home": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd. — профессиональный производитель интеллектуальных электроприводов для клапанов.",
+  "meta.desc_home": "Wenzhou RICH Measure & Control Equipment Co., Ltd. — профессиональный производитель интеллектуальных электроприводов для клапанов.",
   "meta.desc_about": "RAGA — высокотехнологичное предприятие, специализирующееся на НИОКР, производстве и продаже интеллектуальных электроприводов.",
   "meta.desc_products": "Полная линейка продукции RAGA: серия RA многооборотная, серия RQ прямоходная, серия RL/RJ неполнооборотная.",
   "meta.desc_cases": "Типичные примеры применения интеллектуальных электроприводов RAGA в нефтяной, химической, электроэнергетической, металлургической, водообрабатывающей отраслях.",
   "meta.desc_tech": "Основные технологические преимущества RAGA: неинвазивная настройка, абсолютный энкодер, защита IP68, сертификация взрывозащиты.",
-  "meta.desc_contact": "Свяжитесь с нами — Вэньчжоу RAGA, Шанхай RAGA Ruiran, Тайцан RAGA.",
+  "meta.desc_contact": "Свяжитесь с нами — Вэньчжоу RAGA, Шанхай RAGA, Тайцан RAGA.",
   "meta.desc_downloads": "Скачать технические ресурсы продукции RAGA, включая руководства, руководства по выбору, инструкции по установке.",
   "meta.desc_machining": "Передовой обрабатывающий центр RAGA с высокоточным ЧПУ оборудованием.",
   "meta.desc_production": "Современная производственная линия сборки RAGA с строгим контролем качества.",
@@ -2602,7 +2602,7 @@ i18nData.ru = {
   "downloads.drawings_pdf": "Габаритные чертежи PDF",
   "downloads.drawings_dwg": "Габаритные чертежи DWG",
   "downloads.drawings_3d": "3D Габаритные модели",
-  "downloads.file_catalog": "Каталог Shanghai Ruiran",
+  "downloads.file_catalog": "Каталог Shanghai RAGA",
   "downloads.file_brochure": "Брошюра RAGA",
   "downloads.file_training": "Учебное руководство по актуаторам RAⅢ",
   "downloads.series_ra": "Серия RA (Многооборотная)",
@@ -2618,8 +2618,8 @@ i18nData.ru = {
   "downloads.note_7z": "Распаковка 7z",
 
   /* Certificate image labels */
-  "tech.cert_label_wenzhou": "Вэньчжоу RAGA Measurement & Control Equipment Co., Ltd.",
-  "tech.cert_label_shanghai": "Шанхай RAGA Ruiran Automation Technology Co., Ltd.",
+  "tech.cert_label_wenzhou": "Wenzhou RICH Measure & Control Equipment Co., Ltd.",
+  "tech.cert_label_shanghai": "Шанхай RAGA Automation Co., Ltd.",
   "tech.cert_label_ex1": "Сертификат взрывозащиты GYB23.1992X",
   "tech.cert_label_ex2": "Сертификат взрывозащиты GYB23.1993X",
   "tech.cert_label_ex3": "Сертификат взрывозащиты GYB22.1729X",
